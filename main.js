@@ -4,6 +4,7 @@ var min_size_px = 5
 var m_per_px = 10
 var zoomSlowFactor = 100
 var screen_px_per_mm = 96/2.54
+var loaded = false
 
 var FancyNumber = (function(number, sigfigs) {
   var number_names = [
@@ -107,11 +108,17 @@ function resize() {
       }
     }
   }
-  $('.m_per_px').text((new FancyNumber(m_per_px, 3)).getUnits());
+  var text_elm = $('.status')
+  text_elm.find('.m_per_px').text((new FancyNumber(m_per_px, 3)).getUnits());
   real_to_screen = m_per_px*1000*screen_px_per_mm
   if(real_to_screen < 1) {
-    $('.ratio').text('1:' + new FancyNumber(1/real_to_screen).getHuman())
+    text_elm.find('.ratio').text('1:' + new FancyNumber(1/real_to_screen).getHuman())
   } else {
-    $('.ratio').text(new FancyNumber(real_to_screen).getHuman() + ':1')
+    text_elm.find('.ratio').text(new FancyNumber(real_to_screen).getHuman() + ':1')
+  }
+  if(!loaded) {
+    text_elm.find('.loading').hide()
+    text_elm.find('.loaded').show()
+    loaded = true
   }
 }

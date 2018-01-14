@@ -45,4 +45,5 @@ function resize() {
       }
     }
   })
+  $('.m_per_px').text(Math.round(m_per_px));
 }

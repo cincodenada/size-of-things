@@ -86,7 +86,7 @@ function resize() {
     var info = ship.info
     if(!info.Length) {
       console.log("Error: No length for " + info.Name)
-      return
+      continue
     }
     var px_width = info.Length/m_per_px
     if(px_width > min_size_px) {

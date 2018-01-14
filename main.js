@@ -71,7 +71,6 @@ $(function() {
 
   $(window).on('mousewheel', function(evt) {
     evt.preventDefault();
-    console.log(evt.deltaY);
     m_per_px *= Math.pow(10, evt.deltaY/zoomSlowFactor);
     resize();
   })

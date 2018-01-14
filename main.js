@@ -104,9 +104,9 @@ function resize() {
         ship.elm = document.createElement('img')
         ship.elm.className = "thing"
         ship.elm.src = ship.path + '/' + ship.filename
+        ship.elm.meters = ship.info.Length;
         reinsert = true;
       }
-      ship.elm.meters = ship.info.Length;
       if(ship.elm.complete) {
         set_size(ship.elm)
       } else {

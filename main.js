@@ -49,8 +49,11 @@ var FancyNumber = (function(number, sigfigs) {
     if(si_idx < 0) { si_idx = 0 }
     if(si_idx >= si_units.length) { si_idx = si_units.length - 1 }
     power_adj = si_idx - si_offset
-    var out_num = this.roundSigFig()/Math.pow(10, si_idx - si_offset)
-    if(power_adj < 0) { out_num = out_num.toFixed(-out_num) }
+    var out_num = this.roundSigFig()/Math.pow(10, power_adj*3)
+    if(power_adj < 0) {
+      var decimals = (power_adj+1)*3-(this.zeroes+1)
+      out_num = out_num.toFixed(decimals)
+    }
     return out_num + " " + si_units[si_idx]
   }
 

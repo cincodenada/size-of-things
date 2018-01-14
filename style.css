@@ -1,3 +1,8 @@
 .thing {
   float: left;
 }
+
+#ruler {
+  width: 100mm;
+  display: none;
+}

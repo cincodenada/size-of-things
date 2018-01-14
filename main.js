@@ -53,7 +53,7 @@ function resize() {
       }
     }
   })
-  $('.m_per_px').text(Math.round(m_per_px));
+  $('.m_per_px').text(humanize(m_per_px, 3));
   real_to_screen = m_per_px*1000*screen_px_per_mm
   if(real_to_screen < 1) {
     $('.ratio').text('1:' + humanize(1/real_to_screen))
@@ -62,15 +62,18 @@ function resize() {
   }
 }
 
-function humanize(number) {
+function humanize(number, digits) {
+  if(!digits) { digits = 1; }
   var zeroes = Math.floor(Math.log10(number))
+  var num_clear = zeroes - (digits-1)
   var groups = Math.floor(zeroes/3)
-  number = Math.round(number/Math.pow(10, zeroes)) * Math.pow(10, zeroes)
+  number = Math.round(number/Math.pow(10, num_clear)) * Math.pow(10, num_clear)
+  if(num_clear < 0) { number = number.toFixed(-num_clear) }
   if(groups >= 2) {
     number /= Math.pow(10, groups*3)
     number = number + " " + number_names[groups-2]
   } else if(groups == 1) {
-    number = Math.floor(number/1e3) + ",000"
+    number = number.toString().substring(0,zeroes-2) + ',' + number.toString().substring(zeroes-2)
   }
   return number
 }

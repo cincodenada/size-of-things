@@ -45,7 +45,7 @@ def gather_yaml(path):
 def sort_ship(ship):
   size_order = None
   if 'Length' in ship['info']:
-    size_order = math.floor(math.log10(ship['info']['Length']))
+    size_order = math.floor(math.log10(ship['info']['Length'])*10)
   else:
     size_order = 0
 

@@ -1,21 +1,33 @@
 var container;
 var ships;
 var min_size_px = 50;
+var m_per_px = 10;
 $(function() {
   container = $('.stuff')
   $.getJSON("ships.json").done(function(data) {
     ships = data;
     initialize_ships();
   })
+
+  $(window).on('mousewheel', function(evt) {
+    evt.preventDefault();
+    console.log(evt.deltaY);
+    m_per_px -= evt.deltaY;
+    resize();
+  })
 })
 
 function initialize_ships() {
-  resize(2);
+  resize();
 }
 
-function resize(m_per_px) {
+function resize() {
   $.each(ships, function(idx, ship) {
     var info = ship.info
+    if(!info.Length) {
+      console.log("Error: No length for " + info.Name)
+      return
+    }
     var px_width = info.Length/m_per_px
     if(px_width > min_size_px) {
       if(!ship.elm) {
@@ -27,7 +39,10 @@ function resize(m_per_px) {
       ship.elm.width = px_width
       ship.elm.height = ship.elm.naturalHeight*ratio
     } else {
-      if(ship.elm) { container.remove(elm); }
+      if(ship.elm) {
+        container.get(0).removeChild(ship.elm);
+        ship.elm = false;
+      }
     }
   })
 }

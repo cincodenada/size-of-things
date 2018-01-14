@@ -81,7 +81,8 @@ function initialize_ships() {
 }
 
 function resize() {
-  $.each(ships, function(idx, ship) {
+  for(var i = ships.length-1; i >= 0; i--) {
+    var ship = ships[i];
     var info = ship.info
     if(!info.Length) {
       console.log("Error: No length for " + info.Name)
@@ -92,7 +93,7 @@ function resize() {
       if(!ship.elm) {
         ship.elm = $('<img class="thing"></img>').get(0)
         ship.elm.src = ship.path + '/' + ship.filename
-        container.append(ship.elm)
+        container.prepend(ship.elm)
       }
       var ratio = px_width/ship.elm.naturalWidth
       ship.elm.width = px_width
@@ -103,7 +104,7 @@ function resize() {
         ship.elm = false;
       }
     }
-  })
+  }
   $('.m_per_px').text((new FancyNumber(m_per_px, 3)).getUnits());
   real_to_screen = m_per_px*1000*screen_px_per_mm
   if(real_to_screen < 1) {

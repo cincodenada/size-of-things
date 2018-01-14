@@ -1,3 +1,8 @@
+body {
+  background: black;
+  color: white;
+}
+
 .thing {
   float: left;
 }

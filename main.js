@@ -1,6 +1,6 @@
 var container;
 var ships;
-var min_size_px = 50
+var min_size_px = 5
 var m_per_px = 10
 var zoomSlowFactor = 100
 var screen_px_per_mm = 96/2.54

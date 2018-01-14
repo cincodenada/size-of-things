@@ -81,17 +81,13 @@ function initialize_ships() {
   resize();
 }
 
-function set_size(px_width, elm) {
-  if(!elm) {
-    // We're an event handler, first arg is evt data
-    elm = this
-    px_width = px_width.px_width
-  }
-  var ratio = px_width/elm.naturalWidth
-  elm.width = px_width
+function set_size(elm) {
+  if(!elm) { elm = this }
+  var ratio = elm.px_width/elm.naturalWidth
+  elm.width = elm.px_width
   elm.height = elm.naturalHeight*ratio
   console.log("Set size")
-  console.log(px_width)
+  console.log(elm.px_width)
   console.log(elm)
 }
 
@@ -107,15 +103,17 @@ function resize() {
     if(px_width > min_size_px) {
       var reinsert = false
       if(!ship.elm) {
-        ship.elm = $('<img class="thing"></img>')
-        ship.elm.prop('src', ship.path + '/' + ship.filename)
+        ship.elm = document.createElement('img')
+        ship.elm.className = "thing"
+        ship.elm.src = ship.path + '/' + ship.filename
         reinsert = true;
       }
-      if(ship.elm.prop('complete')) {
-        set_size(px_width, ship.elm.get(0))
+      ship.elm.px_width = px_width;
+      if(ship.elm.complete) {
+        set_size(ship.elm)
       } else {
         console.log("Deferring size for " + ship['info']['Name'])
-        ship.elm.on('load', {px_width: px_width}, set_size)
+        ship.elm.addEventListener('load', set_size)
       }
       if(reinsert) { container.prepend(ship.elm) }
     } else {

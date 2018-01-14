@@ -21,8 +21,10 @@ def get_parts(path):
   return part_values
 
 def set_default(d, k, defaults):
-  defaults.update(d[k])
-  d[k] = defaults
+  combined = {}
+  combined.update(defaults)
+  combined.update(d[k])
+  d[k] = combined
 
 def gather_yaml(path):
   ships = []

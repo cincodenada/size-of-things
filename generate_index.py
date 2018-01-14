@@ -1,6 +1,7 @@
 import json
 import yaml
 import os
+import math
 
 def get_parts(path):
   part_values = {}
@@ -39,4 +40,15 @@ def gather_yaml(path):
 
   return ships
 
-json.dump(gather_yaml('images'), open('ships.json', 'w'))
+def sort_ship(ship):
+  size_order = None
+  if 'Length' in ship['info']:
+    size_order = math.floor(math.log10(ship['info']['Length']))
+  else:
+    size_order = 0
+
+  return (size_order, ship['info'].get('Universe'), ship['info'].get('Faction'))
+
+ships = gather_yaml('images')
+ships.sort(key = sort_ship)
+json.dump(ships, open('ships.json', 'w'))

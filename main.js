@@ -113,10 +113,15 @@ function set_size(elm) {
   elm.height = elm.naturalHeight*ratio
   elm.style.display = ""
 
+  clear_load(elm)
+  if(!remaining_to_load) { $('.stuff').show() }
+}
+
+function clear_load(elm) {
+  if(elm.target) { elm = elm.target }
   which_load = elm.loads.pop()
   if(which_load == current_load) {
     remaining_to_load--
-    if(!remaining_to_load) { $('.stuff').show() }
   }
 }
 
@@ -151,6 +156,7 @@ function resize() {
         ship.elm.loads.push(load_time)
         ship.elm.style.display="none"
         ship.elm.addEventListener('load', set_size)
+        ship.elm.addEventListener('error', clear_load)
       }
       if(reinsert) { container.prepend(ship.elm) }
     } else {

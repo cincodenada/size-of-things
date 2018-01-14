@@ -6,6 +6,7 @@ var zoomSlowFactor = 100
 var screen_px_per_mm = 96/2.54
 var loaded = false
 var remaining_to_load
+var current_load
 var load_timeout = 500
 
 var FancyNumber = (function(number, sigfigs) {
@@ -112,14 +113,19 @@ function set_size(elm) {
   elm.height = elm.naturalHeight*ratio
   elm.style.display = ""
 
-  remaining_to_load--
-  if(!remaining_to_load) { $('.stuff').show() }
+  which_load = elm.loads.pop()
+  if(which_load == current_load) {
+    remaining_to_load--
+    if(!remaining_to_load) { $('.stuff').show() }
+  }
 }
 
 function resize() {
   var min_length = min_size_px*m_per_px
   $('.stuff').hide()
   remaining_to_load = 0
+  var load_time = +new Date()
+  current_load = load_time
   for(var i = ships.length-1; i >= 0; i--) {
     var ship = ships[i];
     var info = ship.info
@@ -134,12 +140,15 @@ function resize() {
         ship.elm.className = "thing"
         ship.elm.src = ship.path + '/' + ship.filename
         ship.elm.data = ship;
+        if(!ship.elm.loads) { ship.elm.loads = [] }
+
         reinsert = true;
       }
       if(ship.elm.complete) {
         set_size(ship.elm)
       } else {
         remaining_to_load++
+        ship.elm.loads.push(load_time)
         ship.elm.style.display="none"
         ship.elm.addEventListener('load', set_size)
       }
@@ -152,10 +161,10 @@ function resize() {
     }
   }
   if(remaining_to_load) {
-    $('.stuff').show()
-  } else {
     // Always load within a reasonable time
     setTimeout(function() { $('.stuff').show() }, load_timeout)
+  } else {
+    $('.stuff').show()
   }
   var text_elm = $('.status')
   text_elm.find('.m_per_px').text((new FancyNumber(m_per_px, 3)).getUnits());

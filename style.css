@@ -11,3 +11,19 @@ body {
   width: 100mm;
   display: none;
 }
+
+.info {
+  position: absolute;
+  border-radius: 5px;
+  border: 3px solid #600;
+  margin: 5px;
+  padding: 5px;
+  background: #222;
+}
+.info span {
+  float: left;
+  clear: both;
+}
+.info span.universe {
+  color: yellow;
+}

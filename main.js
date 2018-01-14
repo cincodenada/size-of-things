@@ -77,6 +77,25 @@ $(function() {
     m_per_px *= Math.pow(10, evt.deltaY/zoomSlowFactor);
     resize();
   })
+
+  $('.stuff').on('mouseover', 'img', function() {
+    infodiv = $('.info')
+    infodiv.find('.universe').text(this.data.info.Universe)
+    infodiv.find('.faction').text(this.data.info.Faction)
+    infodiv.find('.name').text(this.data.info.Name)
+    infodiv.find('.length').text(this.data.info.Length)
+    ship_rect = this.getBoundingClientRect()
+    infodiv.css('top', ship_rect.bottom)
+    infodiv.css('left', ship_rect.left)
+    infodiv.show()
+  })
+  $('.stuff').on('mouseout', 'img', function() {
+    infodiv.find('.universe').text("")
+    infodiv.find('.faction').text("")
+    infodiv.find('.name').text("")
+    infodiv.find('.length').text("")
+    infodiv.hide()
+  })
 })
 
 function initialize_ships() {
@@ -85,7 +104,7 @@ function initialize_ships() {
 
 function set_size(elm) {
   if(elm.target) { elm = elm.target }
-  var px_width = elm.meters/m_per_px
+  var px_width = elm.data.info.Length/m_per_px
   var ratio = px_width/elm.naturalWidth
   elm.width = px_width
   elm.height = elm.naturalHeight*ratio
@@ -106,7 +125,7 @@ function resize() {
         ship.elm = document.createElement('img')
         ship.elm.className = "thing"
         ship.elm.src = ship.path + '/' + ship.filename
-        ship.elm.meters = ship.info.Length;
+        ship.elm.data = ship;
         reinsert = true;
       }
       if(ship.elm.complete) {

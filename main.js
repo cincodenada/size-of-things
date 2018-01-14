@@ -2,6 +2,7 @@ var container;
 var ships;
 var min_size_px = 50;
 var m_per_px = 10;
+var zoomSlowFactor = 100
 $(function() {
   container = $('.stuff')
   $.getJSON("ships.json").done(function(data) {
@@ -9,10 +10,12 @@ $(function() {
     initialize_ships();
   })
 
+  // Figure out px/mm
+
   $(window).on('mousewheel', function(evt) {
     evt.preventDefault();
     console.log(evt.deltaY);
-    m_per_px -= evt.deltaY;
+    m_per_px *= Math.pow(10, evt.deltaY/zoomSlowFactor);
     resize();
   })
 })

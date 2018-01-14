@@ -90,14 +90,16 @@ function resize() {
     }
     var px_width = info.Length/m_per_px
     if(px_width > min_size_px) {
+      var reinsert = false
       if(!ship.elm) {
         ship.elm = $('<img class="thing"></img>').get(0)
         ship.elm.src = ship.path + '/' + ship.filename
-        container.prepend(ship.elm)
+        reinsert = true;
       }
       var ratio = px_width/ship.elm.naturalWidth
       ship.elm.width = px_width
       ship.elm.height = ship.elm.naturalHeight*ratio
+      if(reinsert) { container.prepend(ship.elm) }
     } else {
       if(ship.elm) {
         container.get(0).removeChild(ship.elm);

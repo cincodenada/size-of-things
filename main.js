@@ -5,6 +5,8 @@ var m_per_px = 10
 var zoomSlowFactor = 100
 var screen_px_per_mm = 96/2.54
 var loaded = false
+var remaining_to_load
+var load_timeout = 500
 
 var FancyNumber = (function(number, sigfigs) {
   var number_names = [
@@ -108,10 +110,16 @@ function set_size(elm) {
   var ratio = px_width/elm.naturalWidth
   elm.width = px_width
   elm.height = elm.naturalHeight*ratio
+  elm.style.display = ""
+
+  remaining_to_load--
+  if(!remaining_to_load) { $('.stuff').show() }
 }
 
 function resize() {
   var min_length = min_size_px*m_per_px
+  $('.stuff').hide()
+  remaining_to_load = 0
   for(var i = ships.length-1; i >= 0; i--) {
     var ship = ships[i];
     var info = ship.info
@@ -131,6 +139,8 @@ function resize() {
       if(ship.elm.complete) {
         set_size(ship.elm)
       } else {
+        remaining_to_load++
+        ship.elm.style.display="none"
         ship.elm.addEventListener('load', set_size)
       }
       if(reinsert) { container.prepend(ship.elm) }
@@ -140,6 +150,12 @@ function resize() {
         ship.elm = false;
       }
     }
+  }
+  if(remaining_to_load) {
+    $('.stuff').show()
+  } else {
+    // Always load within a reasonable time
+    setTimeout(function() { $('.stuff').show() }, load_timeout)
   }
   var text_elm = $('.status')
   text_elm.find('.m_per_px').text((new FancyNumber(m_per_px, 3)).getUnits());

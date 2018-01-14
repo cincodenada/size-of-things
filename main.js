@@ -82,13 +82,10 @@ function initialize_ships() {
 }
 
 function set_size(elm) {
-  if(!elm) { elm = this }
+  if(elm.target) { elm = elm.target }
   var ratio = elm.px_width/elm.naturalWidth
   elm.width = elm.px_width
   elm.height = elm.naturalHeight*ratio
-  console.log("Set size")
-  console.log(elm.px_width)
-  console.log(elm)
 }
 
 function resize() {
@@ -112,7 +109,6 @@ function resize() {
       if(ship.elm.complete) {
         set_size(ship.elm)
       } else {
-        console.log("Deferring size for " + ship['info']['Name'])
         ship.elm.addEventListener('load', set_size)
       }
       if(reinsert) { container.prepend(ship.elm) }

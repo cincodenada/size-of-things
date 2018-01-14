@@ -15,7 +15,6 @@ var FancyNumber = (function(number, sigfigs) {
   var si_offset = 3
 
   function FancyNumber(number, sigfigs) {
-    if(!sigfigs) { sigfigs = 1 }
     this.zeroes = Math.floor(Math.log10(number))
     this.groups = Math.floor(this.zeroes/3)
     this.number = number
@@ -27,11 +26,14 @@ var FancyNumber = (function(number, sigfigs) {
   }
 
   FancyNumber.prototype.roundSigFig = function() {
-    if(!sigfigs) { sigfigs = 1; }
-    var num_clear = this.zeroes - (sigfigs-1)
-    var out_num = Math.round(this.number/Math.pow(10, num_clear)) * Math.pow(10, num_clear)
-    if(num_clear < 0) { out_num = out_num.toFixed(-num_clear) }
-    return out_num
+    if(this.sigfigs) {
+      var num_clear = this.zeroes - (this.sigfigs-1)
+      var out_num = Math.round(this.number/Math.pow(10, num_clear)) * Math.pow(10, num_clear)
+      if(num_clear < 0) { out_num = out_num.toFixed(-num_clear) }
+      return out_num
+    } else {
+      return this.number
+    }
   }
 
   FancyNumber.prototype.getHuman = function() {
@@ -124,9 +126,9 @@ function resize() {
   text_elm.find('.m_per_px').text((new FancyNumber(m_per_px, 3)).getUnits());
   real_to_screen = m_per_px*1000*screen_px_per_mm
   if(real_to_screen < 1) {
-    text_elm.find('.ratio').text('1:' + new FancyNumber(1/real_to_screen).getHuman())
+    text_elm.find('.ratio').text('1:' + new FancyNumber(1/real_to_screen, 1).getHuman())
   } else {
-    text_elm.find('.ratio').text(new FancyNumber(real_to_screen).getHuman() + ':1')
+    text_elm.find('.ratio').text(new FancyNumber(real_to_screen, 1).getHuman() + ':1')
   }
   if(!loaded) {
     text_elm.find('.loading').hide()

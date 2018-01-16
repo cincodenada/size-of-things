@@ -2,6 +2,7 @@ import json
 import yaml
 import os
 import math
+from PIL import Image
 
 def get_parts(path):
   part_values = {}
@@ -36,6 +37,11 @@ def gather_yaml(path):
         for ship in yaml.load_all(open(fullpath, 'r')):
           set_default(ship, 'info', extra_info)
           ship['path'] = path
+
+          # Get image width/height
+          im = Image.open(os.path.join(path, ship['filename']))
+          ships['image_size'] = im.size
+
           ships.append(ship)
     elif os.path.isdir(fullpath):
       ships += gather_yaml(fullpath)
@@ -45,7 +51,7 @@ def gather_yaml(path):
 def sort_ship(ship):
   size_order = None
   if 'Length' in ship['info']:
-    size_order = math.floor(math.log10(ship['info']['Length'])*10)
+    size_order = ship['info']['Length']
   else:
     size_order = 0
 
@@ -53,4 +59,5 @@ def sort_ship(ship):
 
 ships = gather_yaml('images')
 ships.sort(key = sort_ship)
+arrange_ships(ships)
 json.dump(ships, open('ships.json', 'w'))

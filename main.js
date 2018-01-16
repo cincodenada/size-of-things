@@ -73,7 +73,7 @@ $(function() {
     initialize_ships();
   })
 
-  // Figure out px/mm
+  $('.px_mm').text(screen_px_per_mm.toFixed(2))
 
   $(window).on('mousewheel', function(evt) {
     evt.preventDefault();

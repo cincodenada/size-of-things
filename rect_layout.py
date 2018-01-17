@@ -15,6 +15,12 @@ class Ray:
     return distance
 
 class Rect:
+  # Which corner to ignore for angles < x
+  ignore_corners = {
+      90: 3, 180: 2,
+      270: 1, 360: 0
+  }
+
   def __init__(self, size, center):
     self.left = center[0] - size[0]/2
     self.right = center[0] + size[0]/2
@@ -27,21 +33,37 @@ class Rect:
   def corners(self):
     yield (self.left, self.top)
     yield (self.right, self.top)
-    yield (self.left, self.bottom)
     yield (self.right, self.bottom)
+    yield (self.left, self.bottom)
 
-  def corner_angles(self):
+  def corner_angles(self, origin = (0,0)):
     return [
       Angle(origin, c).distance(angle)
       for c in self.corners()
     ]
 
   def intersects_angle(self, angle, origin = (0,0)):
-    distances = self.corner_angles()
+    distances = self.corner_angles(origin)
     return (min(distances) < 0 and max(distances) > 0)
 
   def outer_radius(self, angle):
+    distances = self.corner_angles()
+    if not min(distances) < 0 and max(distances) > 0:
+      return False
 
+    # We can ignore the closest corner
+    # Line will then be between two of the remaining points
+    ignore_corner = get_ignore(angle)
+    middle_corner = distances[(ignore_corner + 2) % 4]
+    if(middle_corner < 0):
+    else:
+
+  def get_ignore(self, angle):
+    for (max_angle, corner) in ignore_corners.items():
+      if angle < max_angle:
+        return corner
+
+    return None
 
   def intersects(self, rect):
     # origin top-left

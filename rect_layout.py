@@ -22,6 +22,10 @@ class Rayish:
         self.origin[0] + math.cos(self.angle)*length,
         self.origin[1] + math.sin(self.angle)*length
       )
+
+    print("Created Rayish from {} to {} (angle {})".format(
+      self.origin, self.end, self.angle
+    ))
     
     self.length = None
 
@@ -106,6 +110,10 @@ class Rect:
     ignore_corner = self.get_ignore(angle)
     middle_corner = (ignore_corner + 2) % 4
     dist_middle = distances[middle_corner]
+    print("Finding sides for angle {}, ignoring corner {}, middle corner {}".format(
+      angle, ignore_corner, middle_corner
+    ))
+    print(distances)
     if(middle_corner < 0):
       point = ray.intersects_segment(corners[(middle_corner - 1) % 4], corners[middle_corner])
       side = middle_corner
@@ -174,7 +182,7 @@ class Layout:
       outer_rect_idx = 0
 
     max_radius = None
-    for i in range(len(self.rects) - 1, outer_rect_idx - 1, -1):
+    for i in reversed(range(len(self.rects))):
       cur_radius = self.rects[i].outer_radius(angle)
       if(max_radius is None or cur_radius.length() > max_radius.length()):
         new_outer = i

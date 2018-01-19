@@ -4,8 +4,8 @@ import tkinter as tk
 
 def addrect():
   global layout
-  width = random.randrange(100) + 20
-  height = random.randrange(100) + 20
+  width = random.randrange(10) + 20
+  height = random.randrange(10) + 20
   layout.add_rect((width, height))
 
 win = tk.Tk()

@@ -2,6 +2,12 @@ import rect_layout
 import random
 import tkinter as tk
 
+def addrect():
+  global layout
+  width = random.randrange(100) + 20
+  height = random.randrange(100) + 20
+  layout.add_rect((width, height))
+
 win = tk.Tk()
 can = tk.Canvas(win)
 can.pack()
@@ -9,11 +15,7 @@ can.pack()
 btn = tk.Button(win, text="Add Rectangle", command=addrect)
 btn.pack()
 
-layout = Layout(400, can)
+layout = rect_layout.Layout(400, can)
 
 win.mainloop()
 
-def addrect():
-  width = random.randrange(100)
-  height = random.randrange(100)
-  layout.add_rect((width, height))

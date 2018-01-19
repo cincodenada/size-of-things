@@ -1,12 +1,18 @@
 import math
 math.tau = math.pi*2
 
+def frange(end, jump):
+  x = 0
+  while x < end:
+    yield x
+    x += jump
+
 class Rayish:
   def __init__(self, angle_or_end, origin = (0,0), length=1):
     self.origin = origin
     try:
       self.end = angle_or_end
-      self.angle = atan2(
+      self.angle = math.atan2(
         self.end[0] - self.origin[0],
         self.end[1] - self.origin[1]
       )
@@ -42,20 +48,17 @@ class Rayish:
 
     div = det(xdiff, ydiff)
     if div == 0:
-       raise Exception('lines do not intersect')
+      return None
 
     d = (det(a, b), det(self.origin, self.end))
     x = det(d, xdiff) / div
     y = det(d, ydiff) / div
-    return x, y
+    return (x, y)
 
 class Rect:
-  # Which corner to ignore for each quadrant
-  ignore_corners = [2, 3, 0, 1]
-
   def __init__(self, size, center = (0,0)):
     self.size = size
-    self.move(center)
+    self.move_to(center)
 
   def move(self, dist):
     self.move_to((
@@ -81,7 +84,7 @@ class Rect:
 
   def corner_angles(self, origin = (0,0)):
     return [
-      Angle(origin, c).distance(angle)
+      Rayish(c).angle
       for c in self.corners()
     ]
 
@@ -91,7 +94,8 @@ class Rect:
 
   def outer_radius(self, angle):
     corners = self.corners()
-    distances = self.corner_angles()
+    corner_angles = self.corner_angles()
+    distances = [ca - angle for ca in corner_angles]
     if not min(distances) < 0 and max(distances) > 0:
       return False
 
@@ -99,14 +103,14 @@ class Rect:
 
     # We can ignore the closest corner
     # Line will then be between two of the remaining points
-    ignore_corner = get_ignore(angle)
+    ignore_corner = self.get_ignore(angle)
     middle_corner = (ignore_corner + 2) % 4
     dist_middle = distances[middle_corner]
     if(middle_corner < 0):
-      point = ray.intersects_segment(corners[middle_corner - 1], corners[middle_corner])
+      point = ray.intersects_segment(corners[(middle_corner - 1) % 4], corners[middle_corner])
       side = middle_corner
     else:
-      point = ray.intersects_segment(corners[middle_corner + 1], corners[middle_corner])
+      point = ray.intersects_segment(corners[(middle_corner + 1) % 4], corners[middle_corner])
       side = middle_corner + 1
 
     ray = Rayish(point)
@@ -114,9 +118,9 @@ class Rect:
     return ray
 
   def get_ignore(self, angle):
-    for (max_angle, corner) in ignore_corners.items():
-      if angle < max_angle:
-        return corner
+    for cnum in range(4):
+      if angle < (cnum+1)*math.pi/2:
+        return cnum
 
     return None
 
@@ -145,15 +149,23 @@ class Layout:
     self.rects = []
     self.outer_rects = {}
     self.angle = 0
-    self.angle_increment = math.tau/num_slices
+    self.angle_step = math.tau/num_slices
     self.canvas = canvas
 
   def add_rect(self, size):
     if(len(self.rects) == 0):
-      self.rects.push(Rect(size, (0,0)))
+      rect = Rect(size, (0,0))
+    else:
+      rect = self.place_rect(size)
+
+    if rect is None:
+      print("Couldn't add rectangle!")
       return
 
-    self.place_rect(size)
+    self.rects.append(rect)
+
+    if(self.canvas):
+      self.canvas.create_rectangle(rect.top+200, rect.left+200, rect.bottom+200, rect.right+200)
 
   def get_radius(self, angle):
     try:
@@ -164,7 +176,7 @@ class Layout:
     max_radius = None
     for i in range(len(self.rects) - 1, outer_rect_idx - 1, -1):
       cur_radius = self.rects[i].outer_radius(angle)
-      if(cur_radius.length() > max_radius.length()):
+      if(max_radius is None or cur_radius.length() > max_radius.length()):
         new_outer = i
         max_radius = cur_radius
 
@@ -175,34 +187,36 @@ class Layout:
   def place_rect(self, size):
     min_radius = None
     rect = Rect(size)
-    move_dist = size
-    move_dist[base_radius.size % 2] = 0
-
-    for ang in range(math.tau, ang.step):
+    for ang in frange(math.tau, self.angle_step):
       base_radius = self.get_radius(ang)
-      
-      rect_center = base_radius.end
-      rect_center[0] += move_dist[0]
-      rect_center[1] += move_dist[1]
+      if base_radius.side % 2:
+        move_dist = (size[0], 0)
+      else:
+        move_dist = (0, size[1])
 
+      rect_center = (
+        base_radius.end[0] + move_dist[0],
+        base_radius.end[1] + move_dist[1]
+      )
       rect.move_to(rect_center)
       
       for r in self.rects:
         if rect.intersects(r):
           continue 
 
-      if min_radius is None or base_radius.length < min_radius.length:
+      if min_radius is None or base_radius.length() < min_radius.length():
         min_radius = base_radius
 
     if min_radius:
-      rect_center = min_radius.end
-      rect_center[0] += move_dist[0]
-      rect_center[1] += move_dist[1]
+      rect_center = (
+        base_radius.end[0] + move_dist[0],
+        base_radius.end[1] + move_dist[1]
+      )
+      rect.move_to(rect_center)
     else:
-      print("Couldn't add rectangle!")
+      rect = None
 
-    if(canvas):
-      canvas.create_rectangle(rect.top, rect.left, rect.bottom, rect.right)
+    return rect
 
 
       #budge = 1

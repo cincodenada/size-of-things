@@ -13,8 +13,8 @@ class Rayish:
     try:
       self.end = angle_or_end
       self.angle = math.atan2(
-        self.end[0] - self.origin[0],
-        self.end[1] - self.origin[1]
+        self.end[1] - self.origin[1],
+        self.end[0] - self.origin[0]
       )
     except TypeError:
       self.angle = angle_or_end
@@ -126,11 +126,8 @@ class Rect:
     return ray
 
   def get_ignore(self, angle):
-    for cnum in range(4):
-      if angle < (cnum+1)*math.pi/2:
-        return cnum
-
-    return None
+    quadrant = math.floor(angle/math.pi/2)
+    return int((quadrant + 2) % 4)
 
   def intersects(self, rect):
     # origin top-left

@@ -23,11 +23,14 @@ class Rayish:
         self.origin[1] + math.sin(self.angle)*length
       )
 
-    print("Created Rayish from {} to {} (angle {})".format(
-      self.origin, self.end, self.angle
-    ))
+    print("Created {}".format(self))
     
     self.length = None
+
+  def __str__(self):
+    return "Rayish from {} to {} (angle {})".format(
+      self.origin, self.end, self.angle
+    )
 
   def distance(self, angle):
     phi = math.abs(angle.angle - self.angle) % 360
@@ -63,6 +66,11 @@ class Rect:
   def __init__(self, size, center = (0,0)):
     self.size = size
     self.move_to(center)
+
+  def __str__(self):
+    return "Rectangle: tldr {}/{}/{}/{}".format(
+      self.top, self.left, self.bottom, self.right
+    )
 
   def move(self, dist):
     self.move_to((
@@ -114,12 +122,12 @@ class Rect:
       angle, ignore_corner, middle_corner
     ))
     print(distances)
-    if(middle_corner < 0):
+    if(dist_middle < 0):
       point = ray.intersects_segment(corners[(middle_corner - 1) % 4], corners[middle_corner])
       side = middle_corner
     else:
       point = ray.intersects_segment(corners[(middle_corner + 1) % 4], corners[middle_corner])
-      side = middle_corner + 1
+      side = (middle_corner + 1) % 4
 
     ray = Rayish(point)
     ray.side = side
@@ -133,21 +141,25 @@ class Rect:
     # origin top-left
     # "below" is >
     # "above" is <
+    print(rect)
+    print(self)
+    v = False
     if rect.top > self.top:
       if rect.top < self.bottom:
-        return True
+        vert = True
     else:
       if rect.bottom > self.top:
-        return True
+        vert = True
 
+    h = False
     if rect.left > self.left:
       if rect.left < self.right:
-        return True
+        h = True
     else:
       if rect.right > self.left:
-        return True
+        h = True
 
-    return False
+    return (v and h)
 
 class Layout:
   def __init__(self, num_slices, canvas = None):
@@ -181,7 +193,7 @@ class Layout:
     max_radius = None
     for i in reversed(range(len(self.rects))):
       cur_radius = self.rects[i].outer_radius(angle)
-      if(max_radius is None or cur_radius.length() > max_radius.length()):
+      if max_radius is None or cur_radius.length() > max_radius.length():
         new_outer = i
         max_radius = cur_radius
 
@@ -193,11 +205,14 @@ class Layout:
     min_radius = None
     rect = Rect(size)
     for ang in frange(math.tau, self.angle_step):
+      print(ang)
       base_radius = self.get_radius(ang)
+      print(base_radius)
+      print(base_radius.side)
       if base_radius.side % 2:
-        move_dist = (size[0], 0)
-      else:
         move_dist = (0, size[1])
+      else:
+        move_dist = (size[0], 0)
 
       rect_center = (
         base_radius.end[0] + move_dist[0],

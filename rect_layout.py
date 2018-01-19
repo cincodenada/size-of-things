@@ -25,7 +25,7 @@ class Rayish:
 
     print("Created {}".format(self))
     
-    self.length = None
+    self._length = None
 
   def __str__(self):
     return "Rayish from {} to {} (angle {})".format(
@@ -38,13 +38,13 @@ class Rayish:
     return distance
   
   def length(self):
-    if not self.length:
-      self.length = math.sqrt(
-        math.pow((self.origin[0] - self.end[0]), 2),
+    if not self._length:
+      self._length = math.sqrt(
+        math.pow((self.origin[0] - self.end[0]), 2) +
         math.pow((self.origin[1] - self.end[1]), 2)
       )
 
-    return self.length
+    return self._length
 
   def intersects_segment(self, a, b):
     xdiff = (a[0] - b[0], self.origin[0] - self.end[0])

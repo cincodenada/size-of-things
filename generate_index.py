@@ -2,7 +2,6 @@ import json
 import yaml
 import os
 import math
-from PIL import Image
 
 def get_parts(path):
   part_values = {}
@@ -61,3 +60,5 @@ ships = gather_yaml('images')
 ships.sort(key = sort_ship)
 arrange_ships(ships)
 json.dump(ships, open('ships.json', 'w'))
+
+

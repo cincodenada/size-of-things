@@ -108,7 +108,7 @@ class Rect:
 
   def corner_angles(self, origin = (0,0)):
     return [
-      Rayish(c).angle
+      Rayish(c, origin).angle
       for c in self.corners()
     ]
 

@@ -13,12 +13,12 @@ class Rayish:
     self.origin = origin
     try:
       self.end = angle_or_end
-      self.angle = math.atan2(
-        self.end[1] - self.origin[1],
-        self.end[0] - self.origin[0]
+      self.angle = self.clamp_range(
+        math.atan2(
+          self.end[1] - self.origin[1],
+          self.end[0] - self.origin[0]
+        )
       )
-      if(self.angle < 0):
-        self.angle += 2*math.pi
     except TypeError:
       self.angle = angle_or_end
       self.end = (
@@ -27,6 +27,18 @@ class Rayish:
       )
 
     self._length = None
+
+  @staticmethod
+  def clamp_range(val, range=(0,2*math.pi)):
+    if not (range[1] - range[0]) == 2*math.pi:
+      raise ValueError("Range must span 2*pi")
+
+    while val < range[0]:
+      val += 2*math.pi
+    while val > range[1]:
+      val -= 2*math.pi
+
+    return val
 
   def __str__(self):
     return "Rayish from {} to {} (angle {})".format(
@@ -123,7 +135,7 @@ class Rect:
     corner_angles = self.corner_angles()
     print(corner_angles)
     distances = [ca - angle for ca in corner_angles]
-    distances = [d if d < math.pi else d - 2*math.pi for d in distances]
+    distances = [Rayish.clamp_range(d, [-math.pi, math.pi]) for d in distances]
     print(distances)
     if not min(distances) < 0 and max(distances) > 0:
       return False

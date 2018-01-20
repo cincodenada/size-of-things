@@ -140,10 +140,10 @@ class Rect:
       angle, ignore_corner, middle_corner
     ))
     if(dist_middle < 0):
-      point = ray.intersects_segment(corners[(middle_corner - 1) % 4], corners[middle_corner])
+      point = ray.intersects_segment(corners[(middle_corner + 1) % 4], corners[middle_corner])
       side = middle_corner
     else:
-      point = ray.intersects_segment(corners[(middle_corner + 1) % 4], corners[middle_corner])
+      point = ray.intersects_segment(corners[(middle_corner - 1) % 4], corners[middle_corner])
       side = (middle_corner + 1) % 4
 
     ray = Rayish(point)

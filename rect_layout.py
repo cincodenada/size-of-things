@@ -148,7 +148,7 @@ class Rect:
     return ray
 
   def get_ignore(self, angle):
-    quadrant = math.floor(angle/math.pi/2)
+    quadrant = math.floor(angle/(math.pi/2))
     return int((quadrant + 2) % 4)
 
   def intersects(self, rect):
@@ -227,6 +227,7 @@ class Layout:
     rect = Rect(size)
     for ang in frange(math.tau, self.angle_step):
       base_radius = self.get_radius(ang)
+      base_radius.draw(self.canvas)
       print(base_radius)
       print(base_radius.side)
       if base_radius.side % 2:

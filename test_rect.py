@@ -15,7 +15,7 @@ can.pack()
 btn = tk.Button(win, text="Add Rectangle", command=addrect)
 btn.pack()
 
-layout = rect_layout.Layout(400, can)
+layout = rect_layout.Layout(24, can)
 
 win.mainloop()
 

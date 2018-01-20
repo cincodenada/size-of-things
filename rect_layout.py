@@ -235,7 +235,7 @@ class Layout:
     max_radius = None
     for i in reversed(range(len(self.rects))):
       cur_radius = self.rects[i].outer_radius(angle)
-      if max_radius is None or cur_radius.length() > max_radius.length():
+      if cur_radius and (max_radius is None or cur_radius.length() > max_radius.length()):
         new_outer = i
         max_radius = cur_radius
 

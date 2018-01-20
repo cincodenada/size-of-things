@@ -126,16 +126,21 @@ class Rect:
       for c in self.corners()
     ]
 
+  def corner_distances(self, angle, origin=(0,0)):
+    corner_angles = self.corner_angles()
+    print(corner_angles)
+    distances = [ca - angle for ca in corner_angles]
+    distances = [Rayish.clamp_range(d, [-math.pi, math.pi]) for d in distances]
+    return distances
+
+
   def intersects_angle(self, angle, origin = (0,0)):
     distances = self.corner_angles(origin)
     return (min(distances) < 0 and max(distances) > 0)
 
   def outer_radius(self, angle):
     corners = self.corners()
-    corner_angles = self.corner_angles()
-    print(corner_angles)
-    distances = [ca - angle for ca in corner_angles]
-    distances = [Rayish.clamp_range(d, [-math.pi, math.pi]) for d in distances]
+    distances = self.corner_distances(angle)
     print(distances)
     if not min(distances) < 0 and max(distances) > 0:
       return False
@@ -153,10 +158,10 @@ class Rect:
     ))
     if(dist_middle < 0):
       point = ray.intersects_segment(corners[(middle_corner + 1) % 4], corners[middle_corner])
-      side = middle_corner
+      side = (middle_corner + 1) % 4
     else:
       point = ray.intersects_segment(corners[(middle_corner - 1) % 4], corners[middle_corner])
-      side = (middle_corner + 1) % 4
+      side = middle_corner
 
     ray = Rayish(point)
     ray.side = side

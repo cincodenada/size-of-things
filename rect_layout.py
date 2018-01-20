@@ -231,13 +231,13 @@ class Layout:
     for ang in frange(math.tau, self.angle_step):
       print("---")
       base_radius = self.get_radius(ang)
-      base_radius.draw(self.canvas)
       print(base_radius)
       print(base_radius.side)
-      if base_radius.side % 2:
-        move_dist = (0, size[1])
-      else:
-        move_dist = (size[0], 0)
+
+      axis = base_radius.side % 2
+      direction = 1-int(base_radius.side/2)*2
+      move_dist = [0,0]
+      move_dist[axis] = direction*size[axis]
 
       rect_center = (
         base_radius.end[0] + move_dist[0],
@@ -250,7 +250,9 @@ class Layout:
           continue
 
       if min_radius is None or base_radius.length() < min_radius.length():
+        print("<<{} < {}>>".format(min_radius.length() if min_radius else None, base_radius.length()))
         min_radius = base_radius
+        base_radius.draw(self.canvas)
 
     if min_radius:
       rect_center = (

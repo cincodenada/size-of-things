@@ -20,8 +20,8 @@ class CartesianCanvas(tk.Canvas):
 
 def addrect():
   global layout
-  width = random.randrange(10) + 20
   height = random.randrange(10) + 20
+  width = height + random.randrange(10) + 10
   layout.add_rect((width, height))
 
 win = tk.Tk()

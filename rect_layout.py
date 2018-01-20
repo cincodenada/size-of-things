@@ -24,8 +24,6 @@ class Rayish:
         self.origin[1] + math.sin(self.angle)*length
       )
 
-    print("Created {}".format(self))
-
     self._length = None
 
   def __str__(self):
@@ -121,11 +119,13 @@ class Rect:
   def outer_radius(self, angle):
     corners = self.corners()
     corner_angles = self.corner_angles()
+    print(corner_angles)
     distances = [ca - angle for ca in corner_angles]
     if not min(distances) < 0 and max(distances) > 0:
       return False
 
     ray = Rayish(angle)
+    print(ray)
 
     # We can ignore the closest corner
     # Line will then be between two of the remaining points
@@ -152,18 +152,18 @@ class Rect:
     return int((quadrant + 2) % 4)
 
   def intersects(self, rect):
-    # origin top-left
-    # "below" is >
-    # "above" is <
+    # standard cartesian
+    # "below" is <
+    # "above" is >
     print(rect)
     print(self)
     v = False
-    if rect.top > self.top:
-      if rect.top < self.bottom:
-        vert = True
+    if rect.top < self.top:
+      if rect.top > self.bottom:
+        v = True
     else:
-      if rect.bottom > self.top:
-        vert = True
+      if rect.bottom < self.top:
+        v = True
 
     h = False
     if rect.left > self.left:
@@ -226,6 +226,7 @@ class Layout:
     min_radius = None
     rect = Rect(size)
     for ang in frange(math.tau, self.angle_step):
+      print("---")
       base_radius = self.get_radius(ang)
       base_radius.draw(self.canvas)
       print(base_radius)

@@ -1,7 +1,6 @@
 import math
 from copy import copy
 math.tau = math.pi*2
-canvas_offset = 200
 
 def frange(end, jump):
   x = 0
@@ -38,12 +37,12 @@ class Rayish:
     if(canvas):
       oval_size = 5
       canvas.create_line(
-        self.origin[0]+canvas_offset, -self.origin[1]+canvas_offset,
-        self.end[0]+canvas_offset, -self.end[1]+canvas_offset
+        self.origin[0], self.origin[1],
+        self.end[0], self.end[1]
       )
       canvas.create_oval(
-        self.end[0]-oval_size/2+canvas_offset, -(self.end[1]-oval_size/2)+canvas_offset,
-        self.end[0]+oval_size/2+canvas_offset, -(self.end[1]+oval_size/2)+canvas_offset,
+        self.end[0]-oval_size/2, self.end[1]-oval_size/2,
+        self.end[0]+oval_size/2, self.end[1]+oval_size/2,
         fill="red"
       )
 
@@ -182,9 +181,10 @@ class Rect:
   def draw(self, canvas):
     if(canvas):
       canvas.create_rectangle(
-        -self.top+canvas_offset, self.left+canvas_offset,
-        -self.bottom+canvas_offset, self.right+canvas_offset
+        self.top, self.left,
+        self.bottom, self.right
       )
+      Rayish((self.top,self.right), self.center).draw()
 
 
 class Layout:

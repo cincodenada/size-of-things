@@ -193,8 +193,8 @@ class Rect:
   def draw(self, canvas):
     if(canvas):
       canvas.create_rectangle(
-        self.top, self.left,
-        self.bottom, self.right
+        self.left, self.top,
+        self.right, self.bottom
       )
       Rayish((self.top,self.right), self.center).draw(canvas)
 

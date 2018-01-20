@@ -196,7 +196,7 @@ class Rect:
         self.top, self.left,
         self.bottom, self.right
       )
-      Rayish((self.top,self.right), self.center).draw()
+      Rayish((self.top,self.right), self.center).draw(canvas)
 
 
 class Layout:
@@ -260,7 +260,7 @@ class Layout:
           continue
 
       if min_radius is None or base_radius.length() < min_radius.length():
-        print("<<{} < {}>>".format(min_radius.length() if min_radius else None, base_radius.length()))
+        print("<<{} < {}>>".format(base_radius.length(), min_radius.length() if min_radius else None))
         min_radius = copy(base_radius)
         base_radius.draw(self.canvas)
 
@@ -271,7 +271,10 @@ class Layout:
       move_dist[axis] = direction*size[axis]/2
 
       print(min_radius)
+      print(min_radius.side)
       print(move_dist)
+      print(axis)
+      print(direction)
 
       rect.move_to(min_radius.end)
       rect.move(move_dist)

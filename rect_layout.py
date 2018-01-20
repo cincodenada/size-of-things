@@ -1,5 +1,6 @@
 import math
 math.tau = math.pi*2
+canvas_offset = 200
 
 def frange(end, jump):
   x = 0
@@ -31,6 +32,19 @@ class Rayish:
     return "Rayish from {} to {} (angle {})".format(
       self.origin, self.end, self.angle
     )
+
+  def draw(self, canvas):
+    if(canvas):
+      oval_size = 5
+      canvas.create_line(
+        self.origin[0]+canvas_offset, self.origin[1]+canvas_offset,
+        self.end[0]+canvas_offset, self.end[1]+canvas_offset
+      )
+      canvas.create_oval(
+        self.end[0]-oval_size/2+canvas_offset, self.end[1]-oval_size/2+canvas_offset,
+        self.end[0]+oval_size/2+canvas_offset, self.end[1]+oval_size/2+canvas_offset,
+        fill="red"
+      )
 
   def distance(self, angle):
     phi = math.abs(angle.angle - self.angle) % 360
@@ -161,6 +175,14 @@ class Rect:
 
     return (v and h)
 
+  def draw(self, canvas):
+    if(canvas):
+      canvas.create_rectangle(
+        self.top+canvas_offset, self.left+canvas_offset,
+        self.bottom+canvas_offset, self.right+canvas_offset
+      )
+
+
 class Layout:
   def __init__(self, num_slices, canvas = None):
     self.rects = []
@@ -181,8 +203,7 @@ class Layout:
 
     self.rects.append(rect)
 
-    if(self.canvas):
-      self.canvas.create_rectangle(rect.top+200, rect.left+200, rect.bottom+200, rect.right+200)
+    rect.draw(self.canvas)
 
   def get_radius(self, angle):
     try:
@@ -205,7 +226,6 @@ class Layout:
     min_radius = None
     rect = Rect(size)
     for ang in frange(math.tau, self.angle_step):
-      print(ang)
       base_radius = self.get_radius(ang)
       print(base_radius)
       print(base_radius.side)
@@ -233,6 +253,7 @@ class Layout:
         base_radius.end[1] + move_dist[1]
       )
       rect.move_to(rect_center)
+      min_radius.draw(self.canvas)
     else:
       rect = None
 

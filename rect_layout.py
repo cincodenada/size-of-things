@@ -37,12 +37,12 @@ class Rayish:
     if(canvas):
       oval_size = 5
       canvas.create_line(
-        self.origin[0]+canvas_offset, self.origin[1]+canvas_offset,
-        self.end[0]+canvas_offset, self.end[1]+canvas_offset
+        self.origin[0]+canvas_offset, -self.origin[1]+canvas_offset,
+        self.end[0]+canvas_offset, -self.end[1]+canvas_offset
       )
       canvas.create_oval(
-        self.end[0]-oval_size/2+canvas_offset, self.end[1]-oval_size/2+canvas_offset,
-        self.end[0]+oval_size/2+canvas_offset, self.end[1]+oval_size/2+canvas_offset,
+        self.end[0]-oval_size/2+canvas_offset, -(self.end[1]-oval_size/2)+canvas_offset,
+        self.end[0]+oval_size/2+canvas_offset, -(self.end[1]+oval_size/2)+canvas_offset,
         fill="red"
       )
 
@@ -178,8 +178,8 @@ class Rect:
   def draw(self, canvas):
     if(canvas):
       canvas.create_rectangle(
-        self.top+canvas_offset, self.left+canvas_offset,
-        self.bottom+canvas_offset, self.right+canvas_offset
+        -self.top+canvas_offset, self.left+canvas_offset,
+        -self.bottom+canvas_offset, self.right+canvas_offset
       )
 
 

@@ -1,4 +1,5 @@
 import math
+from copy import copy
 math.tau = math.pi*2
 canvas_offset = 200
 
@@ -239,11 +240,8 @@ class Layout:
       move_dist = [0,0]
       move_dist[axis] = direction*size[axis]
 
-      rect_center = (
-        base_radius.end[0] + move_dist[0],
-        base_radius.end[1] + move_dist[1]
-      )
-      rect.move_to(rect_center)
+      rect.move_to(base_radius.end)
+      rect.move(move_dist)
 
       for r in self.rects:
         if rect.intersects(r):
@@ -251,15 +249,17 @@ class Layout:
 
       if min_radius is None or base_radius.length() < min_radius.length():
         print("<<{} < {}>>".format(min_radius.length() if min_radius else None, base_radius.length()))
-        min_radius = base_radius
+        min_radius = copy(base_radius)
         base_radius.draw(self.canvas)
 
     if min_radius:
-      rect_center = (
-        base_radius.end[0] + move_dist[0],
-        base_radius.end[1] + move_dist[1]
-      )
-      rect.move_to(rect_center)
+      axis = min_radius.side % 2
+      direction = 1-int(min_radius.side/2)*2
+      move_dist = [0,0]
+      move_dist[axis] = direction*size[axis]
+
+      rect.move_to(min_radius.end)
+      rect.move(move_dist)
       min_radius.draw(self.canvas)
     else:
       rect = None

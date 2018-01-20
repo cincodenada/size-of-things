@@ -47,16 +47,19 @@ class Rayish:
 
   def draw(self, canvas):
     if(canvas):
+      elms = []
       oval_size = 5
-      canvas.create_line(
+      elms.append(canvas.create_line(
         self.origin[0], self.origin[1],
         self.end[0], self.end[1]
-      )
-      canvas.create_oval(
+      ))
+      elms.append(canvas.create_oval(
         self.end[0]-oval_size/2, self.end[1]-oval_size/2,
         self.end[0]+oval_size/2, self.end[1]+oval_size/2,
         fill="red"
-      )
+      ))
+      return elms
+    return None
 
   def distance(self, angle):
     phi = math.abs(angle.angle - self.angle) % 360
@@ -197,11 +200,14 @@ class Rect:
 
   def draw(self, canvas):
     if(canvas):
-      canvas.create_rectangle(
+      elms = []
+      elms.append(canvas.create_rectangle(
         self.left, self.top,
         self.right, self.bottom
-      )
-      Rayish((self.right, self.top), self.center).draw(canvas)
+      ))
+      elms += Rayish((self.right, self.top), self.center).draw(canvas)
+      return elms
+    return None
 
 
 class Layout:
@@ -211,6 +217,7 @@ class Layout:
     self.angle = 0
     self.angle_step = math.tau/num_slices
     self.canvas = canvas
+    self.cur_radii = []
 
   def add_rect(self, size):
     if(len(self.rects) == 0):
@@ -246,6 +253,13 @@ class Layout:
   def place_rect(self, size):
     min_radius = None
     rect = Rect(size)
+    if(self.canvas):
+      print(self.cur_radii)
+      for r in self.cur_radii:
+        for elm in r:
+          self.canvas.delete(elm)
+
+    self.cur_radii = []
     for ang in frange(math.tau, self.angle_step):
       print("---")
       base_radius = self.get_radius(ang)
@@ -267,7 +281,7 @@ class Layout:
       if min_radius is None or base_radius.length() < min_radius.length():
         print("<<{} < {}>>".format(base_radius.length(), min_radius.length() if min_radius else None))
         min_radius = copy(base_radius)
-        base_radius.draw(self.canvas)
+        self.cur_radii.append(base_radius.draw(self.canvas))
 
     if min_radius:
       axis = min_radius.side % 2

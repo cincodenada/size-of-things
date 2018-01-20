@@ -256,7 +256,10 @@ class Layout:
       axis = min_radius.side % 2
       direction = 1-int(min_radius.side/2)*2
       move_dist = [0,0]
-      move_dist[axis] = direction*size[axis]
+      move_dist[axis] = direction*size[axis]/2
+
+      print(min_radius)
+      print(move_dist)
 
       rect.move_to(min_radius.end)
       rect.move(move_dist)

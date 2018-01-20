@@ -77,7 +77,7 @@ class Rayish:
 
   def intersects_segment(self, a, b):
     xdiff = (a[0] - b[0], self.origin[0] - self.end[0])
-    ydiff = (a[1] - b[1], self.origin[1] - self.end[1]) #Typo was here
+    ydiff = (a[1] - b[1], self.origin[1] - self.end[1])
 
     def det(a, b):
         return a[0] * b[1] - a[1] * b[0]
@@ -87,9 +87,18 @@ class Rayish:
       return None
 
     d = (det(a, b), det(self.origin, self.end))
-    x = det(d, xdiff) / div
-    y = det(d, ydiff) / div
-    return (x, y)
+    x = round(det(d, xdiff) / div, 3)
+    y = round(det(d, ydiff) / div, 3)
+
+    x_range = (min(a[0], b[0]), max(a[0],b[0]))
+    y_range = (min(a[1], b[1]), max(a[1],b[1]))
+
+    print(x_range, y_range)
+    print(x, y)
+    if x >= x_range[0] and x <= x_range[1] and y >= y_range[0] and y <= y_range[1]:
+      return (x, y)
+    else:
+      return None
 
 class Rect:
   def __init__(self, size, center = (0,0)):
@@ -165,6 +174,9 @@ class Rect:
     else:
       point = ray.intersects_segment(corners[(middle_corner - 1) % 4], corners[middle_corner])
       side = middle_corner
+
+    if not point:
+      return None
 
     ray = Rayish(point)
     ray.side = side

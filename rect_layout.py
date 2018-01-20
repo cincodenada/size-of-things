@@ -17,6 +17,8 @@ class Rayish:
         self.end[1] - self.origin[1],
         self.end[0] - self.origin[0]
       )
+      if(self.angle < 0):
+        self.angle += 2*math.pi
     except TypeError:
       self.angle = angle_or_end
       self.end = (
@@ -95,8 +97,8 @@ class Rect:
 
     self.left = center[0] - self.size[0]/2
     self.right = center[0] + self.size[0]/2
-    self.top = center[1] - self.size[1]/2
-    self.bottom = center[1] + self.size[1]/2
+    self.bottom = center[1] - self.size[1]/2
+    self.top = center[1] + self.size[1]/2
 
   def corners(self):
     return [
@@ -121,6 +123,8 @@ class Rect:
     corner_angles = self.corner_angles()
     print(corner_angles)
     distances = [ca - angle for ca in corner_angles]
+    distances = [d if d < math.pi else d - 2*math.pi for d in distances]
+    print(distances)
     if not min(distances) < 0 and max(distances) > 0:
       return False
 
@@ -135,7 +139,6 @@ class Rect:
     print("Finding sides for angle {}, ignoring corner {}, middle corner {}".format(
       angle, ignore_corner, middle_corner
     ))
-    print(distances)
     if(dist_middle < 0):
       point = ray.intersects_segment(corners[(middle_corner - 1) % 4], corners[middle_corner])
       side = middle_corner

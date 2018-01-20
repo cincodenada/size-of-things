@@ -25,7 +25,7 @@ class Rayish:
       )
 
     print("Created {}".format(self))
-    
+
     self._length = None
 
   def __str__(self):
@@ -50,7 +50,7 @@ class Rayish:
     phi = math.abs(angle.angle - self.angle) % 360
     distance = 360 - phi if phi > 180 else phi
     return distance
-  
+
   def length(self):
     if not self._length:
       self._length = math.sqrt(
@@ -239,10 +239,10 @@ class Layout:
         base_radius.end[1] + move_dist[1]
       )
       rect.move_to(rect_center)
-      
+
       for r in self.rects:
         if rect.intersects(r):
-          continue 
+          continue
 
       if min_radius is None or base_radius.length() < min_radius.length():
         min_radius = base_radius

@@ -196,7 +196,7 @@ class Rect:
         self.left, self.top,
         self.right, self.bottom
       )
-      Rayish((self.top,self.right), self.center).draw(canvas)
+      Rayish((self.right, self.top), self.center).draw(canvas)
 
 
 class Layout:

@@ -93,8 +93,6 @@ class Rayish:
     x_range = (min(a[0], b[0]), max(a[0],b[0]))
     y_range = (min(a[1], b[1]), max(a[1],b[1]))
 
-    print(x_range, y_range)
-    print(x, y)
     if x >= x_range[0] and x <= x_range[1] and y >= y_range[0] and y <= y_range[1]:
       return (x, y)
     else:
@@ -140,17 +138,16 @@ class Rect:
 
   def corner_distances(self, angle, origin=(0,0)):
     corner_angles = self.corner_angles()
-    print(corner_angles)
     distances = [ca - angle for ca in corner_angles]
     distances = [Rayish.clamp_range(d, [-math.pi, math.pi]) for d in distances]
     return distances
-
 
   def intersects_angle(self, angle, origin = (0,0)):
     distances = self.corner_angles(origin)
     return (min(distances) < 0 and max(distances) > 0)
 
   def outer_radius(self, angle):
+    print(self)
     corners = self.corners()
     distances = self.corner_distances(angle)
     print(distances)
@@ -158,16 +155,19 @@ class Rect:
       return False
 
     ray = Rayish(angle)
-    print(ray)
 
     # We can ignore the closest corner
     # Line will then be between two of the remaining points
     ignore_corner = self.get_ignore(angle)
     middle_corner = (ignore_corner + 2) % 4
     dist_middle = distances[middle_corner]
-    print("Finding sides for angle {}, ignoring corner {}, middle corner {}".format(
-      angle, ignore_corner, middle_corner
+
+    print("Finding sides for angle {}, ignoring corner {}, middle corner {} ({})".format(
+      angle, ignore_corner, middle_corner, dist_middle
     ))
+    if (dist_middle > math.pi/2) or (dist_middle < -math.pi/2):
+      return None
+
     if(dist_middle < 0):
       point = ray.intersects_segment(corners[(middle_corner + 1) % 4], corners[middle_corner])
       side = (middle_corner + 1) % 4
@@ -180,6 +180,7 @@ class Rect:
 
     ray = Rayish(point)
     ray.side = side
+    print(ray)
     return ray
 
   def get_ignore(self, angle):
@@ -190,8 +191,8 @@ class Rect:
     # standard cartesian
     # "below" is <
     # "above" is >
-    print(rect)
-    print(self)
+    #print(rect)
+    #print(self)
     v = False
     if rect.top < self.top:
       if rect.top > self.bottom:
@@ -256,7 +257,7 @@ class Layout:
       cur_radius = self.rects[i].outer_radius(angle)
       if cur_radius and (max_radius is None or cur_radius.length() > max_radius.length()):
         new_outer = i
-        max_radius = cur_radius
+        max_radius = copy(cur_radius)
 
     self.outer_rects[angle] = new_outer
 
@@ -274,6 +275,7 @@ class Layout:
     self.cur_radii = []
     for ang in frange(math.tau, self.angle_step):
       print("---")
+      print("Getting radius for angle {}π".format(round(ang/math.pi, 3)))
       base_radius = self.get_radius(ang)
       print(base_radius)
       print(base_radius.side)
@@ -290,10 +292,11 @@ class Layout:
         if rect.intersects(r):
           continue
 
+      if len(self.rects) > 1:
+        self.cur_radii.append(base_radius.draw(self.canvas))
       if min_radius is None or base_radius.length() < min_radius.length():
         print("<<{} < {}>>".format(base_radius.length(), min_radius.length() if min_radius else None))
         min_radius = copy(base_radius)
-        self.cur_radii.append(base_radius.draw(self.canvas))
 
     if min_radius:
       axis = min_radius.side % 2

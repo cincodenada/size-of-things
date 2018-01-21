@@ -213,13 +213,14 @@ class Rect:
 
     return (v and h)
 
-  def draw(self, canvas, tags = None):
+  def draw(self, canvas, tags = None, color = "black"):
     if(canvas):
       elms = []
       elms.append(canvas.create_rectangle(
         self.left, self.top,
         self.right, self.bottom,
-        tags = tags
+        tags = tags,
+        outline = color
       ))
       return elms
     return None
@@ -323,19 +324,26 @@ class Layout:
         return rect
 
       nudge_pos = nudge_neg = [0,0]
-      nudge_pos[axis] = size[axis]/(self.num_slices/2)
-      nudge_neg[axis] = -size[axis]/(self.num_slices/2)
+      nudge_pos[1-axis] = size[1-axis]/(self.num_slices/2)
+      nudge_neg[1-axis] = -size[1-axis]/(self.num_slices/2)
 
       rect_pos = rect_neg = rect
+      curcolor = [0, 255, 0]
+      if(self.canvas):
+        self.canvas.delete("shifty")
       for nudge_step in range(1, int(self.num_slices/2)):
         # Shift positive
         rect_pos.move(nudge_pos)
+        rect_pos.draw(self.canvas, tags="shifty", color = hexcolor(curcolor))
         if not self.intersects_any(rect_pos):
           return rect_pos
 
         rect_neg.move(nudge_neg)
+        rect_neg.draw(self.canvas, tags="shifty", color = hexcolor(curcolor))
         if not self.intersects_any(rect_neg):
           return rect_neg
+
+        curcolor[1] -= color_inc*2
 
     return None
 

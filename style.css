@@ -1,6 +1,7 @@
 body {
   background: url('images/stars_tile.jpg') black;
   color: white;
+  height: 100%;
 }
 
 .thing {

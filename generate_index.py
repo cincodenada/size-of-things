@@ -2,6 +2,8 @@ import json
 import yaml
 import os
 import math
+import rect_layout
+from PIL import Image
 
 def get_parts(path):
   part_values = {}
@@ -39,7 +41,27 @@ def gather_yaml(path):
 
           # Get image width/height
           im = Image.open(os.path.join(path, ship['filename']))
-          ships['image_size'] = im.size
+          ship['image_size'] = im.size
+
+          # Add scale information
+          m = px = None
+          if 'm_per_px' in ship:
+            m_per_px = ship['m_per_px']
+            if isinstance(m_per_px, str):
+              (m, px) = m_per_px.split('/')
+          else:
+            if 'Length' in ship['info']:
+              m = ship['info']['Length']
+              px = im.size[0]
+            elif 'Width' in ship['info']:
+              m = ship['info']['Width']
+              px = im.size[0]
+            elif 'Height' in ship['info']:
+              m = ship['info']['Height']
+              px = im.size[1]
+
+          if m and px:
+            ship['m_per_px'] = float(m)/float(px)
 
           ships.append(ship)
     elif os.path.isdir(fullpath):
@@ -58,7 +80,21 @@ def sort_ship(ship):
 
 ships = gather_yaml('images')
 ships.sort(key = sort_ship)
-arrange_ships(ships)
+
+layout = rect_layout.Layout(24)
+for s in ships:
+  if 'm_per_px' not in s:
+    print("Skipping {}, no size info!".format(s['info']['Name']))
+  if 'image_size' not in s:
+    print("Skipping {}, no image info!".format(s['info']['Name']))
+
+  rect = layout.add_rect([
+    px * s['m_per_px']
+    for px in s['image_size']
+  ])
+
+  s['position'] = rect.center
+
 json.dump(ships, open('ships.json', 'w'))
 
 

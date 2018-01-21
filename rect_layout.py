@@ -245,6 +245,7 @@ class Layout:
       return
 
     self.rects.append(rect)
+    return rect
 
   def get_radius(self, angle):
     try:
@@ -266,7 +267,8 @@ class Layout:
   def place_rect(self, size):
     min_radius = None
     rect = Rect(size)
-    self.canvas.delete("outer_radius")
+    if(self.canvas):
+      self.canvas.delete("outer_radius")
 
     for ang in frange(math.tau, self.angle_step):
       print("---")
@@ -310,7 +312,8 @@ class Layout:
 
       rect.draw(self.canvas)
       min_radius.draw(self.canvas, color="yellow", tags="min_radius")
-      self.canvas.tag_raise("min_radius","all")
+      if(self.canvas):
+        self.canvas.tag_raise("min_radius","all")
     else:
       rect = None
 

@@ -265,13 +265,14 @@ class Rect:
 
 
 class Layout:
-  def __init__(self, num_slices, canvas = None, precision = default_precision):
+  def __init__(self, num_slices, canvas = None, margin = 0.05, precision = default_precision):
     self.rects = []
     self.outer_rects = {}
     self.angle = 0
     self.num_slices = num_slices
     self.angle_step = math.tau/num_slices
     self.canvas = canvas
+    self.margin = margin
 
   def add_rect(self, size):
     if(len(self.rects) == 0):
@@ -321,15 +322,6 @@ class Layout:
       print("---")
       print("Getting radius for angle {}".format(Rayish.as_pi(ang)))
       base_radius = self.get_radius(ang)
-
-      axis = base_radius.side % 2
-      direction = 1-int(base_radius.side/2)*2
-      move_dist = [0,0]
-      move_dist[axis] = direction*size[axis]
-
-      rect.move_to(base_radius.end)
-      rect.move(move_dist)
-
       radii.append(base_radius)
 
     radii.sort(key = lambda x: x.length())
@@ -348,7 +340,7 @@ class Layout:
       axis = r.side % 2
       direction = 1-int(r.side/2)*2
       move_dist = [0,0]
-      move_dist[axis] = direction*size[axis]/2
+      move_dist[axis] = direction*size[axis]/2*(1+self.margin)
 
       rect.move_to(r.end)
       rect.move(move_dist)

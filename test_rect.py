@@ -2,6 +2,9 @@ import rect_layout
 import random
 import tkinter as tk
 
+scale = 1
+growth_rate = 1.05
+
 class CartesianCanvas(tk.Canvas):
   def __init__(self, master=None, cnf={}, **kw):
     cnf['scrollregion'] = (
@@ -20,8 +23,10 @@ class CartesianCanvas(tk.Canvas):
 
 def addrect():
   global layout
-  height = random.randrange(10) + 20
-  width = height + random.randrange(10) + 10
+  global scale
+  scale *= growth_rate
+  height = (random.randrange(10) + 20)*scale
+  width = height + (random.randrange(10) + 10)*scale
   layout.add_rect((width, height))
 
 win = tk.Tk()

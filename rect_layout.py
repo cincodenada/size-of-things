@@ -41,8 +41,8 @@ class Rayish:
     return val
 
   def __str__(self):
-    return "Rayish from {} to {} (angle {})".format(
-      self.origin, self.end, self.angle
+    return "Rayish length {} from {} to {} (angle {})".format(
+      self.length(), self.origin, self.end, self.angle
     )
 
   def draw(self, canvas, tags = None, color="red"):
@@ -230,19 +230,21 @@ class Layout:
     self.rects = []
     self.outer_rects = {}
     self.angle = 0
+    self.num_slices = num_slices
     self.angle_step = math.tau/num_slices
     self.canvas = canvas
 
   def add_rect(self, size):
     if(len(self.rects) == 0):
       rect = Rect(size, (0,0))
-      rect.draw(self.canvas)
     else:
       rect = self.place_rect(size)
 
     if rect is None:
       print("Couldn't add rectangle!")
       return
+
+    rect.draw(self.canvas)
 
     self.rects.append(rect)
     return rect
@@ -264,18 +266,22 @@ class Layout:
 
     return max_radius
 
+  def intersects_any(self, rect):
+    for r in reversed(self.rects):
+      if r.intersects(rect):
+        return True
+
   def place_rect(self, size):
     min_radius = None
     rect = Rect(size)
     if(self.canvas):
       self.canvas.delete("outer_radius")
 
+    radii = []
     for ang in frange(math.tau, self.angle_step):
       print("---")
       print("Getting radius for angle {}π".format(round(ang/math.pi, 3)))
       base_radius = self.get_radius(ang)
-      print(base_radius)
-      print(base_radius.side)
 
       axis = base_radius.side % 2
       direction = 1-int(base_radius.side/2)*2
@@ -285,40 +291,53 @@ class Layout:
       rect.move_to(base_radius.end)
       rect.move(move_dist)
 
-      for r in self.rects:
-        if rect.intersects(r):
-          continue
+      radii.append(base_radius)
 
-      if len(self.rects) > 1:
-        base_radius.draw(self.canvas, tags="outer_radius")
-      if min_radius is None or base_radius.length() < min_radius.length():
-        print("<<{} < {}>>".format(base_radius.length(), min_radius.length() if min_radius else None))
-        min_radius = copy(base_radius)
+    radii.sort(key = lambda x: x.length())
 
-    if min_radius:
-      axis = min_radius.side % 2
-      direction = 1-int(min_radius.side/2)*2
+    hexcolor = lambda tup: '#%02x%02x%02x' % tuple(tup)
+    curcolor = [255, 0, 0]
+    color_inc = int(192/self.num_slices)
+
+    for r in radii:
+      r.draw(self.canvas, tags="outer_radius", color = hexcolor(curcolor))
+      curcolor[0] -= color_inc
+
+    # Try just side-scooting
+    for r in radii:
+      axis = r.side % 2
+      direction = 1-int(r.side/2)*2
       move_dist = [0,0]
       move_dist[axis] = direction*size[axis]/2
 
-      print(min_radius)
-      print(min_radius.side)
+      print(r)
+      print(r.side)
       print(move_dist)
       print(axis)
       print(direction)
 
-      rect.move_to(min_radius.end)
+      rect.move_to(r.end)
       rect.move(move_dist)
 
-      rect.draw(self.canvas)
-      min_radius.draw(self.canvas, color="yellow", tags="min_radius")
-      if(self.canvas):
-        self.canvas.tag_raise("min_radius","all")
-    else:
-      rect = None
+      if not self.intersects_any(rect):
+        return rect
 
-    return rect
+      nudge_pos = nudge_neg = [0,0]
+      nudge_pos[axis] = size[axis]/(self.num_slices/2)
+      nudge_neg[axis] = -size[axis]/(self.num_slices/2)
 
+      rect_pos = rect_neg = rect
+      for nudge_step in range(1, int(self.num_slices/2)):
+        # Shift positive
+        rect_pos.move(nudge_pos)
+        if not self.intersects_any(rect_pos):
+          return rect_pos
+
+        rect_neg.move(nudge_neg)
+        if not self.intersects_any(rect_neg):
+          return rect_neg
+
+    return None
 
       #budge = 1
       #while True:

@@ -30,12 +30,16 @@ def addrect():
   layout.add_rect((width, height))
 
 win = tk.Tk()
-can = CartesianCanvas(win, width=1000, height=800)
+can = CartesianCanvas(win, width=600, height=400)
 can.pack()
 
 btn = tk.Button(win, text="Add Rectangle", command=addrect)
 btn.pack()
 
 layout = rect_layout.Layout(24, can)
+
+for i in range(15):
+  #addrect()
+  pass
 
 win.mainloop()

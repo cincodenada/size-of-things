@@ -45,8 +45,5 @@ for i in range(15):
   #addrect()
   pass
 
-layout.add_rect((42.0, 27.3))
-layout.add_rect((41.895, 24.255000000000003))
 addrect()
-print(rects)
 win.mainloop()

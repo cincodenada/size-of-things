@@ -234,6 +234,9 @@ class Rect:
       if rect.right > self.left:
         h = True
 
+    intersects = (v and h)
+    if(intersects):
+      print("Intersection:\n{}\n{}".format(self, rect))
     return (v and h)
 
   def draw(self, canvas, tags = None, color = "black"):
@@ -366,6 +369,8 @@ class Layout:
           return rect_neg
 
         curcolor[1] -= color_inc*2
+
+      pause = input("Press enter to continue...\n")
 
     return None
 

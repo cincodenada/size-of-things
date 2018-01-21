@@ -21,12 +21,15 @@ class CartesianCanvas(tk.Canvas):
     args[3] = -args[3]
     super(CartesianCanvas, self)._create(itemType, args, kw)
 
+rects = []
 def addrect():
   global layout
   global scale
+  global rects
   scale *= growth_rate
   height = (random.randrange(10) + 20)*scale
   width = height + (random.randrange(10) + 10)*scale
+  rects.append((width, height))
   layout.add_rect((width, height))
 
 win = tk.Tk()
@@ -42,4 +45,8 @@ for i in range(15):
   #addrect()
   pass
 
+layout.add_rect((42.0, 27.3))
+layout.add_rect((41.895, 24.255000000000003))
+addrect()
+print(rects)
 win.mainloop()

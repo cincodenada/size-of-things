@@ -99,8 +99,18 @@ class Rayish:
     x = round(det(d, xdiff) / div, 3)
     y = round(det(d, ydiff) / div, 3)
 
-    x_range = [round(x, 3) for x in (min(a[0], b[0]), max(a[0],b[0]))]
-    y_range = [round(y, 3) for y in (min(a[1], b[1]), max(a[1],b[1]))]
+    print(x, y)
+
+    x_range = [
+      math.floor(min(a[0],b[0])),
+      math.ceil(max(a[0],b[0]))
+    ]
+    y_range = [
+      math.floor(min(a[1],b[1])),
+      math.ceil(max(a[1],b[1]))
+    ]
+
+    print(x_range, y_range)
 
     if x >= x_range[0] and x <= x_range[1] and y >= y_range[0] and y <= y_range[1]:
       return (x, y)

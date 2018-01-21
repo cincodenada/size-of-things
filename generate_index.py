@@ -62,6 +62,10 @@ def gather_yaml(path):
 
           if m and px:
             ship['m_per_px'] = float(m)/float(px)
+            ship['real_size'] = [
+              d*ship['m_per_px']
+              for d in ship['image_size']
+            ]
 
           ships.append(ship)
     elif os.path.isdir(fullpath):
@@ -71,8 +75,8 @@ def gather_yaml(path):
 
 def sort_ship(ship):
   size_order = None
-  if 'Length' in ship['info']:
-    size_order = ship['info']['Length']
+  if 'real_size' in ship:
+    size_order = ship['real_size'][0]*ship['real_size'][1]
   else:
     size_order = 0
 
@@ -96,5 +100,3 @@ for s in ships:
   s['position'] = rect.center
 
 json.dump(ships, open('ships.json', 'w'))
-
-

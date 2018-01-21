@@ -45,18 +45,20 @@ class Rayish:
       self.origin, self.end, self.angle
     )
 
-  def draw(self, canvas):
+  def draw(self, canvas, tags = None, color="red"):
     if(canvas):
       elms = []
       oval_size = 5
       elms.append(canvas.create_line(
         self.origin[0], self.origin[1],
-        self.end[0], self.end[1]
+        self.end[0], self.end[1],
+        dash=(1,2),
+        tags=tags
       ))
       elms.append(canvas.create_oval(
         self.end[0]-oval_size/2, self.end[1]-oval_size/2,
         self.end[0]+oval_size/2, self.end[1]+oval_size/2,
-        fill="red"
+        fill=color, tags=tags
       ))
       return elms
     return None
@@ -211,12 +213,13 @@ class Rect:
 
     return (v and h)
 
-  def draw(self, canvas):
+  def draw(self, canvas, tags = None):
     if(canvas):
       elms = []
       elms.append(canvas.create_rectangle(
         self.left, self.top,
-        self.right, self.bottom
+        self.right, self.bottom,
+        tags = tags
       ))
       elms += Rayish((self.right, self.top), self.center).draw(canvas)
       return elms
@@ -230,7 +233,6 @@ class Layout:
     self.angle = 0
     self.angle_step = math.tau/num_slices
     self.canvas = canvas
-    self.cur_radii = []
 
   def add_rect(self, size):
     if(len(self.rects) == 0):
@@ -243,8 +245,6 @@ class Layout:
       return
 
     self.rects.append(rect)
-
-    rect.draw(self.canvas)
 
   def get_radius(self, angle):
     try:
@@ -266,13 +266,8 @@ class Layout:
   def place_rect(self, size):
     min_radius = None
     rect = Rect(size)
-    if(self.canvas):
-      print(self.cur_radii)
-      for r in self.cur_radii:
-        for elm in r:
-          self.canvas.delete(elm)
+    self.canvas.delete("outer_radius")
 
-    self.cur_radii = []
     for ang in frange(math.tau, self.angle_step):
       print("---")
       print("Getting radius for angle {}π".format(round(ang/math.pi, 3)))
@@ -293,7 +288,7 @@ class Layout:
           continue
 
       if len(self.rects) > 1:
-        self.cur_radii.append(base_radius.draw(self.canvas))
+        base_radius.draw(self.canvas, tags="outer_radius")
       if min_radius is None or base_radius.length() < min_radius.length():
         print("<<{} < {}>>".format(base_radius.length(), min_radius.length() if min_radius else None))
         min_radius = copy(base_radius)
@@ -312,7 +307,10 @@ class Layout:
 
       rect.move_to(min_radius.end)
       rect.move(move_dist)
-      min_radius.draw(self.canvas)
+
+      rect.draw(self.canvas)
+      min_radius.draw(self.canvas, color="yellow", tags="min_radius")
+      self.canvas.tag_raise("min_radius","all")
     else:
       rect = None
 

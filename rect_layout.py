@@ -29,6 +29,13 @@ class Rayish:
     self._length = None
 
   @staticmethod
+  def as_pi(val):
+    try:
+      return [Rayish.as_pi(v) for v in val]
+    except TypeError:
+      return "{}π".format(round(val/math.pi, 3))
+
+  @staticmethod
   def clamp_range(val, range=(0,2*math.pi)):
     if not (range[1] - range[0]) == 2*math.pi:
       raise ValueError("Range must span 2*pi")
@@ -42,7 +49,7 @@ class Rayish:
 
   def __str__(self):
     return "Rayish length {} from {} to {} (angle {})".format(
-      self.length(), self.origin, self.end, self.angle
+      self.length(), self.origin, self.end, self.as_pi(self.angle)
     )
 
   def draw(self, canvas, tags = None, color="red"):
@@ -107,7 +114,7 @@ class Rect:
 
   def __str__(self):
     return "Rectangle: tldr {}/{}/{}/{}".format(
-      self.top, self.left, self.bottom, self.right
+      *[round(v, 3) for v in (self.top, self.left, self.bottom, self.right)]
     )
 
   def move(self, dist):
@@ -152,7 +159,7 @@ class Rect:
     print(self)
     corners = self.corners()
     distances = self.corner_distances(angle)
-    print(distances)
+    print(Rayish.as_pi(distances))
     if not min(distances) < 0 and max(distances) > 0:
       return False
 
@@ -165,7 +172,7 @@ class Rect:
     dist_middle = distances[middle_corner]
 
     print("Finding sides for angle {}, ignoring corner {}, middle corner {} ({})".format(
-      angle, ignore_corner, middle_corner, dist_middle
+      Rayish.as_pi(angle), ignore_corner, middle_corner, dist_middle
     ))
     if (dist_middle > math.pi/2) or (dist_middle < -math.pi/2):
       return None
@@ -281,7 +288,7 @@ class Layout:
     radii = []
     for ang in frange(math.tau, self.angle_step):
       print("---")
-      print("Getting radius for angle {}π".format(round(ang/math.pi, 3)))
+      print("Getting radius for angle {}".format(Rayish.as_pi(ang)))
       base_radius = self.get_radius(ang)
 
       axis = base_radius.side % 2
@@ -306,24 +313,23 @@ class Layout:
 
     # Try just side-scooting
     for r in radii:
+      # Move rectangle so edge is on radius end
       axis = r.side % 2
       direction = 1-int(r.side/2)*2
       move_dist = [0,0]
       move_dist[axis] = direction*size[axis]/2
 
-      print(r)
-      print(r.side)
-      print(move_dist)
-      print(axis)
-      print(direction)
-
       rect.move_to(r.end)
       rect.move(move_dist)
 
+      # If we're good here, that's as good as we'll get
       if not self.intersects_any(rect):
         return rect
 
-      nudge_pos = nudge_neg = [0,0]
+      # Otherwise, scoot around until we find something better
+      # Scoot from inside out
+      nudge_pos = [0,0]
+      nudge_neg = [0,0]
       nudge_pos[1-axis] = size[1-axis]/(self.num_slices/2)
       nudge_neg[1-axis] = -size[1-axis]/(self.num_slices/2)
 

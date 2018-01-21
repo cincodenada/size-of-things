@@ -92,8 +92,8 @@ class Rayish:
     x = round(det(d, xdiff) / div, 3)
     y = round(det(d, ydiff) / div, 3)
 
-    x_range = (min(a[0], b[0]), max(a[0],b[0]))
-    y_range = (min(a[1], b[1]), max(a[1],b[1]))
+    x_range = [round(x, 3) for x in (min(a[0], b[0]), max(a[0],b[0]))]
+    y_range = [round(y, 3) for y in (min(a[1], b[1]), max(a[1],b[1]))]
 
     if x >= x_range[0] and x <= x_range[1] and y >= y_range[0] and y <= y_range[1]:
       return (x, y)
@@ -221,7 +221,6 @@ class Rect:
         self.right, self.bottom,
         tags = tags
       ))
-      elms += Rayish((self.right, self.top), self.center).draw(canvas)
       return elms
     return None
 
@@ -237,6 +236,7 @@ class Layout:
   def add_rect(self, size):
     if(len(self.rects) == 0):
       rect = Rect(size, (0,0))
+      rect.draw(self.canvas)
     else:
       rect = self.place_rect(size)
 

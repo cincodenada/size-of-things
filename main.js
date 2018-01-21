@@ -8,6 +8,7 @@ var loaded = false
 var remaining_to_load
 var current_load
 var load_timeout = 500
+var center_offset;
 
 var FancyNumber = (function(number, sigfigs) {
   var number_names = [
@@ -81,6 +82,9 @@ $(function() {
     resize();
   })
 
+  $(window).on('resize', update_windowsize)
+  update_windowsize()
+
   $('.stuff').on('mouseover', 'img', function() {
     infodiv = $('.info')
     infodiv.find('.universe').text(this.data.info.Universe)
@@ -101,6 +105,13 @@ $(function() {
   })
 })
 
+function update_windowsize() {
+  center_offset = [
+    $(window).width()/2,
+    $(window).height()/2
+  ]
+}
+
 function initialize_ships() {
   resize();
 }
@@ -111,6 +122,8 @@ function set_size(elm) {
   var ratio = px_width/elm.naturalWidth
   elm.width = px_width
   elm.height = elm.naturalHeight*ratio
+  elm.style.left = ((elm.data.position[0] - elm.data.image_size[0])*ratio+center_offset[0]) + "px"
+  elm.style.top = ((elm.data.position[1] - elm.data.image_size[1])*ratio+center_offset[1]) + "px"
   elm.style.display = ""
 
   clear_load(elm)

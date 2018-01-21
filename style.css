@@ -4,7 +4,7 @@ body {
 }
 
 .thing {
-  float: left;
+  position: absolute;
 }
 
 #ruler {

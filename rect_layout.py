@@ -1,6 +1,7 @@
 import math
 from copy import copy
 math.tau = math.pi*2
+default_precision = 2
 
 def frange(end, jump):
   x = 0
@@ -8,9 +9,16 @@ def frange(end, jump):
     yield x
     x += jump
 
+def defp(val, p):
+  try:
+    return [defp(v, p) for v in val]
+  except TypeError:
+    return round(val, p)
+
 class Rayish:
-  def __init__(self, angle_or_end, origin = (0,0), length=1):
-    self.origin = origin
+  def __init__(self, angle_or_end, origin = (0,0), length=1, precision = default_precision):
+    self.p = precision
+    self.origin = defp(origin, self.p)
     try:
       self.end = angle_or_end
       self.angle = self.clamp_range(
@@ -26,6 +34,7 @@ class Rayish:
         self.origin[1] + math.sin(self.angle)*length
       )
 
+    self.end = defp(self.end, self.p)
     self._length = None
 
   @staticmethod
@@ -118,8 +127,9 @@ class Rayish:
       return None
 
 class Rect:
-  def __init__(self, size, center = (0,0)):
-    self.size = size
+  def __init__(self, size, center = (0,0), precision = default_precision):
+    self.p = precision
+    self.size = defp(size, self.p)
     self.move_to(center)
 
   def __str__(self):
@@ -134,12 +144,12 @@ class Rect:
     ))
 
   def move_to(self, center):
-    self.center = center
+    self.center = defp(center, self.p)
 
-    self.left = center[0] - self.size[0]/2
-    self.right = center[0] + self.size[0]/2
-    self.bottom = center[1] - self.size[1]/2
-    self.top = center[1] + self.size[1]/2
+    self.left = self.center[0] - self.size[0]/2
+    self.right = self.center[0] + self.size[0]/2
+    self.bottom = self.center[1] - self.size[1]/2
+    self.top = self.center[1] + self.size[1]/2
 
   def corners(self):
     return [
@@ -253,7 +263,7 @@ class Rect:
 
 
 class Layout:
-  def __init__(self, num_slices, canvas = None):
+  def __init__(self, num_slices, canvas = None, precision = default_precision):
     self.rects = []
     self.outer_rects = {}
     self.angle = 0

@@ -138,6 +138,7 @@ class Rect:
     )
 
   def move(self, dist):
+    print("Moving {} from {} ".format(dist, self.center))
     self.move_to((
       self.center[0] + dist[0],
       self.center[1] + dist[1]
@@ -145,11 +146,12 @@ class Rect:
 
   def move_to(self, center):
     self.center = defp(center, self.p)
+    print("New center: {}".format(self.center))
 
-    self.left = self.center[0] - self.size[0]/2
-    self.right = self.center[0] + self.size[0]/2
-    self.bottom = self.center[1] - self.size[1]/2
-    self.top = self.center[1] + self.size[1]/2
+    self.left = defp(self.center[0] - self.size[0]/2, self.p)
+    self.right = defp(self.center[0] + self.size[0]/2, self.p)
+    self.bottom = defp(self.center[1] - self.size[1]/2, self.p)
+    self.top = defp(self.center[1] + self.size[1]/2, self.p)
 
   def corners(self):
     return [
@@ -362,7 +364,8 @@ class Layout:
       nudge_pos[1-axis] = size[1-axis]/(self.num_slices/2)
       nudge_neg[1-axis] = -size[1-axis]/(self.num_slices/2)
 
-      rect_pos = rect_neg = rect
+      rect_pos = copy(rect)
+      rect_neg = copy(rect)
       curcolor = [0, 255, 0]
       if(self.canvas):
         self.canvas.delete("shifty")
@@ -379,8 +382,6 @@ class Layout:
           return rect_neg
 
         curcolor[1] -= color_inc*2
-
-      pause = input("Press enter to continue...\n")
 
     return None
 

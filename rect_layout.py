@@ -148,6 +148,7 @@ class Rect:
   def corner_distances(self, angle, origin=(0,0)):
     corner_angles = self.corner_angles()
     distances = [ca - angle for ca in corner_angles]
+    print(Rayish.as_pi(distances))
     distances = [Rayish.clamp_range(d, [-math.pi, math.pi]) for d in distances]
     return distances
 
@@ -157,26 +158,31 @@ class Rect:
 
   def outer_radius(self, angle):
     print(self)
-    corners = self.corners()
-    distances = self.corner_distances(angle)
-    print(Rayish.as_pi(distances))
-    if not min(distances) < 0 and max(distances) > 0:
-      return False
-
-    ray = Rayish(angle)
 
     # We can ignore the closest corner
     # Line will then be between two of the remaining points
     ignore_corner = self.get_ignore(angle)
     middle_corner = (ignore_corner + 2) % 4
+    distances = self.corner_distances(angle)
     dist_middle = distances[middle_corner]
 
     print("Finding sides for angle {}, ignoring corner {}, middle corner {} ({})".format(
-      Rayish.as_pi(angle), ignore_corner, middle_corner, dist_middle
+      Rayish.as_pi(angle), ignore_corner, middle_corner, Rayish.as_pi(dist_middle)
     ))
-    if (dist_middle > math.pi/2) or (dist_middle < -math.pi/2):
+
+    # Ensure our corner is even in the quadrant
+    corner_angles = self.corner_angles()
+    if (corner_angles[middle_corner] < middle_corner*math.pi/2 or
+        corner_angles[middle_corner] > (middle_corner+1)*math.pi/2):
       return None
 
+    print(Rayish.as_pi(distances))
+    if not min(distances) < 0 and max(distances) > 0:
+      return None
+
+    ray = Rayish(angle)
+
+    corners = self.corners()
     if(dist_middle < 0):
       point = ray.intersects_segment(corners[(middle_corner + 1) % 4], corners[middle_corner])
       side = (middle_corner + 1) % 4

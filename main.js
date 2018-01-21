@@ -118,12 +118,10 @@ function initialize_ships() {
 
 function set_size(elm) {
   if(elm.target) { elm = elm.target }
-  var px_width = elm.data.info.Length/m_per_px
-  var ratio = px_width/elm.naturalWidth
-  elm.width = px_width
-  elm.height = elm.naturalHeight*ratio
-  elm.style.left = (elm.data.position[0]/m_per_px - elm.data.image_size[0]/2*ratio + center_offset[0]) + "px"
-  elm.style.top = (elm.data.position[1]/m_per_px - elm.data.image_size[1]/2*ratio + center_offset[1]) + "px"
+  elm.width = elm.data.real_size[0]/m_per_px
+  elm.height = elm.data.real_size[1]/m_per_px
+  elm.style.left = ((elm.data.position[0] - elm.data.real_size[0]/2)/m_per_px + center_offset[0]) + "px"
+  elm.style.top = ((elm.data.position[1] - elm.data.real_size[1]/2)/m_per_px + center_offset[1]) + "px"
   elm.style.display = ""
 
   clear_load(elm)
@@ -147,11 +145,7 @@ function resize() {
   for(var i = ships.length-1; i >= 0; i--) {
     var ship = ships[i];
     var info = ship.info
-    if(!info.Length) {
-      console.log("Error: No length for " + info.Name)
-      continue
-    }
-    if(ship.info.Length > min_length) {
+    if(ship.real_size[0] > min_length) {
       var reinsert = false
       if(!ship.elm) {
         ship.elm = document.createElement('img')

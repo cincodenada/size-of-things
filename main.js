@@ -122,8 +122,8 @@ function set_size(elm) {
   var ratio = px_width/elm.naturalWidth
   elm.width = px_width
   elm.height = elm.naturalHeight*ratio
-  elm.style.left = ((elm.data.position[0] - elm.data.image_size[0])*ratio+center_offset[0]) + "px"
-  elm.style.top = ((elm.data.position[1] - elm.data.image_size[1])*ratio+center_offset[1]) + "px"
+  elm.style.left = (elm.data.position[0]*m_per_px - elm.data.image_size[0]/2*ratio + center_offset[0]) + "px"
+  elm.style.top = (elm.data.position[1]*m_per_px - elm.data.image_size[1]/2*ratio + center_offset[1]) + "px"
   elm.style.display = ""
 
   clear_load(elm)

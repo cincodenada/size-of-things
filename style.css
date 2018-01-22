@@ -28,3 +28,13 @@ body {
 .info span.universe {
   color: yellow;
 }
+
+a {
+  color: white;
+}
+a:hover, a:active {
+  color: #CCC;
+}
+a:visited {
+  color: #999;
+}

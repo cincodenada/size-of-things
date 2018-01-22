@@ -77,9 +77,10 @@ $(function() {
   $('.px_mm').text(screen_px_per_mm.toFixed(2))
 
   $(window).on('mousewheel', function(evt) {
-    evt.preventDefault();
-    m_per_px *= Math.pow(10, -evt.deltaY/zoomSlowFactor);
-    resize();
+    evt.preventDefault()
+    m_per_px *= Math.pow(10, -evt.deltaY/zoomSlowFactor)
+    clear_info()
+    resize()
   })
 
   $(window).on('resize', update_windowsize)
@@ -99,6 +100,15 @@ $(function() {
     infodiv.show()
   })
 })
+
+function clear_info() {
+    infodiv = $('.info')
+    infodiv.find('.universe').text("")
+    infodiv.find('.faction').text("")
+    infodiv.find('.name').text("")
+    infodiv.find('.length').text("")
+    infodiv.hide()
+}
 
 function update_windowsize() {
   center_offset = [

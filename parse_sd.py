@@ -2,12 +2,37 @@ from __future__ import print_function
 from bs4 import BeautifulSoup
 import glob
 import re
+import os
+from shutil import copyfile
+import yaml
+import urllib
 
 def dewhite(desc):
   desc = re.sub(r"\s+", " ", desc).strip()
   return desc
 
-for page in glob.glob("Starship Dimensions/1 Pixel*.htm"):
+def generate_ship(ship):
+  info = {}
+  size_extract = re.match("(.*) (\w+): ([\d\.]+)(\w+)", ship['description'])
+  if size_extract:
+    info[size_extract.groups(2)] = size_extract.groups(3)
+    info['Units'] = size_extract.groups(4)
+    info['Name'] = size_extract.groups(1)
+
+  if 'Name' in info and 'name' in ship and info['Name'] != ship['name']:
+    info['AltName'] = ship['name']
+
+  outship = {}
+  outship['filename'] = os.path.basename(ship['src'])
+  outship['info'] = info
+  outship['source'] = "http://www.merzo.net/indexSD.html"
+  outship['credit'] = "Jeff Russell"
+
+  return outship
+
+basedir = 'Starship Dimensions'
+
+for page in glob.glob(os.path.join(basedir,'1 Pixel*.htm')):
   soup = BeautifulSoup(open(page, 'r'), "lxml")
   category = None
   ships = []
@@ -46,7 +71,6 @@ for page in glob.glob("Starship Dimensions/1 Pixel*.htm"):
           ships.append(ship)
       elif len(images)*2 < len(lines):
         # <font>Description</font>
-        print(lines)
         dangling_ship = False
         for l in lines:
           if l.find('img'):
@@ -67,4 +91,21 @@ for page in glob.glob("Starship Dimensions/1 Pixel*.htm"):
               if incomplete_idx == len(ships):
                 incomplete_idx = None
 
-  print("\n".join([str(s) for s in ships]))
+for ship in ships:
+  groupname = ship['group'].replace(' Starships','')
+  groupdir = os.path.join('images',groupname.replace("/","_"))
+  try:
+    os.mkdir(groupdir)
+  except OSError:
+    # Assume path exists
+    pass
+
+  filesrc = urllib.unquote(ship['src'])
+
+  copyfile(
+    os.path.join(basedir, filesrc),
+    os.path.join(groupdir,os.path.basename(filesrc))
+  )
+  outfile = open(os.path.join(groupdir,'info.yaml'), 'a')
+  outfile.write('---' + os.linesep)
+  outfile.write(yaml.dump(generate_ship(ship)))

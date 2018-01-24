@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import math
 from copy import copy
 math.tau = math.pi*2

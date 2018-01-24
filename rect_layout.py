@@ -2,8 +2,11 @@
 import math
 from copy import copy
 import sys
+import logging
 math.tau = math.pi*2
 default_precision = 2
+
+logger = logging.getLogger()
 
 def frange(end, jump):
   x = 0
@@ -156,7 +159,7 @@ class Rect:
     )
 
   def move(self, dist):
-    print("Moving {} from {} ".format(dist, self.center))
+    logger.debug("Moving {} from {} ".format(dist, self.center))
     self.move_to((
       self.center[0] + dist[0],
       self.center[1] + dist[1]
@@ -164,7 +167,7 @@ class Rect:
 
   def move_to(self, center):
     self.center = center
-    print("New center: {}".format(self.center))
+    logger.debug("New center: {}".format(self.center))
 
     self.left = self.center[0] - self.size[0]/2
     self.right = self.center[0] + self.size[0]/2
@@ -188,7 +191,7 @@ class Rect:
   def corner_distances(self, angle, origin=(0,0)):
     corner_angles = self.corner_angles()
     distances = [ca - angle for ca in corner_angles]
-    print(Rayish.as_pi(distances))
+    logger.debug(Rayish.as_pi(distances))
     distances = [Rayish.clamp_range(d, [-math.pi, math.pi]) for d in distances]
     return distances
 
@@ -197,7 +200,7 @@ class Rect:
     return (min(distances) < 0 and max(distances) > 0)
 
   def outer_radius(self, angle):
-    print(self)
+    logger.debug(self)
 
     # We can ignore the closest corner
     # Line will then be between two of the remaining points
@@ -206,7 +209,7 @@ class Rect:
     distances = self.corner_distances(angle)
     dist_middle = distances[middle_corner]
 
-    print("Finding sides for angle {}, ignoring corner {}, middle corner {} ({})".format(
+    logger.debug("Finding sides for angle {}, ignoring corner {}, middle corner {} ({})".format(
       Rayish.as_pi(angle), ignore_corner, middle_corner, Rayish.as_pi(dist_middle)
     ))
 
@@ -216,7 +219,7 @@ class Rect:
         corner_angles[middle_corner] > (middle_corner+1)*math.pi/2):
       return None
 
-    print(Rayish.as_pi(distances))
+    logger.debug(Rayish.as_pi(distances))
     if not min(distances) < 0 and max(distances) > 0:
       return None
 
@@ -235,7 +238,7 @@ class Rect:
 
     ray = Rayish(point)
     ray.side = side
-    print(ray)
+    logger.debug(ray)
     return ray
 
   def get_ignore(self, angle):
@@ -246,8 +249,8 @@ class Rect:
     # standard cartesian
     # "below" is <
     # "above" is >
-    #print(rect)
-    #print(self)
+    #logger.debug(rect)
+    #logger.debug(self)
     # TODO: Use nearlyCmp here?
     # Margins might make this unnecessary, thank goodness
     v = False
@@ -268,7 +271,7 @@ class Rect:
 
     intersects = (v and h)
     if(intersects):
-      print("Intersection:\n{}\n{}".format(self, rect))
+      logger.debug("Intersection:\n{}\n{}".format(self, rect))
     return (v and h)
 
   def draw(self, canvas, tags = None, color = "black"):
@@ -301,7 +304,7 @@ class Layout:
       rect = self.place_rect(size)
 
     if rect is None:
-      print("Couldn't add rectangle!")
+      logger.debug("Couldn't add rectangle!")
       return
 
     rect.draw(self.canvas)
@@ -339,8 +342,8 @@ class Layout:
 
     radii = []
     for ang in frange(math.tau, self.angle_step):
-      print("---")
-      print("Getting radius for angle {}".format(Rayish.as_pi(ang)))
+      logger.debug("---")
+      logger.debug("Getting radius for angle {}".format(Rayish.as_pi(ang)))
       base_radius = self.get_radius(ang)
       radii.append(base_radius)
 

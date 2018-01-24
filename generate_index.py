@@ -4,6 +4,7 @@ import os
 import math
 import rect_layout
 from PIL import Image
+from progress.bar import Bar
 
 dimension_axes = {
   'Size': 0,
@@ -101,6 +102,7 @@ ships = gather_yaml('images')
 ships.sort(key = sort_ship)
 
 layout = rect_layout.Layout(24)
+bar = Bar('Placing ships', max=len(ships))
 for s in ships:
   if 'm_per_px' not in s:
     print("Skipping {}, no size info!".format(s['info']['Name']))
@@ -113,5 +115,6 @@ for s in ships:
   ])
 
   s['position'] = rect.center
+  bar.next()
 
 json.dump(ships, open('ships.json', 'w'))

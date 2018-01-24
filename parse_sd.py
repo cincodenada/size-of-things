@@ -11,10 +11,10 @@ for page in glob.glob("Starship Dimensions/1 Pixel*.htm"):
   soup = BeautifulSoup(open(page, 'r'), "lxml")
   category = None
   ships = []
+  incomplete_idx = None
   for td in soup.body.find_all('td'):
     if td.find('strong'):
       category = dewhite(td.find('strong').text)
-      print(category)
     else:
       images = td.find_all('img')
       lines = td.find_all(['font','img'], recursive=False)
@@ -30,10 +30,12 @@ for page in glob.glob("Starship Dimensions/1 Pixel*.htm"):
           ship['description'] = dewhite(img.parent.text)
           if 'alt' in img:
             ship['name'] = img['alt']
+
+          if not ship['description'] and incomplete_idx is None:
+            incomplete_idx = len(ships)
+
           ships.append(ship)
-      elif len(lines) == 1:
-        # <font>Description</font>
-        pass
+
       elif len(lines) == len(images)*2:
         # <font><img></font><font>Description</font>
         for (idx, img) in enumerate(images):
@@ -42,5 +44,27 @@ for page in glob.glob("Starship Dimensions/1 Pixel*.htm"):
           ship['src'] = img['src']
           ship['description'] = dewhite(lines[idx*2+1].text)
           ships.append(ship)
+      elif len(images)*2 < len(lines):
+        # <font>Description</font>
+        print(lines)
+        dangling_ship = False
+        for l in lines:
+          if l.find('img'):
+            ship = {}
+            ship['group'] = category
+            ship['src'] = l.find('img')['src']
+            if 'alt' in img:
+              ship['name'] = img['alt']
+            dangling_ship = True
+          else:
+            description = dewhite(l.text)
+            if dangling_ship:
+              ship['description'] = description
+              ships.append(ship)
+            elif incomplete_idx is not None:
+              ships[incomplete_idx]['description'] = dewhite(lines[0].text)
+              incomplete_idx += 1
+              if incomplete_idx == len(ships):
+                incomplete_idx = None
 
   print("\n".join([str(s) for s in ships]))

@@ -7,17 +7,28 @@ from shutil import copyfile
 import yaml
 import urllib
 
+size_extracts = [
+  r"(?P<name>.*) (?P<dimension>\w+): (?P<size>[\d\.]+)(?P<unit>\w+)",
+  r"(?P<name>.*) (?P<size>[\d\.]+)(?P<unit>\w+)(?: (?P<dimension>\w+))?",
+]
+
 def dewhite(desc):
   desc = re.sub(r"\s+", " ", desc).strip()
   return desc
 
 def generate_ship(ship):
   info = {}
-  size_extract = re.match("(.*) (\w+): ([\d\.]+)(\w+)", ship['description'])
-  if size_extract:
-    info[size_extract.groups(2)] = size_extract.groups(3)
-    info['Units'] = size_extract.groups(4)
-    info['Name'] = size_extract.groups(1)
+  
+  for regex in size_extracts:
+    ship_info = re.match(regex, ship['description'])
+    if ship_info:
+      break
+
+  info['Description'] = ship['description']
+  if ship_info:
+    info[str(ship_info.group('dimension'))] = float(ship_info.group('size'))
+    info['Units'] = ship_info.group('unit')
+    info['Name'] = ship_info.group('name')
 
   if 'Name' in info and 'name' in ship and info['Name'] != ship['name']:
     info['AltName'] = ship['name']
@@ -108,4 +119,5 @@ for ship in ships:
   )
   outfile = open(os.path.join(groupdir,'info.yaml'), 'a')
   outfile.write('---' + os.linesep)
-  outfile.write(yaml.dump(generate_ship(ship)))
+  outfile.write(yaml.safe_dump(generate_ship(ship), default_flow_style=False))
+  print(yaml.safe_dump(generate_ship(ship), default_flow_style=False))

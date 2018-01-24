@@ -1,0 +1,585 @@
+---
+credit: Jeff Russell
+filename: 1mppstroopersplasmabug.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'Plasma Bug from ''Starship Troopers'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '40', !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'Plasma Bug from ''Starship Troopers'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '40', !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'Plasma Bug from ''Starship Troopers'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '40', !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'Plasma Bug from ''Starship Troopers'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '40', !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppstroopertankerbug.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'Tanker Bug from ''Starship Troopers'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '18', !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'Tanker Bug from ''Starship Troopers'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '18', !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'Tanker Bug from ''Starship Troopers'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '18', !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'Tanker Bug from ''Starship Troopers'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '18', !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppbgcolumbia.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'Battlestar Galactica ''Columbia'', adapted
+      from a schematic drawn by J. Stevenson. Official', !!python/unicode 'Length',
+    !!python/unicode '610', !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'Battlestar Galactica ''Columbia'', adapted
+      from a schematic drawn by J. Stevenson. Official', !!python/unicode 'Length',
+    !!python/unicode '610', !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'Battlestar Galactica ''Columbia'', adapted from
+      a schematic drawn by J. Stevenson. Official', !!python/unicode 'Length', !!python/unicode '610',
+    !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'Battlestar Galactica ''Columbia'', adapted from
+      a schematic drawn by J. Stevenson. Official', !!python/unicode 'Length', !!python/unicode '610',
+    !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppswrebelmedicalfrigate.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'Rebel Medical Frigate from ''Star Wars''
+      episodes V and VI motion pictures', !!python/unicode 'Length', !!python/unicode '300',
+    !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'Rebel Medical Frigate from ''Star Wars''
+      episodes V and VI motion pictures', !!python/unicode 'Length', !!python/unicode '300',
+    !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'Rebel Medical Frigate from ''Star Wars'' episodes
+      V and VI motion pictures', !!python/unicode 'Length', !!python/unicode '300',
+    !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'Rebel Medical Frigate from ''Star Wars'' episodes
+      V and VI motion pictures', !!python/unicode 'Length', !!python/unicode '300',
+    !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppswrebelblockaderunner.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'Rebel Blockade Runner (Tantive IV) from
+      ''Star Wars'' episode IV motion picture', !!python/unicode 'Length', !!python/unicode '150',
+    !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'Rebel Blockade Runner (Tantive IV) from
+      ''Star Wars'' episode IV motion picture', !!python/unicode 'Length', !!python/unicode '150',
+    !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'Rebel Blockade Runner (Tantive IV) from ''Star
+      Wars'' episode IV motion picture', !!python/unicode 'Length', !!python/unicode '150',
+    !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'Rebel Blockade Runner (Tantive IV) from ''Star
+      Wars'' episode IV motion picture', !!python/unicode 'Length', !!python/unicode '150',
+    !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppswrebeltransport.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'Rebel Troop Transport from ''Star Wars''
+      episodes V and VI motion pictures', !!python/unicode 'Length', !!python/unicode '90',
+    !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'Rebel Troop Transport from ''Star Wars''
+      episodes V and VI motion pictures', !!python/unicode 'Length', !!python/unicode '90',
+    !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'Rebel Troop Transport from ''Star Wars'' episodes
+      V and VI motion pictures', !!python/unicode 'Length', !!python/unicode '90',
+    !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'Rebel Troop Transport from ''Star Wars'' episodes
+      V and VI motion pictures', !!python/unicode 'Length', !!python/unicode '90',
+    !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mpp2001discovery.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'Discovery from ''2001, a Space Odyssey''
+      motion picture', !!python/unicode 'Length', !!python/unicode '113', !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'Discovery from ''2001, a Space Odyssey''
+      motion picture', !!python/unicode 'Length', !!python/unicode '113', !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'Discovery from ''2001, a Space Odyssey'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '113', !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'Discovery from ''2001, a Space Odyssey'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '113', !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mpp2001Orion.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'Orion from ''2001, a Space Odyssey'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '65', !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'Orion from ''2001, a Space Odyssey'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '65', !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'Orion from ''2001, a Space Odyssey'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '65', !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'Orion from ''2001, a Space Odyssey'' motion
+      picture', !!python/unicode 'Length', !!python/unicode '65', !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppspace1999eagle.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'Eagle from ''Space 1999'' TV Series', !!python/unicode 'Length',
+    !!python/unicode '68', !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'Eagle from ''Space 1999'' TV Series', !!python/unicode 'Length',
+    !!python/unicode '68', !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'Eagle from ''Space 1999'' TV Series', !!python/unicode 'Length',
+    !!python/unicode '68', !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'Eagle from ''Space 1999'' TV Series', !!python/unicode 'Length',
+    !!python/unicode '68', !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppForbiddenPlanetC-57D.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'C-57D United Planet Starcruiser from ''Forbidden
+      Planet''', !!python/unicode 'Diameter', !!python/unicode '51', !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'C-57D United Planet Starcruiser from ''Forbidden
+      Planet''', !!python/unicode 'Diameter', !!python/unicode '51', !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'C-57D United Planet Starcruiser from ''Forbidden
+      Planet''', !!python/unicode 'Diameter', !!python/unicode '51', !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'C-57D United Planet Starcruiser from ''Forbidden
+      Planet''', !!python/unicode 'Diameter', !!python/unicode '51', !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSWOpeeSeaKiller.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'Opee Sea Killer from ''Star Wars: Episode
+      I'',', !!python/unicode 'Length', !!python/unicode '20', !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'Opee Sea Killer from ''Star Wars: Episode
+      I'',', !!python/unicode 'Length', !!python/unicode '20', !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'Opee Sea Killer from ''Star Wars: Episode I'',',
+    !!python/unicode 'Length', !!python/unicode '20', !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'Opee Sea Killer from ''Star Wars: Episode I'',',
+    !!python/unicode 'Length', !!python/unicode '20', !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppswsmallships.gif
+info: {}
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppcloseencountersmom.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'Mothership from ''Close Encounters of the
+      Third Kind'' motion picture', !!python/unicode 'Diameter', !!python/unicode '525',
+    !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'Mothership from ''Close Encounters of the
+      Third Kind'' motion picture', !!python/unicode 'Diameter', !!python/unicode '525',
+    !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'Mothership from ''Close Encounters of the Third
+      Kind'' motion picture', !!python/unicode 'Diameter', !!python/unicode '525',
+    !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'Mothership from ''Close Encounters of the Third
+      Kind'' motion picture', !!python/unicode 'Diameter', !!python/unicode '525',
+    !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppStarplex.gif
+info:
+  Name: !!python/tuple [!!python/unicode '''Starplex'' from the novel ''Starplex'',
+      written by Robert J. Sawyer', !!python/unicode 'Diameter', !!python/unicode '290',
+    !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode '''Starplex'' from the novel ''Starplex'',
+      written by Robert J. Sawyer', !!python/unicode 'Diameter', !!python/unicode '290',
+    !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode '''Starplex'' from the novel ''Starplex'', written
+      by Robert J. Sawyer', !!python/unicode 'Diameter', !!python/unicode '290', !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode '''Starplex'' from the novel ''Starplex'', written
+      by Robert J. Sawyer', !!python/unicode 'Diameter', !!python/unicode '290', !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppCrysis.gif
+info:
+  Description: Alien ship from the amazing Crysis video game. Length is 3475m, taken
+    from Sandbox editor.
+  None: 3475.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5CentauriPrimus.gif
+info:
+  Description: 'Centauri Primus from ''Babylon 5'', length: 1.8km, mesh created and
+    rendered by Meurig'
+  Units: km
+  length: 1.8
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: x2mppSDF3.gif
+info:
+  Description: SDF-3 Pioneer
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5OmegaDestroyer.gif
+info:
+  Description: EA Omega Destroyer
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppSWStarDestroyer.gif
+info:
+  Description: Imperial Star Destroyer
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppSTRomulanDderidex.gif
+info:
+  Description: Romulan D'deridex
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppswspaceslug.gif
+info:
+  Description: Space Slug from Empire Strikes Back
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppSDF1D.gif
+info:
+  Description: Macross Super Dimensional Fortress One (SDF-1)
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppST8472Bioship.gif
+info:
+  Bioship: 847.0
+  Description: Species 8472 Bioship
+  Units: '2'
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5VorlonCruiser.gif
+info:
+  Description: Vorlon Cruiser
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5ShadowCruiser.gif
+info:
+  Description: Shadow Cruiser
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5Hyperion.gif
+info:
+  Description: mesh created and rendered by Meurig
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5Hyperion.gif
+info:
+  Description: mesh created and rendered by Meurig
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5EAShadowHybrid.gif
+info:
+  Description: EA Shadow Hybrid, mesh created and rendered by Meurig
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5MinbariSharlin.gif
+info:
+  Description: Minbari Sharlin class cruiser
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5MinbariTinashi.gif
+info:
+  Description: 'Minbari Tinashi class cruiser, mesh created and rendered by Meurig
+    Length: 850m'
+  Length: 850.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppStarplex.gif
+info:
+  Description: '''Starplex'' from the novel ''Starplex'', written by Robert J. Sawyer
+    Diameter: 290m (main disk)'
+  Diameter: 290.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppBattlefleetGothicCobra.gif
+info:
+  Description: 'Battlefleet Gothic Cobra, image created by John Reed Length: 1500m'
+  Length: 1500.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppAndromeda.gif
+info:
+  Description: 'Starship Andromeda, image submitted by Neil Bond Length: 1301m'
+  Length: 1301.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSerenity.gif
+info:
+  Description: 'Serenity from ''Firefly'' TV Series Length: 63m'
+  Length: 63.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppstarshiptroopersrodgeryoung.gif
+info:
+  Description: 'Rodger-Young from ''Starship Troopers'' motion picture Length: 550m'
+  Length: 550.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppstroopersplasmabug.gif
+info:
+  Description: 'Plasma Bug from ''Starship Troopers'' motion picture Length: 40m+'
+  Length: 40.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppstroopertankerbug.gif
+info:
+  Description: 'Tanker Bug from ''Starship Troopers'' motion picture Length: 18m'
+  Length: 18.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppbgcolumbia.gif
+info:
+  Description: 'Battlestar Galactica ''Columbia'', adapted from a schematic drawn
+    by J. Stevenson. Official Length: 610m, click here for an alternate length and
+    discussion of the ''Columbia'' size.'
+  Length: 610.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppswrebelmedicalfrigate.gif
+info:
+  Description: 'Rebel Medical Frigate from ''Star Wars'' episodes V and VI motion
+    pictures Length: 300m'
+  Length: 300.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppswrebelblockaderunner.gif
+info:
+  Description: 'Rebel Blockade Runner (Tantive IV) from ''Star Wars'' episode IV motion
+    picture Length: 150m'
+  Length: 150.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppswrebeltransport.gif
+info:
+  Description: 'Rebel Troop Transport from ''Star Wars'' episodes V and VI motion
+    pictures Length: 90m'
+  Length: 90.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mpp2001discovery.gif
+info:
+  Description: 'Discovery from ''2001, a Space Odyssey'' motion picture Length: 113m'
+  Length: 113.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mpp2001Orion.gif
+info:
+  Description: 'Orion from ''2001, a Space Odyssey'' motion picture Length: 65m (Approximately)'
+  Length: 65.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppspace1999eagle.gif
+info:
+  Description: 'Eagle from ''Space 1999'' TV Series Length: 68m'
+  Length: 68.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppForbiddenPlanetC-57D.gif
+info:
+  Description: 'C-57D United Planet Starcruiser from ''Forbidden Planet'' Diameter:
+    51m'
+  Diameter: 51.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSWOpeeSeaKiller.gif
+info:
+  Description: 'Opee Sea Killer from ''Star Wars: Episode I'', Length: 20m'
+  Length: 20.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppswsmallships.gif
+info:
+  Description: Smaller vessels from 'Star Wars' motion pictures, to view in greater
+    detail larger images are found on the 10 ppm page
+  Units: '0'
+  ppm: 1.0
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppcloseencountersmom.gif
+info:
+  Description: 'Mothership from ''Close Encounters of the Third Kind'' motion picture
+    Diameter: 525m (main disk)'
+  Diameter: 525.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppStarplex.gif
+info:
+  Description: '''Starplex'' from the novel ''Starplex'', written by Robert J. Sawyer
+    Diameter: 290m (main disk)'
+  Diameter: 290.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1CMPPdextre.gif
+info:
+  Description: 'Name: Dextre (Special Purpose Dexterous Manipulator) Height: 3.5m
+    Source: Canadian Space Agency'
+  Height: 3.5
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1CMPPET.gif
+info:
+  Description: ''
+  Name: E.T.
+  Size: +/- 1.3m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 100mppMacrossCapitalShips.gif
+info:
+  Description: ''
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppJupiterAscending.gif
+info:
+  Description: Titus Abrasax Clipper from the movie "Jupiter Ascending". 3 km total
+    length
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mpp67P.gif
+info:
+  Description: Comet 67P, to be visited by Rosetta/Philea. Approximately 6 km total
+    length, long axis
+  None: 67.0
+  Units: P
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mmpSpaceCity.gif
+info:
+  Description: ASTEN Space Settlement, designed by Eric Yam. 1.7km high, 1km diameter
+  Units: km
+  diameter: 1.0
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppSWSuperStarDestroyer.gif
+info:
+  Description: Super Star Destroyer, 19.0km (Official), Please see http://www.theforce.net/swtc/ssd.html
+    for an alternate length and discussion. Image originally drawn by Chad Wilson
+  None: 19.0
+  Units: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppEveAmarrAvatar.gif
+info:
+  Description: Amarr Avatar from Eve Online, 13816m long
+  Units: m
+  long: 13816.0
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppEveGallenteErebus.gif
+info:
+  Description: Gallente Erebus from Eve Online, 14788m long
+  Units: m
+  long: 14788.0
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppEveCaldariLeviathan.gif
+info:
+  Description: Caldari Leviathan from Eve Online, 18056m long
+  Units: m
+  long: 18056.0
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppEveMinmatarRagnarok.gif
+info:
+  Description: Minmatar Ragnarok from Eve Online, 18144m long
+  Units: m
+  long: 18144.0
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppLEXX.gif
+info:
+  Description: LEXX, 10km long, adapted from official blueprints
+  Units: km
+  long: 10.0
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppFarscapePKCommandCarrier.gif
+info:
+  Description: mesh created and rendered by Meurig
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppBloodHawk.gif
+info:
+  Description: The Imperial Retribution Class Battleship BloodHawk, from Battlefleet
+    Gothic, 7.5km long. Image created by John Reed
+  Units: km
+  long: 7.5
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppBattlefleetGothicCobra.gif
+info:
+  Description: Cobra Class Destroyer BlackSkull, from Battlefleet Gothic, 1.5km long.
+    Image created by John Reed
+  Units: km
+  long: 1.5
+source: http://www.merzo.net/indexSD.html

@@ -1,0 +1,79 @@
+---
+credit: Jeff Russell
+filename: 1mppAlienSulaco.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'Sulaco', !!python/unicode 'Length', !!python/unicode '385',
+    !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'Sulaco', !!python/unicode 'Length', !!python/unicode '385',
+    !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'Sulaco', !!python/unicode 'Length', !!python/unicode '385',
+    !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'Sulaco', !!python/unicode 'Length', !!python/unicode '385',
+    !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppAlienNostromo.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'Nostromo', !!python/unicode 'Length', !!python/unicode '243.8',
+    !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'Nostromo', !!python/unicode 'Length', !!python/unicode '243.8',
+    !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'Nostromo', !!python/unicode 'Length', !!python/unicode '243.8',
+    !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'Nostromo', !!python/unicode 'Length', !!python/unicode '243.8',
+    !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppAlienDropShip.gif
+info:
+  Name: !!python/tuple [!!python/unicode 'UD-4L Cheyenne Dropship', !!python/unicode 'Length',
+    !!python/unicode '25.18', !!python/unicode 'm']
+  Units: !!python/tuple [!!python/unicode 'UD-4L Cheyenne Dropship', !!python/unicode 'Length',
+    !!python/unicode '25.18', !!python/unicode 'm']
+  ? !!python/tuple [!!python/unicode 'UD-4L Cheyenne Dropship', !!python/unicode 'Length',
+    !!python/unicode '25.18', !!python/unicode 'm']
+  : !!python/tuple [!!python/unicode 'UD-4L Cheyenne Dropship', !!python/unicode 'Length',
+    !!python/unicode '25.18', !!python/unicode 'm']
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppAlienSulaco.gif
+info:
+  Description: 'Sulaco Length: 385m'
+  Length: 385.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppAlienNostromo.gif
+info:
+  Description: 'Nostromo Length: 243.8m'
+  Length: 243.8
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppAlienSulaco.gif
+info:
+  Description: 'Sulaco Length: 385m'
+  Length: 385.0
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppAlienNostromo.gif
+info:
+  Description: 'Nostromo Length: 243.8m'
+  Length: 243.8
+  Units: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppAlienDropShip.gif
+info:
+  Description: 'UD-4L Cheyenne Dropship Length: 25.18m'
+  Length: 25.18
+  Units: m
+source: http://www.merzo.net/indexSD.html

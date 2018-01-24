@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import math
 from copy import copy
+import sys
 math.tau = math.pi*2
 default_precision = 2
 
@@ -10,16 +11,33 @@ def frange(end, jump):
     yield x
     x += jump
 
-def defp(val, p):
-  try:
-    return [defp(v, p) for v in val]
-  except TypeError:
-    return round(val, p)
+# Adapted from http://www.floating-point-gui.de/errors/comparison/
+def nearlyEqual(a, b, epsilon = 0.001):
+  absA = abs(a);
+  absB = abs(b);
+  diff = abs(a - b);
+
+  if (a == b): # shortcut, handles infinities
+    return True;
+  elif (a == 0 or b == 0 or diff < sys.float_info.min):
+    # a or b is zero or both are extremely close to it
+    # relative error is less meaningful here
+    return diff < (epsilon * sys.float_info.min);
+  else: # use relative error
+    return diff / min((absA + absB), sys.float_info.max) < epsilon;
+
+def nearlyCmp(a, op, b, epsilon = 0.001):
+  if op == '>':
+    return ((a > b) or (nearlyEqual(a, b)))
+  elif op == '<':
+    return ((a < b) or (nearlyEqual(a, b)))
+  elif op == '==':
+    return nearlyEqual(a, b)
 
 class Rayish:
   def __init__(self, angle_or_end, origin = (0,0), length=1, precision = default_precision):
     self.p = precision
-    self.origin = defp(origin, self.p)
+    self.origin = origin
     try:
       self.end = angle_or_end
       self.angle = self.clamp_range(
@@ -35,7 +53,6 @@ class Rayish:
         self.origin[1] + math.sin(self.angle)*length
       )
 
-    self.end = defp(self.end, self.p)
     self._length = None
 
   @staticmethod
@@ -106,23 +123,23 @@ class Rayish:
       return None
 
     d = (det(a, b), det(self.origin, self.end))
-    x = round(det(d, xdiff) / div, 3)
-    y = round(det(d, ydiff) / div, 3)
-
-    print(x, y)
+    x = det(d, xdiff) / div
+    y = det(d, ydiff) / div
 
     x_range = [
-      math.floor(min(a[0],b[0])),
-      math.ceil(max(a[0],b[0]))
+      min(a[0],b[0]),
+      max(a[0],b[0])
     ]
     y_range = [
-      math.floor(min(a[1],b[1])),
-      math.ceil(max(a[1],b[1]))
+      min(a[1],b[1]),
+      max(a[1],b[1])
     ]
 
-    print(x_range, y_range)
-
-    if x >= x_range[0] and x <= x_range[1] and y >= y_range[0] and y <= y_range[1]:
+    if (nearlyCmp(x, '>', x_range[0]) and
+        nearlyCmp(x, '<', x_range[1]) and
+        nearlyCmp(y, '>', y_range[0]) and
+        nearlyCmp(y, '<', y_range[1])
+      ):
       return (x, y)
     else:
       return None
@@ -130,7 +147,7 @@ class Rayish:
 class Rect:
   def __init__(self, size, center = (0,0), precision = default_precision):
     self.p = precision
-    self.size = defp(size, self.p)
+    self.size = size
     self.move_to(center)
 
   def __str__(self):
@@ -146,13 +163,13 @@ class Rect:
     ))
 
   def move_to(self, center):
-    self.center = defp(center, self.p)
+    self.center = center
     print("New center: {}".format(self.center))
 
-    self.left = defp(self.center[0] - self.size[0]/2, self.p)
-    self.right = defp(self.center[0] + self.size[0]/2, self.p)
-    self.bottom = defp(self.center[1] - self.size[1]/2, self.p)
-    self.top = defp(self.center[1] + self.size[1]/2, self.p)
+    self.left = self.center[0] - self.size[0]/2
+    self.right = self.center[0] + self.size[0]/2
+    self.bottom = self.center[1] - self.size[1]/2
+    self.top = self.center[1] + self.size[1]/2
 
   def corners(self):
     return [
@@ -231,6 +248,8 @@ class Rect:
     # "above" is >
     #print(rect)
     #print(self)
+    # TODO: Use nearlyCmp here?
+    # Margins might make this unnecessary, thank goodness
     v = False
     if rect.top < self.top:
       if rect.top > self.bottom:

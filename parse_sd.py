@@ -80,10 +80,10 @@ def generate_ship(ship):
 
 basedir = 'Starship Dimensions'
 
+ships = []
 for page in glob.glob(os.path.join(basedir,'*.htm')):
   soup = BeautifulSoup(open(page, 'r'), "lxml")
   category = None
-  ships = []
   incomplete_idx = None
   field_start = None
   for td in soup.body.find_all(['td','p']):
@@ -94,6 +94,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
       category = dewhite(td.find('strong').text)
     else:
       images = td.select('> img, > font > img')
+      print(images)
       lines = td.find_all(['font','img'], recursive=False)
 
       if len(images) == len(lines):
@@ -134,7 +135,6 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
             incomplete_idx = None
           field_idx = field_start
         else:
-          print(lines)
           ships[field_idx][field_map[cur_field]] = dewhite(line.text)
           field_idx += 1
       elif len(images)*2 < len(lines):
@@ -159,6 +159,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
               if incomplete_idx == len(ships):
                 incomplete_idx = None
 
+print(len(ships))
 for ship in ships:
   try:
     groupname = ship['group'].replace(' Starships','')
@@ -183,4 +184,3 @@ for ship in ships:
   outfile = open(os.path.join(groupdir,'info.yaml'), 'a')
   outfile.write('---' + os.linesep)
   outfile.write(yaml.safe_dump(generate_ship(ship), default_flow_style=False))
-  print(yaml.safe_dump(generate_ship(ship), default_flow_style=False))

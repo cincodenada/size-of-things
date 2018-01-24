@@ -5,6 +5,14 @@ import math
 import rect_layout
 from PIL import Image
 
+dimension_axes = {
+  'Size': 0,
+  'Length': 0,
+  'Width': 0,
+  'Diameter': 0,
+  'Height': 1,
+}
+
 def get_parts(path):
   part_values = {}
   keys = ['Universe','Faction']
@@ -36,38 +44,45 @@ def gather_yaml(path):
     if os.path.isfile(fullpath):
       if e.endswith('.yaml'):
         for ship in yaml.load_all(open(fullpath, 'r')):
-          set_default(ship, 'info', extra_info)
-          ship['path'] = path
+          try:
+            set_default(ship, 'info', extra_info)
+            ship['path'] = path
 
-          # Get image width/height
-          im = Image.open(os.path.join(path, ship['filename']))
-          ship['image_size'] = im.size
+            # Get image width/height
+            im = Image.open(os.path.join(path, ship['filename']))
+            ship['image_size'] = im.size
 
-          # Add scale information
-          m = px = None
-          if 'm_per_px' in ship:
-            m_per_px = ship['m_per_px']
-            if isinstance(m_per_px, str):
-              (m, px) = m_per_px.split('/')
-          else:
-            if 'Length' in ship['info']:
-              m = ship['info']['Length']
-              px = im.size[0]
-            elif 'Width' in ship['info']:
-              m = ship['info']['Width']
-              px = im.size[0]
-            elif 'Height' in ship['info']:
-              m = ship['info']['Height']
-              px = im.size[1]
+            # Add scale information
+            m = px = None
+            if 'm_per_px' in ship:
+              m_per_px = ship['m_per_px']
+              if isinstance(m_per_px, str):
+                (m, px) = m_per_px.split('/')
+            else:
+              for (dim, axis) in dimension_axes.items():
+                if dim in ship['info']:
+                  m = ship['info'][dim]
+                  px = im.size[axis]
+                  break
 
-          if m and px:
-            ship['m_per_px'] = float(m)/float(px)
-            ship['real_size'] = [
-              d*ship['m_per_px']
-              for d in ship['image_size']
-            ]
+            if m and px:
+              ship['m_per_px'] = float(m)/float(px)
+              ship['real_size'] = [
+                d*ship['m_per_px']
+                for d in ship['image_size']
+              ]
 
-          ships.append(ship)
+            if 'm_per_px' not in ship:
+              raise ArithmeticError("Couldn't determine m/px!")
+
+            ships.append(ship)
+          except ValueError as e:
+            print("Failed to load ship from {}:\n{}\n{}".format(fullpath, str(e), str(ship)))
+          except IOError as e:
+            print("Failed to load image from {}:\n{}\n{}".format(fullpath, str(e), str(ship)))
+          except ArithmeticError as e:
+            print("Failed to load ship from {}:\n{}\n{}".format(fullpath, str(e), str(ship)))
+
     elif os.path.isdir(fullpath):
       ships += gather_yaml(fullpath)
 

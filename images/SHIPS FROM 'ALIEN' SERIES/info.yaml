@@ -1,43 +1,10 @@
 ---
 credit: Jeff Russell
-filename: 10mppAlienSulaco.gif
+filename: 10mppmardukscout.gif
 info:
-  Description: 'Sulaco Length: 385m'
-  Length: 385.0
+  Description: Marduk scout ship, 500m
+  Size: 500.0
   Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppAlienNostromo.gif
-info:
-  Description: 'Nostromo Length: 243.8m'
-  Length: 243.8
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppzenflagship.gif
-info:
-  Description: Zentraedi Nupetiet-Vergnitzs (Flagship), 4km, Originally designed by
-    Kazutaka Miyatake, drawn by Jeff Russell
-  Size: 4.0
-  Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppzentanker.gif
-info:
-  Description: Zentreadi Quitra Queleual (Tanker), 3km
-  Size: 3.0
-  Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppzencruiser.gif
-info:
-  Description: Zentraedi Thuverl Salan (Cruiser), 2.3km
-  Size: 2.3
-  Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -65,11 +32,20 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppzenscout.gif
+filename: 10mppzenflagship.gif
 info:
-  Description: Zentraedi scout ship, 500m
-  Size: 500.0
-  Unit: m
+  Description: Zentraedi Nupetiet-Vergnitzs (Flagship), 4km, Originally designed by
+    Kazutaka Miyatake, drawn by Jeff Russell
+  Size: 4.0
+  Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppzentanker.gif
+info:
+  Description: Zentreadi Quitra Queleual (Tanker), 3km
+  Size: 3.0
+  Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -81,9 +57,17 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppmardukscout.gif
+filename: 10mppzenscout.gif
 info:
-  Description: Marduk scout ship, 500m
+  Description: Zentraedi scout ship, 500m
   Size: 500.0
   Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppzencruiser.gif
+info:
+  Description: Zentraedi Thuverl Salan (Cruiser), 2.3km
+  Size: 2.3
+  Unit: km
 source: http://www.merzo.net/indexSD.html

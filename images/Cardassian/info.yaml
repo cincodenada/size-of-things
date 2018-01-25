@@ -1,25 +1,9 @@
 ---
 credit: Jeff Russell
-filename: 2mppSTCardassianKeldon.gif
-info:
-  Description: Cardassian Keldon 481m
-  Size: 481.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppSTCardassianGalor.gif
+filename: 1mppSTCardassianGalor.gif
 info:
   Description: Cardassian Galor 481m
   Size: 481.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppSTCardassianMilitaryFreighter.gif
-info:
-  Description: Cardassian Military Freighter 256m
-  Size: 256.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -27,14 +11,6 @@ credit: Jeff Russell
 filename: 1mppSTCardassianKeldon.gif
 info:
   Description: Cardassian Keldon 481m
-  Size: 481.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTCardassianGalor.gif
-info:
-  Description: Cardassian Galor 481m
   Size: 481.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

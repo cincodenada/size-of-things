@@ -1,5 +1,57 @@
 ---
 credit: Jeff Russell
+filename: 10ppmswrebelawing.gif
+info:
+  Description: The Rebellion
+  Length: ''
+  Name: Rebel A-Wing Class Fighter
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswrebelxwing.gif
+info:
+  Description: The Rebellion
+  Length: ''
+  Name: Rebel X-Wing Class Fighter
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswrebelbwing.gif
+info:
+  Description: The Rebellion
+  Length: ''
+  Name: Rebel B-Wing Class Fighter
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1CMPPSWJABBA.gif
+info:
+  Description: ''
+  Name: Jabba the Hutt
+  Size: 3.9
+  Size Notes: long
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1CMPPSWWAMPA.gif
+info:
+  Description: ''
+  Name: Wampa
+  Size: 3.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 100mppswcloudcity.gif
+info:
+  Description: Bespin Mining Colony
+  Length: 16.0
+  Name: Cloud City
+  Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 1CMPPGQDEMONCHILD.gif
 info:
   Description: ''
@@ -18,20 +70,20 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1CMPPSWACKBAR.gif
-info:
-  Description: ''
-  Name: Admiral Ackbar
-  Size: 1.8
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 1CMPPSWTAUNWE.gif
 info:
   Description: ''
   Name: Taun We
   Size: 2.13
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1CMPPSWRANCOR.gif
+info:
+  Description: ''
+  Name: Rancor from Return of the Jedi
+  Size: 5.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -46,54 +98,6 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1CMPPSWWAMPA.gif
-info:
-  Description: ''
-  Name: Wampa
-  Size: 3.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1CMPPSWJABBA.gif
-info:
-  Description: ''
-  Name: Jabba the Hutt
-  Size: 3.9
-  Size Notes: long
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1CMPPSWRANCOR.gif
-info:
-  Description: ''
-  Name: Rancor from Return of the Jedi
-  Size: 5.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 100mppswcloudcity.gif
-info:
-  Description: Bespin Mining Colony
-  Length: 16.0
-  Name: Cloud City
-  Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 100mppSWSuperStarDestroyer.gif
-info:
-  Description: The Empire under Darth Sidious (human). Darth Vader's command ship.
-  Length: 19.0
-  Name: Executor/ Super Star Destroyer
-  Size Notes: (Official), Please see http://www.theforce.net/swtc/ssd.html for an
-    alternate length and discussion.
-  Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 10ppmswrebelywing.gif
 info:
   Description: The Rebellion
@@ -102,25 +106,10 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10ppmswrebelxwing.gif
+filename: 1CMPPSWACKBAR.gif
 info:
-  Description: The Rebellion
-  Length: ''
-  Name: Rebel X-Wing Class Fighter
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmswrebelawing.gif
-info:
-  Description: The Rebellion
-  Length: ''
-  Name: Rebel A-Wing Class Fighter
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmswrebelbwing.gif
-info:
-  Description: The Rebellion
-  Length: ''
-  Name: Rebel B-Wing Class Fighter
+  Description: ''
+  Name: Admiral Ackbar
+  Size: 1.8
+  Unit: m
 source: http://www.merzo.net/indexSD.html

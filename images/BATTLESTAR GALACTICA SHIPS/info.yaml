@@ -1,19 +1,5 @@
 ---
 credit: Jeff Russell
-filename: 10mppswtradefederation.gif
-info:
-  Description: Trade Federation battleship, originally drawn by Chad Wilson
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppSWStarDestroyer.gif
-info:
-  Description: Star Destroyer, 1.6km, originally drawn by Chad Wilson
-  Size: 1.6
-  Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 10mppswmoncalimari.gif
 info:
   Description: Mon Calamari cruiser, 1.3km
@@ -22,17 +8,15 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
+filename: 10mppswtradefederation.gif
+info:
+  Description: Trade Federation battleship, originally drawn by Chad Wilson
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 10mppswrebelfrigate.gif
 info:
   Description: Rebel frigate, 300m
   Size: 300.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppbgcolumbia.gif
-info:
-  Description: Columbia, 610m
-  Size: 610.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

@@ -1,30 +1,6 @@
 ---
 credit: Jeff Russell
-filename: 2mppSTKlingonNeghVar.gif
-info:
-  Description: Klingon Negh'Var 682m
-  Size: 682.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppSTKlingonVorCha.gif
-info:
-  Description: Klingon Vor'Cha 481m
-  Size: 481.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppSTKlingonMilitaryTransport.gif
-info:
-  Description: Klingon Military Transport 256m
-  Size: 256.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppSTKlingonD7.gif
+filename: 1mppSTKlingonD7.gif
 info:
   Description: Klingon D-7 228m
   Size: 228.0
@@ -32,18 +8,10 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 2mppSTKlingonKTinga.gif
+filename: 1mppSTKlingonMilitaryTransport.gif
 info:
-  Description: Klingon K'Tinga 214m
-  Size: 214.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppSTKlingonBirdofPrey.gif
-info:
-  Description: Klingon Bird of Prey 109m
-  Size: 109.0
+  Description: Klingon Military Transport 256m
+  Size: 256.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -64,18 +32,10 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppSTKlingonMilitaryTransport.gif
+filename: 1mppSTKlingonBirdofPrey.gif
 info:
-  Description: Klingon Military Transport 256m
-  Size: 256.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTKlingonD7.gif
-info:
-  Description: Klingon D-7 228m
-  Size: 228.0
+  Description: Klingon Bird of Prey 109m
+  Size: 109.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -84,13 +44,5 @@ filename: 1mppSTKlingonKTinga.gif
 info:
   Description: Klingon K'Tinga 214m
   Size: 214.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTKlingonBirdofPrey.gif
-info:
-  Description: Klingon Bird of Prey 109m
-  Size: 109.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

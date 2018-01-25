@@ -206,6 +206,36 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
               if incomplete_idx == len(ships):
                 incomplete_idx = None
 
+# Deduplicate
+max_res = {}
+filtered = {}
+for (idx, s) in enumerate(ships):
+  imgname = os.path.basename(s['src']).lower()
+  bits = re.match(
+    '(\d+)([kc]?)([mp])([mp])([mp])(.*).gif',
+    imgname 
+  )
+  if(bits):
+    (num, prefix, numer, _, denom, ship) = bits.groups()
+    num = float(num)
+    if(prefix == 'k'):
+      num *= 1000
+    elif(prefix == 'c'):
+      num /= 100
+
+    if(numer == 'p'):
+      ppm = num
+    else:
+      ppm = 1/num
+
+    if ship not in max_res or max_res[ship] < ppm:
+      max_res[ship] = ppm
+      filtered[ship] = s
+  else:
+    print(imgname)
+    filtered[imgname] = s
+
+ships = filtered.values()
 print(len(ships))
 for ship in ships:
   try:

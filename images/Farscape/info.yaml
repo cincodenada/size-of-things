@@ -1,18 +1,10 @@
 ---
 credit: Jeff Russell
-filename: 2mppFarscapeMoya.gif
+filename: 1mppfarscapepkvigilant.gif
 info:
-  Description: 'Moya from ''Farscape'', modeled and rendered by Meurig Length: 650m'
-  Length: 650.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppFarscapeTalyn.gif
-info:
-  Description: 'Talyn from ''Farscape'', modeled and rendered by Meurig Length: 300m
-    at time of death'
-  Length: 300.0
+  Description: 'PK Vigilant from ''Farscape'', mesh created and rendered by Meurig
+    Length: 535m'
+  Length: 535.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -26,15 +18,6 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppfarscapepkvigilant.gif
-info:
-  Description: 'PK Vigilant from ''Farscape'', mesh created and rendered by Meurig
-    Length: 535m'
-  Length: 535.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 1mppFarscapeTalyn.html
 info:
   Description: 'Talyn from ''Farscape'', mesh created and rendered by Meurig Length:
@@ -44,10 +27,10 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppfarscapenebaripod.gif
+filename: 2mppFarscapeTalyn.gif
 info:
-  Description: 'Nebari Pod from ''Farscape'', mesh created and rendered by Meurig
-    Length: 30m'
-  Length: 30.0
+  Description: 'Talyn from ''Farscape'', modeled and rendered by Meurig Length: 300m
+    at time of death'
+  Length: 300.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

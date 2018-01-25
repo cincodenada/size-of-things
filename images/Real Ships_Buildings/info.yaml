@@ -1,221 +1,10 @@
 ---
 credit: Jeff Russell
-filename: 2mpp2001StationV.gif
-info:
-  Description: "Station V from 2001\_Diameter: 300m Ok, not a Real ship, but look\
-    \ over there ->"
-  Size: 300.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistSpaceStationA.gif
-info:
-  Description: "The International Space Station\_Length: 80m\_\_ I thought it interesting\
-    \ to compare where we thought we'd be in 2001 as opposed to where we are.\_ Kudos\
-    \ to the Space Station Team."
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexisthindenburg.gif
-info:
-  Description: 'The Hindenburg, built in Germany in 1936 and later destroyed Length:
-    245m'
-  Length: 245.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistBoeing747.gif
-info:
-  Description: 'Boeing 747 Length: 70.5m'
-  Length: 70.5
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexiststealthbomber.gif
-info:
-  Description: 'Stealth Bomber (B2-A Spirit) Wingspan: 52.4m'
-  Unit: m
-  Wingspan: 52.4
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexiststealthfighter.gif
-info:
-  Description: 'Stealth Fighter (F-117A Nighthawk) Wingspan: 13.2m'
-  Unit: m
-  Wingspan: 13.2
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistCNTower.gif
-info:
-  Description: Knock Navis
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistEmpireStateBuilding.gif
-info:
-  Description: Knock Navis
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppKingKong.gif
-info:
-  Description: 'King Kong Height: 12.5m (Approximate)'
-  Height: 12.5
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexisteiffeltower.gif
-info:
-  Description: 'Eiffel Tower Height: 324m'
-  Height: 324.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistCalgaryTower.gif
-info:
-  Description: 'Calgary Tower Height: 190.8m'
-  Height: 190.8
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistfootbalfield.gif
-info:
-  Description: 'Amercan Regulation Football Field Length: 109.7m'
-  Length: 109.7
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexiststatueofliberty.gif
-info:
-  Description: 'Statue of Liberty Height: 93m'
-  Height: 93.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistsaturn5.gif
-info:
-  Description: 'Appolo Saturn V Height: 110.6m'
-  Height: 110.6
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistdiscovery.gif
-info:
-  Description: 'Space Shuttle Discovery Height with tanks: 56.1m'
-  Size: 56.1
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistleaningtower.gif
-info:
-  Description: 'Leaning Tower of Piza Height:'
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppGhostBustersStayPuft.gif
-info:
-  Description: 'Stay Puft Marshmallow Man Height: 43m'
-  Height: 43.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppGodzilla.gif
-info:
-  Description: 'Godzilla Height: 100m'
-  Height: 100.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexist330tonminingtruck.gif
-info:
-  Description: '330 ton mining truck Height: 7.5m'
-  Height: 7.5
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistPeggysCoveLighthouse.gif
-info:
-  Description: 'Peggy''s Cove LightHouse Nova Scotia Height: 15m'
-  Height: 15.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistyamato.gif
-info:
-  Description: 'Battleship Yamato, length: 263m'
-  Length: 263.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistjahreviking.gif
-info:
-  Description: ''
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistbluewhale.gif
-info:
-  Description: 'Blue Whale, length: 33 m'
-  Length: 33.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexisttyphoonsub.gif
-info:
-  Description: 'Length: 175m'
-  Size: 175.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexisttyphoonsub.gif
-info:
-  Description: 'Length: 175m'
-  Size: 175.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 1mpp2001StationV.gif
 info:
   Description: "Station V from 2001\_Diameter: 300m Ok, not a Real ship, but look\
     \ over there ->"
   Size: 300.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppexistSpaceStation.gif
-info:
-  Description: "The International Space Station\_Length: 80m\_\_ I thought it interesting\
-    \ to compare where we thought we'd be in 2001 as opposed to where we are.\_ Kudos\
-    \ to the Space Station Team."
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppexisthindenburg.gif
-info:
-  Description: 'The Hindenburg, built in Germany in 1936 and later destroyed Length:
-    245m'
-  Length: 245.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -228,90 +17,6 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppexiststealthbomber.gif
-info:
-  Description: 'Stealth Bomber (B2-A Spirit) Wingspan: 52.4m'
-  Unit: m
-  Wingspan: 52.4
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppexiststealthfighter.gif
-info:
-  Description: 'Stealth Fighter (F-117A Nighthawk) Wingspan: 13.2m'
-  Unit: m
-  Wingspan: 13.2
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppexistCNTower.gif
-info:
-  Description: Knock Navis (Formerly 'Jahre Viking'), World's Largest ship, I think
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppexistEmpireStateBuilding.gif
-info:
-  Description: Knock Navis (Formerly 'Jahre Viking'), World's Largest ship, I think
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppKingKong.gif
-info:
-  Description: 'King Kong Height: 12.5m (Approximate)'
-  Height: 12.5
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppcloverfield.gif
-info:
-  Description: 'Cloverfield Creature Height: 153m (Approximate)'
-  Height: 153.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppexisteiffeltower.gif
-info:
-  Description: 'Eiffel Tower Height: 324m'
-  Height: 324.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppexistCalgaryTower.gif
-info:
-  Description: 'Calgary Tower Height: 190.8m'
-  Height: 190.8
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppexistfootbalfield.gif
-info:
-  Description: 'Amercan Regulation Football Field Length: 109.7m'
-  Length: 109.7
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppexiststatueofliberty.gif
-info:
-  Description: 'Statue of Liberty Height: 93m'
-  Height: 93.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppexistsaturn5.gif
-info:
-  Description: 'Appolo Saturn V Height: 110.6m'
-  Height: 110.6
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 1mppexistdiscovery.gif
 info:
   Description: 'Space Shuttle Discovery Height with tanks: 56.1m'
@@ -320,16 +25,17 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppexistleaningtower.gif
+filename: 1mppexistknocknavis.gif
 info:
-  Description: 'Leaning Tower of Piza Height:'
+  Description: ''
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppWoWMartianTripod.gif
+filename: 1mppexisthindenburg.gif
 info:
-  Description: 'Martian Tripod Height: 40m'
-  Height: 40.0
+  Description: 'The Hindenburg, built in Germany in 1936 and later destroyed Length:
+    245m'
+  Length: 245.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -342,18 +48,38 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppGodzilla.gif
+filename: 2mppexistjahreviking.gif
 info:
-  Description: 'Godzilla Height: 100m'
-  Height: 100.0
+  Description: ''
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppexistSpaceStationA.gif
+info:
+  Description: "The International Space Station\_Length: 80m\_\_ I thought it interesting\
+    \ to compare where we thought we'd be in 2001 as opposed to where we are.\_ Kudos\
+    \ to the Space Station Team."
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppexistCNTower.gif
+info:
+  Description: Knock Navis (Formerly 'Jahre Viking'), World's Largest ship, I think
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppexiststatueofliberty.gif
+info:
+  Description: 'Statue of Liberty Height: 93m'
+  Height: 93.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppexist330tonminingtruck.gif
+filename: 1mppcloverfield.gif
 info:
-  Description: '330 ton mining truck Height: 7.5m'
-  Height: 7.5
+  Description: 'Cloverfield Creature Height: 153m (Approximate)'
+  Height: 153.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -374,9 +100,95 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppexistknocknavis.gif
+filename: 1mppexistsaturn5.gif
 info:
-  Description: ''
+  Description: 'Appolo Saturn V Height: 110.6m'
+  Height: 110.6
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppGodzilla.gif
+info:
+  Description: 'Godzilla Height: 100m'
+  Height: 100.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppexisteiffeltower.gif
+info:
+  Description: 'Eiffel Tower Height: 324m'
+  Height: 324.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppexistEmpireStateBuilding.gif
+info:
+  Description: Knock Navis (Formerly 'Jahre Viking'), World's Largest ship, I think
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppexistleaningtower.gif
+info:
+  Description: 'Leaning Tower of Piza Height:'
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppexiststealthfighter.gif
+info:
+  Description: 'Stealth Fighter (F-117A Nighthawk) Wingspan: 13.2m'
+  Unit: m
+  Wingspan: 13.2
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppexistCalgaryTower.gif
+info:
+  Description: 'Calgary Tower Height: 190.8m'
+  Height: 190.8
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppexiststealthbomber.gif
+info:
+  Description: 'Stealth Bomber (B2-A Spirit) Wingspan: 52.4m'
+  Unit: m
+  Wingspan: 52.4
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppKingKong.gif
+info:
+  Description: 'King Kong Height: 12.5m (Approximate)'
+  Height: 12.5
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppexistfootbalfield.gif
+info:
+  Description: 'Amercan Regulation Football Field Length: 109.7m'
+  Length: 109.7
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppexistSpaceStation.gif
+info:
+  Description: "The International Space Station\_Length: 80m\_\_ I thought it interesting\
+    \ to compare where we thought we'd be in 2001 as opposed to where we are.\_ Kudos\
+    \ to the Space Station Team."
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppexisttyphoonsub.gif
+info:
+  Description: 'Length: 175m'
+  Size: 175.0
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -388,17 +200,9 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppexisttyphoonsub.gif
+filename: 1mppexist330tonminingtruck.gif
 info:
-  Description: 'Length: 175m'
-  Size: 175.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppexisttyphoonsub.gif
-info:
-  Description: 'Length: 175m'
-  Size: 175.0
+  Description: '330 ton mining truck Height: 7.5m'
+  Height: 7.5
   Unit: m
 source: http://www.merzo.net/indexSD.html

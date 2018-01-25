@@ -8,97 +8,10 @@ info:
     Length: 45000
 ---
 credit: Jeff Russell
-filename: 2mppb5vreexill.gif
-info:
-  Description: Vree Xill 500m diameter
-  Diameter: 500.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppB5EarthForceOne.gif
-info:
-  Description: Earth Force One 425m long mesh created and rendered by Meurig
-  Length: 425.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppb5vreexorr.gif
-info:
-  Description: Vree Xorr 350m diameter
-  Diameter: 350.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppb5eawhitestar.gif
-info:
-  Description: EA Whitestar 475.6m
-  Size: 475.6
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppB5ShadowScout.gif
-info:
-  Description: Shadow Scout 356m
-  Size: 356.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppb5drazisunhawk.gif
-info:
-  Description: Drazi Sun-Hawk 350m mesh created and rendered by Meurig
-  Size: 350.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppb5drakhraider.gif
-info:
-  Description: Drakh Raider 215m
-  Size: 215.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppB5VorlonTransport.gif
+filename: 1mppB5VorlonTransport.gif
 info:
   Description: Vorlon Transport 131m
   Size: 131.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppb5raiderbattlewagon.gif
-info:
-  Description: Raider battle wagon 89m
-  Size: 89.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppb53rdspacefighter.gif
-info:
-  Description: 3rd Space fighter 100m
-  Size: 100.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppb5smallships.gif
-info:
-  Description: Smaller vessels from 'Babylon 5', to view in greater detail, click
-    here
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppb5vreexill.gif
-info:
-  Description: Vree Xill 500m diameter
-  Diameter: 500.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -108,84 +21,6 @@ info:
   Description: EA Earth Force One 425m long, mesh created and rendered by Meurig
   Length: 425.0
   Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppb5vreexorr.gif
-info:
-  Description: Vree Xorr 350m diameter
-  Diameter: 350.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppb5eawhitestar.gif
-info:
-  Description: EA Whitestar 475.6m
-  Size: 475.6
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppb5centaurikutai.gif
-info:
-  Description: Centauri Kutai 465m (to be updated, should be 200m), Babylon 5 Agents
-    of Gaming, ship designed by Mike Wikan
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppB5ShadowScout.gif
-info:
-  Description: Shadow Scout 356m
-  Size: 356.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppb5drazisunhawk.gif
-info:
-  Description: Drazi Sun-Hawk 450m, mesh created and rendered by Meurig
-  Size: 450.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppb5drakhraider.gif
-info:
-  Description: Drakh Raider 215m
-  Size: 215.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppB5VorlonTransport.gif
-info:
-  Description: Vorlon Transport 131m
-  Size: 131.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppb5raiderbattlewagon.gif
-info:
-  Description: Raider battle wagon 89m
-  Size: 89.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppb53rdspacefighter.gif
-info:
-  Description: 3rd Space fighter 100m
-  Size: 100.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppb5smallships.gif
-info:
-  Description: Smaller vessels from 'Babylon 5', to view in greater detail larger
-    images are found on the 10 ppm page
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -199,6 +34,14 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
+filename: 1mppb5drakhraider.gif
+info:
+  Description: Drakh Raider 215m
+  Size: 215.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 10ppmb5centauriroturian.gif
 info:
   Description: Centauri
@@ -207,9 +50,79 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
+filename: 1mppb5vreexorr.gif
+info:
+  Description: Vree Xorr 350m diameter
+  Diameter: 350.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppb5smallships.gif
+info:
+  Description: Smaller vessels from 'Babylon 5', to view in greater detail larger
+    images are found on the 10 ppm page
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppB5ShadowScout.gif
+info:
+  Description: Shadow Scout 356m
+  Size: 356.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppb5vreexill.gif
+info:
+  Description: Vree Xill 500m diameter
+  Diameter: 500.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppb5centaurikutai.gif
+info:
+  Description: Centauri Kutai 465m (to be updated, should be 200m), Babylon 5 Agents
+    of Gaming, ship designed by Mike Wikan
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppb53rdspacefighter.gif
+info:
+  Description: 3rd Space fighter 100m
+  Size: 100.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 10ppmb5narngorith.gif
 info:
   Description: Narn Regime
   Length: ''
   Name: Narn Gorith Fighter
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppb5raiderbattlewagon.gif
+info:
+  Description: Raider battle wagon 89m
+  Size: 89.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppb5eawhitestar.gif
+info:
+  Description: EA Whitestar 475.6m
+  Size: 475.6
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppb5drazisunhawk.gif
+info:
+  Description: Drazi Sun-Hawk 450m, mesh created and rendered by Meurig
+  Size: 450.0
+  Unit: m
 source: http://www.merzo.net/indexSD.html

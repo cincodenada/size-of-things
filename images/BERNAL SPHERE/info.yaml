@@ -12,10 +12,11 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppCrysis.gif
+filename: 10ppmEventHorizon.gif
 info:
-  Description: Crysis Alien Ship, 3475m long
-  Length: 3475.0
+  Description: '''Event Horizon'', from the movie Event Horizon, approximately 2200
+    meters long.'
+  Length: 2200.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -29,21 +30,6 @@ credit: Jeff Russell
 filename: 10mppvmothership.gif
 info:
   Description: V mothership
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppstarshiptroopersrodgeryoung.gif
-info:
-  Description: Rodger-Young from Starship Troopers
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmEventHorizon.gif
-info:
-  Description: '''Event Horizon'', from the movie Event Horizon, approximately 2200
-    meters long.'
-  Length: 2200.0
-  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

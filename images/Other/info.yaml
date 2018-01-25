@@ -1,11 +1,140 @@
 ---
 credit: Jeff Russell
-filename: 2mppCrysis.gif
+filename: 10mmpSpaceCity.gif
 info:
-  Description: Alien ship from the amazing Crysis video game. Length is 3475m, taken
-    from Sandbox editor.
-  Size: 3475.0
+  Description: ASTEN Space Settlement, designed by Eric Yam. 1.7km high, 1km diameter
+  Diameter: 1.0
+  Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5VorlonCruiser.gif
+info:
+  Description: Vorlon Cruiser
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppST8472Bioship.gif
+info:
+  Description: Species 8472 Bioship
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppbgcolumbia.gif
+info:
+  Description: 'Battlestar Galactica ''Columbia'', adapted from a schematic drawn
+    by J. Stevenson. Official Length: 610m, click here for an alternate length and
+    discussion of the ''Columbia'' size.'
+  Length: 610.0
   Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppcloseencountersmom.gif
+info:
+  Description: 'Mothership from ''Close Encounters of the Third Kind'' motion picture
+    Diameter: 525m (main disk)'
+  Diameter: 525.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppswspaceslug.gif
+info:
+  Description: Space Slug from Empire Strikes Back
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppBloodHawk.gif
+info:
+  Description: The Imperial Retribution Class Battleship BloodHawk, from Battlefleet
+    Gothic, 7.5km long. Image created by John Reed
+  Length: 7.5
+  Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mpp2001discovery.gif
+info:
+  Description: 'Discovery from ''2001, a Space Odyssey'' motion picture Length: 113m'
+  Length: 113.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppFarscapePKCommandCarrier.gif
+info:
+  Description: mesh created and rendered by Meurig
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5Hyperion.gif
+info:
+  Description: mesh created and rendered by Meurig
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppSWSuperStarDestroyer.gif
+info:
+  Description: Super Star Destroyer, 19.0km (Official), Please see http://www.theforce.net/swtc/ssd.html
+    for an alternate length and discussion. Image originally drawn by Chad Wilson
+  Size: 19.0
+  Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSerenity.gif
+info:
+  Description: 'Serenity from ''Firefly'' TV Series Length: 63m'
+  Length: 63.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5MinbariTinashi.gif
+info:
+  Description: 'Minbari Tinashi class cruiser, mesh created and rendered by Meurig
+    Length: 850m'
+  Length: 850.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppSTRomulanDderidex.gif
+info:
+  Description: Romulan D'deridex
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: x2mppSDF3.gif
+info:
+  Description: SDF-3 Pioneer
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppStarplex.gif
+info:
+  Description: '''Starplex'' from the novel ''Starplex'', written by Robert J. Sawyer
+    Diameter: 290m (main disk)'
+  Diameter: 290.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppEveAmarrAvatar.gif
+info:
+  Description: Amarr Avatar from Eve Online, 13816m long
+  Length: 13816.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppJupiterAscending.gif
+info:
+  Description: Titus Abrasax Clipper from the movie "Jupiter Ascending". 3 km total
+    length
+  Size: 3.0
+  Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -18,9 +147,74 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: x2mppSDF3.gif
+filename: 100mppMacrossCapitalShips.gif
 info:
-  Description: SDF-3 Pioneer
+  Description: ''
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppstarshiptroopersrodgeryoung.gif
+info:
+  Description: 'Rodger-Young from ''Starship Troopers'' motion picture Length: 550m'
+  Length: 550.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppEveMinmatarRagnarok.gif
+info:
+  Description: Minmatar Ragnarok from Eve Online, 18144m long
+  Length: 18144.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppswsmallships.gif
+info:
+  Description: Smaller vessels from 'Star Wars' motion pictures, to view in greater
+    detail larger images are found on the 10 ppm page
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppEveCaldariLeviathan.gif
+info:
+  Description: Caldari Leviathan from Eve Online, 18056m long
+  Length: 18056.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5MinbariSharlin.gif
+info:
+  Description: Minbari Sharlin class cruiser
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppB5ShadowCruiser.gif
+info:
+  Description: Shadow Cruiser
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppspace1999eagle.gif
+info:
+  Description: 'Eagle from ''Space 1999'' TV Series Length: 68m'
+  Length: 68.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppAndromeda.gif
+info:
+  Description: 'Starship Andromeda, image submitted by Neil Bond Length: 1301m'
+  Length: 1301.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppSDF1D.gif
+info:
+  Description: Macross Super Dimensional Fortress One (SDF-1)
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -36,51 +230,21 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 2mppSTRomulanDderidex.gif
+filename: 10mpp67P.gif
 info:
-  Description: Romulan D'deridex
+  Description: Comet 67P, to be visited by Rosetta/Philea. Approximately 6 km total
+    length, long axis
+  Size: 6.0
+  Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 2mppswspaceslug.gif
+filename: 2mppCrysis.gif
 info:
-  Description: Space Slug from Empire Strikes Back
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppSDF1D.gif
-info:
-  Description: Macross Super Dimensional Fortress One (SDF-1)
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppST8472Bioship.gif
-info:
-  Description: Species 8472 Bioship
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppB5VorlonCruiser.gif
-info:
-  Description: Vorlon Cruiser
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppB5ShadowCruiser.gif
-info:
-  Description: Shadow Cruiser
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppB5Hyperion.gif
-info:
-  Description: mesh created and rendered by Meurig
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppB5Hyperion.gif
-info:
-  Description: mesh created and rendered by Meurig
+  Description: Alien ship from the amazing Crysis video game. Length is 3475m, taken
+    from Sandbox editor.
+  Size: 3475.0
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -90,177 +254,10 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 2mppB5MinbariSharlin.gif
+filename: 10mppEveGallenteErebus.gif
 info:
-  Description: Minbari Sharlin class cruiser
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppB5MinbariTinashi.gif
-info:
-  Description: 'Minbari Tinashi class cruiser, mesh created and rendered by Meurig
-    Length: 850m'
-  Length: 850.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppStarplex.gif
-info:
-  Description: '''Starplex'' from the novel ''Starplex'', written by Robert J. Sawyer
-    Diameter: 290m (main disk)'
-  Diameter: 290.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppBattlefleetGothicCobra.gif
-info:
-  Description: 'Battlefleet Gothic Cobra, image created by John Reed Length: 1500m'
-  Length: 1500.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppAndromeda.gif
-info:
-  Description: 'Starship Andromeda, image submitted by Neil Bond Length: 1301m'
-  Length: 1301.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSerenity.gif
-info:
-  Description: 'Serenity from ''Firefly'' TV Series Length: 63m'
-  Length: 63.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppstarshiptroopersrodgeryoung.gif
-info:
-  Description: 'Rodger-Young from ''Starship Troopers'' motion picture Length: 550m'
-  Length: 550.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppstroopersplasmabug.gif
-info:
-  Description: 'Plasma Bug from ''Starship Troopers'' motion picture Length: 40m+'
-  Length: 40.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppstroopertankerbug.gif
-info:
-  Description: 'Tanker Bug from ''Starship Troopers'' motion picture Length: 18m'
-  Length: 18.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppbgcolumbia.gif
-info:
-  Description: 'Battlestar Galactica ''Columbia'', adapted from a schematic drawn
-    by J. Stevenson. Official Length: 610m, click here for an alternate length and
-    discussion of the ''Columbia'' size.'
-  Length: 610.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppswrebelmedicalfrigate.gif
-info:
-  Description: 'Rebel Medical Frigate from ''Star Wars'' episodes V and VI motion
-    pictures Length: 300m'
-  Length: 300.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppswrebelblockaderunner.gif
-info:
-  Description: 'Rebel Blockade Runner (Tantive IV) from ''Star Wars'' episode IV motion
-    picture Length: 150m'
-  Length: 150.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppswrebeltransport.gif
-info:
-  Description: 'Rebel Troop Transport from ''Star Wars'' episodes V and VI motion
-    pictures Length: 90m'
-  Length: 90.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mpp2001discovery.gif
-info:
-  Description: 'Discovery from ''2001, a Space Odyssey'' motion picture Length: 113m'
-  Length: 113.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mpp2001Orion.gif
-info:
-  Description: 'Orion from ''2001, a Space Odyssey'' motion picture Length: 65m (Approximately)'
-  Length: 65.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppspace1999eagle.gif
-info:
-  Description: 'Eagle from ''Space 1999'' TV Series Length: 68m'
-  Length: 68.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppForbiddenPlanetC-57D.gif
-info:
-  Description: 'C-57D United Planet Starcruiser from ''Forbidden Planet'' Diameter:
-    51m'
-  Diameter: 51.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSWOpeeSeaKiller.gif
-info:
-  Description: 'Opee Sea Killer from ''Star Wars: Episode I'', Length: 20m'
-  Length: 20.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppswsmallships.gif
-info:
-  Description: Smaller vessels from 'Star Wars' motion pictures, to view in greater
-    detail larger images are found on the 10 ppm page
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppcloseencountersmom.gif
-info:
-  Description: 'Mothership from ''Close Encounters of the Third Kind'' motion picture
-    Diameter: 525m (main disk)'
-  Diameter: 525.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppStarplex.gif
-info:
-  Description: '''Starplex'' from the novel ''Starplex'', written by Robert J. Sawyer
-    Diameter: 290m (main disk)'
-  Diameter: 290.0
+  Description: Gallente Erebus from Eve Online, 14788m long
+  Length: 14788.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -274,83 +271,11 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1CMPPET.gif
+filename: 1mppswrebelblockaderunner.gif
 info:
-  Description: ''
-  Name: E.T.
-  Size: +/- 1.3m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 100mppMacrossCapitalShips.gif
-info:
-  Description: ''
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppJupiterAscending.gif
-info:
-  Description: Titus Abrasax Clipper from the movie "Jupiter Ascending". 3 km total
-    length
-  Size: 3.0
-  Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mpp67P.gif
-info:
-  Description: Comet 67P, to be visited by Rosetta/Philea. Approximately 6 km total
-    length, long axis
-  Size: 6.0
-  Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mmpSpaceCity.gif
-info:
-  Description: ASTEN Space Settlement, designed by Eric Yam. 1.7km high, 1km diameter
-  Diameter: 1.0
-  Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppSWSuperStarDestroyer.gif
-info:
-  Description: Super Star Destroyer, 19.0km (Official), Please see http://www.theforce.net/swtc/ssd.html
-    for an alternate length and discussion. Image originally drawn by Chad Wilson
-  Size: 19.0
-  Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppEveAmarrAvatar.gif
-info:
-  Description: Amarr Avatar from Eve Online, 13816m long
-  Length: 13816.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppEveGallenteErebus.gif
-info:
-  Description: Gallente Erebus from Eve Online, 14788m long
-  Length: 14788.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppEveCaldariLeviathan.gif
-info:
-  Description: Caldari Leviathan from Eve Online, 18056m long
-  Length: 18056.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppEveMinmatarRagnarok.gif
-info:
-  Description: Minmatar Ragnarok from Eve Online, 18144m long
-  Length: 18144.0
+  Description: 'Rebel Blockade Runner (Tantive IV) from ''Star Wars'' episode IV motion
+    picture Length: 150m'
+  Length: 150.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -363,25 +288,35 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppFarscapePKCommandCarrier.gif
+filename: 1mppswrebeltransport.gif
 info:
-  Description: mesh created and rendered by Meurig
+  Description: 'Rebel Troop Transport from ''Star Wars'' episodes V and VI motion
+    pictures Length: 90m'
+  Length: 90.0
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppBloodHawk.gif
+filename: 2mppBattlefleetGothicCobra.gif
 info:
-  Description: The Imperial Retribution Class Battleship BloodHawk, from Battlefleet
-    Gothic, 7.5km long. Image created by John Reed
-  Length: 7.5
-  Unit: km
+  Description: 'Battlefleet Gothic Cobra, image created by John Reed Length: 1500m'
+  Length: 1500.0
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppBattlefleetGothicCobra.gif
+filename: 1CMPPET.gif
 info:
-  Description: Cobra Class Destroyer BlackSkull, from Battlefleet Gothic, 1.5km long.
-    Image created by John Reed
-  Length: 1.5
-  Unit: km
+  Description: ''
+  Name: E.T.
+  Size: +/- 1.3m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppswrebelmedicalfrigate.gif
+info:
+  Description: 'Rebel Medical Frigate from ''Star Wars'' episodes V and VI motion
+    pictures Length: 300m'
+  Length: 300.0
+  Unit: m
 source: http://www.merzo.net/indexSD.html

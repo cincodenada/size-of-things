@@ -1,17 +1,5 @@
 ---
 credit: Jeff Russell
-filename: 100mppislandthree.gif
-info:
-  Description: 'A. Twu: "Island Three is a scaled up version of Island Two. It has
-    the same proportions, but has a diameter of 6.4 km and a population of 10 million.
-    The larger diameter means the atmosphere inside is thick enough to create a blue
-    sky effect. It is also known as the O''Neill Cylinder or the ''sunflower''. Island
-    Three type colonies are depicted in the anime Mobile Suit Gundam series."'
-  Length: Main habitat cylinder approximately 32km, diameter 6.4km
-  Name: Island Three space colony
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 10mppzencommandship1.gif
 info:
   Description: 'A. Twu: "Island Two is a space colony proposed by Gerard K O''Neill
@@ -22,4 +10,16 @@ info:
     to live in it."'
   Length: Approximately 9km (Main habitat cylinder)
   Name: Island Two space colony
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 100mppislandthree.gif
+info:
+  Description: 'A. Twu: "Island Three is a scaled up version of Island Two. It has
+    the same proportions, but has a diameter of 6.4 km and a population of 10 million.
+    The larger diameter means the atmosphere inside is thick enough to create a blue
+    sky effect. It is also known as the O''Neill Cylinder or the ''sunflower''. Island
+    Three type colonies are depicted in the anime Mobile Suit Gundam series."'
+  Length: Main habitat cylinder approximately 32km, diameter 6.4km
+  Name: Island Three space colony
 source: http://www.merzo.net/indexSD.html

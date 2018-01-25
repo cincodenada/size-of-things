@@ -8,8 +8,10 @@ import yaml
 import urllib
 
 size_extracts = [
-  r"(?P<name>.*) (?P<dimension>\w+): (?P<size>[\d\.]+)(?P<unit>\w+)",
-  r"(?P<name>.*) (?P<size>[\d\.]+)(?P<unit>\w+)(?: (?P<dimension>\w+))?",
+  # Name Length: 123.45m or 123.45 m
+  r"(?P<name>.*) (?P<dimension>\w+): (?P<size>[\d\.]+) ?(?P<unit>\w+)",
+  # Name 123.45m diameter
+  r"(?P<name>.*) (?P<size>[\d\.]+) ?(?P<unit>\w+)(?: (?P<dimension>\w+))?",
 ]
 
 field_map = {
@@ -52,12 +54,14 @@ def generate_ship(ship):
       break
 
   if has_size:
-    parts = re.match(r'(?P<dimension>[\d\.]+) ?(?P<unit>\w+)(?: \((?P<note>.*)\))?', ship[cur_dim])
+    parts = re.match(r'(?P<size>[\d\.]+) ?(?P<unit>\w+)(?:[,\.]\s+)?(?P<note>[^,\.].*)?', ship[cur_dim])
     if(parts):
-      info[cur_dim] = float(parts.group('dimension'))
+      print(ship[cur_dim])
+      print(parts.groups())
+      info[cur_dim] = float(parts.group('size'))
       info['Unit'] = parts.group('unit')
       if parts.group('note'):
-        info['Size Notes'] = parts.group('note')
+        info['Size Notes'] = parts.group('note').strip('\n\t ()')
     else:
       info[cur_dim] = ship[cur_dim]
     if 'description' in ship:

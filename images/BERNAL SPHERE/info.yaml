@@ -42,8 +42,8 @@ filename: 10ppmEventHorizon.gif
 info:
   Description: '''Event Horizon'', from the movie Event Horizon, approximately 2200
     meters long.'
-  Unit: '0'
-  meters: 220.0
+  Unit: meters
+  long: 2200.0
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

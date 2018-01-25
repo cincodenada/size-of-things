@@ -3,12 +3,16 @@ credit: Jeff Russell
 filename: 10mppb5babylon4.gif
 info:
   Description: Babylon 4 space colony
+  Unit: space
+  colony: 4.0
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5babylon5.gif
 info:
   Description: Babylon 5 space colony
+  Unit: space
+  colony: 5.0
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -85,6 +89,8 @@ credit: Jeff Russell
 filename: 10mppb5centauribalvarin.gif
 info:
   Description: Centauri Balvarin cruiser, Babylon 5 AoG, ship designed by Mike Wikan
+  None: 5.0
+  Unit: AoG
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -123,6 +129,8 @@ credit: Jeff Russell
 filename: 10mppb5centauricorvan.gif
 info:
   Description: Centauri Corvan cruiser, Babylon 5 AoG, ship designed by Mike Wikan
+  None: 5.0
+  Unit: AoG
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -159,6 +167,8 @@ credit: Jeff Russell
 filename: 10mppb5centaurikutai.gif
 info:
   Description: Centauri Kutai class ship, Babylon 5 AoG, ship designed by Mike Wikan
+  None: 5.0
+  Unit: AoG
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -185,6 +195,8 @@ credit: Jeff Russell
 filename: 10mppb5lowerscale.gif
 info:
   Description: Smaller ships from Babylon 5 TV series
+  Unit: TV
+  series: 5.0
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

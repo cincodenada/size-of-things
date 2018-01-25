@@ -56,9 +56,9 @@ source: http://www.merzo.net/indexSD.html
 credit: Jeff Russell
 filename: 2mppST8472Bioship.gif
 info:
-  Bioship: 847.0
   Description: Species 8472 Bioship
-  Unit: '2'
+  None: 8472.0
+  Unit: Bioship
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -246,8 +246,8 @@ filename: 1mppswsmallships.gif
 info:
   Description: Smaller vessels from 'Star Wars' motion pictures, to view in greater
     detail larger images are found on the 10 ppm page
-  Unit: '0'
-  ppm: 1.0
+  Unit: ppm
+  page: 10.0
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -296,6 +296,8 @@ filename: 10mppJupiterAscending.gif
 info:
   Description: Titus Abrasax Clipper from the movie "Jupiter Ascending". 3 km total
     length
+  Unit: km
+  total: 3.0
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -303,8 +305,8 @@ filename: 10mpp67P.gif
 info:
   Description: Comet 67P, to be visited by Rosetta/Philea. Approximately 6 km total
     length, long axis
-  None: 67.0
-  Unit: P
+  Unit: km
+  total: 6.0
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

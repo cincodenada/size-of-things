@@ -131,8 +131,8 @@ filename: 1mppb5centaurikutai.gif
 info:
   Description: Centauri Kutai 465m (to be updated, should be 200m), Babylon 5 Agents
     of Gaming, ship designed by Mike Wikan
-  None: 200.0
-  Unit: m
+  Unit: Agents
+  of: 5.0
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -188,8 +188,8 @@ filename: 1mppb5smallships.gif
 info:
   Description: Smaller vessels from 'Babylon 5', to view in greater detail larger
     images are found on the 10 ppm page
-  Unit: '0'
-  ppm: 1.0
+  Unit: ppm
+  page: 10.0
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -198,6 +198,7 @@ info:
   Description: ''
   Name: Shadow
   Size: 2.0
+  Size Notes: ??? (pure conjecture
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---

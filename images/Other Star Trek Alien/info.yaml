@@ -443,6 +443,6 @@ filename: 1mppstsmallships.gif
 info:
   Description: Smaller vessels from 'Star Trek', to view in greater detail larger
     images are found on the 10 ppm page
-  Unit: '0'
-  ppm: 1.0
+  Unit: ppm
+  page: 10.0
 source: http://www.merzo.net/indexSD.html

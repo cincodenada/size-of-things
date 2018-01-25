@@ -1,66 +1,10 @@
 ---
 credit: Jeff Russell
-filename: 1mppFarscapeMoya.gif
-info:
-  Name: !!python/tuple [!!python/unicode 'Moya from ''Farscape'', mesh created and
-      rendered by Meurig', !!python/unicode 'Length', !!python/unicode '650', !!python/unicode 'm']
-  Units: !!python/tuple [!!python/unicode 'Moya from ''Farscape'', mesh created and
-      rendered by Meurig', !!python/unicode 'Length', !!python/unicode '650', !!python/unicode 'm']
-  ? !!python/tuple [!!python/unicode 'Moya from ''Farscape'', mesh created and rendered
-      by Meurig', !!python/unicode 'Length', !!python/unicode '650', !!python/unicode 'm']
-  : !!python/tuple [!!python/unicode 'Moya from ''Farscape'', mesh created and rendered
-      by Meurig', !!python/unicode 'Length', !!python/unicode '650', !!python/unicode 'm']
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppfarscapepkvigilant.gif
-info:
-  Name: !!python/tuple [!!python/unicode 'PK Vigilant from ''Farscape'', mesh created
-      and rendered by Meurig', !!python/unicode 'Length', !!python/unicode '535',
-    !!python/unicode 'm']
-  Units: !!python/tuple [!!python/unicode 'PK Vigilant from ''Farscape'', mesh created
-      and rendered by Meurig', !!python/unicode 'Length', !!python/unicode '535',
-    !!python/unicode 'm']
-  ? !!python/tuple [!!python/unicode 'PK Vigilant from ''Farscape'', mesh created
-      and rendered by Meurig', !!python/unicode 'Length', !!python/unicode '535',
-    !!python/unicode 'm']
-  : !!python/tuple [!!python/unicode 'PK Vigilant from ''Farscape'', mesh created
-      and rendered by Meurig', !!python/unicode 'Length', !!python/unicode '535',
-    !!python/unicode 'm']
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppFarscapeTalyn.html
-info:
-  Name: !!python/tuple [!!python/unicode 'Talyn from ''Farscape'', mesh created and
-      rendered by Meurig', !!python/unicode 'Length', !!python/unicode '300', !!python/unicode 'm']
-  Units: !!python/tuple [!!python/unicode 'Talyn from ''Farscape'', mesh created and
-      rendered by Meurig', !!python/unicode 'Length', !!python/unicode '300', !!python/unicode 'm']
-  ? !!python/tuple [!!python/unicode 'Talyn from ''Farscape'', mesh created and rendered
-      by Meurig', !!python/unicode 'Length', !!python/unicode '300', !!python/unicode 'm']
-  : !!python/tuple [!!python/unicode 'Talyn from ''Farscape'', mesh created and rendered
-      by Meurig', !!python/unicode 'Length', !!python/unicode '300', !!python/unicode 'm']
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppfarscapenebaripod.gif
-info:
-  Name: !!python/tuple [!!python/unicode 'Nebari Pod from ''Farscape'', mesh created
-      and rendered by Meurig', !!python/unicode 'Length', !!python/unicode '30', !!python/unicode 'm']
-  Units: !!python/tuple [!!python/unicode 'Nebari Pod from ''Farscape'', mesh created
-      and rendered by Meurig', !!python/unicode 'Length', !!python/unicode '30', !!python/unicode 'm']
-  ? !!python/tuple [!!python/unicode 'Nebari Pod from ''Farscape'', mesh created and
-      rendered by Meurig', !!python/unicode 'Length', !!python/unicode '30', !!python/unicode 'm']
-  : !!python/tuple [!!python/unicode 'Nebari Pod from ''Farscape'', mesh created and
-      rendered by Meurig', !!python/unicode 'Length', !!python/unicode '30', !!python/unicode 'm']
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 2mppFarscapeMoya.gif
 info:
   Description: 'Moya from ''Farscape'', modeled and rendered by Meurig Length: 650m'
   Length: 650.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -69,7 +13,7 @@ info:
   Description: 'Talyn from ''Farscape'', modeled and rendered by Meurig Length: 300m
     at time of death'
   Length: 300.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -78,7 +22,7 @@ info:
   Description: 'Moya from ''Farscape'', mesh created and rendered by Meurig Length:
     650m'
   Length: 650.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -87,7 +31,7 @@ info:
   Description: 'PK Vigilant from ''Farscape'', mesh created and rendered by Meurig
     Length: 535m'
   Length: 535.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -96,7 +40,7 @@ info:
   Description: 'Talyn from ''Farscape'', mesh created and rendered by Meurig Length:
     300m'
   Length: 300.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -105,5 +49,5 @@ info:
   Description: 'Nebari Pod from ''Farscape'', mesh created and rendered by Meurig
     Length: 30m'
   Length: 30.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html

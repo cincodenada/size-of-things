@@ -5,7 +5,7 @@ info:
   Description: 'SHIP NAME/TYPE: Nebari Pod LENGTH: 30m BUILDER/COMMENTS: SOURCE: Farscape,
     mesh created and rendered by Meurig'
   LENGTH: 30.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -14,7 +14,7 @@ info:
   Description: 'SHIP NAME/TYPE: Zenetan Junk Trader LENGTH: 28m BUILDER/COMMENTS:
     SOURCE: Farscape, mesh created and rendered by Meurig'
   LENGTH: 28.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -23,7 +23,7 @@ info:
   Description: 'SHIP NAME/TYPE: Transport pod LENGTH: 18m BUILDER/COMMENTS: SOURCE:
     Farscape, mesh created and rendered by Meurig'
   LENGTH: 18.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -32,7 +32,7 @@ info:
   Description: 'SHIP NAME/TYPE: Illonic pod LENGTH: 15m BUILDER/COMMENTS: SOURCE:
     Farscape, mesh created and rendered by Meurig'
   LENGTH: 15.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -41,7 +41,7 @@ info:
   Description: 'SHIP NAME/TYPE: Lo''Laan LENGTH: 12m BUILDER/COMMENTS: SOURCE: Farscape,
     mesh created and rendered by Meurig'
   LENGTH: 12.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -50,7 +50,7 @@ info:
   Description: 'SHIP NAME/TYPE: Peacekeeper Marauder B-Type LENGTH: 12m BUILDER/COMMENTS:
     SOURCE: Farscape, mesh created and rendered by Meurig'
   LENGTH: 12.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -59,7 +59,7 @@ info:
   Description: 'SHIP NAME/TYPE: Zenetan Pirate Fighter LENGTH: 8m BUILDER/COMMENTS:
     SOURCE: Farscape, mesh created and rendered by Meurig'
   LENGTH: 8.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -68,7 +68,7 @@ info:
   Description: 'SHIP NAME/TYPE: Peacekeeper Prowler LENGTH: 4m BUILDER/COMMENTS: SOURCE:
     Farscape, mesh created and rendered by Meurig'
   LENGTH: 4.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -77,7 +77,7 @@ info:
   Description: 'SHIP NAME/TYPE: Farsacpe 1 (upgraded) LENGTH: 3.5m BUILDER/COMMENTS:
     SOURCE: Farscape, mesh created and rendered by Meurig'
   LENGTH: 3.5
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -86,7 +86,7 @@ info:
   Description: 'SHIP NAME/TYPE: Farscape 1 LENGTH: 3.5m BUILDER/COMMENTS: SOURCE:
     Farscape, mesh created and rendered by Meurig'
   LENGTH: 3.5
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -95,7 +95,7 @@ info:
   Description: 'SHIP NAME/TYPE: UD-4L Cheyenne Dropship LENGTH: 25.18m BUILDER/COMMENTS:
     SOURCE: Aliens, (movie)'
   LENGTH: 25.18
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -105,7 +105,7 @@ info:
     Croker: "One hundred feet tall!!!") BUILDER/COMMENTS: Scourge of the planet Kabijj,
     Servant of the Mighty Emperor Rabirr SOURCE: Evil Alien Conquerors, (movie, 2003)'
   HEIGHT: 13.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -181,7 +181,7 @@ info:
     \ extend their legs to become taller as needed. BUILDER/COMMENTS: Martians SOURCE:\
     \ War of the Worlds, by H.G. Wells"
   HEIGHT: 40.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -190,7 +190,7 @@ info:
   Description: 'SHIP NAME/TYPE: Opee Sea Killer LENGTH: 20m BUILDER/COMMENTS: Wet
     SOURCE: Star Wars, Episode I'
   LENGTH: 20.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -199,7 +199,7 @@ info:
   Description: 'SHIP NAME/TYPE: F-14 LENGTH: 19.1m BUILDER/COMMENTS: Grumman Corp.
     SOURCE: US Navy'
   LENGTH: 19.1
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -208,7 +208,7 @@ info:
   Description: 'SHIP NAME/TYPE: Plasma Bug LENGTH: 40m+ BUILDER/COMMENTS: Klendathu
     Hive SOURCE: Starship Troopers'
   LENGTH: 40.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -217,7 +217,7 @@ info:
   Description: 'SHIP NAME/TYPE: Tanker Bug LENGTH: 18m BUILDER/COMMENTS: Klendathu
     Hive SOURCE: Starship Troopers'
   LENGTH: 18.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -226,7 +226,7 @@ info:
   Description: 'SHIP NAME/TYPE: Warrior Bug LENGTH: 4m (Body) BUILDER/COMMENTS: Klendathu
     Hive SOURCE: Starship Troopers'
   LENGTH: 4.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -235,7 +235,7 @@ info:
   Description: 'SHIP NAME/TYPE: Warrior Bug LENGTH: 4m (Body) BUILDER/COMMENTS: Volkswagen
     Hive SOURCE: 1970'
   SOURCE: 197.0
-  Units: '0'
+  Unit: '0'
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -244,7 +244,7 @@ info:
   Description: 'SHIP NAME/TYPE: StarGate HEIGHT: 6m BUILDER/COMMENTS: SOURCE: StarGate,
     the motion picture and television series, image drawn by Stefan Mayrhofer'
   HEIGHT: 6.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -253,5 +253,5 @@ info:
   DIAMETER: 51.0
   Description: "SHIP NAME/TYPE: C-57D United Planet Starcruiser\_\_ Diameter: 51m\
     \ DIAMETER: 51m BUILDER/COMMENTS: SOURCE: 'Forbidden Planet'"
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html

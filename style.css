@@ -21,7 +21,7 @@ body {
   padding: 5px;
   background: #222;
 }
-.info span {
+.info > span {
   float: left;
   clear: both;
 }

@@ -4,7 +4,7 @@ filename: 2mppstarshiptroopersrodgeryoung.gif
 info:
   Description: 'Rodger-Young from ''Starship Troopers'' motion picture Length: 550m'
   Length: 550.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -12,7 +12,7 @@ filename: 2mppstroopersplasmabug.gif
 info:
   Description: 'Plasma Bug from ''Starship Troopers'' motion picture Length: 40m+'
   Length: 40.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -20,7 +20,7 @@ filename: 2mppstroopertankerbug.gif
 info:
   Description: 'Tanker Bug from ''Starship Troopers'' motion picture Length: 18m'
   Length: 18.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -30,7 +30,7 @@ info:
     by J. Stevenson. Official Length: 610m, click here for an alternate length and
     discussion of the ''Columbia'' size.'
   Length: 610.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -39,7 +39,7 @@ info:
   Description: 'Rebel Medical Frigate from ''Star Wars'' episodes V and VI motion
     pictures Length: 300m'
   Length: 300.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -48,7 +48,7 @@ info:
   Description: 'Rebel Blockade Runner (Tantive IV) from ''Star Wars'' episode IV motion
     picture Length: 150m'
   Length: 150.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -57,7 +57,7 @@ info:
   Description: 'Rebel Troop Transport from ''Star Wars'' episodes V and VI motion
     pictures Length: 90m'
   Length: 90.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -65,7 +65,7 @@ filename: 2mpp2001discovery.gif
 info:
   Description: 'Discovery from ''2001, a Space Odyssey'' motion picture Length: 113m'
   Length: 113.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -73,7 +73,7 @@ filename: 2mppspace1999eagle.gif
 info:
   Description: 'Eagle from ''Space 1999'' TV Series Length: 68m'
   Length: 68.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -89,5 +89,5 @@ info:
   Description: 'Mothership from ''Close Encounters of the Third Kind'' motion picture
     Diameter: 525m (main disk)'
   Diameter: 525.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html

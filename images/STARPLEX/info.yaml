@@ -5,7 +5,7 @@ info:
   Description: '''Starplex'' from the novel ''Starplex'', written by Robert J. Sawyer
     Diameter: 290m (main disk)'
   Diameter: 290.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -14,7 +14,7 @@ info:
   BondLength: 1301.0
   Description: 'Starship Andromeda, from the "Andromeda TV series, image submitted
     by Neil BondLength: 1301m'
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -22,5 +22,5 @@ filename: 10mpp2001StationV.gif
 info:
   Description: "Station V from 2001\_Diameter: 300m"
   None: 300.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html

@@ -66,7 +66,7 @@ def generate_ship(ship):
     info['Description'] = ship['description']
     if ship_info:
       info[str(ship_info.group('dimension'))] = float(ship_info.group('size'))
-      info['Units'] = ship_info.group('unit')
+      info['Unit'] = ship_info.group('unit')
       if ship_info.group('name') and 'Name' in info and info['Name'] != ship['name']:
         info['AltName'] = ship_info.group('name')
 
@@ -94,7 +94,6 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
       category = dewhite(td.find('strong').text)
     else:
       images = td.select('> img, > font > img')
-      print(images)
       lines = td.find_all(['font','img'], recursive=False)
 
       if len(images) == len(lines):

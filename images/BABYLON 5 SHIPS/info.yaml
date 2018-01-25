@@ -22,7 +22,7 @@ filename: 10mppb5shadowdreadnought.gif
 info:
   Description: Shadow Dreadnought, 2km
   None: 2.0
-  Units: km
+  Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -42,7 +42,7 @@ filename: 10mppb5shadowcruiser.gif
 info:
   Description: Shadow cruiser, 1km
   None: 1.0
-  Units: km
+  Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -98,7 +98,7 @@ filename: 10mppb5narnbintak.gif
 info:
   Description: Narn Bin'Tak cruiser, 2km
   None: 2.0
-  Units: km
+  Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -172,7 +172,7 @@ filename: 10mppb53rdspacecruiser.gif
 info:
   Description: 3rd Space cruiser, 2km
   None: 2.0
-  Units: km
+  Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

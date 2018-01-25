@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import json
 import yaml
 import os
@@ -12,6 +13,21 @@ dimension_axes = {
   'Width': 0,
   'Diameter': 0,
   'Height': 1,
+}
+
+unit_conversions = {
+  'ly': 946073e10,
+  'm': 1,
+  'km': 1000,
+  'mi': 1609.344,
+  'ft': 0.3048,
+  'cm': 0.01,
+  'mm': 0.001,
+  'um': 1e-6,
+  'µm': 1e-6,
+  'nm': 1e-9,
+  'Å': 1e-10,
+  'A': 1e-10,
 }
 
 def get_parts(path):
@@ -63,8 +79,14 @@ def gather_yaml(path):
               for (dim, axis) in dimension_axes.items():
                 if dim in ship['info']:
                   m = ship['info'][dim]
+                  ship['info']['Size'] = m
+                  ship['info']['Dimension'] = dim
                   px = im.size[axis]
                   break
+
+            if m and ('Unit' in ship['info']) and ship['info']['Unit']:
+              print("Converting {} to m".format(ship['info']['Unit']))
+              m = m*unit_conversions[ship['info']['Unit']]
 
             if m and px:
               ship['m_per_px'] = float(m)/float(px)

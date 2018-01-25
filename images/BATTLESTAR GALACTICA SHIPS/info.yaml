@@ -10,7 +10,7 @@ filename: 10mppSWStarDestroyer.gif
 info:
   Description: Star Destroyer, 1.6km, originally drawn by Chad Wilson
   None: 1.6
-  Units: km
+  Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -18,7 +18,7 @@ filename: 10mppswmoncalimari.gif
 info:
   Description: Mon Calamari cruiser, 1.3km
   None: 1.3
-  Units: km
+  Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -26,7 +26,7 @@ filename: 10mppswrebelfrigate.gif
 info:
   Description: Rebel frigate, 300m
   None: 300.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -34,5 +34,5 @@ filename: 10mppbgcolumbia.gif
 info:
   Description: Columbia, 610m
   None: 610.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html

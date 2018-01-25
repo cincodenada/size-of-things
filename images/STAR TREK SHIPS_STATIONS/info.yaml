@@ -4,7 +4,7 @@ filename: 10mppstvothcityship.gif
 info:
   Description: Voth City Ship, 4900m
   None: 4900.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -60,7 +60,7 @@ filename: 10mppstromulandderidex.gif
 info:
   Description: Romulan D'Deridex, 1341m
   None: 1341.0
-  Units: m
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -92,7 +92,7 @@ filename: 10mppstspecies8472.gif
 info:
   Description: Species 8472
   None: 847.0
-  Units: '2'
+  Unit: '2'
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

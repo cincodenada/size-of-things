@@ -61,7 +61,10 @@ def generate_ship(ship):
       info[cur_dim] = float(parts.group('size'))
       info['Unit'] = parts.group('unit')
       if parts.group('note'):
-        info['Size Notes'] = parts.group('note').strip('\n\t ()')
+        note = parts.group('note').strip()
+        if note[0] == '(' and note[-1] == ')':
+          note = note[1:-1].strip()
+        info['Size Notes'] = note
     else:
       info[cur_dim] = ship[cur_dim]
     if 'description' in ship:

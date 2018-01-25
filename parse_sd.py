@@ -28,9 +28,13 @@ field_map = {
   'BUILDER/COMMENTS': 'description',
   'SOURCE': 'group',
   'long': 'Length',
+  'height': 'Height',
+  'length': 'Length',
+  'width': 'Width',
+  'diameter': 'Diameter',
 }
 
-size_types = ['Size','Height','Width','Length','Diameter']
+size_types = ['Size','Height','Width','Length','Diameter','Wingspan']
 
 units = {
   'ly': ['lightyear'],

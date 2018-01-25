@@ -37,16 +37,16 @@ credit: Jeff Russell
 filename: 2mppexiststealthbomber.gif
 info:
   Description: 'Stealth Bomber (B2-A Spirit) Wingspan: 52.4m'
-  Size: 52.4
   Unit: m
+  Wingspan: 52.4
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 2mppexiststealthfighter.gif
 info:
   Description: 'Stealth Fighter (F-117A Nighthawk) Wingspan: 13.2m'
-  Size: 13.2
   Unit: m
+  Wingspan: 13.2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -159,7 +159,7 @@ credit: Jeff Russell
 filename: 2mppexistyamato.gif
 info:
   Description: 'Battleship Yamato, length: 263m'
-  Size: 263.0
+  Length: 263.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -173,7 +173,7 @@ credit: Jeff Russell
 filename: 2mppexistbluewhale.gif
 info:
   Description: 'Blue Whale, length: 33 m'
-  Size: 33.0
+  Length: 33.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -231,16 +231,16 @@ credit: Jeff Russell
 filename: 1mppexiststealthbomber.gif
 info:
   Description: 'Stealth Bomber (B2-A Spirit) Wingspan: 52.4m'
-  Size: 52.4
   Unit: m
+  Wingspan: 52.4
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 1mppexiststealthfighter.gif
 info:
   Description: 'Stealth Fighter (F-117A Nighthawk) Wingspan: 13.2m'
-  Size: 13.2
   Unit: m
+  Wingspan: 13.2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -369,7 +369,7 @@ credit: Jeff Russell
 filename: 1mppexistyamato.gif
 info:
   Description: 'Battleship Yamato, length: 263m'
-  Size: 263.0
+  Length: 263.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -383,7 +383,7 @@ credit: Jeff Russell
 filename: 1mppexistbluewhale.gif
 info:
   Description: 'Blue Whale, length: 33 m'
-  Size: 33.0
+  Length: 33.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---

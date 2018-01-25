@@ -12,6 +12,7 @@ dimension_axes = {
   'Length': 0,
   'Width': 0,
   'Diameter': 0,
+  'Wingspan': 1,
   'Height': 1,
 }
 

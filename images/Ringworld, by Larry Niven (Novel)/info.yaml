@@ -6,8 +6,7 @@ info:
     by Larry Niven, is one of the most scale-intensive science fiction stories ever
     written, and is a classic of the genre. Essentially, the Ringworld is a gargantuan
     habitable surface almost 300 million km in diameter, and 1.6 million km wide.
-  Diameter: 299.0
+  Diameter: 299300000.0
   Name: Ringworld
-  Size Notes: 000 km
-  Unit: '300'
+  Unit: km
 source: http://www.merzo.net/indexSD.html

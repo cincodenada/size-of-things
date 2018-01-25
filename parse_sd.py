@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from __future__ import print_function
 from bs4 import BeautifulSoup
 import glob
@@ -9,9 +10,9 @@ import urllib
 
 size_extracts = [
   # Name Length: 123.45m or 123.45 m
-  r"(?P<name>.*) (?P<dimension>\w+): (?P<size>[\d\.]+) ?(?P<unit>\w+)",
+  r"(?P<name>.*) (?P<dimension>\w+): (?P<size>[\d\., ]*\d) ?(?P<unit>\w+)",
   # Name 123.45m diameter
-  r"(?P<name>.*) (?P<size>[\d\.]+) ?(?P<unit>\w+)(?: (?P<dimension>\w+))?",
+  r"(?P<name>.*) (?P<size>[\d\., ]*\d) ?(?P<unit>\w+)(?: (?P<dimension>\w+))?",
 ]
 
 field_map = {
@@ -26,13 +27,37 @@ field_map = {
   'DIAMETER': 'Diameter',
   'BUILDER/COMMENTS': 'description',
   'SOURCE': 'group',
+  'long': 'Length',
 }
 
 size_types = ['Size','Height','Width','Length','Diameter']
 
+units = {
+  'ly': ['lightyear'],
+  'm': ['meter'],
+  'km': ['kilometer'],
+  'cm': ['centimeter'],
+  'mm': ['millimeter'],
+  'µm': ['micrometer','um'],
+  'nm': ['nanometer'],
+  'Å': ['angstrom','A'],
+  'mi': ['mile'],
+  'ft': ['foot','feet'],
+}
+
+unit_map = {}
+for (unit, maps) in units.items():
+  maps.append(unit)
+  for name in maps:
+    unit_map[name] = unit
+    unit_map[name + 's'] = unit
+
 def dewhite(desc):
   desc = re.sub(r"\s+", " ", desc).strip()
   return desc
+
+def getnum(numstr):
+  return float(numstr.replace(',','').replace(' ',''))
 
 def generate_ship(ship):
   info = {}
@@ -54,11 +79,11 @@ def generate_ship(ship):
       break
 
   if has_size:
-    parts = re.match(r'(?P<size>[\d\.]+) ?(?P<unit>\w+)(?:[,\.]\s+)?(?P<note>[^,\.].*)?', ship[cur_dim])
+    parts = re.match(r'(?P<size>[\d\., ]*\d) ?(?P<unit>\w+)(?:[,\.]\s+)?(?P<note>[^,\.].*)?', ship[cur_dim])
     if(parts):
       print(ship[cur_dim])
       print(parts.groups())
-      info[cur_dim] = float(parts.group('size'))
+      info[cur_dim] = getnum(parts.group('size'))
       info['Unit'] = parts.group('unit')
       if parts.group('note'):
         note = parts.group('note').strip()
@@ -72,8 +97,20 @@ def generate_ship(ship):
   elif 'description' in ship:
     info['Description'] = ship['description']
     if ship_info:
-      info[str(ship_info.group('dimension'))] = float(ship_info.group('size'))
-      info['Unit'] = ship_info.group('unit')
+      dim = ship_info.group('dimension')
+      if dim and ((dim in field_map) or (dim in size_types)):
+        if dim in field_map:
+          dim_key = field_map[dim]
+        else:
+          dim_key = dim
+      else:
+        dim_key = 'Size'
+
+      unit = ship_info.group('unit')
+      if unit and (unit in unit_map):
+        info['Unit'] = unit_map[unit]
+        info[dim_key] = getnum(ship_info.group('size'))
+
       if ship_info.group('name') and 'Name' in info and info['Name'] != ship['name']:
         info['AltName'] = ship_info.group('name')
 

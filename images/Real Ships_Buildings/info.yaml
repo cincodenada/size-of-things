@@ -4,7 +4,7 @@ filename: 2mpp2001StationV.gif
 info:
   Description: "Station V from 2001\_Diameter: 300m Ok, not a Real ship, but look\
     \ over there ->"
-  Ok: 300.0
+  Size: 300.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -14,8 +14,6 @@ info:
   Description: "The International Space Station\_Length: 80m\_\_ I thought it interesting\
     \ to compare where we thought we'd be in 2001 as opposed to where we are.\_ Kudos\
     \ to the Space Station Team."
-  Unit: as
-  opposed: 2001.0
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -39,16 +37,16 @@ credit: Jeff Russell
 filename: 2mppexiststealthbomber.gif
 info:
   Description: 'Stealth Bomber (B2-A Spirit) Wingspan: 52.4m'
+  Size: 52.4
   Unit: m
-  Wingspan: 52.4
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 2mppexiststealthfighter.gif
 info:
   Description: 'Stealth Fighter (F-117A Nighthawk) Wingspan: 13.2m'
+  Size: 13.2
   Unit: m
-  Wingspan: 13.2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -115,8 +113,8 @@ credit: Jeff Russell
 filename: 2mppexistdiscovery.gif
 info:
   Description: 'Space Shuttle Discovery Height with tanks: 56.1m'
+  Size: 56.1
   Unit: m
-  tanks: 56.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -161,8 +159,8 @@ credit: Jeff Russell
 filename: 2mppexistyamato.gif
 info:
   Description: 'Battleship Yamato, length: 263m'
+  Size: 263.0
   Unit: m
-  length: 263.0
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -175,15 +173,7 @@ credit: Jeff Russell
 filename: 2mppexistbluewhale.gif
 info:
   Description: 'Blue Whale, length: 33 m'
-  Unit: m
-  length: 33.0
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexisttyphoonsub.gif
-info:
-  Description: 'Length: 175m'
-  None: 175.0
+  Size: 33.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -191,7 +181,15 @@ credit: Jeff Russell
 filename: 2mppexisttyphoonsub.gif
 info:
   Description: 'Length: 175m'
-  None: 175.0
+  Size: 175.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppexisttyphoonsub.gif
+info:
+  Description: 'Length: 175m'
+  Size: 175.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -200,7 +198,7 @@ filename: 1mpp2001StationV.gif
 info:
   Description: "Station V from 2001\_Diameter: 300m Ok, not a Real ship, but look\
     \ over there ->"
-  Ok: 300.0
+  Size: 300.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -210,8 +208,6 @@ info:
   Description: "The International Space Station\_Length: 80m\_\_ I thought it interesting\
     \ to compare where we thought we'd be in 2001 as opposed to where we are.\_ Kudos\
     \ to the Space Station Team."
-  Unit: as
-  opposed: 2001.0
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -235,16 +231,16 @@ credit: Jeff Russell
 filename: 1mppexiststealthbomber.gif
 info:
   Description: 'Stealth Bomber (B2-A Spirit) Wingspan: 52.4m'
+  Size: 52.4
   Unit: m
-  Wingspan: 52.4
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 1mppexiststealthfighter.gif
 info:
   Description: 'Stealth Fighter (F-117A Nighthawk) Wingspan: 13.2m'
+  Size: 13.2
   Unit: m
-  Wingspan: 13.2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -319,8 +315,8 @@ credit: Jeff Russell
 filename: 1mppexistdiscovery.gif
 info:
   Description: 'Space Shuttle Discovery Height with tanks: 56.1m'
+  Size: 56.1
   Unit: m
-  tanks: 56.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -373,8 +369,8 @@ credit: Jeff Russell
 filename: 1mppexistyamato.gif
 info:
   Description: 'Battleship Yamato, length: 263m'
+  Size: 263.0
   Unit: m
-  length: 263.0
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -387,15 +383,7 @@ credit: Jeff Russell
 filename: 1mppexistbluewhale.gif
 info:
   Description: 'Blue Whale, length: 33 m'
-  Unit: m
-  length: 33.0
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppexisttyphoonsub.gif
-info:
-  Description: 'Length: 175m'
-  None: 175.0
+  Size: 33.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -403,6 +391,14 @@ credit: Jeff Russell
 filename: 1mppexisttyphoonsub.gif
 info:
   Description: 'Length: 175m'
-  None: 175.0
+  Size: 175.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppexisttyphoonsub.gif
+info:
+  Description: 'Length: 175m'
+  Size: 175.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

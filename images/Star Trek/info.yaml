@@ -164,7 +164,7 @@ info:
     unable to penetrate the material. The upper atmosphere polarises to provide an
     artificial day/night cycle of 15.4 hours of light and 10.2 hours of darkness."
     From here.'
-  Diameter: 20.0
+  Diameter: 200000000.0
   Name: Dyson Sphere
-  Unit: '0'
+  Unit: km
 source: http://www.merzo.net/indexSD.html

@@ -3,7 +3,7 @@ credit: Jeff Russell
 filename: 2mppSTFerengiDKora.gif
 info:
   Description: Ferengi D'Kora 366m
-  None: 366.0
+  Size: 366.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -11,6 +11,6 @@ credit: Jeff Russell
 filename: 1mppSTFerengiDKora.gif
 info:
   Description: Ferengi D'Kora 366m
-  None: 366.0
+  Size: 366.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

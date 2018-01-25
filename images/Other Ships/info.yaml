@@ -4,7 +4,7 @@ filename: 10ppmFarscapeNebariPod.gif
 info:
   Description: 'SHIP NAME/TYPE: Nebari Pod LENGTH: 30m BUILDER/COMMENTS: SOURCE: Farscape,
     mesh created and rendered by Meurig'
-  LENGTH: 30.0
+  Length: 30.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -13,7 +13,7 @@ filename: 10ppmFarscapeZenetanJunkTrader.gif
 info:
   Description: 'SHIP NAME/TYPE: Zenetan Junk Trader LENGTH: 28m BUILDER/COMMENTS:
     SOURCE: Farscape, mesh created and rendered by Meurig'
-  LENGTH: 28.0
+  Length: 28.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -22,7 +22,7 @@ filename: 10ppmFarscapeTransportPod.gif
 info:
   Description: 'SHIP NAME/TYPE: Transport pod LENGTH: 18m BUILDER/COMMENTS: SOURCE:
     Farscape, mesh created and rendered by Meurig'
-  LENGTH: 18.0
+  Length: 18.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -31,7 +31,7 @@ filename: 10ppmFarscapeIllonicPod.gif
 info:
   Description: 'SHIP NAME/TYPE: Illonic pod LENGTH: 15m BUILDER/COMMENTS: SOURCE:
     Farscape, mesh created and rendered by Meurig'
-  LENGTH: 15.0
+  Length: 15.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -40,7 +40,7 @@ filename: 10ppmFarscapeLolaan.gif
 info:
   Description: 'SHIP NAME/TYPE: Lo''Laan LENGTH: 12m BUILDER/COMMENTS: SOURCE: Farscape,
     mesh created and rendered by Meurig'
-  LENGTH: 12.0
+  Length: 12.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -49,7 +49,7 @@ filename: 10ppmFarscapePeaceKeeperMarauderb.gif
 info:
   Description: 'SHIP NAME/TYPE: Peacekeeper Marauder B-Type LENGTH: 12m BUILDER/COMMENTS:
     SOURCE: Farscape, mesh created and rendered by Meurig'
-  LENGTH: 12.0
+  Length: 12.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -58,7 +58,7 @@ filename: 10ppmFarscapeZenetanFighter.gif
 info:
   Description: 'SHIP NAME/TYPE: Zenetan Pirate Fighter LENGTH: 8m BUILDER/COMMENTS:
     SOURCE: Farscape, mesh created and rendered by Meurig'
-  LENGTH: 8.0
+  Length: 8.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -67,7 +67,7 @@ filename: 10ppmFarscapePeaceKeeperProwler.gif
 info:
   Description: 'SHIP NAME/TYPE: Peacekeeper Prowler LENGTH: 4m BUILDER/COMMENTS: SOURCE:
     Farscape, mesh created and rendered by Meurig'
-  LENGTH: 4.0
+  Length: 4.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -76,7 +76,7 @@ filename: 10ppmFarscapeFarscape1Upgraded.gif
 info:
   Description: 'SHIP NAME/TYPE: Farsacpe 1 (upgraded) LENGTH: 3.5m BUILDER/COMMENTS:
     SOURCE: Farscape, mesh created and rendered by Meurig'
-  LENGTH: 3.5
+  Length: 3.5
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -85,7 +85,7 @@ filename: 10ppmFarscapeFarscape1.gif
 info:
   Description: 'SHIP NAME/TYPE: Farscape 1 LENGTH: 3.5m BUILDER/COMMENTS: SOURCE:
     Farscape, mesh created and rendered by Meurig'
-  LENGTH: 3.5
+  Length: 3.5
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -94,7 +94,7 @@ filename: 10ppmAlienDropShip.gif
 info:
   Description: 'SHIP NAME/TYPE: UD-4L Cheyenne Dropship LENGTH: 25.18m BUILDER/COMMENTS:
     SOURCE: Aliens, (movie)'
-  LENGTH: 25.18
+  Length: 25.18
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -104,7 +104,7 @@ info:
   Description: 'SHIP NAME/TYPE: Croker The Destroyer HEIGHT: 13m (or as stated by
     Croker: "One hundred feet tall!!!") BUILDER/COMMENTS: Scourge of the planet Kabijj,
     Servant of the Mighty Emperor Rabirr SOURCE: Evil Alien Conquerors, (movie, 2003)'
-  HEIGHT: 13.0
+  Height: 13.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -180,7 +180,7 @@ info:
   Description: "SHIP NAME/TYPE: Martian Tripod HEIGHT: 40m or taller.\_ They could\
     \ extend their legs to become taller as needed. BUILDER/COMMENTS: Martians SOURCE:\
     \ War of the Worlds, by H.G. Wells"
-  HEIGHT: 40.0
+  Height: 40.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -189,7 +189,7 @@ filename: 10ppmSWOpeeSeaKiller.gif
 info:
   Description: 'SHIP NAME/TYPE: Opee Sea Killer LENGTH: 20m BUILDER/COMMENTS: Wet
     SOURCE: Star Wars, Episode I'
-  LENGTH: 20.0
+  Length: 20.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -198,7 +198,7 @@ filename: 10ppmexistF14.gif
 info:
   Description: 'SHIP NAME/TYPE: F-14 LENGTH: 19.1m BUILDER/COMMENTS: Grumman Corp.
     SOURCE: US Navy'
-  LENGTH: 19.1
+  Length: 19.1
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -207,7 +207,7 @@ filename: 10ppmstroopersplasmabug.gif
 info:
   Description: 'SHIP NAME/TYPE: Plasma Bug LENGTH: 40m+ BUILDER/COMMENTS: Klendathu
     Hive SOURCE: Starship Troopers'
-  LENGTH: 40.0
+  Length: 40.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -216,7 +216,7 @@ filename: 10ppmstroopertankerbug.gif
 info:
   Description: 'SHIP NAME/TYPE: Tanker Bug LENGTH: 18m BUILDER/COMMENTS: Klendathu
     Hive SOURCE: Starship Troopers'
-  LENGTH: 18.0
+  Length: 18.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -225,7 +225,7 @@ filename: 10ppmstrooperwarriorbug.gif
 info:
   Description: 'SHIP NAME/TYPE: Warrior Bug LENGTH: 4m (Body) BUILDER/COMMENTS: Klendathu
     Hive SOURCE: Starship Troopers'
-  LENGTH: 4.0
+  Length: 4.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -234,8 +234,6 @@ filename: 10ppmvwbug.gif
 info:
   Description: 'SHIP NAME/TYPE: Warrior Bug LENGTH: 4m (Body) BUILDER/COMMENTS: Volkswagen
     Hive SOURCE: 1970'
-  SOURCE: 197.0
-  Unit: '0'
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -243,15 +241,15 @@ filename: 10ppmStargate.gif
 info:
   Description: 'SHIP NAME/TYPE: StarGate HEIGHT: 6m BUILDER/COMMENTS: SOURCE: StarGate,
     the motion picture and television series, image drawn by Stefan Mayrhofer'
-  HEIGHT: 6.0
+  Height: 6.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10ppmForbiddenPlanetC-57D.gif
 info:
-  DIAMETER: 51.0
   Description: "SHIP NAME/TYPE: C-57D United Planet Starcruiser\_\_ Diameter: 51m\
     \ DIAMETER: 51m BUILDER/COMMENTS: SOURCE: 'Forbidden Planet'"
+  Diameter: 51.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

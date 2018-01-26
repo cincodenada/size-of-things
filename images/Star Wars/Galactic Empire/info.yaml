@@ -124,7 +124,8 @@ source: "https://vignette.wikia.nocookie.net/disney/images/b/ba/Death_Star-RO_U_
 credit: Star Wars Wiki
 info:
   Name: Death Star
-  Width: 160000
+  Width: 160
+  Unit: km
   Armament:
     - Mk I Superlaser (1)
     - Tractor beam emplacements (768)
@@ -136,7 +137,8 @@ filename: Death_Star_II_Render.png
 source: "https://vignette.wikia.nocookie.net/vsbattles/images/4/4a/Death_Star_II_Render.png/revision/latest?cb=20160114150132"
 info:
   Name: Death Star II
-  Width: 200000
+  Width: 200
+  Unit: km
   Armament:
     - Superlaser (1)
     - Heavy turbolasers (15,000)

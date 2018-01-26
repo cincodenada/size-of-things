@@ -4,7 +4,8 @@ source: "http://www.st-minutiae.com/resources/comparison/"
 credit: Dan Carlson
 info:
     Name: Starbase Yorktown
-    Length: 25000
+    Length: 25
+    Unit: km
     Size Notes: approximate
 ---
 filename: Earth Spacedock.png

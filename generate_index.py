@@ -70,33 +70,52 @@ def gather_yaml(path):
             im = Image.open(os.path.join(path, ship['filename']))
             ship['image_size'] = im.size
 
-            # Add scale information
-            m = px = None
-            if 'm_per_px' in ship:
-              m_per_px = ship['m_per_px']
-              if isinstance(m_per_px, str):
-                (m, px) = m_per_px.split('/')
-            else:
+            # Initialize scale information
+            m = px = unit = m_per_px = None
+
+            # First, check for explicit x_per_px
+            loaded_explicit = False
+            for pre in unit_conversions.keys():
+              key = pre + '_per_px'
+              if key in ship:
+                m_per_px = ship[key]
+                unit = pre
+                if isinstance(m_per_px, str):
+                  (m, px) = m_per_px.split('/')
+                break
+
+            # Otherwise, load from info
+            if not m_per_px:
+              # Look for size keys
               for (dim, axis) in dimension_axes.items():
                 if dim in ship['info']:
                   m = ship['info'][dim]
                   ship['info']['Size'] = m
                   ship['info']['Dimension'] = dim
+                  # Load px from correct image axis
                   px = im.size[axis]
                   break
 
-            if m and ('Unit' in ship['info']) and ship['info']['Unit']:
-              print("Converting {} to m".format(ship['info']['Unit']))
-              m = m*unit_conversions[ship['info']['Unit']]
+              # Look for a unit as well
+              if ('Unit' in ship['info']) and ship['info']['Unit']:
+                unit = ship['info']['Unit']
 
+            # At this point we should have something
             if m and px:
-              ship['m_per_px'] = float(m)/float(px)
+              m_per_px = float(m)/float(px)
+              if unit and unit != 'm':
+                print("Converting {} to m".format(unit))
+                m_per_px = m_per_px*unit_conversions[unit]
+
+            # Assign to ship
+            if m_per_px:
+              ship['m_per_px'] = m_per_px
               ship['real_size'] = [
                 d*ship['m_per_px']
                 for d in ship['image_size']
               ]
-
-            if 'm_per_px' not in ship:
+            else:
+              # If we don't have things by now throw a fit
               raise ArithmeticError("Couldn't determine m/px!")
 
             ships.append(ship)

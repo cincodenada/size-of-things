@@ -1,0 +1,9 @@
+---
+filename: Earth.png
+source: "https://visibleearth.nasa.gov/view.php?id=57723"
+credit: NASA
+km_per_px: 6378.1/1785
+info:
+  Name: Earth
+  Diameter: 6378.1
+  Unit: km

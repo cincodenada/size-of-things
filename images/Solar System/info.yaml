@@ -7,3 +7,12 @@ info:
   Name: Earth
   Diameter: 6378.1
   Unit: km
+---
+filename: Sun.png
+source: "https://www.nasa.gov/content/goddard/sdo-sees-giant-filament-on-the-sun"
+credit: NASA
+km_per_px: 1400000/3273
+info:
+  Name: Sol
+  Diameter: 1400000
+  Unit: km

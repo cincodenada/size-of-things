@@ -87,6 +87,7 @@ $(function() {
   update_windowsize()
 
   $('.stuff').on('mouseover', 'img', function() {
+    clear_info()
     infodiv = $('.info')
     infodiv.find('.universe').text(this.data.info.Universe)
     infodiv.find('.faction').text(this.data.info.Faction)

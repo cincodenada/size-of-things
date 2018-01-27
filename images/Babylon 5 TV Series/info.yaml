@@ -1,18 +1,26 @@
 ---
 credit: Jeff Russell
+filename: 10ppmb5centaurisentri.gif
+info:
+  Description: Centauri
+  Length: ''
+  Name: Sentri Class Fighter
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5drakhshuttle.gif
+info:
+  Description: Drakh
+  Length: ''
+  Name: Drakh Scout
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 10ppmb5draziskyserpent.gif
 info:
   Description: Drazi
   Length: ''
   Name: Drazi SunHawk
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmb5minbarinialfighter.gif
-info:
-  Description: Minbari
-  Length: ''
-  Name: Nial Fighter
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -24,51 +32,11 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10ppmb5shadowspitfire.gif
-info:
-  Description: The Shadows
-  Length: Varies, Between 15 and 50m
-  Name: Shadow Spitfire
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 10ppmb5eaaurorastarfury.gif
 info:
   Description: Earth Alliance
   Length: ''
   Name: EA Aurora Starfury
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmb5narnfrazifighter.gif
-info:
-  Description: Narn Regime
-  Length: ''
-  Name: Narn Frazi Fighter
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmb5centaurisentri.gif
-info:
-  Description: Centauri
-  Length: ''
-  Name: Sentri Class Fighter
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmb5vorlonfighter.gif
-info:
-  Description: The Vorlon
-  Length: ''
-  Name: Vorlon Fighter
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmb5raiderzephyr.gif
-info:
-  Description: Belt Alliance Raiders
-  Length: ''
-  Name: Raider Zephyr Fighter
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -88,9 +56,41 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10ppmb5drakhshuttle.gif
+filename: 10ppmb5minbarinialfighter.gif
 info:
-  Description: Drakh
+  Description: Minbari
   Length: ''
-  Name: Drakh Scout
+  Name: Nial Fighter
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5narnfrazifighter.gif
+info:
+  Description: Narn Regime
+  Length: ''
+  Name: Narn Frazi Fighter
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5raiderzephyr.gif
+info:
+  Description: Belt Alliance Raiders
+  Length: ''
+  Name: Raider Zephyr Fighter
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5shadowspitfire.gif
+info:
+  Description: The Shadows
+  Length: Varies, Between 15 and 50m
+  Name: Shadow Spitfire
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5vorlonfighter.gif
+info:
+  Description: The Vorlon
+  Length: ''
+  Name: Vorlon Fighter
 source: http://www.merzo.net/indexSD.html

@@ -1,9 +1,9 @@
 ---
 credit: Jeff Russell
-filename: 1mppstbajoranassaultvessel.gif
+filename: 1mppSTBajoranFreighter.gif
 info:
-  Description: Bajoran assault vessel 93m
-  Size: 93.0
+  Description: Bajoran freighter 250m
+  Size: 250.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -16,9 +16,9 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppSTBajoranFreighter.gif
+filename: 1mppstbajoranassaultvessel.gif
 info:
-  Description: Bajoran freighter 250m
-  Size: 250.0
+  Description: Bajoran assault vessel 93m
+  Size: 93.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

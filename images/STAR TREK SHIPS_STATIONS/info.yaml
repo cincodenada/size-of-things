@@ -1,70 +1,8 @@
 ---
 credit: Jeff Russell
-filename: 10mppstsonacollectorship.gif
+filename: 10mppexist.gif
 info:
-  Description: Son'A collector ship
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppstvothcityship.gif
-info:
-  Description: Voth City Ship, 4900m
-  Size: 4900.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppstplanetkiller.gif
-info:
-  Description: Planet Killer
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppstkrenimtemporalweapon.gif
-info:
-  Description: Krenim temporal weapon
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppstdeepspace9.gif
-info:
-  Description: Deep Space 9
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppstfedspacedock.gif
-info:
-  Description: Federation space dock
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppstfedjupiterstation.gif
-info:
-  Description: Federation Jupiter station
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppstjemhadarbattleship.gif
-info:
-  Description: Jem Hadar battlecruiser
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppsthusnockship.gif
-info:
-  Description: Husnock ship
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppstkazoncruiser.gif
-info:
-  Description: Kazon warship
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppstsonacruiser.gif
-info:
-  Description: Son'A battleship
+  Description: Existing ships and buildings to scale
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -74,13 +12,75 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppexist.gif
+filename: 10mppstdeepspace9.gif
 info:
-  Description: Existing ships and buildings to scale
+  Description: Deep Space 9
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstfedjupiterstation.gif
+info:
+  Description: Federation Jupiter station
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstfedspacedock.gif
+info:
+  Description: Federation space dock
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppsthusnockship.gif
+info:
+  Description: Husnock ship
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstjemhadarbattleship.gif
+info:
+  Description: Jem Hadar battlecruiser
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstkazoncruiser.gif
+info:
+  Description: Kazon warship
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstkrenimtemporalweapon.gif
+info:
+  Description: Krenim temporal weapon
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstplanetkiller.gif
+info:
+  Description: Planet Killer
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstsonacollectorship.gif
+info:
+  Description: Son'A collector ship
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstsonacruiser.gif
+info:
+  Description: Son'A battleship
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppstspecies8472.gif
 info:
   Description: Species 8472
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstvothcityship.gif
+info:
+  Description: Voth City Ship, 4900m
+  Size: 4900.0
+  Unit: m
 source: http://www.merzo.net/indexSD.html

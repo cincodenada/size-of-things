@@ -1,14 +1,5 @@
 ---
 credit: Jeff Russell
-filename: 1mppfarscapepkvigilant.gif
-info:
-  Description: 'PK Vigilant from ''Farscape'', mesh created and rendered by Meurig
-    Length: 535m'
-  Length: 535.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 1mppFarscapeMoya.gif
 info:
   Description: 'Moya from ''Farscape'', mesh created and rendered by Meurig Length:
@@ -23,6 +14,15 @@ info:
   Description: 'Talyn from ''Farscape'', mesh created and rendered by Meurig Length:
     300m'
   Length: 300.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppfarscapepkvigilant.gif
+info:
+  Description: 'PK Vigilant from ''Farscape'', mesh created and rendered by Meurig
+    Length: 535m'
+  Length: 535.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---

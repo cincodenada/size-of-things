@@ -238,7 +238,9 @@ for (idx, s) in enumerate(ships):
     print(imgname)
     filtered[imgname] = s
 
-ships = filtered.values()
+ships = list(filtered.values())
+# Sort by filename to guarantee consistent order
+ships.sort(key=lambda x: x['src'])
 print(len(ships))
 for ship in ships:
   try:

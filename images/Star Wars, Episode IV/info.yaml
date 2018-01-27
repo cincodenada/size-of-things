@@ -1,10 +1,10 @@
 ---
 credit: Jeff Russell
-filename: 10ppmswmilleniumfalcon.gif
+filename: 10ppmswempiretiefighter.gif
 info:
-  Description: Personal transport of the smuggler Han Solo
-  Length: 26.7
-  Name: Millenium Falcon
+  Description: Twin Ion Engine Fighter
+  Length: 6.3
+  Name: TIE Fighter
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -26,10 +26,10 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10ppmswempiretiefighter.gif
+filename: 10ppmswmilleniumfalcon.gif
 info:
-  Description: Twin Ion Engine Fighter
-  Length: 6.3
-  Name: TIE Fighter
+  Description: Personal transport of the smuggler Han Solo
+  Length: 26.7
+  Name: Millenium Falcon
   Unit: m
 source: http://www.merzo.net/indexSD.html

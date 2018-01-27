@@ -1,58 +1,10 @@
 ---
 credit: Jeff Russell
-filename: 10mppb5lowerscale.gif
-info:
-  Description: Smaller ships from Babylon 5 TV series
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 10mppb53rdspacecruiser.gif
 info:
   Description: 3rd Space cruiser, 2km
   Size: 2.0
   Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5centauricorvan.gif
-info:
-  Description: Centauri Corvan cruiser, Babylon 5 AoG, ship designed by Mike Wikan
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5eawarlock.gif
-info:
-  Description: Warlock class battlecruiser
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5eanova.gif
-info:
-  Description: Nova cruiser
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5eacortez.gif
-info:
-  Description: Cortez class explorer
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5eaearthforce1.gif
-info:
-  Description: Earth Force 1
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5eaposeidon.gif
-info:
-  Description: Poseidon carrier
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5narntloth.gif
-info:
-  Description: Narn T'Loth cruiser
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -68,15 +20,101 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppb5eaomega.gif
+filename: 10mppb5centauribalvarin.gif
 info:
-  Description: Omega destroyer
+  Description: Centauri Balvarin cruiser, Babylon 5 AoG, ship designed by Mike Wikan
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5centauricorvan.gif
+info:
+  Description: Centauri Corvan cruiser, Babylon 5 AoG, ship designed by Mike Wikan
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5centaurivorchan.gif
+info:
+  Description: Centauri Vorchan cruiser
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5drakhcruiser.gif
 info:
   Description: Drakh cruiser
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eacortez.gif
+info:
+  Description: Cortez class explorer
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eaearthforce1.gif
+info:
+  Description: Earth Force 1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eahyperion.gif
+info:
+  Description: Hyperion cruiser
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eanova.gif
+info:
+  Description: Nova cruiser
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eaolympuscorvette.gif
+info:
+  Description: Olympus corvette
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eaomega.gif
+info:
+  Description: Omega destroyer
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eaposeidon.gif
+info:
+  Description: Poseidon carrier
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eawarlock.gif
+info:
+  Description: Warlock class battlecruiser
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5iavictory.gif
+info:
+  Description: Victory class destroyer
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5iawhitestar.gif
+info:
+  Description: Whitestar
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5lowerscale.gif
+info:
+  Description: Smaller ships from Babylon 5 TV series
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5narnbintak.gif
+info:
+  Description: Narn Bin'Tak cruiser, 2km
+  Size: 2.0
+  Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -92,53 +130,9 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppb5eaolympuscorvette.gif
+filename: 10mppb5narntloth.gif
 info:
-  Description: Olympus corvette
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5eahyperion.gif
-info:
-  Description: Hyperion cruiser
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5centaurivorchan.gif
-info:
-  Description: Centauri Vorchan cruiser
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5narnbintak.gif
-info:
-  Description: Narn Bin'Tak cruiser, 2km
-  Size: 2.0
-  Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5iavictory.gif
-info:
-  Description: Victory class destroyer
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5centauribalvarin.gif
-info:
-  Description: Centauri Balvarin cruiser, Babylon 5 AoG, ship designed by Mike Wikan
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppislandtwo.gif
-info:
-  Description: ''
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5iawhitestar.gif
-info:
-  Description: Whitestar
+  Description: Narn T'Loth cruiser
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -147,4 +141,10 @@ info:
   Description: Shadow Dreadnought, 2km
   Size: 2.0
   Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppislandtwo.gif
+info:
+  Description: ''
 source: http://www.merzo.net/indexSD.html

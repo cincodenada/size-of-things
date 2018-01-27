@@ -1,6 +1,24 @@
 ---
 credit: Jeff Russell
-filename: 10ppmstfedfighter.gif
+filename: 1CMPPSTBORG.gif
+info:
+  Description: ''
+  Name: Borg (random)
+  Size: 1.75
+  Size Notes: avg.
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmstaeon.gif
+info:
+  Description: ''
+  Length: ''
+  Name: ''
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmstbajoranimpulseship.gif
 info:
   Description: ''
   Length: ''
@@ -16,7 +34,23 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10ppmstfedgalaxyyacht.gif
+filename: 10ppmstfeddanube.gif
+info:
+  Description: ''
+  Length: ''
+  Name: ''
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmstfeddeltaflyer.gif
+info:
+  Description: ''
+  Length: ''
+  Name: ''
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmstfedeshuttle.gif
 info:
   Description: ''
   Length: ''
@@ -32,7 +66,7 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10ppmstfeddanube.gif
+filename: 10ppmstfedfighter.gif
 info:
   Description: ''
   Length: ''
@@ -40,23 +74,7 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10ppmstfedscout.gif
-info:
-  Description: ''
-  Length: ''
-  Name: ''
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmstnenebek.gif
-info:
-  Description: ''
-  Length: ''
-  Name: ''
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmstkazontorpedo.gif
+filename: 10ppmstfedgalaxyyacht.gif
 info:
   Description: ''
   Length: ''
@@ -72,11 +90,59 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
+filename: 10ppmstfedscout.gif
+info:
+  Description: ''
+  Length: ''
+  Name: ''
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmstfedtrainer.gif
+info:
+  Description: ''
+  Length: ''
+  Name: Various Federation Shuttles
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmstkazontorpedo.gif
+info:
+  Description: ''
+  Length: ''
+  Name: ''
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmstnenebek.gif
+info:
+  Description: ''
+  Length: ''
+  Name: ''
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 10ppmstromulanshuttle.gif
 info:
   Description: ''
   Length: ''
   Name: Romulan Scout
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmstsovereignyacht.gif
+info:
+  Description: ''
+  Length: ''
+  Name: ''
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmstvulcanwarpsled.gif
+info:
+  Description: Vulcan
+  Length: ''
+  Name: Vulcan Warp Sled
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -94,70 +160,4 @@ info:
   Diameter: 200000000.0
   Name: Dyson Sphere
   Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmstfeddeltaflyer.gif
-info:
-  Description: ''
-  Length: ''
-  Name: ''
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmstbajoranimpulseship.gif
-info:
-  Description: ''
-  Length: ''
-  Name: ''
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmstfedtrainer.gif
-info:
-  Description: ''
-  Length: ''
-  Name: Various Federation Shuttles
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmstfedeshuttle.gif
-info:
-  Description: ''
-  Length: ''
-  Name: ''
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmstsovereignyacht.gif
-info:
-  Description: ''
-  Length: ''
-  Name: ''
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1CMPPSTBORG.gif
-info:
-  Description: ''
-  Name: Borg (random)
-  Size: 1.75
-  Size Notes: avg.
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmstvulcanwarpsled.gif
-info:
-  Description: Vulcan
-  Length: ''
-  Name: Vulcan Warp Sled
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10ppmstaeon.gif
-info:
-  Description: ''
-  Length: ''
-  Name: ''
 source: http://www.merzo.net/indexSD.html

@@ -1,41 +1,33 @@
 ---
 credit: Jeff Russell
-filename: 1mppstfednx.gif
+filename: 1mppSTFedAkira.gif
 info:
-  Description: NX 225m
-  Size: 225.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTVulcanTPau.gif
-info:
-  Description: Vulcan T'Pau 170m
-  Size: 170.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedGalaxy.gif
-info:
-  Description: Galaxy 643m
-  Size: 643.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedNorway.gif
-info:
-  Description: Norway 335m
-  Size: 335.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedNebula.gif
-info:
-  Description: Nebula 440m
+  Description: Akira 440m
   Size: 440.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedAmbassador.gif
+info:
+  Description: Ambassador 526m
+  Size: 526.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedCheyenne.gif
+info:
+  Description: Cheyenne 362m
+  Size: 362.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedConstellation.gif
+info:
+  Description: Constellation 310m
+  Size: 310.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -48,9 +40,165 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
+filename: 1mppSTFedConstitution2.gif
+info:
+  Description: Constitution II 305m
+  Size: 305.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedDaedalusa.gif
+info:
+  Description: Daedalus 105m
+  Size: 105.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedDefiant.gif
+info:
+  Description: Defiant 120m
+  Size: 120.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedExcelsior.gif
+info:
+  Description: Excelsior 467m
+  Size: 467.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedFreedom.gif
+info:
+  Description: Freedom 430
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedGalaxy.gif
+info:
+  Description: Galaxy 643m
+  Size: 643.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedHoloship.gif
+info:
+  Description: Holoship 247m
+  Size: 247.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedIntrepid.gif
+info:
+  Description: Intrepid 344m
+  Size: 344.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 1mppSTFedMiranda.gif
 info:
   Description: Miranda 243m
+  Size: 243.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedNebula.gif
+info:
+  Description: Nebula 440m
+  Size: 440.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedNewOrleans.gif
+info:
+  Description: New Orleans 345m
+  Size: 345.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedNiagra.gif
+info:
+  Description: Niagra ??
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedNorway.gif
+info:
+  Description: Norway 335m
+  Size: 335.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedNova.gif
+info:
+  Description: Nova 180m
+  Size: 180.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedOberth.gif
+info:
+  Description: Oberth 120m
+  Size: 120.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedOlympic.gif
+info:
+  Description: Olympic 320m
+  Size: 320.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedPrometheus.gif
+info:
+  Description: Prometheus 414m
+  Size: 414.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedRaven.gif
+info:
+  Description: Raven 90m
+  Size: 90.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedSabre.gif
+info:
+  Description: Saber 172m
+  Size: 172.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedSoveriegn.gif
+info:
+  Description: Sovereign 685m
+  Size: 685.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTFedSoyuz.gif
+info:
+  Description: Soyuz 243m
   Size: 243.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -64,118 +212,10 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppSTFedNova.gif
+filename: 1mppSTFedSydney.gif
 info:
-  Description: Nova 180m
-  Size: 180.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppstfedchallenger.gif
-info:
-  Description: Challenger 390m
-  Size: 390.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedOlympic.gif
-info:
-  Description: Olympic 320m
-  Size: 320.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppstfedcurry.gif
-info:
-  Description: Curry 272m
-  Size: 272.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedSoveriegn.gif
-info:
-  Description: Sovereign 685m
-  Size: 685.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedNewOrleans.gif
-info:
-  Description: New Orleans 345m
-  Size: 345.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedDaedalusa.gif
-info:
-  Description: Daedalus 105m
-  Size: 105.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedOberth.gif
-info:
-  Description: Oberth 120m
-  Size: 120.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedSoyuz.gif
-info:
-  Description: Soyuz 243m
-  Size: 243.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedHoloship.gif
-info:
-  Description: Holoship 247m
-  Size: 247.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedFreedom.gif
-info:
-  Description: Freedom 430
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedAkira.gif
-info:
-  Description: Akira 440m
-  Size: 440.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedNiagra.gif
-info:
-  Description: Niagra ??
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppstfednorkova.gif
-info:
-  Description: Norkova 290m
-  Size: 290.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedSabre.gif
-info:
-  Description: Saber 172m
-  Size: 172.0
+  Description: Sydney 235m
+  Size: 235.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -188,74 +228,10 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppSTFedAmbassador.gif
+filename: 1mppSTVulcanTPau.gif
 info:
-  Description: Ambassador 526m
-  Size: 526.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedRaven.gif
-info:
-  Description: Raven 90m
-  Size: 90.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedPrometheus.gif
-info:
-  Description: Prometheus 414m
-  Size: 414.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedConstellation.gif
-info:
-  Description: Constellation 310m
-  Size: 310.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedSydney.gif
-info:
-  Description: Sydney 235m
-  Size: 235.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedCheyenne.gif
-info:
-  Description: Cheyenne 362m
-  Size: 362.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedConstitution2.gif
-info:
-  Description: Constitution II 305m
-  Size: 305.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTFedIntrepid.gif
-info:
-  Description: Intrepid 344m
-  Size: 344.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppstfedwells.gif
-info:
-  Description: Wells 336m
-  Size: 336.0
+  Description: Vulcan T'Pau 170m
+  Size: 170.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -268,17 +244,41 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppSTFedExcelsior.gif
+filename: 1mppstfedchallenger.gif
 info:
-  Description: Excelsior 467m
-  Size: 467.0
+  Description: Challenger 390m
+  Size: 390.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppSTFedDefiant.gif
+filename: 1mppstfedcurry.gif
 info:
-  Description: Defiant 120m
-  Size: 120.0
+  Description: Curry 272m
+  Size: 272.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppstfednorkova.gif
+info:
+  Description: Norkova 290m
+  Size: 290.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppstfednx.gif
+info:
+  Description: NX 225m
+  Size: 225.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppstfedwells.gif
+info:
+  Description: Wells 336m
+  Size: 336.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

@@ -1,9 +1,25 @@
 ---
 credit: Jeff Russell
+filename: 1mppSTKlingonBirdofPrey.gif
+info:
+  Description: Klingon Bird of Prey 109m
+  Size: 109.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 1mppSTKlingonD7.gif
 info:
   Description: Klingon D-7 228m
   Size: 228.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppSTKlingonKTinga.gif
+info:
+  Description: Klingon K'Tinga 214m
+  Size: 214.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -28,21 +44,5 @@ filename: 1mppSTKlingonVorCha.gif
 info:
   Description: Klingon Vor'Cha 481m
   Size: 481.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTKlingonBirdofPrey.gif
-info:
-  Description: Klingon Bird of Prey 109m
-  Size: 109.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 1mppSTKlingonKTinga.gif
-info:
-  Description: Klingon K'Tinga 214m
-  Size: 214.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

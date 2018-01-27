@@ -1,17 +1,9 @@
 ---
 credit: Jeff Russell
-filename: 10mppmardukscout.gif
+filename: 10mppMardukFlagship.gif
 info:
-  Description: Marduk scout ship, 500m
-  Size: 500.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppSDF3.gif
-info:
-  Description: Super Dimensional Fortress Three, 1.6km
-  Size: 1.6
+  Description: Marduk flagship, 4km
+  Size: 4.0
   Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
@@ -24,10 +16,26 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppzenmonitor.gif
+filename: 10mppSDF3.gif
 info:
-  Description: Zentraedi monitor, 1.1km
-  Size: 1.1
+  Description: Super Dimensional Fortress Three, 1.6km
+  Size: 1.6
+  Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppmardukscout.gif
+info:
+  Description: Marduk scout ship, 500m
+  Size: 500.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppzencruiser.gif
+info:
+  Description: Zentraedi Thuverl Salan (Cruiser), 2.3km
+  Size: 2.3
   Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
@@ -41,18 +49,10 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppzentanker.gif
+filename: 10mppzenmonitor.gif
 info:
-  Description: Zentreadi Quitra Queleual (Tanker), 3km
-  Size: 3.0
-  Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppMardukFlagship.gif
-info:
-  Description: Marduk flagship, 4km
-  Size: 4.0
+  Description: Zentraedi monitor, 1.1km
+  Size: 1.1
   Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
@@ -65,9 +65,9 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppzencruiser.gif
+filename: 10mppzentanker.gif
 info:
-  Description: Zentraedi Thuverl Salan (Cruiser), 2.3km
-  Size: 2.3
+  Description: Zentreadi Quitra Queleual (Tanker), 3km
+  Size: 3.0
   Unit: km
 source: http://www.merzo.net/indexSD.html

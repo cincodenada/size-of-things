@@ -60,7 +60,7 @@ for (unit, maps) in units.items():
     unit_map[name + 's'] = unit
 
 def dewhite(desc):
-  desc = re.sub(r"\s+", " ", desc).strip()
+  desc = re.sub(r"\s+", " ", desc, flags=re.UNICODE).strip()
   return desc
 
 def getnum(numstr):
@@ -265,4 +265,4 @@ for ship in ships:
   )
   outfile = open(os.path.join(groupdir,'info.yaml'), 'a')
   outfile.write('---' + os.linesep)
-  outfile.write(yaml.safe_dump(generate_ship(ship), default_flow_style=False))
+  outfile.write(yaml.safe_dump(generate_ship(ship), default_flow_style=False, allow_unicode=True))

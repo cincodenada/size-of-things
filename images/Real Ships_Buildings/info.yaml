@@ -2,9 +2,9 @@
 credit: Jeff Russell
 filename: 1mpp2001StationV.gif
 info:
-  Description: "Station V from 2001\_Diameter: 300m Ok, not a Real ship, but look\
-    \ over there ->"
-  Size: 300.0
+  Description: 'Station V from 2001 Diameter: 300m Ok, not a Real ship, but look over
+    there ->'
+  Diameter: 300.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -87,9 +87,11 @@ source: http://www.merzo.net/indexSD.html
 credit: Jeff Russell
 filename: 1mppexistSpaceStation.gif
 info:
-  Description: "The International Space Station\_Length: 80m\_\_ I thought it interesting\
-    \ to compare where we thought we'd be in 2001 as opposed to where we are.\_ Kudos\
-    \ to the Space Station Team."
+  Description: 'The International Space Station Length: 80m I thought it interesting
+    to compare where we thought we''d be in 2001 as opposed to where we are. Kudos
+    to the Space Station Team.'
+  Length: 80.0
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -196,9 +198,11 @@ source: http://www.merzo.net/indexSD.html
 credit: Jeff Russell
 filename: 2mppexistSpaceStationA.gif
 info:
-  Description: "The International Space Station\_Length: 80m\_\_ I thought it interesting\
-    \ to compare where we thought we'd be in 2001 as opposed to where we are.\_ Kudos\
-    \ to the Space Station Team."
+  Description: 'The International Space Station Length: 80m I thought it interesting
+    to compare where we thought we''d be in 2001 as opposed to where we are. Kudos
+    to the Space Station Team.'
+  Length: 80.0
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

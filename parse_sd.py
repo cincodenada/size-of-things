@@ -131,7 +131,47 @@ def generate_ship(ship):
 
 basedir = 'Starship Dimensions'
 
+def fill_pending():
+  global ships
+  global pending_ships
+  global pending_idx
+
+  global pending_text
+  global pending_field
+  print("Filling pending ships...")
+  if pending_ships and pending_idx < len(pending_ships):
+    print(pending_ships)
+    print(pending_idx)
+    print(pending_text)
+    print(pending_field)
+    for idx in (pending_idx, len(pending_ships)):
+      pending_ships[idx][field_map[pending_field]] = pending_text
+    pending_field = "_default_"
+    pending_text = ""
+  else:
+    print("No orphans, yay!")
+
+def finish_pending():
+  global ships
+  global pending_ships
+  global pending_idx
+
+  if pending_ships:
+    print("Merging pending ships...")
+    fill_pending()
+    ships += pending_ships
+    pending_ships = []
+    pending_idx = 0
+
 ships = []
+pending_ships = []
+pending_idx = 0
+
+pending_text = ""
+pending_field = ""
+
+last_found = ""
+
 for page in glob.glob(os.path.join(basedir,'*.htm')):
   soup = BeautifulSoup(open(page, 'r'), "lxml")
   category = None
@@ -145,21 +185,18 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
       category = dewhite(td.find('strong').text)
     else:
       images = td.select('> img, > font > img')
-      lines = td.find_all(['font','img'], recursive=False)
+      lines = td.find_all(['font','img', 'a'], recursive=False)
+
+      if len(lines) == 0:
+        continue
 
       if len(images) == len(lines):
         # <img><font>Description</font>
         # <font><img> Description</font>
         # <td> <font><img></font> x N </td><td> <font>Description</font> </td>
-        if field_start and field_idx < field_start + num_incomplete:
-          print(images)
-          print(last_text)
-          print("{}-{} of {}".format(field_start,field_idx,num_incomplete))
-          print(ships[field_idx])
-          for idx in (field_idx, field_start + num_incomplete):
-            ships[field_idx][field_map[cur_field]] = last_text
-          num_incomplete = 0
-          field_idx = field_start
+        if last_found != 'image':
+          print(lines)
+          finish_pending()
 
         for img in images:
           ship = {}
@@ -170,51 +207,53 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
             ship['name'] = img['alt']
 
           if not ship['description']:
-            if incomplete_idx is None:
-              incomplete_idx = len(ships)
-              num_incomplete = 0
-              # Account for ships w/o a bold title
-              field_idx = incomplete_idx
-              cur_field = '_default_'
-            num_incomplete+=1
+            print(img)
+            print("Adding ship to pending...")
+            pending_ships.append(ship)
+            pending_idx = len(pending_ships)
+            pending_field = "_default_"
+            pending_text = ""
+          else:
+            ships.append(ship)
 
-          ships.append(ship)
-
+        last_found = 'image'
       elif len(lines) == len(images)*2:
         # <font><img></font><font>Description</font>
+        if last_found != 'image':
+          print(lines)
+          finish_pending()
+
         for (idx, img) in enumerate(images):
           ship = {}
           ship['group'] = category
           ship['src'] = img['src']
           ship['description'] = dewhite(lines[idx*2+1].text)
           ships.append(ship)
+
+        last_found = 'image'
       elif len(lines) >= 1 and len(images) == 0:
         line = lines[0]
         if line.find('b'):
-          if field_start and field_idx < field_start + num_incomplete:
-            print(line)
-            print(last_text)
-            print("{}-{} of {}".format(field_start,field_idx,num_incomplete))
-            print(ships[field_idx])
-            for idx in (field_idx, field_start + num_incomplete):
-              ships[field_idx][field_map[cur_field]] = last_text
-            num_incomplete = 0
-            field_idx = field_start
+          fill_pending()
 
-          cur_field = line.find('b').text.replace(":","")
-          cur_field = re.sub(" \(.*\)$","",cur_field)
-          cur_field = re.sub("\s+"," ",cur_field)
-          if incomplete_idx is not None:
-            field_start = incomplete_idx
-            incomplete_idx = None
-          field_idx = field_start
+          pending_field = line.find('b').text.replace(":","")
+          pending_field = re.sub(" \(.*\)$","",pending_field)
+          pending_field = re.sub("\s+"," ",pending_field)
+          print("New heading: " + pending_field)
+
+          pending_idx = 0
         else:
-          print("Adding {} to {}...".format(cur_field, field_idx))
-          last_text = dewhite(' '.join([l.text for l in lines]))
-          ships[field_idx][field_map[cur_field]] = last_text
-          field_idx+=1
+          if last_found == 'image':
+            pending_idx = 0
+          print("Adding {} to {}...".format(pending_field, pending_idx))
+          pending_text = dewhite(' '.join([l.text for l in lines]))
+          pending_ships[pending_idx][field_map[pending_field]] = pending_text
+          pending_idx+=1
+
+        last_found = 'text'
       elif len(images)*2 < len(lines):
         # <font>Description</font>
+        # But we might have extra images
         dangling_ship = False
         for l in lines:
           if l.find('img'):
@@ -229,11 +268,11 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
             if dangling_ship:
               ship['description'] = description
               ships.append(ship)
-            elif incomplete_idx is not None:
-              ships[incomplete_idx]['description'] = dewhite(lines[0].text)
-              incomplete_idx += 1
-              if incomplete_idx == len(ships):
-                incomplete_idx = None
+            elif pending_ships:
+              pending_ships[pending_idx]['description'] = dewhite(lines[0].text)
+              pending_idx += 1
+
+        last_found = 'text'
 
 # Deduplicate
 max_res = {}

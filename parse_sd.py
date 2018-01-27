@@ -157,8 +157,8 @@ def finish_pending():
   global pending_idx
 
   if pending_ships:
-    print("Merging pending ships...")
     fill_pending()
+    print("Merging pending ships...")
     ships += pending_ships
     pending_ships = []
     pending_idx = 0
@@ -175,10 +175,8 @@ last_found = ""
 for page in glob.glob(os.path.join(basedir,'*.htm')):
   soup = BeautifulSoup(open(page, 'r'), "lxml")
   category = None
-  incomplete_idx = None
-  field_start = None
   for td in soup.body.find_all(['td','p']):
-    if td.name == 'p' and not td.find('img'):
+    if td.name == 'p' and (not td.find('img') or td.parent.name == 'td'):
       continue
 
     if td.find('strong'):
@@ -186,21 +184,16 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
     else:
       images = td.select('> img, > font > img')
       lines = td.find_all(['font','img', 'a'], recursive=False)
+      for p in td.find_all('p', recursive = False):
+        children = p.find_all(['font','img', 'a'], recursive=False)
+        if children:
+          print("Unwrapping <p>...")
+          print(p)
+          lines += children
+
 
       if len(lines) == 0:
         continue
-
-      # Unwrap <p> w/ two fonts in it
-      # e.g. blue whale/yamato
-      if len(lines) > 1:
-        print(lines[1])
-        print(lines[1].name)
-        if lines[1].name == 'p':
-          print("Unwrapping <p>...")
-          children = td.find_all(['font','img', 'a'], recursive=False)
-          print(children)
-          if len(children) > 1:
-            lines = [lines[0]] + children
 
       if len(images) == len(lines):
         # <img><font>Description</font>
@@ -287,6 +280,8 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
               pending_idx += 1
 
         last_found = 'text'
+
+  finish_pending()
 
 # Deduplicate
 max_res = {}

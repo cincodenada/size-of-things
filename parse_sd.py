@@ -190,11 +190,24 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
       if len(lines) == 0:
         continue
 
+      # Unwrap <p> w/ two fonts in it
+      # e.g. blue whale/yamato
+      if len(lines) > 1:
+        print(lines[1])
+        print(lines[1].name)
+        if lines[1].name == 'p':
+          print("Unwrapping <p>...")
+          children = td.find_all(['font','img', 'a'], recursive=False)
+          print(children)
+          if len(children) > 1:
+            lines = [lines[0]] + children
+
       if len(images) == len(lines):
         # <img><font>Description</font>
         # <font><img> Description</font>
         # <td> <font><img></font> x N </td><td> <font>Description</font> </td>
         if last_found != 'image':
+          print("images == lines")
           print(lines)
           finish_pending()
 
@@ -220,6 +233,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
       elif len(lines) == len(images)*2:
         # <font><img></font><font>Description</font>
         if last_found != 'image':
+          print("lines == images*2")
           print(lines)
           finish_pending()
 

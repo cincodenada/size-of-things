@@ -6,7 +6,10 @@ import re
 import os
 from shutil import copyfile
 import yaml
-import urllib
+try:
+  from urllib import unquote
+except ImportError:
+  from urllib.parse import unquote
 
 size_extracts = [
   # Name Length: 123.45m or 123.45 m
@@ -252,7 +255,7 @@ for ship in ships:
     # Assume path exists
     pass
 
-  filesrc = urllib.unquote(ship['src'])
+  filesrc = unquote(ship['src'])
 
   copyfile(
     os.path.join(basedir, filesrc),

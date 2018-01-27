@@ -267,8 +267,19 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
         # <font>Description</font>
         # But we might have extra images
         dangling_ship = False
+        cur_text = ""
         for l in lines:
           if l.find('img'):
+            # Finish up any previous bits
+            if cur_text:
+              if dangling_ship:
+                ship['description'] = dewhite(cur_text)
+                ships.append(ship)
+              elif pending_ships:
+                pending_ships[pending_idx]['description'] = dewhite(cur_text)
+                pending_idx += 1
+              cur_text = ""
+
             ship = {}
             ship['group'] = category
             ship['src'] = l.find('img')['src']
@@ -276,13 +287,16 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
               ship['name'] = img['alt']
             dangling_ship = True
           else:
-            description = dewhite(l.text)
-            if dangling_ship:
-              ship['description'] = description
-              ships.append(ship)
-            elif pending_ships:
-              pending_ships[pending_idx]['description'] = dewhite(lines[0].text)
-              pending_idx += 1
+            cur_text += l.text
+
+        if cur_text:
+          if dangling_ship:
+            ship['description'] = dewhite(cur_text)
+            ships.append(ship)
+          elif pending_ships:
+            pending_ships[pending_idx]['description'] = dewhite(cur_text)
+            pending_idx += 1
+          cur_text = ""
 
         last_found = 'text'
 

@@ -159,10 +159,14 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
           if 'alt' in img:
             ship['name'] = img['alt']
 
-          if not ship['description'] and incomplete_idx is None:
-            incomplete_idx = len(ships)
-            field_idx = incomplete_idx
-            cur_field = '_default_'
+          if not ship['description']:
+            if incomplete_idx is None:
+              incomplete_idx = len(ships)
+              num_incomplete = 0
+              # Account for ships w/o a bold title
+              field_idx = incomplete_idx
+              cur_field = '_default_'
+            num_incomplete+=1
 
           ships.append(ship)
 
@@ -174,7 +178,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
           ship['src'] = img['src']
           ship['description'] = dewhite(lines[idx*2+1].text)
           ships.append(ship)
-      elif len(lines) == 1 and len(images) == 0:
+      elif len(lines) >= 1 and len(images) == 0:
         line = lines[0]
         if line.find('b'):
           cur_field = line.find('b').text.replace(":","")
@@ -185,8 +189,9 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
             incomplete_idx = None
           field_idx = field_start
         else:
-          ships[field_idx][field_map[cur_field]] = dewhite(line.text)
-          field_idx += 1
+          last_text = dewhite(' '.join([l.text for l in lines]))
+          ships[field_idx][field_map[cur_field]] = last_text
+          field_idx+=1
       elif len(images)*2 < len(lines):
         # <font>Description</font>
         dangling_ship = False

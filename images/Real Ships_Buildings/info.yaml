@@ -59,7 +59,9 @@ source: http://www.merzo.net/indexSD.html
 credit: Jeff Russell
 filename: 1mppexistCNTower.gif
 info:
-  Description: Knock Navis (Formerly 'Jahre Viking'), World's Largest ship, I think
+  Description: 'CN Tower Height: 553.3m'
+  Height: 553.3
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -73,7 +75,9 @@ source: http://www.merzo.net/indexSD.html
 credit: Jeff Russell
 filename: 1mppexistEmpireStateBuilding.gif
 info:
-  Description: Knock Navis (Formerly 'Jahre Viking'), World's Largest ship, I think
+  Description: 'Empire State Building Height: 443.5m'
+  Height: 443.5
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -138,7 +142,10 @@ source: http://www.merzo.net/indexSD.html
 credit: Jeff Russell
 filename: 1mppexistknocknavis.gif
 info:
-  Description: ''
+  Description: 'Knock Navis (Formerly ''Jahre Viking''), World''s Largest ship, I
+    think Length: 458.4m'
+  Length: 458.4
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -208,5 +215,7 @@ source: http://www.merzo.net/indexSD.html
 credit: Jeff Russell
 filename: 2mppexistjahreviking.gif
 info:
-  Description: ''
+  Description: 'Knock Navis Length: 458.4m'
+  Length: 458.4
+  Unit: m
 source: http://www.merzo.net/indexSD.html

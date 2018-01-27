@@ -255,6 +255,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
             print("lines >=1 images = 0")
             print(lines)
             fill_pending()
+            pending_idx = 0
           print(lines)
           print("Adding {} to {}...".format(pending_field, pending_idx))
           pending_text = dewhite(' '.join([l.text for l in lines]))

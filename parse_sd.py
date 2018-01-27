@@ -151,6 +151,16 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
         # <img><font>Description</font>
         # <font><img> Description</font>
         # <td> <font><img></font> x N </td><td> <font>Description</font> </td>
+        if field_start and field_idx < field_start + num_incomplete:
+          print(images)
+          print(last_text)
+          print("{}-{} of {}".format(field_start,field_idx,num_incomplete))
+          print(ships[field_idx])
+          for idx in (field_idx, field_start + num_incomplete):
+            ships[field_idx][field_map[cur_field]] = last_text
+          num_incomplete = 0
+          field_idx = field_start
+
         for img in images:
           ship = {}
           ship['group'] = category
@@ -181,6 +191,16 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
       elif len(lines) >= 1 and len(images) == 0:
         line = lines[0]
         if line.find('b'):
+          if field_start and field_idx < field_start + num_incomplete:
+            print(line)
+            print(last_text)
+            print("{}-{} of {}".format(field_start,field_idx,num_incomplete))
+            print(ships[field_idx])
+            for idx in (field_idx, field_start + num_incomplete):
+              ships[field_idx][field_map[cur_field]] = last_text
+            num_incomplete = 0
+            field_idx = field_start
+
           cur_field = line.find('b').text.replace(":","")
           cur_field = re.sub(" \(.*\)$","",cur_field)
           cur_field = re.sub("\s+"," ",cur_field)
@@ -189,6 +209,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
             incomplete_idx = None
           field_idx = field_start
         else:
+          print("Adding {} to {}...".format(cur_field, field_idx))
           last_text = dewhite(' '.join([l.text for l in lines]))
           ships[field_idx][field_map[cur_field]] = last_text
           field_idx+=1

@@ -182,7 +182,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
     if td.find('strong'):
       category = dewhite(td.find('strong').text)
     else:
-      images = td.select('> img, > font > img')
+      images = td.select('> img, > font > img, p > font > img')
       lines = td.find_all(['font','img', 'a'], recursive=False)
       for p in td.find_all('p', recursive = False):
         children = p.find_all(['font','img', 'a'], recursive=False)
@@ -195,6 +195,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
       if len(lines) == 0:
         continue
 
+      print("{} im, {} ln".format(len(images), len(lines)))
       if len(images) == len(lines):
         # <img><font>Description</font>
         # <font><img> Description</font>
@@ -251,7 +252,10 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
           pending_idx = 0
         else:
           if last_found == 'image':
-            pending_idx = 0
+            print("lines >=1 images = 0")
+            print(lines)
+            fill_pending()
+          print(lines)
           print("Adding {} to {}...".format(pending_field, pending_idx))
           pending_text = dewhite(' '.join([l.text for l in lines]))
           pending_ships[pending_idx][field_map[pending_field]] = pending_text

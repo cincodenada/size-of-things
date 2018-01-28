@@ -176,6 +176,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
   soup = BeautifulSoup(open(page, 'r'), "lxml")
   category = None
   for td in soup.body.find_all(['td','p']):
+    print("===\nLoaded {} ships, {} pending...\n===".format(len(ships), len(pending_ships)))
     if td.name == 'p' and (not td.find('img') or td.parent.name == 'td'):
       continue
 

@@ -1,19 +1,19 @@
 ---
 credit: Jeff Russell
-filename: 1CMPPGQDEMONCHILD.gif
-info:
-  Description: ''
-  Name: Demon Child
-  Size: 1.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 1CMPPSWACKBAR.gif
 info:
   Description: ''
   Name: Admiral Ackbar
   Size: 1.8
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1CMPPSWEWOK.gif
+info:
+  Description: ''
+  Name: Ewok
+  Size: 1.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -34,6 +34,15 @@ info:
   Name: Imperial Probe Droid
   Size: 1.6
   Size Notes: variable height
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1CMPPSWR2D2.gif
+info:
+  Description: ''
+  Name: R2D2
+  Size: 0.96
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -65,11 +74,11 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1CMPPVINCENT.gif
+filename: 1CMPPSWYODA.gif
 info:
   Description: ''
-  Name: V.I.N CENT.
-  Size: 0.7
+  Name: Yoda
+  Size: 0.66
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---

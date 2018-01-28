@@ -141,10 +141,8 @@ def fill_pending():
   print("Filling pending ships...")
   if pending_ships and pending_idx < len(pending_ships):
     print(pending_ships)
-    print(pending_idx)
-    print(pending_text)
-    print(pending_field)
-    for idx in (pending_idx, len(pending_ships)):
+    print("Starting at {}, filling {} with {}".format(pending_idx, pending_field, pending_text))
+    for idx in range(pending_idx, len(pending_ships)):
       pending_ships[idx][field_map[pending_field]] = pending_text
     pending_field = "_default_"
     pending_text = ""
@@ -177,13 +175,13 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
   category = None
   for td in soup.body.find_all(['td','p']):
     print("===\nLoaded {} ships, {} pending...\n===".format(len(ships), len(pending_ships)))
-    if td.name == 'p' and (not td.find('img') or td.parent.name == 'td'):
+    if td.name == 'p' and ((not td.find('img')) or td.parent.name == 'td'):
       continue
 
     if td.find('strong'):
       category = dewhite(td.find('strong').text)
     else:
-      images = td.select('> img, > font > img, p > font > img, p > img')
+      images = td.select('> img, > font > img, > p > font > img, > p > img')
       lines = td.find_all(['font','img', 'a'], recursive=False)
       for p in td.find_all('p', recursive = False):
         if p.find('img') and not p.find('font'):
@@ -216,7 +214,11 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
           ship = {}
           ship['group'] = category
           ship['src'] = img['src']
-          ship['description'] = dewhite(img.parent.text)
+          if img.find_next_sibling('table'):
+            # Don't pull in table descriptions, we'll get those later
+            ship['description'] = ""
+          else:
+            ship['description'] = dewhite(img.parent.text)
           if 'alt' in img:
             ship['name'] = img['alt']
 
@@ -306,6 +308,20 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
           cur_text = ""
 
         last_found = 'text'
+
+      elif len(images) > len(lines):
+        # <font><img><img>Description</font>
+        for img in images:
+          ship = {}
+          ship['group'] = category
+          ship['src'] = img['src']
+          if 'alt' in img:
+            ship['name'] = img['alt']
+          pending_ships.append(ship)
+
+        pending_text = dewhite(lines[0].text)
+        pending_field = "_default_"
+        finish_pending()
 
   finish_pending()
 

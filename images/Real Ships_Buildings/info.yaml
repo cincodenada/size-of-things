@@ -143,8 +143,8 @@ credit: Jeff Russell
 filename: 1mppexistknocknavis.gif
 info:
   Description: 'Knock Navis (Formerly ''Jahre Viking''), World''s Largest ship, I
-    think Length: 458.4m'
-  Length: 458.4
+    thinkLength: 458.4m'
+  Size: 458.4
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -189,7 +189,7 @@ source: http://www.merzo.net/indexSD.html
 credit: Jeff Russell
 filename: 1mppexisttyphoonsub.gif
 info:
-  Description: 'Length: 175m'
+  Description: 'Typhoon Class Nuclear SubLength: 175m'
   Size: 175.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -215,7 +215,7 @@ source: http://www.merzo.net/indexSD.html
 credit: Jeff Russell
 filename: 2mppexistjahreviking.gif
 info:
-  Description: 'Knock Navis Length: 458.4m'
-  Length: 458.4
+  Description: 'Knock NavisLength: 458.4m'
+  Size: 458.4
   Unit: m
 source: http://www.merzo.net/indexSD.html

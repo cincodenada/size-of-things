@@ -109,13 +109,6 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppexistleaningtower.gif
-info:
-  Description: 'Leaning Tower of Piza Height:'
-m_per_px: 1
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 1mppexistsaturn5.gif
 info:
   Description: 'Appolo Saturn V Height: 110.6m'
@@ -152,22 +145,6 @@ filename: 1mppexistyamato.gif
 info:
   Description: 'Battleship Yamato, length: 263m'
   Length: 263.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistBoeing747.gif
-info:
-  Description: 'Boeing 747 Length: 70.5m'
-  Length: 70.5
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistbluewhale.gif
-info:
-  Description: 'Blue Whale, length: 33 m'
-  Length: 33.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---

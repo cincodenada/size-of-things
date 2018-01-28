@@ -3,6 +3,7 @@ import math
 from copy import copy
 import sys
 import logging
+from sortedcontainers import SortedListWithKey
 math.tau = math.pi*2
 default_precision = 2
 
@@ -167,6 +168,8 @@ class Rect:
 
   def move_to(self, center):
     self.center = center
+    self.min_radius_ = None
+    self.max_radius_ = None
     logger.debug("New center: {}".format(self.center))
 
     self.left = self.center[0] - self.size[0]/2
@@ -182,11 +185,44 @@ class Rect:
       (self.right, self.bottom)
     ]
 
+  def corner_rays(self, origin = (0,0)):
+    return [Rayish(c, origin) for c in self.corners()]
+
   def corner_angles(self, origin = (0,0)):
-    return [
-      Rayish(c, origin).angle
-      for c in self.corners()
-    ]
+    return [cr.angle for cr in self.corner_rays(origin)]
+
+  def min_radius(self):
+    if not self.min_radius_:
+      self.min_radius_ = self.calc_min_radius()
+
+    return self.min_radius_
+
+  def calc_min_radius(self):
+    straddle_v = (self.left < 0 and self.right > 0)
+    straddle_h = (self.bottom < 0 and self.top > 0)
+    if straddle_h and straddle_v:
+      return min(self.top, self.right)
+    if straddle_v:
+      if self.top > 0:
+        return self.bottom
+      else:
+        return -self.top
+    if straddle_h:
+      if self.right > 0:
+        return self.left
+      else:
+        return -self.right
+
+    return min([r.length() for r in self.corner_rays()])
+
+  def max_radius(self):
+    if not self.max_radius_:
+      self.max_radius_ = self.calc_max_radius()
+
+    return self.max_radius_
+
+  def calc_max_radius(self):
+    return max([r.length() for r in self.corner_rays()])
 
   def corner_distances(self, angle, origin=(0,0)):
     corner_angles = self.corner_angles()
@@ -289,7 +325,7 @@ class Rect:
 
 class Layout:
   def __init__(self, num_slices, canvas = None, margin = 0.05, precision = default_precision):
-    self.rects = []
+    self.rects = SortedListWithKey(key = lambda r: r.max_radius())
     self.outer_rects = {}
     self.angle = 0
     self.num_slices = num_slices
@@ -309,7 +345,7 @@ class Layout:
 
     rect.draw(self.canvas)
 
-    self.rects.append(rect)
+    self.rects.add(rect)
     return rect
 
   def get_radius(self, angle):
@@ -331,7 +367,9 @@ class Layout:
 
   def intersects_any(self, rect):
     for r in reversed(self.rects):
-      if r.intersects(rect):
+      if r.max_radius() < rect.min_radius():
+        return False
+      elif r.intersects(rect):
         return True
 
   def place_rect(self, size):

@@ -91,6 +91,7 @@ filename: 1mppswsmallships.gif
 info:
   Description: Smaller vessels from 'Star Wars' motion pictures, to view in greater
     detail larger images are found on the 10 ppm page
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -164,6 +165,7 @@ credit: Jeff Russell
 filename: 10mppFarscapePKCommandCarrier.gif
 info:
   Description: mesh created and rendered by Meurig
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -213,6 +215,7 @@ credit: Jeff Russell
 filename: 2mppB5EAShadowHybrid.gif
 info:
   Description: EA Shadow Hybrid, mesh created and rendered by Meurig
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -227,6 +230,7 @@ credit: Jeff Russell
 filename: 2mppB5MinbariSharlin.gif
 info:
   Description: Minbari Sharlin class cruiser
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -242,18 +246,21 @@ credit: Jeff Russell
 filename: 2mppB5OmegaDestroyer.gif
 info:
   Description: EA Omega Destroyer
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 2mppB5ShadowCruiser.gif
 info:
   Description: Shadow Cruiser
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 2mppB5VorlonCruiser.gif
 info:
   Description: Vorlon Cruiser
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -277,34 +284,40 @@ credit: Jeff Russell
 filename: 2mppSDF1D.gif
 info:
   Description: Macross Super Dimensional Fortress One (SDF-1)
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 2mppST8472Bioship.gif
 info:
   Description: Species 8472 Bioship
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 2mppSTRomulanDderidex.gif
 info:
   Description: Romulan D'deridex
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 2mppSWStarDestroyer.gif
 info:
   Description: Imperial Star Destroyer
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 2mppswspaceslug.gif
 info:
   Description: Space Slug from Empire Strikes Back
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: x2mppSDF3.gif
 info:
   Description: SDF-3 Pioneer
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html

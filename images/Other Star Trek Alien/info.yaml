@@ -172,6 +172,7 @@ filename: 1mppstsmallships.gif
 info:
   Description: Smaller vessels from 'Star Trek', to view in greater detail larger
     images are found on the 10 ppm page
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

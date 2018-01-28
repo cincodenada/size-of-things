@@ -18,6 +18,17 @@ size_extracts = [
   r"(?P<name>.*) (?P<size>[\d\., ]*\d) ?(?P<unit>\w+)(?: (?P<dimension>\w+))?",
 ]
 
+mpp_map = {
+  "1 cm per pixel.htm": 1/100,
+  "10 Pixels per meter.htm": 1/10,
+  "1 Pixel per meter.htm": 1,
+  "2 meters per pixel.htm": 2,
+  "10 meters per pixel.htm": 10,
+  "100 meters per pixel.htm": 100,
+  "2000 meters per pixel.htm": 2000,
+  "FIVE HUNDRED THOUSAND KILOMETERS per Pixel!!.htm": 500000
+}
+
 field_map = {
   '_default_': 'description',
   'Source': 'group',
@@ -127,6 +138,9 @@ def generate_ship(ship):
   outship['source'] = "http://www.merzo.net/indexSD.html"
   outship['credit'] = "Jeff Russell"
 
+  if 'Unit' not in info:
+    outship['m_per_px'] = ship['default_mpp']
+
   return outship
 
 basedir = 'Starship Dimensions'
@@ -171,6 +185,7 @@ pending_field = ""
 last_found = ""
 
 for page in glob.glob(os.path.join(basedir,'*.htm')):
+  default_mpp = mpp_map[os.path.basename(page)]
   soup = BeautifulSoup(open(page, 'r'), "lxml")
   category = None
   for td in soup.body.find_all(['td','p']):
@@ -211,7 +226,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
           finish_pending()
 
         for img in images:
-          ship = {}
+          ship = {'default_mpp': default_mpp}
           ship['group'] = category
           ship['src'] = img['src']
           if img.find_next_sibling('table'):
@@ -241,7 +256,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
           finish_pending()
 
         for (idx, img) in enumerate(images):
-          ship = {}
+          ship = {'default_mpp': default_mpp}
           ship['group'] = category
           ship['src'] = img['src']
           ship['description'] = dewhite(lines[idx*2+1].text)
@@ -289,7 +304,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
                 pending_idx += 1
               cur_text = ""
 
-            ship = {}
+            ship = {'default_mpp': default_mpp}
             ship['group'] = category
             ship['src'] = l.find('img')['src']
             if 'alt' in img:
@@ -312,7 +327,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
       elif len(images) > len(lines):
         # <font><img><img>Description</font>
         for img in images:
-          ship = {}
+          ship = {'default_mpp': default_mpp}
           ship['group'] = category
           ship['src'] = img['src']
           if 'alt' in img:

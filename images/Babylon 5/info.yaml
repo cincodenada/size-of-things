@@ -36,6 +36,7 @@ filename: 1mppb5centaurikutai.gif
 info:
   Description: Centauri Kutai 465m (to be updated, should be 200m), Babylon 5 Agents
     of Gaming, ship designed by Mike Wikan
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -75,6 +76,7 @@ filename: 1mppb5smallships.gif
 info:
   Description: Smaller vessels from 'Babylon 5', to view in greater detail larger
     images are found on the 10 ppm page
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -109,6 +111,7 @@ info:
   Description: Centauri
   Length: ''
   Name: Centauri Roturian Fighter
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -117,4 +120,5 @@ info:
   Description: Narn Regime
   Length: ''
   Name: Narn Gorith Fighter
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html

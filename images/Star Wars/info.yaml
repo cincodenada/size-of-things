@@ -88,6 +88,7 @@ info:
   Description: The Rebellion
   Length: ''
   Name: Rebel A-Wing Class Fighter
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -96,6 +97,7 @@ info:
   Description: The Rebellion
   Length: ''
   Name: Rebel B-Wing Class Fighter
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -104,6 +106,7 @@ info:
   Description: The Rebellion
   Length: ''
   Name: Rebel X-Wing Class Fighter
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -112,6 +115,7 @@ info:
   Description: The Rebellion
   Length: ''
   Name: Rebel Y-Wing Class Fighter
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

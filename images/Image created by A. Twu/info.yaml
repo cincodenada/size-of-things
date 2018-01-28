@@ -10,6 +10,7 @@ info:
     to live in it."'
   Length: Approximately 9km (Main habitat cylinder)
   Name: Island Two space colony
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -22,4 +23,5 @@ info:
     Three type colonies are depicted in the anime Mobile Suit Gundam series."'
   Length: Main habitat cylinder approximately 32km, diameter 6.4km
   Name: Island Three space colony
+m_per_px: 100
 source: http://www.merzo.net/indexSD.html

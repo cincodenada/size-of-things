@@ -75,6 +75,7 @@ credit: Jeff Russell
 filename: 1mppSTFedFreedom.gif
 info:
   Description: Freedom 430
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -129,6 +130,7 @@ credit: Jeff Russell
 filename: 1mppSTFedNiagra.gif
 info:
   Description: Niagra ??
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

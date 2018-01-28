@@ -5,6 +5,7 @@ info:
   Description: Used by residents of Cloud City, on Bespin
   Length: ''
   Name: Twin-Pod Cloud Car
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -14,6 +15,7 @@ info:
   Height: Approximately 20m. The 15.5m height stated at StarWars.com just doesn't
     add up when you watch the movie.
   Name: Imperial AT-AT walker
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

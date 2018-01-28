@@ -24,6 +24,7 @@ info:
   Description: Used by Jabba the Hutt
   Length: ''
   Name: Jabba's Sail Barge
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -32,4 +33,5 @@ info:
   Description: Used by Jabba's entourage
   Length: ''
   Name: Jabba's Desert Skiff
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html

@@ -8,7 +8,9 @@ var loaded = false
 var remaining_to_load
 var current_load
 var load_timeout = 500
-var center_offset
+var origin = [0,0]
+var center_offset = [0,0]
+var screen_origin
 
 // TODO: Vary on window size?
 var scalebar_target_width = 150
@@ -79,6 +81,9 @@ $(function() {
 
   $('.px_mm').text(screen_px_per_mm.toFixed(2))
 
+  $(window).on('resize', update_windowsize)
+  update_windowsize()
+
   $(window).on('mousewheel', function(evt) {
     evt.preventDefault()
     m_per_px *= Math.pow(10, -evt.deltaY/zoomSlowFactor)
@@ -86,8 +91,20 @@ $(function() {
     resize()
   })
 
-  $(window).on('resize', update_windowsize)
-  update_windowsize()
+  $(window).on('mousedown', function(evt) {
+    evt.preventDefault()
+    var last_loc = [evt.screenX, evt.screenY]
+    $(window).on('mousemove', function(evt) {
+      origin[0] += (evt.screenX - last_loc[0])*m_per_px
+      origin[1] += (evt.screenY - last_loc[1])*m_per_px
+      last_loc = [evt.screenX, evt.screenY]
+      resize()
+    })
+  })
+  $(window).on('mouseup', function(evt) {
+    evt.preventDefault()
+    $(window).off('mousemove')
+  })
 
   $('.stuff').on('mouseover', 'img', function() {
     clear_info()
@@ -116,7 +133,7 @@ function clear_info() {
 }
 
 function update_windowsize() {
-  center_offset = [
+  screen_origin = [
     $(window).width()/2,
     $(window).height()/2
   ]
@@ -148,6 +165,8 @@ function clear_load(elm) {
 
 function resize() {
   var min_length = min_size_px*m_per_px
+  center_offset[0] = screen_origin[0] + origin[0]/m_per_px
+  center_offset[1] = screen_origin[1] + origin[1]/m_per_px
   $('.stuff').hide()
   remaining_to_load = 0
   var load_time = +new Date()

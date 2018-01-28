@@ -182,14 +182,20 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
     if td.find('strong'):
       category = dewhite(td.find('strong').text)
     else:
-      images = td.select('> img, > font > img, p > font > img')
+      images = td.select('> img, > font > img, p > font > img, p > img')
       lines = td.find_all(['font','img', 'a'], recursive=False)
       for p in td.find_all('p', recursive = False):
-        children = p.find_all(['font','img', 'a'], recursive=False)
-        if children:
-          print("Unwrapping <p>...")
+        if p.find('img') and not p.find('font'):
+          print("Converting <p>...")
           print(p)
-          lines += children
+          p.name = 'font'
+          lines.append(p)
+        else:
+          children = p.find_all(['font','img', 'a'], recursive=False)
+          if children:
+            print("Unwrapping <p>...")
+            print(p)
+            lines += children
 
 
       if len(lines) == 0:

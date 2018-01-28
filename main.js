@@ -8,7 +8,10 @@ var loaded = false
 var remaining_to_load
 var current_load
 var load_timeout = 500
-var center_offset;
+var center_offset
+
+// TODO: Vary on window size?
+var scalebar_target_width = 150
 
 var FancyNumber = (function(number, sigfigs) {
   var number_names = [
@@ -69,7 +72,7 @@ var FancyNumber = (function(number, sigfigs) {
 
 $(function() {
   container = $('.stuff')
-  $.getJSON("ships.json").done(function(data) {
+  $.getJSON("ships.json?v=2").done(function(data) {
     ships = data;
     initialize_ships();
   })
@@ -186,6 +189,18 @@ function resize() {
   } else {
     $('.stuff').show()
   }
+
+  update_status()
+  update_scalebar()
+
+  if(!loaded) {
+    text_elm.find('.loading').hide()
+    text_elm.find('.loaded').show()
+    loaded = true
+  }
+}
+
+function update_status() {
   var text_elm = $('.status')
   text_elm.find('.m_per_px').text((new FancyNumber(m_per_px, 3)).getUnits());
   real_to_screen = m_per_px*1000*screen_px_per_mm
@@ -194,9 +209,13 @@ function resize() {
   } else {
     text_elm.find('.ratio').text(new FancyNumber(real_to_screen, 1).getHuman() + ':1')
   }
-  if(!loaded) {
-    text_elm.find('.loading').hide()
-    text_elm.find('.loaded').show()
-    loaded = true
-  }
+}
+
+function update_scalebar() {
+  var scalebar = $('.scalebar')
+  var basewidth = scalebar_target_width*m_per_px
+  var divfact = Math.pow(10, Math.floor(Math.log10(basewidth)))
+  var scalewidth = Math.round(basewidth/divfact)*divfact
+  scalebar.find('.bar').css('width', scalewidth/m_per_px)
+  scalebar.find('.label').text(FancyNumber(scalewidth).getUnits())
 }

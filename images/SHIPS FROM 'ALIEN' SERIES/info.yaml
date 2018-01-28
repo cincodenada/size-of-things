@@ -24,14 +24,6 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppmardukscout.gif
-info:
-  Description: Marduk scout ship, 500m
-  Size: 500.0
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 10mppzencommandship1.gif
 info:
   Description: ''
@@ -75,14 +67,6 @@ info:
   Description: Zentraedi monitor, 1.1km
   Size: 1.1
   Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppzenscout.gif
-info:
-  Description: Zentraedi scout ship, 500m
-  Size: 500.0
-  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

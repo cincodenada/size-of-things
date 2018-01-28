@@ -192,12 +192,6 @@ function resize() {
 
   update_status()
   update_scalebar()
-
-  if(!loaded) {
-    text_elm.find('.loading').hide()
-    text_elm.find('.loaded').show()
-    loaded = true
-  }
 }
 
 function update_status() {
@@ -208,6 +202,12 @@ function update_status() {
     text_elm.find('.ratio').text('1:' + new FancyNumber(1/real_to_screen, 1).getHuman())
   } else {
     text_elm.find('.ratio').text(new FancyNumber(real_to_screen, 1).getHuman() + ':1')
+  }
+
+  if(!loaded) {
+    text_elm.find('.loading').hide()
+    text_elm.find('.loaded').show()
+    loaded = true
   }
 }
 

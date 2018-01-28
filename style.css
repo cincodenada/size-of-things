@@ -2,6 +2,14 @@ body {
   background: url('images/stars_tile.jpg') black;
   color: white;
   height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.status {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
 }
 
 .thing {
@@ -39,7 +47,14 @@ a:visited {
   color: #999;
 }
 
-.scalebar { float: right; }
+.loading, .loaded, .scalebar {
+  background: url('images/stars_tile.jpg') black;
+  background-attachment: fixed;
+  padding: 10px;
+}
+.scalebar {
+  float: right;
+}
 .scalebar .bar {
   border: 1px solid white;
   border-top-width: 0px;

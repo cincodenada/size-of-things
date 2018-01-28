@@ -77,20 +77,6 @@ m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppstsonacruiser.gif
-info:
-  Description: Son'A battleship
-m_per_px: 10
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppstspecies8472.gif
-info:
-  Description: Species 8472
-m_per_px: 10
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 10mppstvothcityship.gif
 info:
   Description: Voth City Ship, 4900m

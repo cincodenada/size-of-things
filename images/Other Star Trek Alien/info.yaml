@@ -168,14 +168,6 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppstsmallships.gif
-info:
-  Description: Smaller vessels from 'Star Trek', to view in greater detail larger
-    images are found on the 10 ppm page
-m_per_px: 1
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 1mppststralebsecurityship.gif
 info:
   Description: Straleb security vessel 180m
@@ -221,4 +213,12 @@ info:
   Description: Zahl ship 360m
   Size: 360.0
   Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppstsmallships.gif
+info:
+  Description: Smaller vessels from 'Star Trek', to view in greater detail, click
+    here
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html

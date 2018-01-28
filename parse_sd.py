@@ -340,30 +340,25 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
 
   finish_pending()
 
-# Deduplicate
+config = yaml.load(open('sdparse_config.yaml', 'r'))
+
+# Deduplicate/filter
 max_res = {}
 filtered = {}
 for (idx, s) in enumerate(ships):
-  imgname = os.path.basename(s['src']).lower()
+  imgname = os.path.basename(s['src'])
+  if os.path.basename(s['src']) in config['ignore_images']:
+    continue
+
+  mpp = s['default_mpp']
   bits = re.match(
     '(\d+)([kc]?)([mp])([mp])([mp])(.*).gif',
-    imgname 
+    imgname.lower()
   )
-  if(bits):
+  if bits:
     (num, prefix, numer, _, denom, ship) = bits.groups()
-    num = float(num)
-    if(prefix == 'k'):
-      num *= 1000
-    elif(prefix == 'c'):
-      num /= 100
-
-    if(numer == 'p'):
-      ppm = num
-    else:
-      ppm = 1/num
-
-    if ship not in max_res or max_res[ship] < ppm:
-      max_res[ship] = ppm
+    if ship not in max_res or max_res[ship] > mpp:
+      max_res[ship] = mpp
       filtered[ship] = s
   else:
     print(imgname)

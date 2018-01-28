@@ -57,13 +57,6 @@ m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppb5eaearthforce1.gif
-info:
-  Description: Earth Force 1
-m_per_px: 10
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 10mppb5eahyperion.gif
 info:
   Description: Hyperion cruiser
@@ -109,20 +102,6 @@ credit: Jeff Russell
 filename: 10mppb5iavictory.gif
 info:
   Description: Victory class destroyer
-m_per_px: 10
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5iawhitestar.gif
-info:
-  Description: Whitestar
-m_per_px: 10
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 10mppb5lowerscale.gif
-info:
-  Description: Smaller ships from Babylon 5 TV series
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---

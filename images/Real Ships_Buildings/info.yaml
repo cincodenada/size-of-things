@@ -49,14 +49,6 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppexistBoeing747.gif
-info:
-  Description: 'Boeing 747 Length: 70.5m'
-  Length: 70.5
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 1mppexistCNTower.gif
 info:
   Description: 'CN Tower Height: 553.3m'
@@ -204,12 +196,10 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 2mppexistSpaceStationA.gif
+filename: 2mppexistBoeing747.gif
 info:
-  Description: 'The International Space Station Length: 80m I thought it interesting
-    to compare where we thought we''d be in 2001 as opposed to where we are. Kudos
-    to the Space Station Team.'
-  Length: 80.0
+  Description: 'Boeing 747 Length: 70.5m'
+  Length: 70.5
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---

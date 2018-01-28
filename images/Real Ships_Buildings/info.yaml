@@ -156,34 +156,10 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 2mppKingKong.gif
-info:
-  Description: 'King Kong Height: 12.5m (Approximate)'
-  Height: 12.5
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexist330tonminingtruck.gif
-info:
-  Description: '330 ton mining truck Height: 7.5m'
-  Height: 7.5
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 2mppexistBoeing747.gif
 info:
   Description: 'Boeing 747 Length: 70.5m'
   Length: 70.5
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexistPeggysCoveLighthouse.gif
-info:
-  Description: 'Peggy''s Cove LightHouse Nova Scotia Height: 15m'
-  Height: 15.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -201,12 +177,4 @@ info:
   Description: 'Knock NavisLength: 458.4m'
   Size: 458.4
   Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
-filename: 2mppexiststealthfighter.gif
-info:
-  Description: 'Stealth Fighter (F-117A Nighthawk) Wingspan: 13.2m'
-  Unit: m
-  Wingspan: 13.2
 source: http://www.merzo.net/indexSD.html

@@ -17,17 +17,15 @@ ignore_images:
   - 10mppb5eaolympuscorvette.gif
   - 10mppexist.gif
   - 2mppexistSpaceStationA.gif
-  - 2mppstsmallships.gif
-  - 2mppswsmallships.gif
-  - 2mppb5smallships.gif
   - 1mppSerenity.gif
-  - 1mppb5smallships.gif
-  - 1mppstsmallships.gif
-  - 1mppswsmallships.gif
   - 1mppexistBoeing747.gif
   - 1mppexistbluewhale.gif
-  - 1mppexistPeggysCoveLighthouse.gif
-  - 1mppexiststealthfighter.gif
-  - 1mppexist330tonminingtruck.gif
-  - 1mppKingKong.gif
   - 10ppmhuman.gif
+
+  - b5smallships
+  - stsmallships
+  - swsmallships
+  - existpeggyscovelighthouse
+  - existstealthfighter
+  - exist330tonminingtruck
+  - kingkong

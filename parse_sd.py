@@ -357,6 +357,11 @@ for (idx, s) in enumerate(ships):
   )
   if bits:
     (num, prefix, numer, _, denom, ship) = bits.groups()
+
+    if ship in config['ignore_images']:
+      print("Skipping " + ship)
+      continue
+
     if ship not in max_res or max_res[ship] > mpp:
       max_res[ship] = mpp
       filtered[ship] = s

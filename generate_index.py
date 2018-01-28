@@ -6,6 +6,7 @@ import math
 import rect_layout
 from PIL import Image
 from progress.bar import Bar
+import csv
 
 dimension_axes = {
   'Size': 0,
@@ -143,6 +144,9 @@ def sort_ship(ship):
 ships = gather_yaml('images')
 ships.sort(key = sort_ship)
 
+ship_size = csv.writer(open('sizes.csv','w'))
+ship_size.writerow(['image','mpp','width','height'])
+
 layout = rect_layout.Layout(24)
 bar = Bar('Placing ships', max=len(ships))
 for s in ships:
@@ -150,6 +154,11 @@ for s in ships:
     print("Skipping {}, no size info!".format(s['info']['Name']))
   if 'image_size' not in s:
     print("Skipping {}, no image info!".format(s['info']['Name']))
+
+  ship_size.writerow([
+      s['filename'], s['m_per_px'],
+      s['image_size'][0], s['image_size'][1]
+  ])
 
   rect = layout.add_rect([
     px * s['m_per_px']

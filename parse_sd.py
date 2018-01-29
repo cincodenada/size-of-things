@@ -19,13 +19,13 @@ size_extracts = [
 ]
 
 mpp_map = {
-  "1 cm per pixel.htm": 1/100,
-  "10 Pixels per meter.htm": 1/10,
+  "1 cm per pixel.htm": 1.0/100,
+  "10 Pixels per meter.htm": 1.0/10,
   "1 Pixel per meter.htm": 1,
   "2 meters per pixel.htm": 2,
   "10 meters per pixel.htm": 10,
-  "100 meters per pixel.htm": 100,
-  "2000 meters per pixel.htm": 2000,
+  "100 Pixels per meter.htm": 100,
+  "2000 Meters per Pixel.htm": 2000,
   "FIVE HUNDRED THOUSAND KILOMETERS per Pixel!!.htm": 500000
 }
 

@@ -5,6 +5,7 @@ info:
   Description: 'Station V from 2001 Diameter: 300m Ok, not a Real ship, but look over
     there ->'
   Diameter: 300.0
+  Name: Station V from 2001
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -13,6 +14,7 @@ filename: 1mppGhostBustersStayPuft.gif
 info:
   Description: 'Stay Puft Marshmallow Man Height: 43m'
   Height: 43.0
+  Name: Stay Puft Marshmallow Man
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -21,6 +23,7 @@ filename: 1mppGodzilla.gif
 info:
   Description: 'Godzilla Height: 100m'
   Height: 100.0
+  Name: Godzilla
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -29,6 +32,7 @@ filename: 1mppcloverfield.gif
 info:
   Description: 'Cloverfield Creature Height: 153m (Approximate)'
   Height: 153.0
+  Name: Cloverfield Creature
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -37,6 +41,7 @@ filename: 1mppexistCNTower.gif
 info:
   Description: 'CN Tower Height: 553.3m'
   Height: 553.3
+  Name: CN Tower
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -45,6 +50,7 @@ filename: 1mppexistCalgaryTower.gif
 info:
   Description: 'Calgary Tower Height: 190.8m'
   Height: 190.8
+  Name: Calgary Tower
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -53,6 +59,7 @@ filename: 1mppexistEmpireStateBuilding.gif
 info:
   Description: 'Empire State Building Height: 443.5m'
   Height: 443.5
+  Name: Empire State Building
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -63,6 +70,7 @@ info:
     to compare where we thought we''d be in 2001 as opposed to where we are. Kudos
     to the Space Station Team.'
   Length: 80.0
+  Name: The International Space Station
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -70,6 +78,7 @@ credit: Jeff Russell
 filename: 1mppexistdiscovery.gif
 info:
   Description: 'Space Shuttle Discovery Height with tanks: 56.1m'
+  Name: Space Shuttle Discovery Height with
   Size: 56.1
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -79,6 +88,7 @@ filename: 1mppexisteiffeltower.gif
 info:
   Description: 'Eiffel Tower Height: 324m'
   Height: 324.0
+  Name: Eiffel Tower
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -87,6 +97,7 @@ filename: 1mppexistfootbalfield.gif
 info:
   Description: 'Amercan Regulation Football Field Length: 109.7m'
   Length: 109.7
+  Name: Amercan Regulation Football Field
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -96,6 +107,7 @@ info:
   Description: 'The Hindenburg, built in Germany in 1936 and later destroyed Length:
     245m'
   Length: 245.0
+  Name: The Hindenburg, built in Germany in 1936 and later destroyed
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -104,6 +116,7 @@ filename: 1mppexistknocknavis.gif
 info:
   Description: 'Knock Navis (Formerly ''Jahre Viking''), World''s Largest ship, I
     thinkLength: 458.4m'
+  Name: Knock Navis (Formerly 'Jahre Viking'), World's Largest ship, I
   Size: 458.4
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -113,6 +126,7 @@ filename: 1mppexistsaturn5.gif
 info:
   Description: 'Appolo Saturn V Height: 110.6m'
   Height: 110.6
+  Name: Appolo Saturn V
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -121,6 +135,7 @@ filename: 1mppexiststatueofliberty.gif
 info:
   Description: 'Statue of Liberty Height: 93m'
   Height: 93.0
+  Name: Statue of Liberty
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -128,6 +143,7 @@ credit: Jeff Russell
 filename: 1mppexiststealthbomber.gif
 info:
   Description: 'Stealth Bomber (B2-A Spirit) Wingspan: 52.4m'
+  Name: Stealth Bomber (B2-A Spirit)
   Unit: m
   Wingspan: 52.4
 source: http://www.merzo.net/indexSD.html
@@ -136,6 +152,7 @@ credit: Jeff Russell
 filename: 1mppexisttyphoonsub.gif
 info:
   Description: 'Typhoon Class Nuclear SubLength: 175m'
+  Name: Typhoon Class Nuclear
   Size: 175.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -145,6 +162,7 @@ filename: 1mppexistyamato.gif
 info:
   Description: 'Battleship Yamato, length: 263m'
   Length: 263.0
+  Name: Battleship Yamato,
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -152,6 +170,7 @@ credit: Jeff Russell
 filename: 2mppexistjahreviking.gif
 info:
   Description: 'Knock NavisLength: 458.4m'
+  Name: Knock
   Size: 458.4
   Unit: m
 source: http://www.merzo.net/indexSD.html

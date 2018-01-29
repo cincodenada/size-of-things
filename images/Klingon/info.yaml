@@ -3,6 +3,7 @@ credit: Jeff Russell
 filename: 1mppSTKlingonBirdofPrey.gif
 info:
   Description: Klingon Bird of Prey 109m
+  Name: Klingon Bird of Prey
   Size: 109.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -11,6 +12,7 @@ credit: Jeff Russell
 filename: 1mppSTKlingonD7.gif
 info:
   Description: Klingon D-7 228m
+  Name: Klingon D-7
   Size: 228.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -19,6 +21,7 @@ credit: Jeff Russell
 filename: 1mppSTKlingonKTinga.gif
 info:
   Description: Klingon K'Tinga 214m
+  Name: Klingon K'Tinga
   Size: 214.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -27,6 +30,7 @@ credit: Jeff Russell
 filename: 1mppSTKlingonMilitaryTransport.gif
 info:
   Description: Klingon Military Transport 256m
+  Name: Klingon Military Transport
   Size: 256.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -35,6 +39,7 @@ credit: Jeff Russell
 filename: 1mppSTKlingonNeghVar.gif
 info:
   Description: Klingon Negh'Var 682m
+  Name: Klingon Negh'Var
   Size: 682.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -43,6 +48,7 @@ credit: Jeff Russell
 filename: 1mppSTKlingonVorCha.gif
 info:
   Description: Klingon Vor'Cha 481m
+  Name: Klingon Vor'Cha
   Size: 481.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

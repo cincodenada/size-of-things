@@ -129,8 +129,11 @@ def generate_ship(ship):
         info['Unit'] = unit_map[unit]
         info[dim_key] = getnum(ship_info.group('size'))
 
-      if ship_info.group('name') and 'Name' in info and info['Name'] != ship['name']:
-        info['AltName'] = ship_info.group('name')
+      if ship_info.group('name'):
+        if 'Name' in info and info['Name'] != ship['name']:
+          info['AltName'] = ship_info.group('name')
+        else:
+          info['Name'] = ship_info.group('name')
 
   outship = {}
   outship['filename'] = os.path.basename(ship['src'])

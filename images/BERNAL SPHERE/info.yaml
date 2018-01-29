@@ -5,6 +5,7 @@ info:
   Description: Bernal Sphere proposed space colony, main sphere 500m diameter, Image
     provided by A. Twu
   Diameter: 500.0
+  Name: Bernal Sphere proposed space colony, main sphere
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -42,5 +43,6 @@ info:
   Description: '''Event Horizon'', from the movie Event Horizon, approximately 2200
     meters long.'
   Length: 2200.0
+  Name: '''Event Horizon'', from the movie Event Horizon, approximately'
   Unit: m
 source: http://www.merzo.net/indexSD.html

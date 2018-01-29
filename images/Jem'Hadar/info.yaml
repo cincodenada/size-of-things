@@ -3,6 +3,7 @@ credit: Jeff Russell
 filename: 1mppSTJemHadarBattlecruiser.gif
 info:
   Description: Jem'Hadar battlecruiser 650m
+  Name: Jem'Hadar battlecruiser
   Size: 650.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -11,6 +12,7 @@ credit: Jeff Russell
 filename: 1mppstjemhadarattackship.gif
 info:
   Description: Jem'Hadar attack ship 95m
+  Name: Jem'Hadar attack ship
   Size: 95.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

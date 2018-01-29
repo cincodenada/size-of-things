@@ -3,6 +3,7 @@ credit: Jeff Russell
 filename: 10mppb53rdspacecruiser.gif
 info:
   Description: 3rd Space cruiser, 2km
+  Name: 3rd Space cruiser,
   Size: 2.0
   Unit: km
 source: http://www.merzo.net/indexSD.html
@@ -11,6 +12,7 @@ credit: Jeff Russell
 filename: 10mppb5babylon4.gif
 info:
   Description: Babylon 4 space colony
+  Name: Babylon
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
@@ -18,6 +20,7 @@ credit: Jeff Russell
 filename: 10mppb5babylon5.gif
 info:
   Description: Babylon 5 space colony
+  Name: Babylon
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
@@ -25,6 +28,7 @@ credit: Jeff Russell
 filename: 10mppb5centauribalvarin.gif
 info:
   Description: Centauri Balvarin cruiser, Babylon 5 AoG, ship designed by Mike Wikan
+  Name: Centauri Balvarin cruiser, Babylon
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
@@ -32,6 +36,7 @@ credit: Jeff Russell
 filename: 10mppb5centauricorvan.gif
 info:
   Description: Centauri Corvan cruiser, Babylon 5 AoG, ship designed by Mike Wikan
+  Name: Centauri Corvan cruiser, Babylon
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
@@ -102,6 +107,7 @@ credit: Jeff Russell
 filename: 10mppb5narnbintak.gif
 info:
   Description: Narn Bin'Tak cruiser, 2km
+  Name: Narn Bin'Tak cruiser,
   Size: 2.0
   Unit: km
 source: http://www.merzo.net/indexSD.html
@@ -131,6 +137,7 @@ credit: Jeff Russell
 filename: 10mppb5shadowdreadnought.gif
 info:
   Description: Shadow Dreadnought, 2km
+  Name: Shadow Dreadnought,
   Size: 2.0
   Unit: km
 source: http://www.merzo.net/indexSD.html

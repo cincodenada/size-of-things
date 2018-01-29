@@ -3,6 +3,7 @@ credit: Jeff Russell
 filename: 1mppSTRomulanBirdofPrey.gif
 info:
   Description: Romulan Bird of Prey 131m
+  Name: Romulan Bird of Prey
   Size: 131.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -11,6 +12,7 @@ credit: Jeff Russell
 filename: 1mppSTRomulanScienceShip.gif
 info:
   Description: Romulan science ship 95m
+  Name: Romulan science ship
   Size: 95.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -19,6 +21,7 @@ credit: Jeff Russell
 filename: 1mppSTRomulanScoutShip.gif
 info:
   Description: Roumlan scout ship 89m
+  Name: Roumlan scout ship
   Size: 89.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

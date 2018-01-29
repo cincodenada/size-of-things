@@ -12,6 +12,7 @@ filename: 1mppB5EarthForceOne.gif
 info:
   Description: EA Earth Force One 425m long, mesh created and rendered by Meurig
   Length: 425.0
+  Name: EA Earth Force One
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -19,6 +20,7 @@ credit: Jeff Russell
 filename: 1mppB5ShadowScout.gif
 info:
   Description: Shadow Scout 356m
+  Name: Shadow Scout
   Size: 356.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -27,6 +29,7 @@ credit: Jeff Russell
 filename: 1mppB5VorlonTransport.gif
 info:
   Description: Vorlon Transport 131m
+  Name: Vorlon Transport
   Size: 131.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -35,6 +38,7 @@ credit: Jeff Russell
 filename: 1mppb53rdspacefighter.gif
 info:
   Description: 3rd Space fighter 100m
+  Name: 3rd Space fighter
   Size: 100.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -44,6 +48,7 @@ filename: 1mppb5centaurikutai.gif
 info:
   Description: Centauri Kutai 465m (to be updated, should be 200m), Babylon 5 Agents
     of Gaming, ship designed by Mike Wikan
+  Name: Centauri Kutai 465m (to be updated, should be 200m), Babylon
 m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
@@ -51,6 +56,7 @@ credit: Jeff Russell
 filename: 1mppb5drakhraider.gif
 info:
   Description: Drakh Raider 215m
+  Name: Drakh Raider
   Size: 215.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -59,6 +65,7 @@ credit: Jeff Russell
 filename: 1mppb5drazisunhawk.gif
 info:
   Description: Drazi Sun-Hawk 450m, mesh created and rendered by Meurig
+  Name: Drazi Sun-Hawk
   Size: 450.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -67,6 +74,7 @@ credit: Jeff Russell
 filename: 1mppb5eawhitestar.gif
 info:
   Description: EA Whitestar 475.6m
+  Name: EA Whitestar
   Size: 475.6
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -75,6 +83,7 @@ credit: Jeff Russell
 filename: 1mppb5raiderbattlewagon.gif
 info:
   Description: Raider battle wagon 89m
+  Name: Raider battle wagon
   Size: 89.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -84,6 +93,7 @@ filename: 1mppb5vreexill.gif
 info:
   Description: Vree Xill 500m diameter
   Diameter: 500.0
+  Name: Vree Xill
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -92,6 +102,7 @@ filename: 1mppb5vreexorr.gif
 info:
   Description: Vree Xorr 350m diameter
   Diameter: 350.0
+  Name: Vree Xorr
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---

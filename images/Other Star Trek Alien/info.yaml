@@ -3,6 +3,7 @@ credit: Jeff Russell
 filename: 1mppSTHidekiShip.gif
 info:
   Description: Hideki ship 98m
+  Name: Hideki ship
   Size: 98.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -11,6 +12,7 @@ credit: Jeff Russell
 filename: 1mppSTMalonExportVessel.gif
 info:
   Description: Malon Export Vessel 515m
+  Name: Malon Export Vessel
   Size: 515.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -19,6 +21,7 @@ credit: Jeff Russell
 filename: 1mppSTMerchantman.gif
 info:
   Description: Merchantman 150m
+  Name: Merchantman
   Size: 150.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -27,6 +30,7 @@ credit: Jeff Russell
 filename: 1mppSTPromellianBattlecruiser.gif
 info:
   Description: Promellian battlecruiser 600m
+  Name: Promellian battlecruiser
   Size: 600.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -35,6 +39,7 @@ credit: Jeff Russell
 filename: 1mppSTSonACommandShip.gif
 info:
   Description: Son'A command ship 354m
+  Name: Son'A command ship
   Size: 354.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -43,6 +48,7 @@ credit: Jeff Russell
 filename: 1mppSTTamarianShip.gif
 info:
   Description: Tamarian ship 700m
+  Name: Tamarian ship
   Size: 700.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -51,6 +57,7 @@ credit: Jeff Russell
 filename: 1mppSTTarellianShip.gif
 info:
   Description: Tarellian ship 560m
+  Name: Tarellian ship
   Size: 560.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -59,6 +66,7 @@ credit: Jeff Russell
 filename: 1mppstangosiantransport.gif
 info:
   Description: Angosian transport 110m
+  Name: Angosian transport
   Size: 110.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -67,6 +75,7 @@ credit: Jeff Russell
 filename: 1mppstbatris.gif
 info:
   Description: Batris ship 290m
+  Name: Batris ship
   Size: 290.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -75,6 +84,7 @@ credit: Jeff Russell
 filename: 1mppstbreen.gif
 info:
   Description: Breen ship 330m
+  Name: Breen ship
   Size: 330.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -83,6 +93,7 @@ credit: Jeff Russell
 filename: 1mppstcaatati.gif
 info:
   Description: Caatati ship 116m
+  Name: Caatati ship
   Size: 116.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -91,6 +102,7 @@ credit: Jeff Russell
 filename: 1mppsthirogenhuntership.gif
 info:
   Description: Hirogen Hunter ship 150m
+  Name: Hirogen Hunter ship
   Size: 150.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -99,6 +111,7 @@ credit: Jeff Russell
 filename: 1mppstjaheel.gif
 info:
   Description: Jaheel's ship 300m
+  Name: Jaheel's ship
   Size: 300.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -107,6 +120,7 @@ credit: Jeff Russell
 filename: 1mppstjovis.gif
 info:
   Description: Jovis ship 250m
+  Name: Jovis ship
   Size: 250.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -115,6 +129,7 @@ credit: Jeff Russell
 filename: 1mppstkaremma.gif
 info:
   Description: Karemma ship 380m
+  Name: Karemma ship
   Size: 380.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -123,6 +138,7 @@ credit: Jeff Russell
 filename: 1mppstkazonraider.gif
 info:
   Description: Kazon raider 160m
+  Name: Kazon raider
   Size: 160.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -131,6 +147,7 @@ credit: Jeff Russell
 filename: 1mppstkrenimpatrolship.gif
 info:
   Description: Krenim patrol ship 260m
+  Name: Krenim patrol ship
   Size: 260.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -139,6 +156,7 @@ credit: Jeff Russell
 filename: 1mppstkrenimwarship.gif
 info:
   Description: Krenim warship 500m
+  Name: Krenim warship
   Size: 500.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -147,6 +165,7 @@ credit: Jeff Russell
 filename: 1mppstmawasi.gif
 info:
   Description: Mawasi cruiser 245m
+  Name: Mawasi cruiser
   Size: 245.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -155,6 +174,7 @@ credit: Jeff Russell
 filename: 1mppstnihydron.gif
 info:
   Description: Nyhidron cruiser 310m
+  Name: Nyhidron cruiser
   Size: 310.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -163,6 +183,7 @@ credit: Jeff Russell
 filename: 1mppstpralor.gif
 info:
   Description: Pralor vessel 450m
+  Name: Pralor vessel
   Size: 450.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -171,6 +192,7 @@ credit: Jeff Russell
 filename: 1mppststralebsecurityship.gif
 info:
   Description: Straleb security vessel 180m
+  Name: Straleb security vessel
   Size: 180.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -179,6 +201,7 @@ credit: Jeff Russell
 filename: 1mppsttalarianobscraft.gif
 info:
   Description: Talarian observation craft 220m
+  Name: Talarian observation craft
   Size: 220.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -187,6 +210,7 @@ credit: Jeff Russell
 filename: 1mppstvidian.gif
 info:
   Description: Vidian ship 550m
+  Name: Vidian ship
   Size: 550.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -195,6 +219,7 @@ credit: Jeff Russell
 filename: 1mppstwadi.gif
 info:
   Description: Wadi ship 200m
+  Name: Wadi ship
   Size: 200.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -203,6 +228,7 @@ credit: Jeff Russell
 filename: 1mppstxhosa.gif
 info:
   Description: Xhosa ship 210m
+  Name: Xhosa ship
   Size: 210.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -211,6 +237,7 @@ credit: Jeff Russell
 filename: 1mppstzahl.gif
 info:
   Description: Zahl ship 360m
+  Name: Zahl ship
   Size: 360.0
   Unit: m
 source: http://www.merzo.net/indexSD.html

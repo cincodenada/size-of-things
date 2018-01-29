@@ -6,6 +6,7 @@ info:
     there ->'
   Diameter: 300.0
   Name: Station V from 2001
+  Size Note: Ok, not a Real ship, but look over there ->
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -33,6 +34,7 @@ info:
   Description: 'Cloverfield Creature Height: 153m (Approximate)'
   Height: 153.0
   Name: Cloverfield Creature
+  Size Note: Approximate
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -71,6 +73,8 @@ info:
     to the Space Station Team.'
   Length: 80.0
   Name: The International Space Station
+  Size Note: I thought it interesting to compare where we thought we'd be in 2001
+    as opposed to where we are. Kudos to the Space Station Team.
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -78,7 +82,7 @@ credit: Jeff Russell
 filename: 1mppexistdiscovery.gif
 info:
   Description: 'Space Shuttle Discovery Height with tanks: 56.1m'
-  Name: Space Shuttle Discovery Height with
+  Name: 'Space Shuttle Discovery Height with tanks:'
   Size: 56.1
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -116,7 +120,7 @@ filename: 1mppexistknocknavis.gif
 info:
   Description: 'Knock Navis (Formerly ''Jahre Viking''), World''s Largest ship, I
     thinkLength: 458.4m'
-  Name: Knock Navis (Formerly 'Jahre Viking'), World's Largest ship, I
+  Name: 'Knock Navis (Formerly ''Jahre Viking''), World''s Largest ship, I thinkLength:'
   Size: 458.4
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -152,7 +156,7 @@ credit: Jeff Russell
 filename: 1mppexisttyphoonsub.gif
 info:
   Description: 'Typhoon Class Nuclear SubLength: 175m'
-  Name: Typhoon Class Nuclear
+  Name: 'Typhoon Class Nuclear SubLength:'
   Size: 175.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
@@ -162,7 +166,7 @@ filename: 1mppexistyamato.gif
 info:
   Description: 'Battleship Yamato, length: 263m'
   Length: 263.0
-  Name: Battleship Yamato,
+  Name: Battleship Yamato
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
@@ -170,7 +174,7 @@ credit: Jeff Russell
 filename: 2mppexistjahreviking.gif
 info:
   Description: 'Knock NavisLength: 458.4m'
-  Name: Knock
+  Name: 'Knock NavisLength:'
   Size: 458.4
   Unit: m
 source: http://www.merzo.net/indexSD.html

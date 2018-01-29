@@ -11,13 +11,6 @@ try:
 except ImportError:
   from urllib.parse import unquote
 
-size_extracts = [
-  # Name Length: 123.45m or 123.45 m
-  r"(?P<name>.*) (?P<dimension>\w+): (?P<size>[\d\., ]*\d) ?(?P<unit>\w+)",
-  # Name 123.45m diameter
-  r"(?P<name>.*) (?P<size>[\d\., ]*\d) ?(?P<unit>\w+)(?: (?P<dimension>\w+))?",
-]
-
 mpp_map = {
   "1 cm per pixel.htm": 1.0/100,
   "10 Pixels per meter.htm": 1.0/10,
@@ -43,9 +36,11 @@ field_map = {
   'SOURCE': 'group',
   'long': 'Length',
   'height': 'Height',
+  'high': 'Height',
   'length': 'Length',
   'width': 'Width',
   'diameter': 'Diameter',
+  'wingspan': 'Wingspan',
 }
 
 size_types = ['Size','Height','Width','Length','Diameter','Wingspan']
@@ -62,6 +57,18 @@ units = {
   'mi': ['mile'],
   'ft': ['foot','feet'],
 }
+
+unit_match = "|".join([re.escape(k) for k in units.keys()])
+field_match = "|".join([re.escape(k) for k in field_map.keys()])
+size_extracts = [
+  # Name Length: 123.45m or 123.45 m
+  r"(?P<name>.*?)[,]? (?P<dimension>" + field_match + "): (?P<size>[\d\., ]*\d) ?(?P<unit>" + unit_match + ")(?:,? ?\(?(?P<note>[^\(\)]*)\)?)?",
+  # Name 123.45m diameter
+  r"(?P<name>.*?)[,]? (?:\(?(?P<note>approximately)\)? )?(?P<size>[\d\., ]*\d) ?(?P<unit>" + unit_match + ")(?: (?P<dimension>" + field_match + "))?",
+]
+print(size_extracts)
+
+
 
 unit_map = {}
 for (unit, maps) in units.items():
@@ -81,7 +88,7 @@ def generate_ship(ship):
   info = {}
   
   for regex in size_extracts:
-    ship_info = re.match(regex, ship['description'])
+    ship_info = re.match(regex, ship['description'], flags=re.IGNORECASE)
     if ship_info:
       break
   
@@ -128,6 +135,9 @@ def generate_ship(ship):
       if unit and (unit in unit_map):
         info['Unit'] = unit_map[unit]
         info[dim_key] = getnum(ship_info.group('size'))
+
+      if ship_info.group('note'):
+        info['Size Note'] = ship_info.group('note')
 
       if ship_info.group('name'):
         if 'Name' in info and info['Name'] != ship['name']:

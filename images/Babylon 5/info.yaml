@@ -48,8 +48,9 @@ filename: 1mppb5centaurikutai.gif
 info:
   Description: Centauri Kutai 465m (to be updated, should be 200m), Babylon 5 Agents
     of Gaming, ship designed by Mike Wikan
-  Name: Centauri Kutai 465m (to be updated, should be 200m), Babylon
-m_per_px: 1
+  Name: Centauri Kutai
+  Size: 465.0
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

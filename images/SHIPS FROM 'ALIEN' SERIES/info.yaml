@@ -3,7 +3,7 @@ credit: Jeff Russell
 filename: 10mppMardukFlagship.gif
 info:
   Description: Marduk flagship, 4km
-  Name: Marduk flagship,
+  Name: Marduk flagship
   Size: 4.0
   Unit: km
 source: http://www.merzo.net/indexSD.html
@@ -12,7 +12,7 @@ credit: Jeff Russell
 filename: 10mppSDF1.gif
 info:
   Description: Macross Super Dimensional Fortress One, 1.2km
-  Name: Macross Super Dimensional Fortress One,
+  Name: Macross Super Dimensional Fortress One
   Size: 1.2
   Unit: km
 source: http://www.merzo.net/indexSD.html
@@ -21,7 +21,7 @@ credit: Jeff Russell
 filename: 10mppSDF3.gif
 info:
   Description: Super Dimensional Fortress Three, 1.6km
-  Name: Super Dimensional Fortress Three,
+  Name: Super Dimensional Fortress Three
   Size: 1.6
   Unit: km
 source: http://www.merzo.net/indexSD.html
@@ -51,7 +51,7 @@ credit: Jeff Russell
 filename: 10mppzencruiser.gif
 info:
   Description: Zentraedi Thuverl Salan (Cruiser), 2.3km
-  Name: Zentraedi Thuverl Salan (Cruiser),
+  Name: Zentraedi Thuverl Salan (Cruiser)
   Size: 2.3
   Unit: km
 source: http://www.merzo.net/indexSD.html
@@ -61,7 +61,7 @@ filename: 10mppzenflagship.gif
 info:
   Description: Zentraedi Nupetiet-Vergnitzs (Flagship), 4km, Originally designed by
     Kazutaka Miyatake, drawn by Jeff Russell
-  Name: Zentraedi Nupetiet-Vergnitzs (Flagship),
+  Name: Zentraedi Nupetiet-Vergnitzs (Flagship)
   Size: 4.0
   Unit: km
 source: http://www.merzo.net/indexSD.html
@@ -70,7 +70,7 @@ credit: Jeff Russell
 filename: 10mppzenmonitor.gif
 info:
   Description: Zentraedi monitor, 1.1km
-  Name: Zentraedi monitor,
+  Name: Zentraedi monitor
   Size: 1.1
   Unit: km
 source: http://www.merzo.net/indexSD.html
@@ -79,7 +79,7 @@ credit: Jeff Russell
 filename: 10mppzentanker.gif
 info:
   Description: Zentreadi Quitra Queleual (Tanker), 3km
-  Name: Zentreadi Quitra Queleual (Tanker),
+  Name: Zentreadi Quitra Queleual (Tanker)
   Size: 3.0
   Unit: km
 source: http://www.merzo.net/indexSD.html

@@ -11,10 +11,12 @@ credit: Jeff Russell
 filename: 10ppmswempireatat.gif
 info:
   Description: Imperial All Terrain Armoured Transport
-  Height: Approximately 20m. The 15.5m height stated at StarWars.com just doesn't
-    add up when you watch the movie.
+  Height: 20.0
   Name: Imperial AT-AT walker
-m_per_px: 0.1
+  Size Details: The 15.5m height stated at StarWars.com just doesn't add up when you
+    watch the movie.
+  Size Notes: Approximately
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

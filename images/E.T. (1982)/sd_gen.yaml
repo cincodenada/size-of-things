@@ -4,6 +4,7 @@ filename: 1CMPPET.gif
 info:
   Description: ''
   Name: E.T.
-  Size: +/- 1.3m
-m_per_px: 0.01
+  Size: 1.3
+  Size Notes: +/-
+  Unit: m
 source: http://www.merzo.net/indexSD.html

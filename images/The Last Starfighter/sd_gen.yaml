@@ -3,7 +3,8 @@ credit: Jeff Russell
 filename: 10ppmlaststarfightergunstar.gif
 info:
   Description: ''
-  Length: Approximately 20m.
+  Length: 20.0
   Name: Gunstar
-m_per_px: 0.1
+  Size Notes: Approximately
+  Unit: m
 source: http://www.merzo.net/indexSD.html

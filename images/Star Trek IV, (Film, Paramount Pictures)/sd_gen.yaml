@@ -4,9 +4,11 @@ filename: 100mppSTWhaleProbe.gif
 info:
   Description: Unknown, although the device was able to communicate with humpback
     whales.
-  Length: Approximately 74 km. There are numerous conflicting sources for the length
-    of the Whale Probe, but extrapolation from the film has led me to accept this
-    length as being the most likely.
+  Length: 74.0
   Name: Whale Probe
-m_per_px: 100
+  Size Details: There are numerous conflicting sources for the length of the Whale
+    Probe, but extrapolation from the film has led me to accept this length as being
+    the most likely.
+  Size Notes: Approximately
+  Unit: km
 source: http://www.merzo.net/indexSD.html

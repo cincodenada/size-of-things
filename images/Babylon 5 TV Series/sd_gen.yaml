@@ -83,9 +83,10 @@ credit: Jeff Russell
 filename: 10ppmb5shadowspitfire.gif
 info:
   Description: The Shadows
-  Length: Varies, Between 15 and 50m
+  Length: 50.0
   Name: Shadow Spitfire
-m_per_px: 0.1
+  Size Notes: Varies, Between 15 and
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

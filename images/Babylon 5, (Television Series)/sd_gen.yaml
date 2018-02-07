@@ -3,9 +3,11 @@ credit: Jeff Russell
 filename: 100mppb5vorlonplanetkiller.gif
 info:
   Description: The Vorlon
-  Length: Approximately 45 km. There are numerous conflicting sources for the length
-    of the Vorlon Planet Killer, but extrapolation from the show has led me to accept
-    this length as being the most likely.
+  Length: 45.0
   Name: Vorlon Planet Killer
-m_per_px: 100
+  Size Details: There are numerous conflicting sources for the length of the Vorlon
+    Planet Killer, but extrapolation from the show has led me to accept this length
+    as being the most likely.
+  Size Notes: Approximately
+  Unit: km
 source: http://www.merzo.net/indexSD.html

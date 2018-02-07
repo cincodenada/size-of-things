@@ -68,9 +68,11 @@ size_extracts = [
   # Name 123.45m diameter
   r"(?P<name>.*?)[,]? (?:\(?(?P<note>approximately)\)? )?(?P<size>[\d\., ]*\d) ?(?P<unit>" + unit_match + ")(?: (?P<dimension>" + field_match + "))?",
 ]
-print(size_extracts)
-
-
+size_formats = [
+  r"(?P<size>[\d\., ]*\d) ?(?P<unit>\w+)(?:[,\.]\s+)?(?P<note>[^,\.].*)?",
+  r"(?:\(?(?P<note>[^\(\)]+?)\)? )?(?P<size>[\d\., ]*\d) ?(?P<unit>" + unit_match + ")[,\.]?\s+(?:\(?(?P<extra_note>[^\(\)]+)\)?)",
+  r"(?:\(?(?P<note>[^\(\)]+?)\)? )?(?P<size>[\d\., ]*\d) ?(?P<unit>" + unit_match + ")(?:[,\.]\s+)?(?P<extra_note>[^,\.].*)?",
+]
 
 unit_map = {}
 for (unit, maps) in units.items():
@@ -93,7 +95,7 @@ def generate_ship(ship):
     ship_info = re.match(regex, ship['description'], flags=re.IGNORECASE)
     if ship_info:
       break
-  
+
   if 'name' in ship:
     info['Name'] = ship['name']
 
@@ -106,7 +108,10 @@ def generate_ship(ship):
       break
 
   if has_size:
-    parts = re.match(r'(?P<size>[\d\., ]*\d) ?(?P<unit>\w+)(?:[,\.]\s+)?(?P<note>[^,\.].*)?', ship[cur_dim])
+    for regex in size_formats:
+      parts = re.match(regex, ship[cur_dim])
+      if parts:
+        break
     if(parts):
       print(ship[cur_dim])
       print(parts.groups())
@@ -119,6 +124,11 @@ def generate_ship(ship):
         if note[0] == '(' and note[-1] == ')':
           note = note[1:-1].strip()
         info['Size Notes'] = note
+        try:
+          if parts.group('extra_note'):
+            info['Size Details'] = parts.group('extra_note')
+        except IndexError:
+          pass
     else:
       if ship[cur_dim]:
         info[cur_dim] = ship[cur_dim]

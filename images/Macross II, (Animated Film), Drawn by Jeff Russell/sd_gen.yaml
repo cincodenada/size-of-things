@@ -3,8 +3,10 @@ credit: Jeff Russell
 filename: 100mppMardukBase.gif
 info:
   Description: Marduk, the creators of the Zentraedi.
-  Diameter: Approximately 50 km. This is the stated length of the RPG version, although
-    the movie version seems to be much larger. Further investigation is needed.
+  Diameter: 50.0
   Name: Marduk Mothership
-m_per_px: 100
+  Size Details: This is the stated length of the RPG version, although the movie version
+    seems to be much larger. Further investigation is needed.
+  Size Notes: Approximately
+  Unit: km
 source: http://www.merzo.net/indexSD.html

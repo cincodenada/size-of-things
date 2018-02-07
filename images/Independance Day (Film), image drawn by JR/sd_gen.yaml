@@ -3,7 +3,9 @@ credit: Jeff Russell
 filename: 2000mppID4Mothership.gif
 info:
   Description: ID4 Aliens. Please see notes
-  Length: Approximately 800 km long. Please see notes
+  Length: 800.0
   Name: ID4 Mothership
-m_per_px: 2000
+  Size Details: long. Please see notes
+  Size Notes: Approximately
+  Unit: km
 source: http://www.merzo.net/indexSD.html

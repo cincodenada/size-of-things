@@ -8,9 +8,11 @@ info:
     and five times as long. Mirrors reflect light into the living area in the center.
     At one end of the space station is a ring of farms. About 800,000 people were
     to live in it."'
-  Length: Approximately 9km (Main habitat cylinder)
+  Length: 9.0
   Name: Island Two space colony
-m_per_px: 10
+  Size Details: Main habitat cylinder
+  Size Notes: Approximately
+  Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -21,7 +23,9 @@ info:
     The larger diameter means the atmosphere inside is thick enough to create a blue
     sky effect. It is also known as the O''Neill Cylinder or the ''sunflower''. Island
     Three type colonies are depicted in the anime Mobile Suit Gundam series."'
-  Length: Main habitat cylinder approximately 32km, diameter 6.4km
+  Length: 32.0
   Name: Island Three space colony
-m_per_px: 100
+  Size Details: diameter 6.4km
+  Size Notes: Main habitat cylinder approximately
+  Unit: km
 source: http://www.merzo.net/indexSD.html

@@ -248,19 +248,7 @@ $(function() {
   })
 
   $('.stuff').on('mouseover', 'img', function() {
-    clear_info()
-    infodiv = $('.info')
-    infodiv.find('.universe').text(this.data.info.Universe)
-    infodiv.find('.faction').text(this.data.info.Faction)
-    infodiv.find('.name').text(this.data.info.Name)
-    infodiv.find('.size').text(this.data.info.Size)
-    infodiv.find('.unit').text(this.data.info.Unit || 'm')
-    infodiv.find('.credit').text(this.data.credit)
-    infodiv.find('.credit').attr('href',this.data.source)
-    ship_rect = this.getBoundingClientRect()
-    infodiv.css('top', ship_rect.bottom)
-    infodiv.css('left', ship_rect.left)
-    infodiv.show()
+    show_tooltip(this.data)
   })
 
   var last_len = 0
@@ -278,6 +266,7 @@ $(function() {
         horiz_zoom = found_ship.real_size[1]/screen_origin[1]
         m_per_px = Math.max(vert_zoom, horiz_zoom)
         resize()
+        show_tooltip(found_ship)
       }
     }
     query = evt.target.value.toLowerCase()
@@ -301,6 +290,22 @@ $(function() {
     }
   })
 })
+
+function show_tooltip(ship) {
+  clear_info()
+  infodiv = $('.info')
+  infodiv.find('.universe').text(ship.info.Universe)
+  infodiv.find('.faction').text(ship.info.Faction)
+  infodiv.find('.name').text(ship.info.Name)
+  infodiv.find('.size').text(ship.info.Size)
+  infodiv.find('.unit').text(ship.info.Unit || 'm')
+  infodiv.find('.credit').text(ship.credit)
+  infodiv.find('.credit').attr('href',ship.source)
+  ship_rect = ship.elm.getBoundingClientRect()
+  infodiv.css('top', ship_rect.bottom)
+  infodiv.css('left', ship_rect.left)
+  infodiv.show()
+}
 
 function clear_info() {
     infodiv = $('.info')

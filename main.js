@@ -185,7 +185,7 @@ var TrieIndex = (function(pool, text_keys, min_chars) {
   }
 
   TrieIndex.prototype.get_vals = function(node) {
-    results = {}
+    var results = {}
     for(l in node) {
       var new_results
       if(l == '_idx') {

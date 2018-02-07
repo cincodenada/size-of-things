@@ -145,6 +145,8 @@ var TrieIndex = (function(pool, text_keys, min_chars) {
             this.dropped.push(match_idx)
           }
         }
+        // Disable further searches if we are at a dead end
+        if(prev_matches.length && !this.matches.length) { this.cur_node = false }
       }
     } else {
       this.cur_node = false

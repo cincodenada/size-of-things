@@ -122,7 +122,69 @@ $(function() {
     infodiv.css('left', ship_rect.left)
     infodiv.show()
   })
+
+  var last_len = 0
+  var last_sel = []
+  $('.search input').on('keyup', function(evt) {
+    // For now very simple, don't deal with paste/backspace
+    query = evt.target.value.toLowerCase()
+    if(query.length < 4) { 
+      update_selection(last_sel, [])
+      last_sel = []
+      return
+    }
+
+    if(query.length - last_len != 1) {
+      idx_pos = text_index
+      cur_sel = search_trie(query)
+    } else {
+      cur_sel = search_trie(query.slice(-1))
+    }
+    if(!cur_sel) {
+      evt.target.className="error"
+      return
+    }
+    update_selection(last_sel, cur_sel)
+    last_sel = cur_sel
+  })
 })
+
+function update_selection(prev_sel, cur_sel) {
+  var desel = prev_sel.filter(function(w) { return cur_sel.indexOf(w) == -1 })
+  $.each(desel, function(x, idx) {
+    if(ships[idx].elm) {
+      $(ships[idx].elm).removeClass('highlight')
+    }
+  })
+  $.each(cur_sel, function(x, idx) {
+    if(ships[idx].elm) {
+      $(ships[idx].elm).addClass('highlight')
+    }
+  })
+}
+
+function search_trie(word) {
+  for(var l = 0; l < word.length; l++) {
+    if(idx_pos[word[l]]) {
+      idx_pos = idx_pos[word[l]]
+    } else {
+      return false
+    }
+  }
+  return walk_trie(idx_pos)
+}
+
+function walk_trie(node) {
+  results = []
+  for(l in node) {
+    if(l == '_idx') {
+      results = results.concat(node[l])
+    } else {
+      results = results.concat(walk_trie(node[l]))
+    }
+  }
+  return results
+}
 
 function clear_info() {
     infodiv = $('.info')

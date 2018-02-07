@@ -63,6 +63,8 @@ field_match = "|".join([re.escape(k) for k in field_map.keys()])
 size_extracts = [
   # Name Length: 123.45m or 123.45 m
   r"(?P<name>.*?)[,]? (?P<dimension>" + field_match + "): (?P<size>[\d\., ]*\d) ?(?P<unit>" + unit_match + ")(?:,? ?\(?(?P<note>[^\(\)]*)\)?)?",
+  # Name Length note: 123.45m or 123.45 m
+  r"(?P<name>.*?)[,]? (?P<dimension>" + field_match + ")(?:,? ?\(?(?P<note>[^\(\)]*)\)?)?: (?P<size>[\d\., ]*\d) ?(?P<unit>" + unit_match + ")",
   # Name 123.45m diameter
   r"(?P<name>.*?)[,]? (?:\(?(?P<note>approximately)\)? )?(?P<size>[\d\., ]*\d) ?(?P<unit>" + unit_match + ")(?: (?P<dimension>" + field_match + "))?",
 ]

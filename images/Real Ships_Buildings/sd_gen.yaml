@@ -82,8 +82,9 @@ credit: Jeff Russell
 filename: 1mppexistdiscovery.gif
 info:
   Description: 'Space Shuttle Discovery Height with tanks: 56.1m'
-  Name: 'Space Shuttle Discovery Height with tanks:'
-  Size: 56.1
+  Height: 56.1
+  Name: Space Shuttle Discovery
+  Size Note: with tanks
   Unit: m
 source: http://www.merzo.net/indexSD.html
 ---

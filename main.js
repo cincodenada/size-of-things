@@ -323,7 +323,7 @@ function update_windowsize() {
 }
 
 function initialize_ships() {
-  text_index = TrieIndex(ships, ['Name','Faction','Universe'], 4)
+  text_index = TrieIndex(ships, ['Name','Faction','Universe'], 2)
   resize();
 }
 

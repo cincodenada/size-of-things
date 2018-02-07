@@ -126,9 +126,23 @@ $(function() {
   var last_len = 0
   var last_sel = []
   $('.search input').on('keyup', function(evt) {
+    if(evt.key=="Enter") {
+      if(last_sel.length == 1) {
+        found_ship = ships[last_sel[0]]
+        // Not sure why I have to negate these but whatevs
+        origin[0] = -found_ship.position[0]
+        origin[1] = -found_ship.position[1]
+        // Use screen_origin for half screen size
+        // Calculate m_per_px to fit on screen
+        vert_zoom = found_ship.real_size[0]/screen_origin[0]
+        horiz_zoom = found_ship.real_size[1]/screen_origin[1]
+        m_per_px = Math.max(vert_zoom, horiz_zoom)
+        resize()
+      }
+    }
     // For now very simple, don't deal with paste/backspace
     query = evt.target.value.toLowerCase()
-    if(query.length < 4) { 
+    if(query.length < 4) {
       update_selection(last_sel, [])
       last_sel = []
       return
@@ -161,6 +175,7 @@ function update_selection(prev_sel, cur_sel) {
       $(ships[idx].elm).addClass('highlight')
     }
   })
+  $('.search .count').text(cur_sel.length)
 }
 
 function search_trie(word) {

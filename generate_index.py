@@ -72,6 +72,12 @@ def gather_yaml(path):
             im = Image.open(os.path.join(path, ship['filename']))
             ship['image_size'] = im.size
 
+            # Pull out size keys into standard location
+            for (dim, axis) in dimension_axes.items():
+              if dim in ship['info']:
+                ship['info']['Size'] = ship['info'][dim]
+                ship['info']['Dimension'] = dim
+
             # Initialize scale information
             m = px = unit = m_per_px = None
 
@@ -85,24 +91,18 @@ def gather_yaml(path):
                   (m, px) = m_per_px.split('/')
                 break
 
-            # Otherwise, load from info
-            if not m_per_px:
-              # Look for size keys
-              for (dim, axis) in dimension_axes.items():
-                if dim in ship['info']:
-                  m = ship['info'][dim]
-                  ship['info']['Size'] = m
-                  ship['info']['Dimension'] = dim
-                  # Load px from correct image axis
-                  if 'size_px' in ship:
-                    px = ship['size_px']
-                  else:
-                    px = im.size[axis]
-                  break
+            # Otherwise, load from the size keys
+            if not m_per_px and 'Size' in ship['info']:
+              m = ship['info']['Size']
+              # Load px from correct image axis
+              if 'size_px' in ship:
+                px = ship['size_px']
+              else:
+                px = im.size[axis]
 
-              # Look for a unit as well
-              if ('Unit' in ship['info']) and ship['info']['Unit']:
-                unit = ship['info']['Unit']
+            # Look for a unit as well
+            if ('Unit' in ship['info']) and ship['info']['Unit']:
+              unit = ship['info']['Unit']
 
             # At this point we should have something
             if m and px:
@@ -119,6 +119,10 @@ def gather_yaml(path):
                 d*ship['m_per_px']
                 for d in ship['image_size']
               ]
+              if 'Size' not in ship['info']:
+                ship['info']['Size'] = ship['real_size'][0]
+                ship['info']['Dimension'] = 'Size'
+                ship['info']['Size Notes'] = 'approximately'
             else:
               # If we don't have things by now throw a fit
               raise ArithmeticError("Couldn't determine m/px!")

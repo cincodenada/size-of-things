@@ -75,6 +75,137 @@ var FancyNumber = (function(number, sigfigs) {
   return new FancyNumber(number, sigfigs)
 })
 
+var TrieIndex = (function(pool, text_keys, min_chars) {
+  function TrieIndex(pool, text_props, min_chars) {
+    this.min_chars = min_chars
+    this.last_query = ""
+    this.matches = []
+    this.new_matches = false
+    this.trie = {}
+    this.cur_node = this.trie
+    this.cur_idx = 0
+
+    // Build a friggin' trie, man
+    for(var i = pool.length-1; i >= 0; i--) {
+      words = []
+      for(var k = 0; k < text_keys.length; k++) {
+        if(pool[i].info[text_keys[k]]) {
+          curtext = pool[i].info[text_keys[k]]
+          curtext = curtext.toLowerCase().replace(/[^ a-z0-9]/g,"")
+          words = words.concat(curtext.split(' '))
+        }
+      }
+      for(var w = 0; w < words.length; w++) {
+        var curword = words[w]
+        var node = this.trie
+        if(curword) {
+          for(var l = 0; l < curword.length; l++) {
+            if(!node[curword[l]]) {
+              node[curword[l]] = {}
+            }
+            node = node[curword[l]]
+          }
+          if(!node['_idx']) {
+            node['_idx'] = []
+          }
+          node['_idx'].push(i)
+        }
+      }
+    }
+  }
+
+  TrieIndex.prototype.step = function(l) {
+    // We're at a failed end
+    if(this.cur_node === false) { return 0 }
+
+    if(l == " ") {
+      // New word, start back at the top
+      // but keep our matches around
+      this.cur_node = this.trie
+    } else if(this.cur_node[l]) {
+      this.cur_node = this.cur_node[l]
+      if(this.matches.length == 0) {
+        // If we don't have any matches,
+        // add everything
+        this.matches = this.get_vals(this.cur_node)
+        this.dropped = []
+        this.new_matches = !!this.matches.length
+      } else {
+        // Otherwise, only add things we've already seen
+        // this is necessary for multi-word searches
+        var new_matches = this.get_vals(this.cur_node)
+        var prev_matches = this.matches
+        this.matches = []
+        this.dropped = []
+        for(var i=0; i < prev_matches.length; i++) {
+          var match_idx = prev_matches[i]
+          if(new_matches.indexOf(match_idx) > -1) {
+            this.matches.push(match_idx)
+          } else {
+            this.dropped.push(match_idx)
+          }
+        }
+      }
+    } else {
+      this.cur_node = false
+      this.dropped = this.matches
+      this.matches = []
+    }
+    return this.matches.length
+  }
+
+  TrieIndex.prototype.search = function(query) {
+    this.new_matches = false
+
+    if(query.length < this.min_chars) {
+      this.dropped = this.matches
+      this.matches = []
+      return 0
+    }
+
+    if(query.slice(0,-1) == this.last_query) {
+      // Keep going down the tree
+      this.step(query.slice(-1))
+    } else {
+      // New query, reset and re-search
+      var prev_matches = this.matches
+
+      this.cur_node = this.trie
+      this.matches = []
+      for(var i=0; i < query.length; i++) {
+        this.step(query[i])
+      }
+      this.dropped = prev_matches.filter(idx => this.matches.indexOf(idx) == -1)
+    }
+
+    this.last_query = query
+    return this.matches.length
+  }
+
+  TrieIndex.prototype.get_vals = function(node) {
+    results = []
+    for(l in node) {
+      if(l == '_idx') {
+        results = results.concat(node[l])
+      } else {
+        results = results.concat(this.get_vals(node[l]))
+      }
+    }
+    return results
+  }
+
+  TrieIndex.prototype.next_match = function() {
+    if(this.matches.length) {
+      this.cur_idx = (this.cur_idx + 1) % this.matches.length
+      return this.matches[this.cur_idx]
+    } else {
+      return false
+    }
+  }
+
+  return new TrieIndex(pool, text_keys, min_chars)
+})
+
 $(function() {
   container = $('.stuff')
   $.getJSON("ships.json?v=2").done(function(data) {
@@ -128,93 +259,40 @@ $(function() {
   var last_sel = []
   $('.search input').on('keyup', function(evt) {
     if(evt.key=="Enter") {
-      jump_idx = (jump_idx+1) % last_sel.length
-      found_ship = ships[last_sel[jump_idx]]
-      // Not sure why I have to negate these but whatevs
-      origin[0] = -found_ship.position[0]
-      origin[1] = -found_ship.position[1]
-      // Use screen_origin for half screen size
-      // Calculate m_per_px to fit on screen
-      vert_zoom = found_ship.real_size[0]/screen_origin[0]
-      horiz_zoom = found_ship.real_size[1]/screen_origin[1]
-      m_per_px = Math.max(vert_zoom, horiz_zoom)
-      resize()
+      if((idx = text_index.next_match()) !== false) {
+        found_ship = ships[idx]
+        // Not sure why I have to negate these but whatevs
+        origin[0] = -found_ship.position[0]
+        origin[1] = -found_ship.position[1]
+        // Use screen_origin for half screen size
+        // Calculate m_per_px to fit on screen
+        vert_zoom = found_ship.real_size[0]/screen_origin[0]
+        horiz_zoom = found_ship.real_size[1]/screen_origin[1]
+        m_per_px = Math.max(vert_zoom, horiz_zoom)
+        resize()
+      }
     }
-    // For now very simple, don't deal with paste/backspace
     query = evt.target.value.toLowerCase()
-    if(query.length < 4) {
-      last_sel = update_selection(last_sel, [])
-      return
-    }
+    var num_results = text_index.search(query)
+    $('.search .count').text(num_results)
 
-    if(query.length - last_len != 1) {
-      idx_pos = text_index
-      cur_sel = search_trie(query)
-    } else if(query.slice(-1) == " ") {
-      //Word split - reset idx_pos but not our selection windows!
-      idx_pos = text_index
-    } else {
-      cur_sel = search_trie(query.slice(-1))
+    // Deselect dropped ships
+    $.each(text_index.dropped, function(x, idx) {
+      if(ships[idx].elm) {
+        $(ships[idx].elm).removeClass('highlight')
+      }
+    })
+
+    // Add new ones if applicable
+    if(text_index.new_matches) {
+      $.each(text_index.matches, function(x, idx) {
+        if(ships[idx].elm) {
+          $(ships[idx].elm).addClass('highlight')
+        }
+      })
     }
-    if(!cur_sel) {
-      evt.target.className="error"
-      return
-    }
-    last_len = query.length
-    last_sel = update_selection(last_sel, cur_sel)
   })
 })
-
-function update_selection(prev_sel, cur_sel) {
-  var out_sel = []
-  if(prev_sel.length == 0) {
-    // We just started finding things
-    $.each(cur_sel, function(x, idx) {
-      if(ships[idx].elm) {
-        $(ships[idx].elm).addClass('highlight')
-      }
-    })
-    out_sel = cur_sel
-  } else {
-    // We're narrowing down
-    // In the case of second words, we can have cur_sel
-    // with things not in prev_sel, which we want to ignore
-    $.each(prev_sel, function(x, idx) {
-      if(cur_sel.indexOf(idx) > -1) {
-        out_sel.push(idx)
-      } else {
-        if(ships[idx].elm) {
-          $(ships[idx].elm).removeClass('highlight')
-        }
-      }
-    })
-  }
-  $('.search .count').text(cur_sel.length)
-  return out_sel
-}
-
-function search_trie(word) {
-  for(var l = 0; l < word.length; l++) {
-    if(idx_pos[word[l]]) {
-      idx_pos = idx_pos[word[l]]
-    } else {
-      return false
-    }
-  }
-  return walk_trie(idx_pos)
-}
-
-function walk_trie(node) {
-  results = []
-  for(l in node) {
-    if(l == '_idx') {
-      results = results.concat(node[l])
-    } else {
-      results = results.concat(walk_trie(node[l]))
-    }
-  }
-  return results
-}
 
 function clear_info() {
     infodiv = $('.info')
@@ -237,37 +315,7 @@ function update_windowsize() {
 }
 
 function initialize_ships() {
-  // Build a friggin' trie, man
-  for(var i = ships.length-1; i >= 0; i--) {
-    text_keys = ['Name','Faction','Universe']
-    words = []
-    for(var k = 0; k < text_keys.length; k++) {
-      if(ships[i].info[text_keys[k]]) {
-        curtext = ships[i].info[text_keys[k]]
-        curtext = curtext.toLowerCase().replace(/[^ a-z0-9]/g,"")
-        words = words.concat(curtext.split(' '))
-      }
-    }
-    for(var w = 0; w < words.length; w++) {
-      var curword = words[w]
-      var node = text_index
-      if(curword) {
-        for(var l = 0; l < curword.length; l++) {
-          if(!node[curword[l]]) {
-            node[curword[l]] = {}
-          }
-          node = node[curword[l]]
-        }
-        if(!node['_idx']) {
-          node['_idx'] = []
-        }
-        node['_idx'].push(i)
-      }
-    }
-  }
-
-  console.log(text_index)
-
+  text_index = TrieIndex(ships, ['Name','Faction','Universe'], 4)
   resize();
 }
 

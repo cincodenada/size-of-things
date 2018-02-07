@@ -11,6 +11,8 @@ var load_timeout = 500
 var origin = [0,0]
 var center_offset = [0,0]
 var screen_origin
+var text_index = {}
+var idx_pos = text_index
 
 // TODO: Vary on window size?
 var scalebar_target_width = 150
@@ -143,6 +145,37 @@ function update_windowsize() {
 }
 
 function initialize_ships() {
+  // Build a friggin' trie, man
+  for(var i = ships.length-1; i >= 0; i--) {
+    text_keys = ['Name','Faction','Universe']
+    words = []
+    for(var k = 0; k < text_keys.length; k++) {
+      if(ships[i].info[text_keys[k]]) {
+        curtext = ships[i].info[text_keys[k]]
+        curtext = curtext.toLowerCase().replace(/[^ a-z0-9]/g,"")
+        words = words.concat(curtext.split(' '))
+      }
+    }
+    for(var w = 0; w < words.length; w++) {
+      var curword = words[w]
+      var node = text_index
+      if(curword) {
+        for(var l = 0; l < curword.length; l++) {
+          if(!node[curword[l]]) {
+            node[curword[l]] = {}
+          }
+          node = node[curword[l]]
+        }
+        if(!node['_idx']) {
+          node['_idx'] = []
+        }
+        node['_idx'].push(i)
+      }
+    }
+  }
+
+  console.log(text_index)
+
   resize();
 }
 

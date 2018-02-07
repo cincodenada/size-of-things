@@ -407,6 +407,6 @@ for ship in ships:
     os.path.join(basedir, filesrc),
     os.path.join(groupdir,os.path.basename(filesrc))
   )
-  outfile = open(os.path.join(groupdir,'info.yaml'), 'a')
+  outfile = open(os.path.join(groupdir,'sd_gen.yaml'), 'a')
   outfile.write('---' + os.linesep)
   outfile.write(yaml.safe_dump(generate_ship(ship), default_flow_style=False, allow_unicode=True))

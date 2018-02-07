@@ -92,7 +92,7 @@ $(function() {
   })
 
   $(window).on('mousedown', function(evt) {
-    evt.preventDefault()
+    if(evt.target.name == 'input') { return; }
     var last_loc = [evt.screenX, evt.screenY]
     $(window).on('mousemove', function(evt) {
       origin[0] += (evt.screenX - last_loc[0])*m_per_px
@@ -102,7 +102,6 @@ $(function() {
     })
   })
   $(window).on('mouseup', function(evt) {
-    evt.preventDefault()
     $(window).off('mousemove')
   })
 

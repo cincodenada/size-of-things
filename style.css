@@ -62,3 +62,36 @@ a:visited {
   height: 10px;
   margin-top: 10px;
 }
+
+.thing.highlight {
+  background: yellow;
+  border-radius: 5px;
+  /* Yeah this is terrible */
+  box-shadow: 5px 5px yellow, -5px -5px yellow;
+}
+
+.search {
+  z-index: 1000;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -250px;
+  width: 500px;
+  background: black;
+  opacity: 1;
+}
+.search .icon {
+  position: absolute;
+  left: 0.25em;
+  top: 0.25em;
+  font-size: 2.5em;
+}
+.search input {
+  width: 100%;
+  color: white;
+  background: black;
+  border: none;
+  padding: 0.25em;
+  padding-left: 1.5em;
+  font-size: 2.5em;
+}

@@ -158,7 +158,7 @@ ships = gather_yaml('images')
 ships.sort(key = sort_ship)
 
 ship_size = csv.writer(open('sizes.csv','w'))
-ship_size.writerow(['image','mpp','width','height'])
+ship_size.writerow(['image','mpp','width','height','universe','faction'])
 
 layout = rect_layout.Layout(24)
 bar = Bar('Placing ships', max=len(ships))
@@ -170,7 +170,9 @@ for s in ships:
 
   ship_size.writerow([
       s['filename'], s['m_per_px'],
-      s['image_size'][0], s['image_size'][1]
+      s['image_size'][0], s['image_size'][1],
+      s['info'].get('Universe'),
+      s['info'].get('Faction'),
   ])
 
   rect = layout.add_rect([

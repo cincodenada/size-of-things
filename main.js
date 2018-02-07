@@ -185,15 +185,21 @@ var TrieIndex = (function(pool, text_keys, min_chars) {
   }
 
   TrieIndex.prototype.get_vals = function(node) {
-    results = []
+    results = {}
     for(l in node) {
+      var new_results
       if(l == '_idx') {
-        results = results.concat(node[l])
+        new_results = node[l]
       } else {
-        results = results.concat(this.get_vals(node[l]))
+        new_results = this.get_vals(node[l])
+      }
+
+      // Add them to our object
+      for(var i=0; i<new_results.length; i++) {
+        results[new_results[i]] = 1
       }
     }
-    return results
+    return Object.keys(results)
   }
 
   TrieIndex.prototype.next_match = function() {

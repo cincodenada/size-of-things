@@ -75,10 +75,13 @@ def gather_yaml(path):
             ship['image_size'] = im.size
 
             # Pull out size keys into standard location
+            size_axis = 0
             for (dim, axis) in dimension_axes.items():
               if dim in ship['info']:
                 ship['info']['Size'] = ship['info'][dim]
                 ship['info']['Dimension'] = dim
+                size_axis = axis
+                break
 
             # Initialize scale information
             m = px = unit = m_per_px = None
@@ -100,7 +103,7 @@ def gather_yaml(path):
               if 'size_px' in ship:
                 px = ship['size_px']
               else:
-                px = im.size[axis]
+                px = im.size[size_axis]
 
             # Look for a unit as well
             if ('Unit' in ship['info']) and ship['info']['Unit']:

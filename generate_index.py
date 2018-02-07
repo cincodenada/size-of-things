@@ -8,6 +8,8 @@ from PIL import Image
 from progress.bar import Bar
 import csv
 
+round_to_n = lambda x, n: round(x, -int(math.floor(math.log10(abs(x)))) + (n - 1))
+
 dimension_axes = {
   'Size': 0,
   'Length': 0,
@@ -120,7 +122,7 @@ def gather_yaml(path):
                 for d in ship['image_size']
               ]
               if 'Size' not in ship['info']:
-                ship['info']['Size'] = ship['real_size'][0]
+                ship['info']['Size'] = round_to_n(ship['real_size'][0], 3)
                 ship['info']['Dimension'] = 'Size'
                 ship['info']['Size Notes'] = 'approximately'
             else:

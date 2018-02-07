@@ -202,9 +202,11 @@ var TrieIndex = (function(pool, text_keys, min_chars) {
     return Object.keys(results)
   }
 
-  TrieIndex.prototype.next_match = function() {
+  TrieIndex.prototype.next_match = function(step) {
+    if(!step) { step = 1 }
+
     if(this.matches.length) {
-      this.cur_idx = (this.cur_idx + 1) % this.matches.length
+      this.cur_idx = (this.cur_idx + step) % this.matches.length
       return this.matches[this.cur_idx]
     } else {
       return false
@@ -255,7 +257,8 @@ $(function() {
   var last_sel = []
   $('.search input').on('keyup', function(evt) {
     if(evt.key=="Enter") {
-      if((idx = text_index.next_match()) !== false) {
+      var dir = evt.shiftKey ? -1 : 1
+      if((idx = text_index.next_match(dir)) !== false) {
         found_ship = ships[idx]
         // Not sure why I have to negate these but whatevs
         origin[0] = -found_ship.position[0]

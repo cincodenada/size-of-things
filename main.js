@@ -143,14 +143,16 @@ $(function() {
     // For now very simple, don't deal with paste/backspace
     query = evt.target.value.toLowerCase()
     if(query.length < 4) {
-      update_selection(last_sel, [])
-      last_sel = []
+      last_sel = update_selection(last_sel, [])
       return
     }
 
     if(query.length - last_len != 1) {
       idx_pos = text_index
       cur_sel = search_trie(query)
+    } else if(query.slice(-1) == " ") {
+      //Word split - reset idx_pos but not our selection windows!
+      idx_pos = text_index
     } else {
       cur_sel = search_trie(query.slice(-1))
     }
@@ -158,24 +160,37 @@ $(function() {
       evt.target.className="error"
       return
     }
-    update_selection(last_sel, cur_sel)
-    last_sel = cur_sel
+    last_len = query.length
+    last_sel = update_selection(last_sel, cur_sel)
   })
 })
 
 function update_selection(prev_sel, cur_sel) {
-  var desel = prev_sel.filter(function(w) { return cur_sel.indexOf(w) == -1 })
-  $.each(desel, function(x, idx) {
-    if(ships[idx].elm) {
-      $(ships[idx].elm).removeClass('highlight')
-    }
-  })
-  $.each(cur_sel, function(x, idx) {
-    if(ships[idx].elm) {
-      $(ships[idx].elm).addClass('highlight')
-    }
-  })
+  var out_sel = []
+  if(prev_sel.length == 0) {
+    // We just started finding things
+    $.each(cur_sel, function(x, idx) {
+      if(ships[idx].elm) {
+        $(ships[idx].elm).addClass('highlight')
+      }
+    })
+    out_sel = cur_sel
+  } else {
+    // We're narrowing down
+    // In the case of second words, we can have cur_sel
+    // with things not in prev_sel, which we want to ignore
+    $.each(prev_sel, function(x, idx) {
+      if(cur_sel.indexOf(idx) > -1) {
+        out_sel.push(idx)
+      } else {
+        if(ships[idx].elm) {
+          $(ships[idx].elm).removeClass('highlight')
+        }
+      }
+    })
+  }
   $('.search .count').text(cur_sel.length)
+  return out_sel
 }
 
 function search_trie(word) {

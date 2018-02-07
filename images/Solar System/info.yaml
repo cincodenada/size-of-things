@@ -2,17 +2,77 @@
 filename: Earth.png
 source: "https://visibleearth.nasa.gov/view.php?id=57723"
 credit: NASA
-km_per_px: 6378.1/1785
+size_px: 1785
 info:
   Name: Earth
-  Diameter: 6378.1
+  Diameter: 12756
   Unit: km
 ---
 filename: Sun.png
 source: "https://www.nasa.gov/content/goddard/sdo-sees-giant-filament-on-the-sun"
 credit: NASA
-km_per_px: 1400000/3273
+size_px: 3273
 info:
   Name: Sol
   Diameter: 1400000
   Unit: km
+---
+filename: Mercury.png
+source: "https://solarsystem.nasa.gov/resources/439/mercurys-subtle-colors/"
+credit: NASA
+info:
+  Name: Mercury
+  Diameter: 4880
+  Unit: km
+---
+filename: Venus.png
+source: "https://solarsystem.nasa.gov/resources/688/computer-simulated-global-view-of-venus/"
+credit: NASA
+info:
+  Name: Venus
+  Diameter: 12100
+  Unit: km
+---
+filename: Mars.png
+source: "https://solarsystem.nasa.gov/resources/683/mars-valles-marineris-hemisphere-enhanced/"
+credit: NASA
+info:
+  Name: Mars
+  Diameter: 6792
+  Unit: km
+---
+filename: Jupiter.png
+source: "https://solarsystem.nasa.gov/resources/113/high-resolution-globe-of-jupiter/"
+credit: NASA
+info:
+  Name: Jupiter
+  Diameter: 138346.5
+  Unit: km
+---
+filename: Saturn.png
+source: "https://solarsystem.nasa.gov/resources/210/saturn-approaching-northern-summer/"
+credit: NASA
+size_px: 680.9
+info:
+  Name: Saturn
+  Diameter: 60268
+  Size Notes: equatorial
+  Unit: km
+---
+filename: Uranus.png
+source: "https://solarsystem.nasa.gov/resources/605/keck-telescope-views-of-uranus/"
+credit: NASA
+info:
+  Name: Uranus
+  Diameter: 51118
+  Unit: km
+  Size Notes: equator
+---
+filename: Neptune.png
+source: "https://solarsystem.nasa.gov/resources/611/neptune-full-disk-view/"
+credit: NASA
+info:
+  Name: Neptune
+  Diameter: 49528
+  Unit: km
+  Size Notes: equator

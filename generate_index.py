@@ -76,7 +76,6 @@ def gather_yaml(path):
             m = px = unit = m_per_px = None
 
             # First, check for explicit x_per_px
-            loaded_explicit = False
             for pre in unit_conversions.keys():
               key = pre + '_per_px'
               if key in ship:
@@ -95,7 +94,10 @@ def gather_yaml(path):
                   ship['info']['Size'] = m
                   ship['info']['Dimension'] = dim
                   # Load px from correct image axis
-                  px = im.size[axis]
+                  if 'size_px' in ship:
+                    px = ship['size_px']
+                  else:
+                    px = im.size[axis]
                   break
 
               # Look for a unit as well
@@ -105,9 +107,10 @@ def gather_yaml(path):
             # At this point we should have something
             if m and px:
               m_per_px = float(m)/float(px)
-              if unit and unit != 'm':
-                print("Converting {} to m".format(unit))
-                m_per_px = m_per_px*unit_conversions[unit]
+
+            if unit and unit != 'm':
+              print("Converting {} to m".format(unit))
+              m_per_px = m_per_px*unit_conversions[unit]
 
             # Assign to ship
             if m_per_px:

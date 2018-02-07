@@ -128,7 +128,11 @@ function clear_info() {
     infodiv.find('.universe').text("")
     infodiv.find('.faction').text("")
     infodiv.find('.name').text("")
+    infodiv.find('.size').text("")
+    infodiv.find('.unit').text("")
     infodiv.find('.length').text("")
+    infodiv.find('.credit').text("")
+    infodiv.find('.credit').attr('href',"#")
     infodiv.hide()
 }
 

@@ -1,0 +1,24 @@
+---
+filename: dragon_capsule.png
+source: "http://www.spacex.com/dragon"
+info:
+  Name: Dragon Capsule
+  Width: 3.7
+---
+filename: dragon_full.png
+source: "http://www.spacex.com/dragon"
+info:
+  Name: Dragon Capsule (with trunk)
+  Height: 7.2
+---
+filename: falcon9.png
+source: "http://www.spacex.com/falcon9"
+info:
+  Name: Falcon 9 (with Dragon)
+  Height: 65
+---
+filename: falconheavy.png
+source: "http://www.spacex.com/falcon-heavy"
+info:
+  Name: Falcon Heavy (with fairing)
+  Height: 70

@@ -13,6 +13,7 @@ var center_offset = [0,0]
 var screen_origin
 var text_index = {}
 var idx_pos = text_index
+var jump_idx = 0
 
 // TODO: Vary on window size?
 var scalebar_target_width = 150
@@ -127,18 +128,17 @@ $(function() {
   var last_sel = []
   $('.search input').on('keyup', function(evt) {
     if(evt.key=="Enter") {
-      if(last_sel.length == 1) {
-        found_ship = ships[last_sel[0]]
-        // Not sure why I have to negate these but whatevs
-        origin[0] = -found_ship.position[0]
-        origin[1] = -found_ship.position[1]
-        // Use screen_origin for half screen size
-        // Calculate m_per_px to fit on screen
-        vert_zoom = found_ship.real_size[0]/screen_origin[0]
-        horiz_zoom = found_ship.real_size[1]/screen_origin[1]
-        m_per_px = Math.max(vert_zoom, horiz_zoom)
-        resize()
-      }
+      jump_idx = (jump_idx+1) % last_sel.length
+      found_ship = ships[last_sel[jump_idx]]
+      // Not sure why I have to negate these but whatevs
+      origin[0] = -found_ship.position[0]
+      origin[1] = -found_ship.position[1]
+      // Use screen_origin for half screen size
+      // Calculate m_per_px to fit on screen
+      vert_zoom = found_ship.real_size[0]/screen_origin[0]
+      horiz_zoom = found_ship.real_size[1]/screen_origin[1]
+      m_per_px = Math.max(vert_zoom, horiz_zoom)
+      resize()
     }
     // For now very simple, don't deal with paste/backspace
     query = evt.target.value.toLowerCase()

@@ -86,7 +86,6 @@ credit: Jeff Russell
 filename: 10ppmswrebelawing.gif
 info:
   Description: The Rebellion
-  Length: ''
   Name: Rebel A-Wing Class Fighter
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
@@ -95,7 +94,6 @@ credit: Jeff Russell
 filename: 10ppmswrebelbwing.gif
 info:
   Description: The Rebellion
-  Length: ''
   Name: Rebel B-Wing Class Fighter
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
@@ -104,7 +102,6 @@ credit: Jeff Russell
 filename: 10ppmswrebelxwing.gif
 info:
   Description: The Rebellion
-  Length: ''
   Name: Rebel X-Wing Class Fighter
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
@@ -113,7 +110,6 @@ credit: Jeff Russell
 filename: 10ppmswrebelywing.gif
 info:
   Description: The Rebellion
-  Length: ''
   Name: Rebel Y-Wing Class Fighter
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html

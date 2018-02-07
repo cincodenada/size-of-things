@@ -108,7 +108,9 @@ def generate_ship(ship):
     if(parts):
       print(ship[cur_dim])
       print(parts.groups())
-      info[cur_dim] = getnum(parts.group('size'))
+      dim = getnum(parts.group('size'))
+      if dim:
+        info[cur_dim] = dim
       info['Unit'] = parts.group('unit')
       if parts.group('note'):
         note = parts.group('note').strip()
@@ -116,7 +118,8 @@ def generate_ship(ship):
           note = note[1:-1].strip()
         info['Size Notes'] = note
     else:
-      info[cur_dim] = ship[cur_dim]
+      if ship[cur_dim]:
+        info[cur_dim] = ship[cur_dim]
     if 'description' in ship:
       info['Description'] = ship['description']
   elif 'description' in ship:
@@ -134,7 +137,9 @@ def generate_ship(ship):
       unit = ship_info.group('unit')
       if unit and (unit in unit_map):
         info['Unit'] = unit_map[unit]
-        info[dim_key] = getnum(ship_info.group('size'))
+        dim = getnum(ship_info.group('size'))
+        if dim:
+          info[dim_key] = dim
 
       if ship_info.group('note'):
         info['Size Note'] = ship_info.group('note')

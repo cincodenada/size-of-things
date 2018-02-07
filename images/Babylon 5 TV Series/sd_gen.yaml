@@ -3,7 +3,6 @@ credit: Jeff Russell
 filename: 10ppmb5centaurisentri.gif
 info:
   Description: Centauri
-  Length: ''
   Name: Sentri Class Fighter
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
@@ -12,7 +11,6 @@ credit: Jeff Russell
 filename: 10ppmb5drakhshuttle.gif
 info:
   Description: Drakh
-  Length: ''
   Name: Drakh Scout
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
@@ -21,7 +19,6 @@ credit: Jeff Russell
 filename: 10ppmb5draziskyserpent.gif
 info:
   Description: Drazi
-  Length: ''
   Name: Drazi SunHawk
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
@@ -30,7 +27,6 @@ credit: Jeff Russell
 filename: 10ppmb5eaathmosshuttle.gif
 info:
   Description: Earth Alliance
-  Length: ''
   Name: Athmospheric Shuttle
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
@@ -39,7 +35,6 @@ credit: Jeff Russell
 filename: 10ppmb5eaaurorastarfury.gif
 info:
   Description: Earth Alliance
-  Length: ''
   Name: EA Aurora Starfury
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
@@ -48,7 +43,6 @@ credit: Jeff Russell
 filename: 10ppmb5eathunderboltsf.gif
 info:
   Description: Earth Alliance
-  Length: ''
   Name: Thunderbolt Starfury
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
@@ -57,7 +51,6 @@ credit: Jeff Russell
 filename: 10ppmb5minbariflyer.gif
 info:
   Description: Minbari
-  Length: ''
   Name: Minbari Flyer
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
@@ -66,7 +59,6 @@ credit: Jeff Russell
 filename: 10ppmb5minbarinialfighter.gif
 info:
   Description: Minbari
-  Length: ''
   Name: Nial Fighter
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
@@ -75,7 +67,6 @@ credit: Jeff Russell
 filename: 10ppmb5narnfrazifighter.gif
 info:
   Description: Narn Regime
-  Length: ''
   Name: Narn Frazi Fighter
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
@@ -84,7 +75,6 @@ credit: Jeff Russell
 filename: 10ppmb5raiderzephyr.gif
 info:
   Description: Belt Alliance Raiders
-  Length: ''
   Name: Raider Zephyr Fighter
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
@@ -102,7 +92,6 @@ credit: Jeff Russell
 filename: 10ppmb5vorlonfighter.gif
 info:
   Description: The Vorlon
-  Length: ''
   Name: Vorlon Fighter
 m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html

@@ -2,7 +2,7 @@ var container;
 var ships;
 var min_size_px = 5
 var m_per_px = 10
-var zoomSlowFactor = 100
+var zoomSlowFactor = 50
 var screen_px_per_mm = 96/2.54
 var loaded = false
 var remaining_to_load
@@ -234,9 +234,12 @@ $(function() {
   })
 
   $(window).on('mousedown', function(evt) {
-    if(evt.target.name == 'input') { return; }
+    if(evt.target.tagName.toLowerCase() == 'input') { return; }
+
+    evt.preventDefault()
     var last_loc = [evt.screenX, evt.screenY]
     $(window).on('mousemove', function(evt) {
+      evt.preventDefault()
       origin[0] += (evt.screenX - last_loc[0])*m_per_px
       origin[1] += (evt.screenY - last_loc[1])*m_per_px
       last_loc = [evt.screenX, evt.screenY]
@@ -244,6 +247,7 @@ $(function() {
     })
   })
   $(window).on('mouseup', function(evt) {
+    evt.preventDefault()
     $(window).off('mousemove')
   })
 
@@ -294,9 +298,9 @@ $(function() {
   $('.zoom').on('mousedown', function(evt) {
     action = evt.target.id
     if(action == "zoom_out") {
-      loopzoom(this, -1, 100)
+      loopzoom(this, -1, 50)
     } else if(action == "zoom_in") {
-      loopzoom(this, 1, 100)
+      loopzoom(this, 1, 50)
     } else if(action == "zoom_reset") {
       origin = [0,0]
       resize()

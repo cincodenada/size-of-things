@@ -5,24 +5,25 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="ruler"></div>
-        <div class="status">
-          <span class="loading">
-            Loading ships...
-          </span>
-          <span class="loaded" style="display: none">
-            Current zoom: <span class="m_per_px"></span>/px (~<span class="ratio"></span>)
-            Screen px/mm: <span class="px_mm"></span>
-          </span>
-          <span class="scalebar">
+        <div class="topbar">
+          <div class="status">
+            <span class="loading">
+              Loading ships...
+            </span>
+            <span class="loaded" style="display: none">
+              Current zoom: <span class="m_per_px"></span>/px (~<span class="ratio"></span>)
+              Screen px/mm: <span class="px_mm"></span>
+            </span>
+          </div>
+          <div class="zoom">
+              <button id="zoom_out">-</button>
+              <button id="zoom_reset">Center</button>
+              <button id="zoom_in">+</button>
+          </div>
+          <div class="scalebar">
             <div class="bar"></div>
             <span class="label"></span>
-          </span>
-        </div>
-        <div class="zoom">
-            <button id="zoom_out">-</button>
-            <button id="zoom_reset">Center</button>
-            <button id="zoom_in">+</button>
+          </div>
         </div>
         <div class="stuff">
         </div>

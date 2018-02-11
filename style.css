@@ -48,13 +48,31 @@ a:visited {
   color: #999;
 }
 
+.topbar {
+  display: flex;
+  z-index: 100;
+}
+
+.status {
+  justify-content: left;
+  flex-grow: 1;
+}
+
 .loading, .loaded, .scalebar {
   background: url('images/stars_tile.jpg') black;
   background-attachment: fixed;
   padding: 10px;
 }
+.zoom {
+  flex-grow: 1;
+  display: flex;
+}
+.zoom button {
+  justify-content: center;
+}
 .scalebar {
-  float: right;
+  flex-grow: 1;
+  justify-content: right;
 }
 .scalebar .bar {
   border: 1px solid white;
@@ -111,11 +129,3 @@ button {
   min-width: 1.5em;
 }
 
-.zoom {
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  width: 300px;
-  margin-left: -150px;
-  z-index: 100;
-}

@@ -230,9 +230,7 @@ $(function() {
 
   $(window).on('mousewheel', function(evt) {
     evt.preventDefault()
-    m_per_px *= Math.pow(10, -evt.deltaY/zoomSlowFactor)
-    clear_info()
-    resize()
+    zoom(evt.deltaY)
   })
 
   $(window).on('mousedown', function(evt) {
@@ -292,7 +290,35 @@ $(function() {
       })
     }
   })
+
+  $('.zoom').on('mousedown', function(evt) {
+    action = evt.target.id
+    if(action == "zoom_out") {
+      loopzoom(this, -1, 100)
+    } else if(action == "zoom_in") {
+      loopzoom(this, 1, 100)
+    } else if(action == "zoom_reset") {
+      origin = [0,0]
+      resize()
+    }
+  })
+
+  $('.zoom').on('mouseup mouseout', function(evt) {
+    if(this.timeout) { clearTimeout(this.timeout) }
+  })
 })
+
+// Zooms continuously, storing the timeout value on elm
+function loopzoom(elm, factor, timeout) {
+  zoom(factor)
+  elm.timeout = setTimeout(function() { loopzoom(elm, factor) }, timeout)
+}
+
+function zoom(factor) {
+  m_per_px *= Math.pow(10, -factor/zoomSlowFactor)
+  clear_info()
+  resize()
+}
 
 function show_tooltip(ship) {
   clear_info()

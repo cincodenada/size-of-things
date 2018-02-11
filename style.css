@@ -102,3 +102,20 @@ a:visited {
   padding-left: 1.5em;
   font-size: 2.5em;
 }
+
+button {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  font-size: 2em;
+  min-width: 1.5em;
+}
+
+.zoom {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 300px;
+  margin-left: -150px;
+  z-index: 100;
+}

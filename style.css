@@ -38,6 +38,18 @@ body {
   color: yellow;
 }
 
+section.info {
+  padding: 40px;
+  margin: 40px;
+  max-width: 800px;
+  display: table-cell;
+}
+
+body.infopage {
+    display: flex;
+    justify-content: center;
+}
+
 a {
   color: white;
 }
@@ -119,6 +131,13 @@ a:visited {
   padding: 0.25em;
   padding-left: 1.5em;
   font-size: 2.5em;
+}
+
+.links {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 1em;
 }
 
 button {

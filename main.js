@@ -218,7 +218,7 @@ var TrieIndex = (function(pool, text_keys, min_chars) {
 
 $(function() {
   container = $('.stuff')
-  $.getJSON("ships.json?v=2").done(function(data) {
+  $.getJSON("ships.json?v=20180210a").done(function(data) {
     ships = data;
     initialize_ships();
   })

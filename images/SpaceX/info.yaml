@@ -11,13 +11,13 @@ info:
   Name: Dragon Capsule (with trunk)
   Height: 7.2
 ---
-filename: falcon9.png
+filename: falcon9_small.png
 source: "http://www.spacex.com/falcon9"
 info:
   Name: Falcon 9 (with Dragon)
   Height: 65
 ---
-filename: falconheavy.png
+filename: falconheavy_small.png
 source: "http://www.spacex.com/falcon-heavy"
 info:
   Name: Falcon Heavy (with fairing)

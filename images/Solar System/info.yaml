@@ -1,17 +1,17 @@
 ---
-filename: Earth.png
+filename: Earth_small.png
 source: "https://visibleearth.nasa.gov/view.php?id=57723"
 credit: NASA
-size_px: 1785
+size_px: 892
 info:
   Name: Earth
   Diameter: 12756
   Unit: km
 ---
-filename: Sun.png
+filename: Sun_small.png
 source: "https://www.nasa.gov/content/goddard/sdo-sees-giant-filament-on-the-sun"
 credit: NASA
-size_px: 3273
+size_px: 818
 info:
   Name: Sol
   Diameter: 1400000
@@ -25,7 +25,7 @@ info:
   Diameter: 4880
   Unit: km
 ---
-filename: Venus.png
+filename: Venus_small.png
 source: "https://solarsystem.nasa.gov/resources/688/computer-simulated-global-view-of-venus/"
 credit: NASA
 info:
@@ -33,7 +33,7 @@ info:
   Diameter: 12100
   Unit: km
 ---
-filename: Mars.png
+filename: Mars_small.png
 source: "https://solarsystem.nasa.gov/resources/683/mars-valles-marineris-hemisphere-enhanced/"
 credit: NASA
 info:
@@ -68,7 +68,7 @@ info:
   Unit: km
   Size Notes: equator
 ---
-filename: Neptune.png
+filename: Neptune_small.png
 source: "https://solarsystem.nasa.gov/resources/611/neptune-full-disk-view/"
 credit: NASA
 info:

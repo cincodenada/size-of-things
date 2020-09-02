@@ -29,6 +29,7 @@ body {
   margin: 5px;
   padding: 5px;
   background: #222;
+  line-height: 1.3em;
 }
 .info > span {
   float: left;

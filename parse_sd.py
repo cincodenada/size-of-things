@@ -168,6 +168,9 @@ def generate_ship(ship):
   outship['source'] = "http://www.merzo.net/indexSD.html"
   outship['credit'] = "Jeff Russell"
 
+  # This is for literally one missing ship but...
+  outship['filename'] = outship['filename'].replace('.html', '.gif')
+
   if 'Unit' not in info:
     outship['m_per_px'] = ship['default_mpp']
 
@@ -226,7 +229,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
     if td.find('strong'):
       category = dewhite(td.find('strong').text)
     else:
-      images = td.select('> img, > font > img, > p > font > img, > p > img')
+      images = td.select(':scope > img, :scope > font > img, :scope > p > font > img, :scope > p > img')
       lines = td.find_all(['font','img', 'a'], recursive=False)
       for p in td.find_all('p', recursive = False):
         if p.find('img') and not p.find('font'):
@@ -411,7 +414,7 @@ for ship in ships:
   if len(groupname) > 50:
     groupname = ' '.join(groupname.split(' ')[0:2])
 
-  groupdir = os.path.join('images',groupname.replace("/","_"))
+  groupdir = os.path.join('images','Starship Dimensions',groupname.replace("/","_"))
   try:
     os.mkdir(groupdir)
   except OSError:

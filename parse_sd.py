@@ -321,7 +321,7 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
           ship = {'default_mpp': default_mpp}
           ship['group'] = category
           ship['src'] = img['src']
-          ship['description'] = dewhite(lines[idx*2+1].text)
+          ship['description'] = dewhite(lines[idx*2].text + lines[idx*2+1].text)
           ships.append(ship)
 
         last_found = 'image'

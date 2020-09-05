@@ -186,8 +186,11 @@ source: http://www.merzo.net/indexSD.html
 credit: Jeff Russell
 filename: 10mppFarscapePKCommandCarrier.gif
 info:
-  Name: mesh created and rendered by Meurig
-m_per_px: 10
+  Description: Peacekeeper Command Carrier, 8701.429m long, mesh created and rendered
+    by Meurig
+  Length: 8701.429
+  Name: Peacekeeper Command Carrier
+  Unit: m
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

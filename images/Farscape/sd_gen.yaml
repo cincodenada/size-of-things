@@ -10,16 +10,6 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppFarscapeTalyn.html
-info:
-  Description: 'Talyn from ''Farscape'', mesh created and rendered by Meurig Length:
-    300m'
-  Length: 300.0
-  Name: Talyn from 'Farscape', mesh created and rendered by Meurig
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 1mppfarscapepkvigilant.gif
 info:
   Description: 'PK Vigilant from ''Farscape'', mesh created and rendered by Meurig
@@ -30,7 +20,7 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 2mppFarscapeTalyn.gif
+filename: 1mppFarscapeTalyn.gif
 info:
   Description: 'Talyn from ''Farscape'', modeled and rendered by Meurig Length: 300m
     at time of death'

@@ -37,7 +37,7 @@ unit_conversions = {
 
 def get_parts(path):
   part_values = {}
-  keys = ['Universe','Faction']
+  keys = ['Collection','Universe','Faction']
   keys.reverse()
 
   remainder = path

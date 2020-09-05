@@ -286,3 +286,11 @@ info:
     size theory and discussion.
   Unit: km
 source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppswspaceslug.gif
+info:
+  Description: Space Slug from Empire Strikes Back
+  Name: Space Slug
+m_per_px: 2
+source: http://www.merzo.net/indexSD.html

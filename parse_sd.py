@@ -221,14 +221,35 @@ for page in glob.glob(os.path.join(basedir,'*.htm')):
   default_mpp = mpp_map[os.path.basename(page)]
   soup = BeautifulSoup(open(page, 'r'), "lxml")
   category = None
+  pending_categories = []
   for td in soup.body.find_all(['td','p']):
     print("===\nLoaded {} ships, {} pending...\n===".format(len(ships), len(pending_ships)))
     if td.name == 'p' and ((not td.find('img')) or td.parent.name == 'td'):
       continue
 
-    if td.find('strong'):
-      category = dewhite(td.find('strong').text)
+    sibling_rows = td.parent.parent.findAll('tr', recursive=False)
+    sibling_cols = td.parent.findAll('td', recursive=False)
+    beheaded_table = (
+        len(sibling_rows) == 2
+        and len(sibling_cols) > 1
+        and sibling_cols[0].find('strong')
+    )
+    title = td.select(':scope > strong, :scope > font > strong')
+    if len(title) == 1:
+      category = dewhite(title[0].text)
+      if beheaded_table:
+        print("Adding {} as pending category...".format(category))
+        pending_categories.append(category)
+    elif beheaded_table:
+      if td.parent == sibling_rows[0]:
+        pending_categories.append(category)
     else:
+      # Pull off pending categories from weird -10x page
+      if len(pending_categories) and td.parent == td.parent.parent.find('tr'):
+        print(pending_categories)
+        category = pending_categories.pop(0)
+        print("Using pending category {}".format(category))
+
       images = td.select(':scope > img, :scope > font > img, :scope > p > font > img, :scope > p > img')
       lines = td.find_all(['font','img', 'a'], recursive=False)
       for p in td.find_all('p', recursive = False):

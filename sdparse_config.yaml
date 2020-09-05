@@ -92,6 +92,7 @@ maps:
     - Macross II, (Animated Film), image drawn by JR
     - "Macross: Do"
     - Robotech_Macross animated
+    - MACROSS I & II SHIPS
   Rendezvous with Rama:
     - Rendezvous with
     - Space, Above And Beyond
@@ -102,14 +103,16 @@ maps:
     - Star Wars, Episode VI (Film)
     - Star Wars, Episode VI
     - Star Wars
+    - STAR WARS SHIPS
   Stargate:
     - Stargate Atlantis
     - StarGate, the
   Starship Troopers:
     - Starship Troopers (1997) read the book tho...
     - Starship Troopers
-  Generic:
+  Other:
     - well.... lots of places
+    - OTHER SHIPS
 overrides:
   1CMPPGENERIC.gif:
     SwapDesc: true

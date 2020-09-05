@@ -9,7 +9,6 @@ body {
 
 .status {
   z-index: 100;
-  position: fixed;
   width: 100%;
 }
 
@@ -64,28 +63,37 @@ a:visited {
 .topbar {
   display: flex;
   z-index: 100;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .status {
-  justify-content: left;
+  flex-grow: 1;
+  width: 33%;
+}
+.zoom {
+  flex-grow: 0;
+  display: flex;
+  justify-content: center;
+}
+.rightpanel {
+  width: 33%;
   flex-grow: 1;
 }
 
-.loading, .loaded, .scalebar {
+.loading, .loaded > span, .scalebar {
   background: url('images/stars_tile.jpg') black;
   background-attachment: fixed;
-  padding: 10px;
 }
-.zoom {
-  flex-grow: 1;
-  display: flex;
+.loading, .scalebar, .loaded {
+  padding: 10px;
 }
 .zoom button {
   justify-content: center;
 }
 .scalebar {
-  flex-grow: 1;
-  justify-content: right;
+  float:right;
 }
 .scalebar .bar {
   border: 1px solid white;
@@ -95,10 +103,8 @@ a:visited {
 }
 
 .thing.highlight {
-  background: yellow;
-  border-radius: 5px;
-  /* Yeah this is terrible */
-  box-shadow: 5px 5px yellow, -5px -5px yellow;
+  /* Two shadows to make it brighter */
+  filter: drop-shadow(0px 0px 5px yellow) drop-shadow(0px 0px 5px yellow);
 }
 
 .search {

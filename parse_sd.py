@@ -162,6 +162,14 @@ def generate_ship(ship):
         else:
           info['Name'] = ship_info.group('name')
 
+  if not info.get('Name') and info.get('Description'):
+    parts = info['Description'].split(',',1)
+    info['Name'] = parts[0]
+    if len(parts) == 2:
+      info['Description'] = parts[1].strip()
+    else:
+      del info['Description']
+
   outship = {}
   outship['filename'] = os.path.basename(ship['src'])
   outship['info'] = info

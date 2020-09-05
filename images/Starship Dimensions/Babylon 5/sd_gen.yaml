@@ -235,91 +235,93 @@ source: http://www.merzo.net/indexSD.html
 credit: Jeff Russell
 filename: 10mppb5babylon4.gif
 info:
-  Description: Babylon 4 space colony
+  Name: Babylon 4 space colony
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5babylon5.gif
 info:
-  Description: Babylon 5 space colony
+  Name: Babylon 5 space colony
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5centauribalvarin.gif
 info:
-  Description: Centauri Balvarin cruiser, Babylon 5 AoG, ship designed by Mike Wikan
+  Description: Babylon 5 AoG, ship designed by Mike Wikan
+  Name: Centauri Balvarin cruiser
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5centauricorvan.gif
 info:
-  Description: Centauri Corvan cruiser, Babylon 5 AoG, ship designed by Mike Wikan
+  Description: Babylon 5 AoG, ship designed by Mike Wikan
+  Name: Centauri Corvan cruiser
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5centaurivorchan.gif
 info:
-  Description: Centauri Vorchan cruiser
+  Name: Centauri Vorchan cruiser
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5drakhcruiser.gif
 info:
-  Description: Drakh cruiser
+  Name: Drakh cruiser
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5eacortez.gif
 info:
-  Description: Cortez class explorer
+  Name: Cortez class explorer
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5eahyperion.gif
 info:
-  Description: Hyperion cruiser
+  Name: Hyperion cruiser
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5eanova.gif
 info:
-  Description: Nova cruiser
+  Name: Nova cruiser
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5eaomega.gif
 info:
-  Description: Omega destroyer
+  Name: Omega destroyer
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5eaposeidon.gif
 info:
-  Description: Poseidon carrier
+  Name: Poseidon carrier
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5eawarlock.gif
 info:
-  Description: Warlock class battlecruiser
+  Name: Warlock class battlecruiser
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5iavictory.gif
 info:
-  Description: Victory class destroyer
+  Name: Victory class destroyer
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
@@ -335,21 +337,21 @@ source: http://www.merzo.net/indexSD.html
 credit: Jeff Russell
 filename: 10mppb5narncruiser.gif
 info:
-  Description: Narn cruiser
+  Name: Narn cruiser
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5narngquan.gif
 info:
-  Description: Narn G'Quan cruiser
+  Name: Narn G'Quan cruiser
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
 filename: 10mppb5narntloth.gif
 info:
-  Description: Narn T'Loth cruiser
+  Name: Narn T'Loth cruiser
 m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---

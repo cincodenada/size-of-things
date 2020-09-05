@@ -458,7 +458,13 @@ for ship in ships:
   try:
     groupname = ship['group'].replace(' Starships','')
   except AttributeError:
-    groupname = 'Other'
+    prose_group = re.match('(.*?) from (.*?)[\.,$]', ship['description'])
+    if prose_group:
+      print(prose_group.groups())
+      groupname = prose_group.group(2)
+      ship['name'] = prose_group.group(1)
+    else:
+      groupname = 'Other'
   if len(groupname) > 50:
     groupname = ' '.join(groupname.split(' ')[0:2])
 

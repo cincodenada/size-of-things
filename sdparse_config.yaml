@@ -49,6 +49,9 @@ maps:
     - BABYLON 5 SHIPS
     - Babylon 5 TV Series
     - Babylon 5, (Television Series)
+    - "'Babylon 5'"
+  Crysis:
+    - the amazing Crysis video game
   Star Trek:
     subgroup:
       - Bajoran
@@ -110,6 +113,8 @@ maps:
   Starship Troopers:
     - Starship Troopers (1997) read the book tho...
     - Starship Troopers
+  Jupiter Ascending:
+    - 'the movie "Jupiter Ascending"'
   Other:
     - well.... lots of places
     - OTHER SHIPS

@@ -402,6 +402,25 @@ for (idx, s) in enumerate(ships):
     print(imgname)
     filtered[imgname] = s
 
+# Load maps
+renames = {}
+for (target, names) in config['maps'].items():
+  merge = []
+  if isinstance(names, dict):
+    if 'merge' in names:
+      merge = names['merge']
+    if 'subgroup' in names:
+      for sg in names['subgroup']:
+        renames[sg] = target + '/' + sg
+    if 'rename' in names:
+      for (name, sg) in names['rename'].items():
+        renames[name] = target + '/' + sg
+  else:
+    merge = names
+
+  for m in merge:
+    renames[m] = target
+
 ships = list(filtered.values())
 # Sort by filename to guarantee consistent order
 ships.sort(key=lambda x: x['src'])
@@ -414,9 +433,28 @@ for ship in ships:
   if len(groupname) > 50:
     groupname = ' '.join(groupname.split(' ')[0:2])
 
-  groupdir = os.path.join('images','Starship Dimensions',groupname.replace("/","_"))
+  groupname = groupname.replace('/','_')
+
+  # Run through rename filter
+  if groupname in renames:
+    groupname = renames[groupname]
+
+  if groupname.isupper():
+    groupname = groupname.title()
+
+  overrides = config['overrides'].get(ship['src'])
+  if overrides:
+    if overrides.get('SwapDesc'):
+      tmp = ship['name']
+      ship['name'] = ship['description']
+      ship['description'] = tmp
+    for (key, newval) in overrides.items():
+      if key in ship:
+        ship[key] = newval
+
+  groupdir = os.path.join('images','Starship Dimensions',groupname)
   try:
-    os.mkdir(groupdir)
+    os.makedirs(groupdir)
   except OSError:
     # Assume path exists
     pass

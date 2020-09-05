@@ -10,6 +10,16 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
+filename: 1CMPPSTKLINGON.gif
+info:
+  Description: ''
+  Name: Klingon
+  Size: 2.0
+  Size Notes: approx.
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 10ppmstaeon.gif
 info:
   Description: ''
@@ -239,6 +249,112 @@ info:
   Description: Vulcan
   Name: Vulcan Warp Sled
 m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstborgcube.gif
+info:
+  Description: Borg Cube
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstdeepspace9.gif
+info:
+  Description: Deep Space 9
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstfedjupiterstation.gif
+info:
+  Description: Federation Jupiter station
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstfedspacedock.gif
+info:
+  Description: Federation space dock
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppsthusnockship.gif
+info:
+  Description: Husnock ship
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstjemhadarbattleship.gif
+info:
+  Description: Jem Hadar battlecruiser
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstkazoncruiser.gif
+info:
+  Description: Kazon warship
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstkrenimtemporalweapon.gif
+info:
+  Description: Krenim temporal weapon
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstplanetkiller.gif
+info:
+  Description: Planet Killer
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstsonacollectorship.gif
+info:
+  Description: Son'A collector ship
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppstvothcityship.gif
+info:
+  Description: Voth City Ship, 4900m
+  Name: Voth City Ship
+  Size: 4900.0
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 100mppSTVGER.gif
+info:
+  Description: Originally built by humans and launched near the end of the 20th century
+    for peacful reconnaisance purposes, the Voyager VI probe was intercepted by an
+    evidently technologically advanced race who augmented the probe and sent it back
+    to Earth under a new internal conciousness, resulting in a near cataclysm.
+  Length: 98.0
+  Name: V'Ger (Voyager VI)
+  Size Notes: Approximately
+  Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 100mppSTWhaleProbe.gif
+info:
+  Description: Unknown, although the device was able to communicate with humpback
+    whales.
+  Length: 74.0
+  Name: Whale Probe
+  Size Details: There are numerous conflicting sources for the length of the Whale
+    Probe, but extrapolation from the film has led me to accept this length as being
+    the most likely.
+  Size Notes: Approximately
+  Unit: km
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

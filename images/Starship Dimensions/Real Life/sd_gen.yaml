@@ -172,6 +172,34 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
+filename: 10mppSpaceshipOne.gif
+info:
+  Description: Burt Rutan and team
+  Length: 5.0
+  Name: Spaceship One
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmexistF14.gif
+info:
+  Description: Grumman Corp.
+  Length: 19.1
+  Name: F-14
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: phobos.gif
+info:
+  Description: Moon of Mars
+  Diameter: 27.0
+  Name: Phobos
+  Size Notes: x 23 km x 20 km
+  Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 2mppexistjahreviking.gif
 info:
   Description: 'Knock NavisLength: 458.4m'

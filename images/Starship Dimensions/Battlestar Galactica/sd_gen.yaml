@@ -7,3 +7,19 @@ info:
   Size: 2.0
   Unit: m
 source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppswmoncalimari.gif
+info:
+  Description: Mon Calamari cruiser, 1.3km
+  Name: Mon Calamari cruiser
+  Size: 1.3
+  Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppswtradefederation.gif
+info:
+  Description: Trade Federation battleship, originally drawn by Chad Wilson
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html

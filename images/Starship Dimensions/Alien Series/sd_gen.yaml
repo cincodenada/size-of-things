@@ -1,5 +1,41 @@
 ---
 credit: Jeff Russell
+filename: 1mppAlienNostromo.gif
+info:
+  Description: 'Nostromo Length: 243.8m'
+  Length: 243.8
+  Name: Nostromo
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1mppAlienSulaco.gif
+info:
+  Description: 'Sulaco Length: 385m'
+  Length: 385.0
+  Name: Sulaco
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 1CMPPALIEN.gif
+info:
+  Description: ''
+  Name: Our Alien
+  Size: 2.2
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmAlienDropShip.gif
+info:
+  Description: ''
+  Length: 25.18
+  Name: UD-4L Cheyenne Dropship
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 10mppMardukFlagship.gif
 info:
   Description: Marduk flagship, 4km

@@ -34,3 +34,83 @@ ignore_images:
   - existbluewhale
   - space1999eagle
   - existleaningtower
+
+maps:
+  Dr. Who:
+    - "'Dr.Who' TV series"
+  Alien Series:
+    - "SHIPS FROM 'ALIEN' SERIES"
+    - "Starships from 'Alien' series"
+    - "Alien (1979)"
+    - "Aliens, (movie)"
+    - "SHIPS FROM 'ALIEN' SERIES"
+    - "Starships from 'Alien' series"
+  Babylon 5:
+    - BABYLON 5 SHIPS
+    - Babylon 5 TV Series
+    - Babylon 5, (Television Series)
+  Star Trek:
+    subgroup:
+      - Bajoran
+      - Cardassian
+      - Ferengi
+      - Jem'Hadar
+      - Klingon
+      - Romulan
+    rename:
+      Other Star Trek Alien: Other
+      Star Trek Federation: United Federation of Planets
+    merge:
+      - Star Trek (See Below)
+      - Star Trek IV, (Film, Paramount Pictures)
+      - STAR TREK SHIPS_STATIONS
+      - Star Trek,
+  Battlestar Galactica:
+    - BATTLESTAR GALACTICA SHIPS
+    - Battlestar Galactica
+  Real Life:
+    - US Navy
+    - "Currently in orbit : )"
+    - Discovered in
+    - People with vision
+    - Real Ships_Buildings
+  Farscape:
+    - Farscape, mesh created and rendered by Meurig
+  Forbidden Planet (1956):
+    - "'Forbidden Planet'"
+  Halo:
+    - Halo and
+  High Frontier (Gerard K. O'Neill):
+    - Image created by A. Twu
+  Indpendence Day:
+    - Independance Day (Film), image drawn by JR
+    - Independence Day (1996)
+    - Independence Day (Film), Drawn by Jeff Russell
+    - Independence Day (ID4)
+  Macross:
+    - Macross II, (Animated Film), Drawn by Jeff Russell
+    - Macross II, (Animated Film), image drawn by JR
+    - "Macross: Do"
+    - Robotech_Macross animated
+  Rendezvous with Rama:
+    - Rendezvous with
+    - Space, Above And Beyond
+  Star Wars:
+    - Star Wars, Episode I
+    - Star Wars, Episode IV
+    - Star Wars, Episode V
+    - Star Wars, Episode VI (Film)
+    - Star Wars, Episode VI
+    - Star Wars
+  Stargate:
+    - Stargate Atlantis
+    - StarGate, the
+  Starship Troopers:
+    - Starship Troopers (1997) read the book tho...
+    - Starship Troopers
+  Generic:
+    - well.... lots of places
+overrides:
+  1CMPPGENERIC.gif:
+    SwapDesc: true
+    name: Generic Alien

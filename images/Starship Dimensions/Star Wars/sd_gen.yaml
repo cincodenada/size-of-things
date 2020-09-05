@@ -83,6 +83,132 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
+filename: 10ppmSWOpeeSeaKiller.gif
+info:
+  Description: Wet
+  Length: 20.0
+  Name: Opee Sea Killer
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswbobbafett.gif
+info:
+  Description: Hairy
+  Height: Big
+  Name: Chewbacca
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswcloudcar.gif
+info:
+  Description: Used by residents of Cloud City, on Bespin
+  Name: Twin-Pod Cloud Car
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswempireatat.gif
+info:
+  Description: Imperial All Terrain Armoured Transport
+  Height: 20.0
+  Name: Imperial AT-AT walker
+  Size Details: The 15.5m height stated at StarWars.com just doesn't add up when you
+    watch the movie.
+  Size Notes: Approximately
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswempireatst.gif
+info:
+  Description: All Terrain Scout Walker
+  Height: 8.6
+  Name: Imperial AT-ST walker
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswempirelambdashuttle.gif
+info:
+  Description: the Lambda-class shuttle is a multi-purpose transport used in the Imperial
+    starfleet.
+  Length: 20.0
+  Name: Imperial Lambda Class Shuttle
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswempiretiebomber.gif
+info:
+  Description: The Empire under Darth Sidious
+  Length: 7.8
+  Name: TIE Bomber
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswempiretiefighter.gif
+info:
+  Description: Twin Ion Engine Fighter
+  Length: 6.3
+  Name: TIE Fighter
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswempiretieinterceptor.gif
+info:
+  Description: The Empire under Darth Sidious
+  Length: 9.6
+  Name: TIE Interceptor
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswempiretiex1.gif
+info:
+  Description: Empire under Darth Sidious
+  Length: 9.2
+  Name: TIE Advanced X1 Starfighter
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswjabbasailbarge.gif
+info:
+  Description: Used by Jabba the Hutt
+  Name: Jabba's Sail Barge
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswjabbaskiff.gif
+info:
+  Description: Used by Jabba's entourage
+  Name: Jabba's Desert Skiff
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswjawasandcrawler.gif
+info:
+  Description: Used by the Jawa
+  Name: Jawa Sandcrawler
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmswmilleniumfalcon.gif
+info:
+  Description: Personal transport of the smuggler Han Solo
+  Length: 26.7
+  Name: Millenium Falcon
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 10ppmswrebelawing.gif
 info:
   Description: The Rebellion
@@ -115,10 +241,31 @@ m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
+filename: 10ppmswslave1.gif
+info:
+  Description: Personal transport of the infamous bounty hunter, Bobba Fett
+  Length: 21.5
+  Name: Slave I
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 100mppswcloudcity.gif
 info:
   Description: Bespin Mining Colony
   Length: 16.0
   Name: Cloud City
+  Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 100mppswdeathstar2.gif
+info:
+  Description: The Empire under Darth Sidious (human). Incorporated into the base
+    is a laser-type weapon capable of destroying an entire Earth sized planet.
+  Diameter: 160.0
+  Name: Death Star II/ Mobile Command Base
+  Size Notes: official size, see http://www.theforce.net/swtc/ds/ for an alternate
+    size theory and discussion.
   Unit: km
 source: http://www.merzo.net/indexSD.html

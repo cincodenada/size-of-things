@@ -118,9 +118,259 @@ m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
+filename: 10ppmb5centaurisentri.gif
+info:
+  Description: Centauri
+  Name: Sentri Class Fighter
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5drakhshuttle.gif
+info:
+  Description: Drakh
+  Name: Drakh Scout
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5draziskyserpent.gif
+info:
+  Description: Drazi
+  Name: Drazi SunHawk
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5eaathmosshuttle.gif
+info:
+  Description: Earth Alliance
+  Name: Athmospheric Shuttle
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5eaaurorastarfury.gif
+info:
+  Description: Earth Alliance
+  Name: EA Aurora Starfury
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5eathunderboltsf.gif
+info:
+  Description: Earth Alliance
+  Name: Thunderbolt Starfury
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5minbariflyer.gif
+info:
+  Description: Minbari
+  Name: Minbari Flyer
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5minbarinialfighter.gif
+info:
+  Description: Minbari
+  Name: Nial Fighter
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5narnfrazifighter.gif
+info:
+  Description: Narn Regime
+  Name: Narn Frazi Fighter
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
 filename: 10ppmb5narngorith.gif
 info:
   Description: Narn Regime
   Name: Narn Gorith Fighter
 m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5raiderzephyr.gif
+info:
+  Description: Belt Alliance Raiders
+  Name: Raider Zephyr Fighter
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5shadowspitfire.gif
+info:
+  Description: The Shadows
+  Length: 50.0
+  Name: Shadow Spitfire
+  Size Notes: Varies, Between 15 and
+  Unit: m
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10ppmb5vorlonfighter.gif
+info:
+  Description: The Vorlon
+  Name: Vorlon Fighter
+m_per_px: 0.1
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb53rdspacecruiser.gif
+info:
+  Description: 3rd Space cruiser, 2km
+  Name: 3rd Space cruiser
+  Size: 2.0
+  Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5babylon4.gif
+info:
+  Description: Babylon 4 space colony
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5babylon5.gif
+info:
+  Description: Babylon 5 space colony
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5centauribalvarin.gif
+info:
+  Description: Centauri Balvarin cruiser, Babylon 5 AoG, ship designed by Mike Wikan
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5centauricorvan.gif
+info:
+  Description: Centauri Corvan cruiser, Babylon 5 AoG, ship designed by Mike Wikan
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5centaurivorchan.gif
+info:
+  Description: Centauri Vorchan cruiser
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5drakhcruiser.gif
+info:
+  Description: Drakh cruiser
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eacortez.gif
+info:
+  Description: Cortez class explorer
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eahyperion.gif
+info:
+  Description: Hyperion cruiser
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eanova.gif
+info:
+  Description: Nova cruiser
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eaomega.gif
+info:
+  Description: Omega destroyer
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eaposeidon.gif
+info:
+  Description: Poseidon carrier
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5eawarlock.gif
+info:
+  Description: Warlock class battlecruiser
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5iavictory.gif
+info:
+  Description: Victory class destroyer
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5narnbintak.gif
+info:
+  Description: Narn Bin'Tak cruiser, 2km
+  Name: Narn Bin'Tak cruiser
+  Size: 2.0
+  Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5narncruiser.gif
+info:
+  Description: Narn cruiser
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5narngquan.gif
+info:
+  Description: Narn G'Quan cruiser
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5narntloth.gif
+info:
+  Description: Narn T'Loth cruiser
+m_per_px: 10
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 10mppb5shadowdreadnought.gif
+info:
+  Description: Shadow Dreadnought, 2km
+  Name: Shadow Dreadnought
+  Size: 2.0
+  Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 100mppb5vorlonplanetkiller.gif
+info:
+  Description: The Vorlon
+  Length: 45.0
+  Name: Vorlon Planet Killer
+  Size Details: There are numerous conflicting sources for the length of the Vorlon
+    Planet Killer, but extrapolation from the show has led me to accept this length
+    as being the most likely.
+  Size Notes: Approximately
+  Unit: km
 source: http://www.merzo.net/indexSD.html

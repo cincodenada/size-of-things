@@ -455,6 +455,7 @@ ships = list(filtered.values())
 ships.sort(key=lambda x: x['src'])
 print(len(ships))
 for ship in ships:
+  groupname = 'Other'
   try:
     groupname = ship['group'].replace(' Starships','')
   except AttributeError:
@@ -464,7 +465,12 @@ for ship in ships:
       groupname = prose_group.group(2)
       ship['name'] = prose_group.group(1)
     else:
-      groupname = 'Other'
+      for universe in config['maps']:
+        if ship['description'].startswith(universe):
+          groupname = universe
+          ship['name'] = ship['description'].replace(universe, '').strip()
+          break
+
   if len(groupname) > 50:
     groupname = ' '.join(groupname.split(' ')[0:2])
 

@@ -9,15 +9,6 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 10mppSDF1.gif
-info:
-  Description: Macross Super Dimensional Fortress One, 1.2km
-  Name: Macross Super Dimensional Fortress One
-  Size: 1.2
-  Unit: km
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 10mppSDF3.gif
 info:
   Description: Super Dimensional Fortress Three, 1.6km
@@ -94,6 +85,14 @@ info:
     seems to be much larger. Further investigation is needed.
   Size Notes: Approximately
   Unit: km
+source: http://www.merzo.net/indexSD.html
+---
+credit: Jeff Russell
+filename: 2mppSDF1D.gif
+info:
+  Description: Macross Super Dimensional Fortress One (SDF-1)
+  Name: Super Dimensional Fortress One (SDF-1)
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

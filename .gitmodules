@@ -1,0 +1,3 @@
+[submodule "generate_index"]
+	path = generate_index
+	url = /home/joel/Projects/ship-layout

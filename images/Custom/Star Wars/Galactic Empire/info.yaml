@@ -1,0 +1,28 @@
+---
+filename: Death_Star-RO_U_Visual_Guide.png
+source: "https://vignette.wikia.nocookie.net/disney/images/b/ba/Death_Star-RO_U_Visual_Guide.png/revision/latest?cb=20170104184600"
+credit: Star Wars Wiki
+info:
+  Name: Death Star
+  Width: 120
+  Unit: km
+  Armament:
+    - Mk I Superlaser (1)
+    - Tractor beam emplacements (768)
+    - Turbolaser batteries (15,000)
+    - Super Blaster 920 laser cannons (2,500)
+    - Ion cannons (2,500)
+---
+filename: Death_Star_II_Render.png
+source: "https://vignette.wikia.nocookie.net/vsbattles/images/4/4a/Death_Star_II_Render.png/revision/latest?cb=20160114150132"
+credit: Star Wars Wiki
+info:
+  Name: Death Star II
+  Width: 160
+  Unit: km
+  Armament:
+    - Superlaser (1)
+    - Heavy turbolasers (15,000)
+    - Standard turbolasers (15,000)
+    - Laser cannons (7,500)
+    - Ion cannons (5,000)

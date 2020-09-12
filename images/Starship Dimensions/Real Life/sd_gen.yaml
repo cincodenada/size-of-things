@@ -66,19 +66,6 @@ info:
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
-filename: 1mppexistSpaceStation.gif
-info:
-  Description: 'The International Space Station Length: 80m I thought it interesting
-    to compare where we thought we''d be in 2001 as opposed to where we are. Kudos
-    to the Space Station Team.'
-  Length: 80.0
-  Name: The International Space Station
-  Size Note: I thought it interesting to compare where we thought we'd be in 2001
-    as opposed to where we are. Kudos to the Space Station Team.
-  Unit: m
-source: http://www.merzo.net/indexSD.html
----
-credit: Jeff Russell
 filename: 1mppexistdiscovery.gif
 info:
   Description: 'Space Shuttle Discovery Height with tanks: 56.1m'

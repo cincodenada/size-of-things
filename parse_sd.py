@@ -465,10 +465,16 @@ for ship in ships:
       groupname = prose_group.group(2)
       ship['name'] = prose_group.group(1)
     else:
+      prefixes = []
       for universe in config['maps']:
-        if ship['description'].startswith(universe):
-          groupname = universe
-          ship['name'] = ship['description'].replace(universe, '').strip()
+        prefixes.append(universe)
+        if 'subgroup' in config['maps'][universe]:
+          prefixes += config['maps'][universe]['subgroup']
+
+      for prefix in prefixes:
+        if ship['description'].startswith(prefix):
+          groupname = prefix
+          ship['name'] = ship['description'].replace(prefix, '').strip()
           break
 
   if len(groupname) > 50:
@@ -492,6 +498,8 @@ for ship in ships:
     for (key, newval) in overrides.items():
       if key in ship:
         ship[key] = newval
+    if 'groupname' in overrides:
+      groupname = overrides['groupname']
 
   groupdir = os.path.join('images','Starship Dimensions',groupname)
   try:

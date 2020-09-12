@@ -6,6 +6,7 @@ info:
   Name: Marduk flagship
   Size: 4.0
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -15,6 +16,7 @@ info:
   Name: Super Dimensional Fortress Three
   Size: 1.6
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -45,6 +47,7 @@ info:
   Name: Zentraedi Thuverl Salan (Cruiser)
   Size: 2.3
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -55,6 +58,7 @@ info:
   Name: Zentraedi Nupetiet-Vergnitzs (Flagship)
   Size: 4.0
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -64,6 +68,7 @@ info:
   Name: Zentraedi monitor
   Size: 1.1
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -73,6 +78,7 @@ info:
   Name: Zentreadi Quitra Queleual (Tanker)
   Size: 3.0
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -85,6 +91,7 @@ info:
     seems to be much larger. Further investigation is needed.
   Size Notes: Approximately
   Unit: km
+m_per_px: 100
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -106,6 +113,7 @@ info:
   Size Notes: Verified by Egan Loo, Macross Compendium.
   Unit: km
   Width: 600.0
+m_per_px: 2000
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -118,4 +126,5 @@ info:
   Size Notes: This height is significant in that it reflects the length of the Japanese
     Isles.
   Unit: km
+m_per_px: 2000
 source: http://www.merzo.net/indexSD.html

@@ -6,6 +6,7 @@ info:
   Name: Admiral Ackbar
   Size: 1.8
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -15,6 +16,7 @@ info:
   Name: Ewok
   Size: 1.0
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -25,6 +27,7 @@ info:
   Size: 3.9
   Size Notes: long
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -35,6 +38,7 @@ info:
   Size: 1.6
   Size Notes: variable height
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -44,6 +48,7 @@ info:
   Name: R2D2
   Size: 0.96
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -53,6 +58,7 @@ info:
   Name: Rancor from Return of the Jedi
   Size: 5.0
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -62,6 +68,7 @@ info:
   Name: Taun We
   Size: 2.13
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -71,6 +78,7 @@ info:
   Name: Wampa
   Size: 3.0
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -80,6 +88,7 @@ info:
   Name: Yoda
   Size: 0.66
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -89,6 +98,7 @@ info:
   Length: 20.0
   Name: Opee Sea Killer
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -118,6 +128,7 @@ info:
     watch the movie.
   Size Notes: Approximately
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -127,6 +138,7 @@ info:
   Height: 8.6
   Name: Imperial AT-ST walker
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -137,6 +149,7 @@ info:
   Length: 20.0
   Name: Imperial Lambda Class Shuttle
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -146,6 +159,7 @@ info:
   Length: 7.8
   Name: TIE Bomber
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -155,6 +169,7 @@ info:
   Length: 6.3
   Name: TIE Fighter
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -164,6 +179,7 @@ info:
   Length: 9.6
   Name: TIE Interceptor
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -173,6 +189,7 @@ info:
   Length: 9.2
   Name: TIE Advanced X1 Starfighter
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -206,6 +223,7 @@ info:
   Length: 26.7
   Name: Millenium Falcon
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -247,6 +265,7 @@ info:
   Length: 21.5
   Name: Slave I
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -256,6 +275,7 @@ info:
   Name: Mon Calamari cruiser
   Size: 1.3
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -273,6 +293,7 @@ info:
   Length: 16.0
   Name: Cloud City
   Unit: km
+m_per_px: 100
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -285,6 +306,7 @@ info:
   Size Notes: official size, see http://www.theforce.net/swtc/ds/ for an alternate
     size theory and discussion.
   Unit: km
+m_per_px: 100
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

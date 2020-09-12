@@ -6,6 +6,7 @@ info:
   Length: 113.0
   Name: Discovery from '2001, a Space Odyssey' motion picture
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -17,6 +18,7 @@ info:
   Name: '''Starplex'' from the novel ''Starplex'', written by Robert J. Sawyer'
   Size Note: main disk
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -30,6 +32,7 @@ info:
     Official
   Size Note: click here for an alternate length and discussion of the 'Columbia' size.
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -41,6 +44,7 @@ info:
   Name: Mothership from 'Close Encounters of the Third Kind' motion picture
   Size Note: main disk
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -50,6 +54,7 @@ info:
   Length: 550.0
   Name: Rodger-Young from 'Starship Troopers' motion picture
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -60,6 +65,7 @@ info:
   Length: 150.0
   Name: Rebel Blockade Runner (Tantive IV) from 'Star Wars' episode IV motion picture
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -70,6 +76,7 @@ info:
   Length: 300.0
   Name: Rebel Medical Frigate from 'Star Wars' episodes V and VI motion pictures
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -80,6 +87,7 @@ info:
   Length: 90.0
   Name: Rebel Troop Transport from 'Star Wars' episodes V and VI motion pictures
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -115,6 +123,7 @@ info:
   Name: 'Name: Dextre (Special Purpose Dexterous Manipulator)'
   Size Note: 'Source: Canadian Space Agency'
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -124,6 +133,7 @@ info:
   Height: 1.7
   Name: ASTEN Space Settlement, designed by Eric Yam.
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -135,6 +145,7 @@ info:
   Size: 6.0
   Size Note: Approximately
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -145,6 +156,7 @@ info:
   Length: 8701.429
   Name: Peacekeeper Command Carrier
   Unit: m
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -154,6 +166,7 @@ info:
   Length: 10.0
   Name: LEXX
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -164,6 +177,7 @@ info:
   Name: Super Star Destroyer
   Size: 19.0
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -196,6 +210,7 @@ info:
   Size: 2200.0
   Size Note: approximately
   Unit: m
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -205,6 +220,7 @@ info:
   Length: 1301.0
   Name: Starship Andromeda, image submitted by Neil Bond
   Unit: m
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -223,6 +239,7 @@ info:
   Name: EA Hyperion
   Size Note: mesh created and rendered by Meurig
   Unit: m
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -240,6 +257,7 @@ info:
   Length: 850.0
   Name: Minbari Tinashi class cruiser, mesh created and rendered by Meurig
   Unit: m
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -270,6 +288,7 @@ info:
   Length: 1500.0
   Name: Battlefleet Gothic Cobra, image created by John Reed
   Unit: m
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell

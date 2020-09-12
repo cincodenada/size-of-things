@@ -13,6 +13,7 @@ info:
   Size Details: Main habitat cylinder
   Size Notes: Approximately
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -28,4 +29,5 @@ info:
   Size Details: diameter 6.4km
   Size Notes: Main habitat cylinder approximately
   Unit: km
+m_per_px: 100
 source: http://www.merzo.net/indexSD.html

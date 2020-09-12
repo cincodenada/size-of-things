@@ -6,6 +6,7 @@ info:
   Name: Cardassian Galor
   Size: 481.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -15,6 +16,7 @@ info:
   Name: Cardassian Keldon
   Size: 481.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -24,4 +26,5 @@ info:
   Name: Cardassian Military Freighter
   Size: 256.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html

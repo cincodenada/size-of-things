@@ -6,6 +6,7 @@ info:
   Name: B.O.B
   Size: 0.7
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -15,4 +16,5 @@ info:
   Name: V.I.N CENT.
   Size: 0.7
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html

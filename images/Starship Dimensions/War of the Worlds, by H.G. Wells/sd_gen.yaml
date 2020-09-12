@@ -7,4 +7,5 @@ info:
   Name: Martian Tripod
   Size Notes: or taller. They could extend their legs to become taller as needed.
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html

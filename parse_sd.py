@@ -17,9 +17,9 @@ mpp_map = {
   "1 Pixel per meter.htm": 1,
   "2 meters per pixel.htm": 2,
   "10 meters per pixel.htm": 10,
-  "100 Pixels per meter.htm": 100,
+  "100 Pixels per meter.htm": 100, # Yes, the filename is backwards
   "2000 Meters per Pixel.htm": 2000,
-  "FIVE HUNDRED THOUSAND KILOMETERS per Pixel!!.htm": 500000
+  "FIVE HUNDRED THOUSAND KILOMETERS per Pixel!!.htm": 500000000
 }
 
 field_map = {
@@ -178,9 +178,7 @@ def generate_ship(ship):
 
   # This is for literally one missing ship but...
   outship['filename'] = outship['filename'].replace('.html', '.gif')
-
-  if 'Unit' not in info:
-    outship['m_per_px'] = ship['default_mpp']
+  outship['m_per_px'] = ship['default_mpp']
 
   return outship
 

@@ -6,6 +6,7 @@ info:
   Name: Jem'Hadar battlecruiser
   Size: 650.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -15,4 +16,5 @@ info:
   Name: Jem'Hadar attack ship
   Size: 95.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html

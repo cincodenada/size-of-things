@@ -6,6 +6,7 @@ info:
   Name: Independence Day alien in suit
   Size: 2.6
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -24,6 +25,7 @@ info:
   Name: ID4 City Destroyer
   Size Notes: across, stated in the film.
   Unit: km
+m_per_px: 100
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -35,4 +37,5 @@ info:
   Size Details: long. Please see notes
   Size Notes: Approximately
   Unit: km
+m_per_px: 2000
 source: http://www.merzo.net/indexSD.html

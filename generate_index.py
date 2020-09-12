@@ -106,7 +106,7 @@ def gather_yaml(path):
                 px = im.size[size_axis]
 
             # Look for a unit as well
-            if ('Unit' in ship['info']) and ship['info']['Unit']:
+            if not unit and ('Unit' in ship['info']) and ship['info']['Unit']:
               unit = ship['info']['Unit']
 
             # At this point we should have something

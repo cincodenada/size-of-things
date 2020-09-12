@@ -6,6 +6,7 @@ info:
   Name: Bajoran freighter
   Size: 250.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -15,6 +16,7 @@ info:
   Name: Bajoran freighter
   Size: 260.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -24,4 +26,5 @@ info:
   Name: Bajoran assault vessel
   Size: 93.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html

@@ -6,6 +6,7 @@ info:
   Name: Akira
   Size: 440.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -15,6 +16,7 @@ info:
   Name: Ambassador
   Size: 526.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -24,6 +26,7 @@ info:
   Name: Cheyenne
   Size: 362.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -33,6 +36,7 @@ info:
   Name: Constellation
   Size: 310.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -42,6 +46,7 @@ info:
   Name: Constitution
   Size: 289.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -51,6 +56,7 @@ info:
   Name: Constitution II
   Size: 305.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -60,6 +66,7 @@ info:
   Name: Daedalus
   Size: 105.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -69,6 +76,7 @@ info:
   Name: Defiant
   Size: 120.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -78,6 +86,7 @@ info:
   Name: Excelsior
   Size: 467.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -94,6 +103,7 @@ info:
   Name: Galaxy
   Size: 643.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -103,6 +113,7 @@ info:
   Name: Holoship
   Size: 247.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -112,6 +123,7 @@ info:
   Name: Intrepid
   Size: 344.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -121,6 +133,7 @@ info:
   Name: Miranda
   Size: 243.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -130,6 +143,7 @@ info:
   Name: Nebula
   Size: 440.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -139,6 +153,7 @@ info:
   Name: New Orleans
   Size: 345.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -155,6 +170,7 @@ info:
   Name: Norway
   Size: 335.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -164,6 +180,7 @@ info:
   Name: Nova
   Size: 180.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -173,6 +190,7 @@ info:
   Name: Oberth
   Size: 120.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -182,6 +200,7 @@ info:
   Name: Olympic
   Size: 320.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -191,6 +210,7 @@ info:
   Name: Prometheus
   Size: 414.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -200,6 +220,7 @@ info:
   Name: Raven
   Size: 90.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -209,6 +230,7 @@ info:
   Name: Saber
   Size: 172.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -218,6 +240,7 @@ info:
   Name: Sovereign
   Size: 685.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -227,6 +250,7 @@ info:
   Name: Soyuz
   Size: 243.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -236,6 +260,7 @@ info:
   Name: Steamrunner
   Size: 355.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -245,6 +270,7 @@ info:
   Name: Sydney
   Size: 235.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -254,6 +280,7 @@ info:
   Name: Yaeger
   Size: 330.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -263,6 +290,7 @@ info:
   Name: Vulcan T'Pau
   Size: 170.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -272,6 +300,7 @@ info:
   Name: Centaur
   Size: 381.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -281,6 +310,7 @@ info:
   Name: Challenger
   Size: 390.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -290,6 +320,7 @@ info:
   Name: Curry
   Size: 272.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -299,6 +330,7 @@ info:
   Name: Norkova
   Size: 290.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -308,6 +340,7 @@ info:
   Name: NX
   Size: 225.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -317,4 +350,5 @@ info:
   Name: Wells
   Size: 336.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html

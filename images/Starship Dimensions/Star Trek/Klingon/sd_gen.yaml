@@ -6,6 +6,7 @@ info:
   Name: Klingon Bird of Prey
   Size: 109.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -15,6 +16,7 @@ info:
   Name: Klingon D-7
   Size: 228.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -24,6 +26,7 @@ info:
   Name: Klingon K'Tinga
   Size: 214.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -33,6 +36,7 @@ info:
   Name: Klingon Military Transport
   Size: 256.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -42,6 +46,7 @@ info:
   Name: Klingon Negh'Var
   Size: 682.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -51,4 +56,5 @@ info:
   Name: Klingon Vor'Cha
   Size: 481.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html

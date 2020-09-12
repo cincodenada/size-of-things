@@ -6,6 +6,7 @@ info:
   Length: 243.8
   Name: Nostromo
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -15,6 +16,7 @@ info:
   Length: 385.0
   Name: Sulaco
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -24,6 +26,7 @@ info:
   Name: Our Alien
   Size: 2.2
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -33,4 +36,5 @@ info:
   Length: 25.18
   Name: UD-4L Cheyenne Dropship
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html

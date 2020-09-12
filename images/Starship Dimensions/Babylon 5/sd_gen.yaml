@@ -6,6 +6,7 @@ info:
   Length: 425.0
   Name: EA Earth Force One
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -15,6 +16,7 @@ info:
   Name: Shadow Scout
   Size: 356.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -24,6 +26,7 @@ info:
   Name: Vorlon Transport
   Size: 131.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -33,6 +36,7 @@ info:
   Name: 3rd Space fighter
   Size: 100.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -43,6 +47,7 @@ info:
   Name: Centauri Kutai
   Size: 465.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -52,6 +57,7 @@ info:
   Name: Drakh Raider
   Size: 215.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -61,6 +67,7 @@ info:
   Name: Drazi Sun-Hawk
   Size: 450.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -70,6 +77,7 @@ info:
   Name: EA Whitestar
   Size: 475.6
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -79,6 +87,7 @@ info:
   Name: Raider battle wagon
   Size: 89.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -88,6 +97,7 @@ info:
   Diameter: 500.0
   Name: Vree Xill
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -97,6 +107,7 @@ info:
   Diameter: 350.0
   Name: Vree Xorr
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -107,6 +118,7 @@ info:
   Size: 2.0
   Size Notes: ??? (pure conjecture)
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -213,6 +225,7 @@ info:
   Name: Shadow Spitfire
   Size Notes: Varies, Between 15 and
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -230,6 +243,7 @@ info:
   Name: 3rd Space cruiser
   Size: 2.0
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -332,6 +346,7 @@ info:
   Name: Narn Bin'Tak cruiser
   Size: 2.0
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -362,6 +377,7 @@ info:
   Name: Shadow Dreadnought
   Size: 2.0
   Unit: km
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -373,4 +389,5 @@ info:
   Name: Centauri Primus from 'Babylon 5'
   Size Note: mesh created and rendered by Meurig
   Unit: km
+m_per_px: 2
 source: http://www.merzo.net/indexSD.html

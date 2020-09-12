@@ -6,6 +6,7 @@ info:
   Name: Hideki ship
   Size: 98.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -15,6 +16,7 @@ info:
   Name: Malon Export Vessel
   Size: 515.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -24,6 +26,7 @@ info:
   Name: Merchantman
   Size: 150.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -33,6 +36,7 @@ info:
   Name: Promellian battlecruiser
   Size: 600.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -42,6 +46,7 @@ info:
   Name: Son'A command ship
   Size: 354.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -51,6 +56,7 @@ info:
   Name: Tamarian ship
   Size: 700.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -60,6 +66,7 @@ info:
   Name: Tarellian ship
   Size: 560.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -69,6 +76,7 @@ info:
   Name: Angosian transport
   Size: 110.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -78,6 +86,7 @@ info:
   Name: Batris ship
   Size: 290.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -87,6 +96,7 @@ info:
   Name: Breen ship
   Size: 330.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -96,6 +106,7 @@ info:
   Name: Caatati ship
   Size: 116.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -105,6 +116,7 @@ info:
   Name: Hirogen Hunter ship
   Size: 150.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -114,6 +126,7 @@ info:
   Name: Jaheel's ship
   Size: 300.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -123,6 +136,7 @@ info:
   Name: Jovis ship
   Size: 250.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -132,6 +146,7 @@ info:
   Name: Karemma ship
   Size: 380.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -141,6 +156,7 @@ info:
   Name: Kazon raider
   Size: 160.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -150,6 +166,7 @@ info:
   Name: Krenim patrol ship
   Size: 260.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -159,6 +176,7 @@ info:
   Name: Krenim warship
   Size: 500.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -168,6 +186,7 @@ info:
   Name: Mawasi cruiser
   Size: 245.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -177,6 +196,7 @@ info:
   Name: Nyhidron cruiser
   Size: 310.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -186,6 +206,7 @@ info:
   Name: Pralor vessel
   Size: 450.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -195,6 +216,7 @@ info:
   Name: Straleb security vessel
   Size: 180.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -204,6 +226,7 @@ info:
   Name: Talarian observation craft
   Size: 220.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -213,6 +236,7 @@ info:
   Name: Vidian ship
   Size: 550.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -222,6 +246,7 @@ info:
   Name: Wadi ship
   Size: 200.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -231,6 +256,7 @@ info:
   Name: Xhosa ship
   Size: 210.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -240,4 +266,5 @@ info:
   Name: Zahl ship
   Size: 360.0
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html

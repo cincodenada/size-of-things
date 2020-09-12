@@ -7,6 +7,7 @@ info:
   Size: 2.0
   Size Notes: approximately
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -17,6 +18,7 @@ info:
   Name: Plasma Bug
   Size Notes: +
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -26,6 +28,7 @@ info:
   Length: 18.0
   Name: Tanker Bug
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -36,4 +39,5 @@ info:
   Name: Warrior Bug
   Size Notes: Body
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html

@@ -6,6 +6,7 @@ info:
   Length: 13816.0
   Name: Amarr Avatar from Eve Online
   Unit: m
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -15,6 +16,7 @@ info:
   Length: 18056.0
   Name: Caldari Leviathan from Eve Online
   Unit: m
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -24,6 +26,7 @@ info:
   Length: 14788.0
   Name: Gallente Erebus from Eve Online
   Unit: m
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -33,4 +36,5 @@ info:
   Length: 18144.0
   Name: Minmatar Ragnarok from Eve Online
   Unit: m
+m_per_px: 10
 source: http://www.merzo.net/indexSD.html

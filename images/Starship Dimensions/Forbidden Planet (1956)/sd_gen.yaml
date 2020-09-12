@@ -6,6 +6,7 @@ info:
   Name: Robbie the Robot
   Size: 2.29
   Unit: m
+m_per_px: 0.01
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -15,4 +16,5 @@ info:
   Diameter: 51.0
   Name: 'C-57D United Planet Starcruiser Diameter: 51m'
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html

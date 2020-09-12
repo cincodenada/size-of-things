@@ -7,6 +7,7 @@ info:
   Length: 650.0
   Name: Moya from 'Farscape', mesh created and rendered by Meurig
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -17,6 +18,7 @@ info:
   Length: 300.0
   Name: Talyn from 'Farscape', mesh created and rendered by Meurig
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -27,6 +29,7 @@ info:
   Length: 535.0
   Name: PK Vigilant from 'Farscape', mesh created and rendered by Meurig
   Unit: m
+m_per_px: 1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -36,6 +39,7 @@ info:
   Length: 3.5
   Name: Farscape 1
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -45,6 +49,7 @@ info:
   Length: 3.5
   Name: Farsacpe 1 (upgraded)
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -54,6 +59,7 @@ info:
   Length: 15.0
   Name: Illonic pod
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -63,6 +69,7 @@ info:
   Length: 12.0
   Name: Lo'Laan
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -72,6 +79,7 @@ info:
   Length: 30.0
   Name: Nebari Pod
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -81,6 +89,7 @@ info:
   Length: 12.0
   Name: Peacekeeper Marauder B-Type
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -90,6 +99,7 @@ info:
   Length: 4.0
   Name: Peacekeeper Prowler
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -99,6 +109,7 @@ info:
   Length: 18.0
   Name: Transport pod
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -108,6 +119,7 @@ info:
   Length: 8.0
   Name: Zenetan Pirate Fighter
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html
 ---
 credit: Jeff Russell
@@ -117,4 +129,5 @@ info:
   Length: 28.0
   Name: Zenetan Junk Trader
   Unit: m
+m_per_px: 0.1
 source: http://www.merzo.net/indexSD.html

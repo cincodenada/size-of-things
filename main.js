@@ -334,6 +334,12 @@ function show_tooltip(ship) {
   infodiv.find('.unit').text(ship.info.Unit || 'm')
   infodiv.find('.credit').text(ship.credit)
   infodiv.find('.credit').attr('href',ship.source)
+  if(ship.submitter) {
+    infodiv.find('.submitter').text(ship.submitter)
+    infodiv.find('.submitter').parent().show()
+  } else {
+    infodiv.find('.submitter').parent().hide()
+  }
   ship_rect = ship.elm.getBoundingClientRect()
   infodiv.css('top', ship_rect.bottom)
   infodiv.css('left', ship_rect.left)
@@ -347,6 +353,7 @@ function clear_info() {
     infodiv.find('.name').text("")
     infodiv.find('.size').text("")
     infodiv.find('.unit').text("")
+    infodiv.find('.submitter').text("")
     infodiv.find('.length').text("")
     infodiv.find('.credit').text("")
     infodiv.find('.credit').attr('href',"#")
